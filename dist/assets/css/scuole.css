@@ -5755,6 +5755,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       .bg-redbrown .card.card-bg.bg-color {
         background-color: #ffffff;
         color: #455b71; }
+      .card.card-bg.bg-color.bg-petrol {
+        background-color: #f2f6f9 !important; }
       .card.card-bg.bg-color.bg-dark {
         color: #ffffff; }
         .card.card-bg.bg-color.bg-dark a {
@@ -5765,6 +5767,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
         background-color: #ebeaff; }
     .card.card-bg.bg-redbrown {
       background-color: #ffebee !important; }
+    .card.card-bg.card-bg-simple p {
+      margin: 0 0 0 0;
+      font-size: 1.13rem;
+      font-weight: 600;
+      font-family: "Titillium Web", Geneva, Tahoma, sans-serif; }
+    .card.card-bg.card-bg-simple:before {
+      content: "";
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #51758d; }
+      .purplelight .card.card-bg.card-bg-simple:before {
+        background-color: #fbeaff; }
+      .redbrown .card.card-bg.card-bg-simple:before {
+        background-color: #f7d2d8; }
+      .bluelectric .card.card-bg.card-bg-simple:before {
+        background-color: #0D00FF; }
   .card.card-no-shadow {
     box-shadow: none; }
   .card.card-icon .icon {
@@ -5825,11 +5847,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     padding-bottom: 22px; }
   .card.card-icon-main .card-icon-content {
     display: flex;
-    align-items: center; }
+    align-items: left;
+    flex-direction: column; }
     .card.card-icon-main .card-icon-content p {
       font-family: "Titillium Web", Geneva, Tahoma, sans-serif;
       font-size: 1.2rem;
-      margin: 0 0 0 0; }
+      margin: 0 0 7px 0; }
   .card.card-avatar .card-avatar-img {
     width: 40px;
     height: 40px;
@@ -6726,6 +6749,8 @@ body.push-body.push-body-toright #main-header:after, body.push-body.push-body-to
       fill: #ffffff; }
     .greendark .owl-carousel.carousel-theme.carousel-simple .owl-nav .owl-prev svg, .greendark .owl-carousel.carousel-theme.carousel-simple .owl-nav .owl-next svg, .greendark .owl-carousel.carousel-theme.carousel-simple-pager .owl-nav .owl-prev svg, .greendark .owl-carousel.carousel-theme.carousel-simple-pager .owl-nav .owl-next svg {
       fill: #0E8A5F; }
+    .bluelectric .owl-carousel.carousel-theme.carousel-simple .owl-nav .owl-prev svg, .bluelectric .owl-carousel.carousel-theme.carousel-simple .owl-nav .owl-next svg, .bluelectric .owl-carousel.carousel-theme.carousel-simple-pager .owl-nav .owl-prev svg, .bluelectric .owl-carousel.carousel-theme.carousel-simple-pager .owl-nav .owl-next svg {
+      fill: #0D00FF; }
 .owl-carousel.carousel-theme.carousel-simple .owl-nav .owl-prev, .owl-carousel.carousel-theme.carousel-simple-pager .owl-nav .owl-prev {
   left: -67px; }
   .owl-carousel.carousel-theme.carousel-simple .owl-nav .owl-prev svg, .owl-carousel.carousel-theme.carousel-simple-pager .owl-nav .owl-prev svg {
