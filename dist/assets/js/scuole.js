@@ -6,7 +6,6 @@
 // @codekit-append "../../bower_components/ResponsiveDom/js/jquery.responsive-dom.js";
 // @codekit-append "../../components/jPushMenu/jpushmenu.js";
 // @codekit-append "../../components/perfect-scrollbar-master/perfect-scrollbar/js/perfect-scrollbar.jquery.js";
-
 // @codekit-append "../../components/vallenato.js-master/vallenato.js";
 // @codekit-append "../../bower_components/responsive-tabs/js/jquery.responsiveTabs.js";
 // @codekit-append "../../bower_components/fitvids/jquery.fitvids.js";
