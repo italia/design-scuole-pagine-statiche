@@ -6615,6 +6615,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   box-shadow: none; }
 
 .btn-outline-white:hover {
+  background-color: #ffffff;
   color: #000000; }
 .bg-bluedark .btn-outline-white:hover {
   color: #30465c !important; }
