@@ -1,4 +1,4 @@
-[![GitHub issues](https://img.shields.io/github/issues/italia/bootstrap-italia.svg)](https://github.com/italia/bootstrap-italia/issues)
+[![GitHub issues](https://img.shields.io/github/issues/italia/bootstrap-italia.svg)](https://github.com/italia/design-scuole-pagine-statiche/issues)
 [![Join the #design channel](https://img.shields.io/badge/Slack%20channel-%23design-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
@@ -10,6 +10,7 @@ All’interno di questo spazio troverai:
 
 - l'Architettura dell'Informazione
 - il codice già pronto all’uso
+- Componenti di terze parti utilizzati
 
 Ti invitiamo infine ad aiutarci a segnalare eventuali bug e a prendere contatto con noi su [Slack](https://slack.developers.italia.it/) qualora avessi bisogno di ulteriore supporto.
 
