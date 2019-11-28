@@ -1,7 +1,7 @@
 {
-  "name": "scuole-italia",
+  "name": "design-scuole-pagine-statiche",
   "version": "1.0.0",
-  "description": "Bootstrap Italia è un tema Bootstrap 4 per la creazione di applicazioni web nel pieno rispetto delle Linee guida di design per i servizi web della PA",
+  "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
   "scripts": {},
   "author": "Presidenza del Consiglio dei Ministri",
   "license": "BSD-3-Clause",
