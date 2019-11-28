@@ -24,7 +24,9 @@ Buon lavoro!
 
 ## Come iniziare
 
-Per utilizzare i templates delle Scuole all'interno del tuo progetto, è sufficiente includere i file compilati.
+Per utilizzare i templates delle Scuole all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/master/build). Per scaricare le dipendenze esterne, è sufficiente utilizzare uno dei seguenti comandi.
+
+`npm install` oppure `yarn install`
 
 ## Architettura Informazione
 
