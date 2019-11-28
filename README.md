@@ -1,7 +1,7 @@
-[![Join the #design channel](https://img.shields.io/badge/Slack%20channel-%23design-blue.svg)](https://developersitalia.slack.com/messages/C7VPAUVB3/)
+[![Join the #design-siti-scuole channel](https://img.shields.io/badge/Slack%20channel-%23design-blue.svg)](https://app.slack.com/client/T6C27AXE0/CQ7J0KANT)
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
-Benvenuto nel repository ufficiale del progetto “I siti web delle Scuole Italiane”.
+Benvenuto nel repository ufficiale contenente i template del progetto “I siti web delle Scuole Italiane”.
 
 Questo repo, assieme alla documentazione tecnica, completa il kit che abbiamo realizzato per farti conoscere meglio il progetto e per metterti subito nelle condizioni di iniziare a sperimentarlo.
 
@@ -15,17 +15,10 @@ Ti invitiamo infine ad aiutarci a segnalare eventuali bug e a prendere contatto 
 
 Buon lavoro!
 
-
-I files contenuti in questo progetto sono basati su Bootstrap Italia che è un tema basato su [Bootstrap 4](https://getbootstrap.com/docs/) per la creazione di applicazioni responsive, mobile-first per il web.
-
-**[Vedi la documentazione completa »](https://italia.github.io/bootstrap-italia/)**
-
-
 ## Indice
 
 - [Come iniziare](#come-iniziare)
 - [Architettura dell'Informazione](#architettura-informazione)
-- [Segnalazione bug e richieste](#segnalazione-bug-e-richieste-di-aiuto)
 - [Come contribuire](#come-contribuire)
 - [Licenze software dei componenti di terze parti](#licenze-software-dei-componenti-di-terze-parti)
 
@@ -43,27 +36,19 @@ Infine, nel documento sono contenute alcune indicazioni per la migrazione e/o ri
 
 Vai al documento: https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing
 
-## Segnalazione bug e richieste di aiuto
-
-Vuoi segnalare un bug o fare una richiesta?
-
-Prima di tutto assicurati che sia un problema relativo al tema Bootstrap Italia e non alla libreria Bootstrap da cui deriva 
-(in tal caso puoi fare riferimento al [repository di Bootstrap](https://github.com/twbs/bootstrap)), poi
-dai un'occhiata a come [creare una issue](https://github.com/italia/bootstrap-italia/blob/master/CONTRIBUTING.md#creare-una-issue).
-
 ## Come contribuire
 
-Vorresti dare una mano su Bootstrap Italia? **Sei nel posto giusto!**
+Vorresti dare una mano sul progetto? **Sei nel posto giusto!**
  
 Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza sulle
 [linee guida di design per i servizi web della PA](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/),
-e fai riferimento alle [indicazioni su come contribuire a Bootstrap Italia](https://github.com/italia/bootstrap-italia/blob/master/CONTRIBUTING.md).
+e unisciti a noi nel [canale Slack #design-siti-scuole](https://app.slack.com/client/T6C27AXE0/CQ7J0KANT).
 
 ## Licenze software dei componenti di terze parti
 
-### Componenti distribuiti con Bootstrap Italia
+### Componenti distribuiti con i template
 
-Vengono di seguito elencati i componenti distribuiti con Bootstrap Italia che hanno una propria licenza diversa da CC0.
+Vengono di seguito elencati i componenti distribuiti con i template che hanno una propria licenza diversa da CC0.
 
 - [jQuery](https://jquery.com/) © jQuery Foundation, licenza MIT
 - [Popper.js](https://popper.js.org/) © Federico Zivolo and contributors, licenza MIT
@@ -82,9 +67,3 @@ Vengono di seguito elencati i componenti distribuiti con Bootstrap Italia che ha
 - [Responsive Tabs](http://jellekralt.github.io/Responsive-Tabs/) © Jelle Kralt, licenza MIT
 - [Sticky Kit](https://leafo.net/sticky-kit/) © Leafo, licenza MIT
 - [svgxuse](https://icomoon.io/svgxuse-demo/) © Icomoon, licenza MIT
-
-<a href="https://www.browserstack.com/
-" target="_blank"><img src="https://p14.zdusercontent.com/attachment/1015988/Acl6uTyvwHnAmpEiRm9p8eh1R?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ewB9aVdbiHzfkiZdbgrc2Q.s1B7FuA_Wdegrj1PBZ0pVGgjWhzuJD8yTKRptv2BxFNe-KQSsaVtbkBer5X2rNq81mHZ_kEuAOigMPjgorAAzTUA5AmP_OX4JQJdQk96Vg3UggORRd4UDSdS-tF4o4evvo_8f3cciZcBBiFuqm-GXAclqWRusZxHITpEM7OHNvvMSDV35zbOO0zLwTnHKNQL715Ozitqrx_Q94yYO9NUM-h6jrN76MM5hLdM2umQXsrd0JH5EMp7tp8yDAAyNtoqZUiNFxCh0o1dUAFgZodntaLkGOv4Gzzj5kb7iBWS6JY.Ev5PtLdgCYcC4799H6-GEg" 
-alt="BrowserStack logo" width="200" height="105" /></a>
-
-We are using BrowserStack for interactive cross browser testing. They are sponsoring our open source project!
