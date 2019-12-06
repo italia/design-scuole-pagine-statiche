@@ -36,7 +36,7 @@ L’architettura dell’informazione è basata sulle linee guida di design dei s
 
 Infine, nel documento sono contenute alcune indicazioni per la migrazione e/o riscrittura di contenuti dal sito esistente al nuovo sito che si sta creando oltre a suggerimenti per la corretta gestione dei contenuti del sito di una scuola.
 
-Vai al documento: https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing
+[Vai al documento di architettura dell'informazione:](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing)
 
 ## Come contribuire
 
