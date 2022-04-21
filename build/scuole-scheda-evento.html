@@ -994,8 +994,7 @@
                             style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1140px;">
                             <div class="owl-item active" style="width: 255px; margin-right: 30px;">
                               <div class="item gallery-item">
-                                <a
-                                  href="http://localhost/wordpress/wp-content/uploads/2022/02/fupete_drawingalive_workshop_opere-3.jpg">
+                                <a href="#">
                                   <figure>
                                     <img
                                       src="http://localhost/wordpress/wp-content/uploads/2022/02/fupete_drawingalive_workshop_opere-3.jpg"
@@ -1008,7 +1007,7 @@
                             <div class="owl-item active" style="width: 255px; margin-right: 30px;">
                               <div class="item gallery-item">
                                 <a
-                                  href="http://localhost/wordpress/wp-content/uploads/2022/02/fupete_drawingalive_workshop_opere-1.jpg">
+                                  href="#">
                                   <figure>
                                     <img
                                       src="http://localhost/wordpress/wp-content/uploads/2022/02/fupete_drawingalive_workshop_opere-1.jpg"
@@ -1021,7 +1020,7 @@
                             <div class="owl-item" style="width: 255px; margin-right: 30px;">
                               <div class="item gallery-item">
                                 <a
-                                  href="http://localhost/wordpress/wp-content/uploads/2022/02/fupete_drawingalive_workshop-4.jpg">
+                                  href="#">
                                   <figure>
                                     <img
                                       src="http://localhost/wordpress/wp-content/uploads/2022/02/fupete_drawingalive_workshop-4.jpg"
@@ -1034,7 +1033,7 @@
                             <div class="owl-item" style="width: 255px; margin-right: 30px;">
                               <div class="item gallery-item">
                                 <a
-                                  href="http://localhost/wordpress/wp-content/uploads/2022/02/fupete_pecci_workshop_-8.jpg">
+                                  href="#">
                                   <figure>
                                     <img
                                       src="http://localhost/wordpress/wp-content/uploads/2022/02/fupete_pecci_workshop_-8.jpg"
@@ -1275,26 +1274,8 @@
                           + aggiungi a Google Calendar</a></p>
                     </div>
                   </div>
-                  <div class="mini-clndr" id="mini-clndr"></div>
-                  <script type="text/template" id="calendar-template">
-                    <div class="clndr-controls clearfix">
-                      <div class="clndr-previous-button clearfix"></div>
-                      <div class="month clearfix"><%= month %> <%= year %></div>
-                      <div class="clndr-next-button clearfix"></div>
-                    </div>
-                    <div class="days-container clearfix">
-                      <div class="days clearfix">
-                        <div class="headers clearfix">
-                          <% _.each(daysOfTheWeek, function(day) { %>
-                          <div class="day-header clearfix"><%= day %></div>
-                          <% }); %>
-                        </div>
-                        <% _.each(days, function(day) { %>
-                        <div class="<%= day.classes %>"><a href="/data/<%= moment(day.date).format('D-MM-YYYY') %> "><%= day.day %></a></div>
-                        <% }); %>
-                      </div>
-                    </div>
-                  </script>
+                  
+                  
                   <div class="d-flex justify-content-end pb-4">
                     <div class="actions-wrapper actions-main">
                       <a class="toggle-actions" href="#" title="Vedi azioni" data-target="#modal-more-items"
