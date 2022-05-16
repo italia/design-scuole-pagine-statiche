@@ -15349,6 +15349,12 @@ button.icon-text {
   fill: #455b71;
 }
 
+@media (max-width: 991.98px) {
+  .header-search svg {
+    margin-bottom: 5px;
+  }
+}
+
 .header-user-access::after {
   display: block;
   clear: both;
