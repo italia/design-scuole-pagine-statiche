@@ -1,0 +1,20 @@
+//
+// Pagination
+// --------------------------------------------------
+
+.pagination {
+  li {
+    &.page-item {
+      a {
+        &.page-link {
+          padding-left: 8px;
+          padding-right: 8px;
+          min-width: inherit;
+          &:hover {
+            color: $petrol;
+          }
+        }
+      }
+    }
+  }
+}

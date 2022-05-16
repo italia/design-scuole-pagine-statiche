@@ -1,0 +1,33 @@
+//
+// Video
+// --------------------------------------------------
+
+.video-wrapper {
+  @include clearfix;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  @include border-radius(4px);
+  box-shadow: 0 0.9rem 0.9rem rgba($black, .17);
+  background-color: $petrol;
+  img {
+    position: relative;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.4;
+  }
+  svg {
+    width: 100px;
+    height: 100px;
+    display: block;
+    fill: #ffffff;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+  }
+}

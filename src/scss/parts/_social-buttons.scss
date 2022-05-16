@@ -1,0 +1,48 @@
+//
+// Social Buttons
+// --------------------------------------------------
+
+.header-social {
+  display: flex;
+  color: #455b71;
+  margin-left: 20px;
+  .header-social-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  a {
+    color: #455b71;
+    margin-left: 8px;
+    svg {
+      fill: #455b71;
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+  }
+  span {
+    font-weight: 600;
+  }
+}
+
+.footer-social {
+  display: flex;
+  color: #ffffff;
+  .footer-social-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  a {
+    color: #ffffff;
+    margin-left: 8px;
+    svg {
+      fill: #ffffff;
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+  }
+  span {
+    font-weight: 600;
+  }
+}

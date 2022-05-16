@@ -1,0 +1,116 @@
+//
+// Sub Nav
+// --------------------------------------------------
+
+#sub-nav {
+  @include clearfix;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  #main-header.is-sticky & {
+    height: 0px;
+    overflow: hidden;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &.nav-list {
+      @include clearfix;
+      display: flex;
+      font-weight: 600;
+      > li {
+        &.menu-dropdown-simple-wrapper {
+          position: relative;
+          z-index: 0;
+        }
+        &.text-redbrown {
+          a {
+            color: $redbrown;
+          }
+        }
+        &.text-greendark {
+          a {
+            color: $greendark;
+          }
+        }
+        &.text-purplelight {
+          a {
+            color: $purplelight;
+          }
+        }
+        &.text-bluelectric {
+          a {
+            color: $bluelectric;
+          }
+        }
+        > ul {
+          display: none;
+        }
+        > a {
+          padding: 10px 17px 10px 17px;
+          @include clearfix;
+          position: relative;
+          z-index: 2;
+          display: inline-block;
+          &.toggle-dropdown-simple {
+            &.active {
+              &:after {
+              	top: 100%;
+              	left: 50%;
+              	border: solid transparent;
+              	content: " ";
+              	height: 0;
+              	width: 0;
+              	position: absolute;
+              	pointer-events: none;
+              	border-color: rgba(255, 255, 255, 0);
+              	border-bottom-color: #ffffff;
+              	border-width: 10px;
+              	margin-left: -10px;
+                margin-top: -10px;
+              }
+            }
+          }
+          &.toggle-dropdown-megamenu {
+            &.active {
+              &:after {
+                top: 100%;
+                left: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                border-color: rgba(0, 0, 0, 0);
+                border-bottom-color: #17324d;;
+                border-width: 10px;
+                margin-left: -10px;
+                margin-top: -20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-container {
+    @include clearfix;
+    position: inherit;
+    .nav-list-primary {
+      float: left;
+    }
+    .nav-list-secondary {
+      float: right;
+      font-size: 0.95rem;
+      margin-top: 4px;
+      font-weight: 400;
+      li {
+        &:last-child {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

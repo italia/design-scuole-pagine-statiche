@@ -1,0 +1,120 @@
+//
+// Footer
+// --------------------------------------------------
+
+.footer-wrapper {
+	background-color: #5a768a;
+	color: #ffffff;
+	padding: 50px 0 50px 0;
+	a {
+		color: #ffffff;
+	}
+	.logo-footer {
+	  @include clearfix;
+	  display: flex;
+	  align-items: center;
+	  svg {
+	    width: 64px;
+	    height: 72px;
+	    display: block;
+	    fill: $white;
+	    @include media-breakpoint-down(md) {
+	      width: 40px;
+	      height: 45px;
+	    }
+	  }
+	  h1, .h1 {
+	    display: block;
+	    font-weight: 400;
+	    font-size: 1.313rem;
+	    line-height: 1.29;
+	    letter-spacing: 0;
+	    margin: 0 0 0 25px;
+			color: #ffffff;
+	    @include media-breakpoint-down(md) {
+	      font-size: .88rem;
+	      margin-left: 15px;
+	    }
+	    span {
+	      display: block;
+	      strong {
+	        font-weight: 700;
+	      }
+	    }
+	  }
+	}
+	h3, .h3 {
+		color: #ffffff;
+		font-size: 1.13rem;
+	}
+}
+
+.footer-list {
+	padding: 0;
+	list-style: none;
+	li {
+		margin: 0 0 0 0;
+	}
+}
+
+.footer-inline-menu {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  list-style: none;
+  padding: 0;
+  li {
+    padding-right: 30px;
+  }
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  position: relative;
+  z-index: 0;
+  padding: 20px 0 20px 0;
+  margin: 20px 0 0 0;
+  p {
+    margin: 0;
+  }
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.27;
+  }
+  &:after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.27;
+  }
+}
+
+.sub-footer {
+  display: flex;
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+  .footer-social {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      margin-left: 0px;
+    }
+  }
+}

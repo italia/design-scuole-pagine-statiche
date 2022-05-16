@@ -1,0 +1,208 @@
+//
+// CLNDR
+// --------------------------------------------------
+
+.mini-clndr {
+  margin: 5px 0 0 0;
+  width: 100%;
+  padding: 15px 10px 20px 10px;
+  border-bottom: 1px solid #e7eaed;
+}
+
+.mini-clndr .clndr {
+  overflow: hidden;
+  width: 100%;
+}
+.mini-clndr .clndr .clndr-controls {
+  color: #000000;
+  width: 100%;
+}
+
+.mini-clndr .clndr .clndr-controls .clndr-previous-button, .mini-clndr .clndr .clndr-controls .clndr-next-button {
+  cursor: pointer;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  transition: background-color 0.5s ease 0s;
+  width: 15%;
+  float: left;
+}
+
+.mini-clndr .clndr .clndr-controls .clndr-previous-button {
+  &:before {
+    content: url("data:image/svg+xml; utf8, <svg width='100%' height='100%' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'><rect id='Rectangle-path' x='0' y='0.035' width='32' height='32' style='fill:none;'/><path d='M22.083,32l3.834,-3.833l-12.334,-12.167l12.167,-12.167l-3.833,-3.833l-15.834,16l16,16Z' style='fill:rgb(14, 138, 95);'/></svg>");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  .bluelectric & {
+    &:before {
+      content: url("data:image/svg+xml; utf8, <svg width='100%' height='100%' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'><rect id='Rectangle-path' x='0' y='0.035' width='32' height='32' style='fill:none;'/><path d='M22.083,32l3.834,-3.833l-12.334,-12.167l12.167,-12.167l-3.833,-3.833l-15.834,16l16,16Z' style='fill:rgb(14, 0, 255);'/></svg>");
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+  }
+}
+
+.mini-clndr .clndr .clndr-controls .clndr-next-button {
+  text-align: center;
+  &:before {
+    content: url("data:image/svg+xml; utf8, <svg width='100%' height='100%' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'><rect id='Rectangle-path' x='0' y='0.035' width='32' height='32' style='fill:none;'/><path d='M9.917,32l-3.834,-3.833l12.334,-12.167l-12.167,-12.167l3.833,-3.833l15.834,16l-16,16Z' style='fill:rgb(14, 138, 95);'/></svg>");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  &:after {
+    display: none;
+  }
+  .bluelectric & {
+    &:before {
+    content: url("data:image/svg+xml; utf8, <svg width='100%' height='100%' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'><rect id='Rectangle-path' x='0' y='0.035' width='32' height='32' style='fill:none;'/><path d='M9.917,32l-3.834,-3.833l12.334,-12.167l-12.167,-12.167l3.833,-3.833l15.834,16l-16,16Z' style='fill:rgb(14, 0, 255);'/></svg>");
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  }
+}
+
+.mini-clndr .clndr .clndr-controls .clndr-previous-button:hover, .mini-clndr .clndr .clndr-controls .clndr-next-button:hover {
+
+}
+
+.mini-clndr .clndr .clndr-controls .month {
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  width: 70%;
+  float: left;
+  color: #555555;
+}
+.mini-clndr .clndr .days-container {
+  display: block;
+
+  position: relative;
+  width: 100%;
+}
+.mini-clndr .clndr .days-container .days {
+  background-color: #ffffff;
+
+  transition: left 0.5s ease 0s;
+  width: 100%;
+}
+.mini-clndr .clndr .days-container .days .day, .mini-clndr .clndr .days-container .days .empty {
+  color: #555555;
+  display: block;
+  font-size: 0.84em;
+  text-align: center;
+  width: 14.2857%;
+  float: left;
+}
+
+.mini-clndr .clndr .days-container .days .day a {
+
+  display: block;
+  padding: 8px 0px 8px 0px;
+  color: #555555;
+
+  &:hover {
+
+    text-decoration: none;
+    cursor: default;
+
+  }
+
+}
+
+.mini-clndr .clndr .days-container .days .day.event, .mini-clndr .clndr .days-container .days .empty.event {
+  cursor: pointer;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  z-index: 0;
+  background-color: $greendark;
+  a {
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    color: #ffffff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .bluelectric & {
+    background-color: $bluelectric;
+  }
+}
+.mini-clndr .clndr .days-container .days .day.event:hover, .mini-clndr .clndr .days-container .days .empty.event:hover {
+
+
+
+}
+.mini-clndr .clndr .days-container .days .day.adjacent-month, .mini-clndr .clndr .days-container .days .empty.adjacent-month {
+  color: rgba(0, 0, 0, 0.3);
+}
+.mini-clndr .clndr .days-container .days .empty {
+  height: 31px;
+  vertical-align: bottom;
+}
+.mini-clndr .clndr .days-container .days .headers {
+
+}
+.mini-clndr .clndr .days-container .days .headers .day-header {
+  color: #000000;
+  display: block;
+  text-align: center;
+  width: 14.2857%;
+  float: left;
+  font-size: 0.8em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.days-container .days .adjacent-month {
+  opacity: 0.4;
+
+}
+
+.mini-clndr .clndr .days-container .days .day.today a {
+
+  background: #eeeeee;
+
+}
+
+.mini-clndr .clndr .days-container .days {
+
+  padding-left: 1px;
+
+}
+
+.mini-clndr .clndr .days-container .days .day {
+
+  margin-top: -1px;
+  margin-left: -1px;
+
+}
+
+.mini-clndr .clndr .days-container .days .day a {
+
+  cursor: pointer !important;
+
+}
+
+
+
+/* FIX CALENDARI */
+.bootstrap-datetimepicker-widget {
+    padding-left:2em;
+    padding-right:2em;
+}
+
+.datepicker_wrapper .h6.strong {
+    padding-left: 3em;
+}
+
+.equal_height_calendar {
+  min-height: 178px;
+}

@@ -1,0 +1,51 @@
+//
+// Logo Header
+// --------------------------------------------------
+
+.logo-header {
+  @include clearfix;
+  display: flex;
+  align-items: center;
+  .is-sticky & {
+    margin-right: 20px;
+    @include media-breakpoint-down(md) {
+      margin-right: 0px;
+    }
+  }
+  svg {
+    width: 64px;
+    height: 72px;
+    display: block;
+    fill: $gray-primary;
+    .is-sticky & {
+      width: 40px;
+      height: 45px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 40px;
+      height: 45px;
+    }
+  }
+  h1, .h1 {
+    display: block;
+    font-weight: 400;
+    font-size: 1.313rem;
+    line-height: 1.29;
+    letter-spacing: 0;
+    margin: 0 0 0 25px;
+    .is-sticky & {
+      font-size: .88rem;
+      margin-left: 15px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: .88rem;
+      margin-left: 15px;
+    }
+    span {
+      display: block;
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+}

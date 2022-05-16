@@ -1,0 +1,172 @@
+//
+// Access
+// --------------------------------------------------
+
+#access-modal {
+	padding: 0;
+	overflow-y: hidden;
+	&.modal {
+		.modal-dialog {
+			width: 100%;
+			max-width: 100%;
+			height: 100%;
+			margin: 0 0 0 0;
+			.modal-content {
+				height: 100%;
+				overflow-y: auto;
+				.modal-body {
+          @include media-breakpoint-down(md) {
+        		padding-left: 0px;
+        		padding-right: 0px;
+        		padding-bottom: 0px;
+        	}
+  				p {
+    				font-size: 1rem;
+  				}
+          @include media-breakpoint-up(lg) {
+      			&:before {
+        			content: "";
+        			background-color: $gray-primary;
+        			width: 50%;
+        			height: 100%;
+        			display: block;
+        			position: absolute;
+        			z-index: 1;
+        			top: 0;
+        			right: 0;
+      			}
+      		}
+      		.access-main-wrapper {
+        		position: relative;
+        		z-index: 2;
+      		}
+				}
+			}
+		}
+	}
+	h2, .h2 {
+		font-size: 3.5rem;
+		font-weight: 600;
+		letter-spacing: -2px;
+		@include media-breakpoint-down(sm) {
+			font-size: 1.47rem;
+			letter-spacing: 0px;
+		}
+	}
+	.form-group {
+		position: relative;
+		z-index: 0;
+		margin: 0 0 30px 0;
+		label {
+			display: none;
+		}
+		input {
+			padding: 0 20px 0 0;
+			border-color: #d1d6db;
+			font-size: 1.2rem;
+			height: 42px;
+			background-color: transparent;
+			border-color: #ffffff;
+			@include media-breakpoint-down(sm) {
+				font-size: 1rem;
+				height: 42px;
+			}
+		}
+		.form-control {
+  		color: #ffffff;
+      &::-webkit-input-placeholder {
+        color: #8da0af !important;
+      }
+      &:-ms-input-placeholder {
+        color: #8da0af !important;
+      }
+      &::placeholder {
+        color: #8da0af !important;
+      }
+		}
+		svg {
+			position: absolute;
+			z-index: 1;
+			bottom: 15px;
+			left: 0;
+			width: 35px;
+			height: 35px;
+			fill: $primary;
+			@include media-breakpoint-down(sm) {
+				width: 17px;
+				height: 17px;
+				bottom: 12px;
+			}
+		}
+	}
+	.dismiss {
+		opacity: 1;
+		margin: 28px 0 0 0;
+		@include media-breakpoint-down(sm) {
+			margin-top: 0px;
+		}
+		svg {
+			width: 32px;
+			height: 32px;
+			fill: #555555;
+	    @include media-breakpoint-up(lg) {
+  			fill: #ffffff;
+  		}
+			@include media-breakpoint-down(sm) {
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+	.text-intro {
+  	font-size: 1.17rem !important;
+  	line-height: 1.5;
+	}
+}
+
+
+.access-login-form {
+  padding: 30px 0 0 0;
+}
+
+.access-login {
+  font-size: 1rem;
+  a {
+    color: #ffffff;
+  }
+  h3, .h3, p {
+    color: #ffffff;
+  }
+  .text-large {
+    font-size: 1.17rem !important;
+    opacity: 0.7;
+  }
+  .form-check, label {
+    color: #ffffff;
+  }
+  .form-check [type="checkbox"]:not(:checked) + label::after {
+    border-color: #ffffff;
+  }
+  .form-check [type="checkbox"]:checked + label::after {
+    border-color: #ffffff;
+    background-color: #ffffff;
+  }
+  .form-check [type="checkbox"]:checked + label::before {
+    border-color: transparent $petrol $petrol transparent;
+  }
+}
+
+.access-buttons {
+  padding: 35px 0 0 0;
+}
+
+.access-mobile-bg {
+  @include media-breakpoint-down(md) {
+		background-color: $gray-primary;
+		overflow: hidden;
+		padding: 27px 0 80px 0;
+		margin: 30px 0 0 0;
+	}
+}
+
+

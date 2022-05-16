@@ -1,0 +1,266 @@
+//
+// Hero
+// --------------------------------------------------
+
+.section-hero {
+  position: relative;
+  z-index: 0;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    min-height: inherit;
+    display: block;
+  }
+  .hero-img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+	  background-color: $gray-primary;
+		background-size: cover;
+		background-attachment: scroll;
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      z-index: 0;
+      right: auto;
+      width: 100%;
+      height: 380px;
+    }
+    @include media-breakpoint-down(xs) {
+      height: 270px;
+    }
+  }
+}
+
+.hero-title {
+  text-align: center;
+  @include media-breakpoint-down(sm) {
+    padding: 50px 0 50px 0;
+  }
+  h1, .h1 {
+    margin: 0 0 35px 0;
+    font-size: 3.32rem;
+    font-weight: 400;
+    letter-spacing: -1.8px;
+    color: $gray-primary;
+    padding: 0 20px 0 20px;
+    line-height: 1.17;
+    @include media-breakpoint-down(lg) {
+      font-size: 3rem;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 2.7rem;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 2.5rem;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 2.4rem;
+    }
+    span {
+      display: block;
+      @include media-breakpoint-down(lg) {
+        display: inline;
+      }
+    }
+  }
+  small {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+    display: block;
+  }
+}
+
+.section-hero-left {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d1344c+0,ab2b3e+100 */
+  background: #d1344c; /* Old browsers */
+  background: -moz-linear-gradient(left, #d1344c 0%, #ab2b3e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #d1344c 0%,#ab2b3e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #d1344c 0%,#ab2b3e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1344c', endColorstr='#ab2b3e',GradientType=1 ); /* IE6-9 */
+	color: #ffffff;
+	position: relative;
+  z-index: 0;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    overflow: hidden;
+  }
+  &:before {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 65 65' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg%3E%3Cpath d='M23.646,31.575l7.702,0l0,-7.702l2.007,0l0,7.702l7.703,0l0,2.007l-7.703,0l0,7.702l-2.007,0l0,-7.702l-7.702,0l0,-2.007Z'/%3E%3Cpath d='M33.355,59.428l0,2.019l-2.007,0l0,-2.019l2.007,0Zm0,-5.095l0,2.018l-2.007,0l0,-2.018l2.007,0Zm0,-5.096l0,2.018l-2.007,0l0,-2.018l2.007,0Zm0,-5.096l0,2.018l-2.007,0l0,-2.018l2.007,0Zm12.858,-12.545l0,2.007l-2.019,0l0,-2.007l2.019,0Zm5.095,0l0,2.007l-2.018,0l0,-2.007l2.018,0Zm5.096,0l0,2.007l-2.018,0l0,-2.007l2.018,0Zm5.096,0l0,2.007l-2.018,0l0,-2.007l2.018,0Zm-55.982,0l0,2.007l-2.018,0l0,-2.007l2.018,0Zm5.096,0l0,2.007l-2.018,0l0,-2.007l2.018,0Zm5.096,0l0,2.007l-2.018,0l0,-2.007l2.018,0Zm5.096,0l0,2.007l-2.019,0l0,-2.007l2.019,0Zm12.549,-12.755l0,2.018l-2.007,0l0,-2.018l2.007,0Zm0,-5.096l0,2.018l-2.007,0l0,-2.018l2.007,0Zm0,-5.096l0,2.018l-2.007,0l0,-2.018l2.007,0Zm0,-5.096l0,2.019l-2.007,0l0,-2.019l2.007,0Z' style='fill-opacity:0.4;'/%3E%3C/g%3E%3C/svg%3E");
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 65px 65px;
+    opacity: 0.12;
+  }
+  .decoration-01 {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    width: 312px;
+    height: 311px;
+    display: block;
+    margin: -156px 0 0 -156px;
+    svg {
+      width: 312px;
+      height: 311px;
+    }
+    @include media-breakpoint-down(sm) {
+      left: auto;
+      right: 0;
+      margin-left: 0px;
+      margin-right: -156px;
+    }
+  }
+  .decoration-02 {
+    position: absolute;
+    z-index: 0;
+    bottom: 50px;
+    left: 50px;
+    width: 102px;
+    height: 114px;
+    display: block;
+    svg {
+      width: 102px;
+      height: 114px;
+    }
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    min-height: inherit;
+    display: block;
+  }
+	.hero-title {
+  	text-align: left;
+  	position: relative;
+  	z-index: 1;
+		@include media-breakpoint-down(sm) {
+      padding: 50px 0 50px 0;
+    }
+    h1, .h1 {
+      margin: 0 0 0 0;
+      font-size: 3.32rem;
+      font-weight: 400;
+      letter-spacing: -1.8px;
+      color: #ffffff;
+      padding: 0;
+      line-height: 1.17;
+      @include media-breakpoint-down(lg) {
+        font-size: 3rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 2.7rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 2.4rem;
+      }
+      span {
+        display: block;
+        @include media-breakpoint-down(lg) {
+          display: inline;
+        }
+      }
+    }
+    h4, .h4 {
+      font-size: 1.5rem;
+    }
+	}
+	.hero-img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+	  background-color: $gray-primary;
+		background-size: cover;
+		background-attachment: scroll;
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      z-index: 0;
+      right: auto;
+      width: 100%;
+      height: 380px;
+    }
+    @include media-breakpoint-down(xs) {
+      height: 270px;
+    }
+  }
+}
+
+
+.section-hero-blue {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#554dff+0,0b00d9+100 */
+  background: #554dff; /* Old browsers */
+  background: -moz-linear-gradient(top, #554dff 0%, #0b00d9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #554dff 0%,#0b00d9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #554dff 0%,#0b00d9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#554dff', endColorstr='#0b00d9',GradientType=0 ); /* IE6-9 */
+	color: #ffffff;
+	position: relative;
+  z-index: 0;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(sm) {
+    min-height: inherit;
+    display: block;
+  }
+	.hero-title {
+  	text-align: left;
+  	position: relative;
+  	z-index: 1;
+		@include media-breakpoint-down(sm) {
+      padding: 50px 0 50px 0;
+    }
+    h1, .h1 {
+      margin: 0 0 0 0;
+      font-size: 3.32rem;
+      font-weight: 400;
+      letter-spacing: -1.8px;
+      color: #ffffff;
+      padding: 0;
+      line-height: 1.17;
+      @include media-breakpoint-down(lg) {
+        font-size: 3rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 2.7rem;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: 2.5rem;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: 2.4rem;
+      }
+      span {
+        display: block;
+        @include media-breakpoint-down(lg) {
+          display: inline;
+        }
+      }
+    }
+    h4, .h4 {
+      font-size: 1.5rem;
+    }
+	}
+}

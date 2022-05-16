@@ -1,0 +1,25 @@
+//
+// Custom Forms
+// --------------------------------------------------
+
+.custom-control-label {
+  cursor: pointer;
+  &:before {
+    background-color: #eeeeee;
+  }
+}
+
+
+.custom-checkbox-outline {
+  padding-left: 2rem;
+  .custom-control-label {
+    &:before {
+      border: 2px solid #5c6f82;
+      background-color: #ffffff;
+      left: -2rem;
+    }
+    &:after {
+      left: -2rem;
+    }
+  }
+}

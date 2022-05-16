@@ -1,0 +1,154 @@
+//
+// Calendars
+// --------------------------------------------------
+
+.calendar-vertical {
+	@include clearfix;
+	.calendar-date {
+		display: flex;
+		.calendar-date-day {
+			width: 100px;
+			flex-shrink: 0;
+			position: relative;
+			z-index: 0;
+			padding: 7px 0 0 0;
+			@include media-breakpoint-down(sm) {
+				width: 70px;
+			}
+			.purplelight & {
+				color: $purplelight;
+			}
+			.redbrown & {
+				color: $redbrown;
+			}
+			.greendark & {
+				color: $greendark;
+			}
+			.bluelectric & {
+				color: $bluelectric;
+			}
+			p {
+				font-family: $font-family-monospace;
+				font-size: 2.5rem;
+				line-height: 1;
+				margin: 0 0 5px 0;
+				text-align: center;
+				padding-right: 34px;
+				display: block;
+				@include media-breakpoint-down(sm) {
+					font-size: 2rem;
+					padding-right: 24px;
+				}
+			}
+			small {
+				font-size: 1rem;
+				line-height: 1;
+				font-weight: 400;
+				text-align: center;
+				padding-right: 34px;
+				display: block;
+				@include media-breakpoint-down(sm) {
+					font-size: .88rem;
+					padding-right: 24px;
+				}
+			}
+			&:before {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				right: 5px;
+				width: 1px;
+				height: 100%;
+				background-color: $gray-primary;
+				content: "";
+				.purplelight & {
+					background-color: $purplelight;
+				}
+				.redbrown & {
+					background-color: $redbrown;
+				}
+				.greendark & {
+					background-color: $greendark;
+				}
+  		  .bluelectric & {
+  				background-color: $bluelectric;
+  			}
+			}
+			&:after {
+				content: "";
+				width: 10px;
+				height: 10px;
+				position: absolute;
+				z-index: 1;
+				top: 35px;
+				right: 0.5px;
+				background-color: $gray-primary;
+				border-radius: 5px;
+				@include media-breakpoint-down(sm) {
+					top: 25px;
+				}
+				.purplelight & {
+					background-color: $purplelight;
+				}
+				.redbrown & {
+					background-color: $redbrown;
+				}
+				.greendark & {
+					background-color: $greendark;
+				}
+  		  .bluelectric & {
+  				background-color: $bluelectric;
+  			}
+			}
+		}
+		.calendar-date-description {
+			box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.17);
+			width: 100%;
+			margin: 0 0 24px 17px;
+			overflow: hidden;
+			.calendar-date-description-content {
+				padding: 27px;
+				position: relative;
+				z-index: 0;
+				@include media-breakpoint-down(sm) {
+					padding: 18px;
+				}
+				p {
+					margin: 0 0 0 0;
+					font-size: 1.13rem;
+					font-weight: 600;
+					@include media-breakpoint-down(sm) {
+						font-size: 1rem;
+					}
+				}
+				&:before {
+					content: "";
+					width: 3px;
+					height: 100%;
+					position: absolute;
+					z-index: 1;
+					top: 0;
+					left: 0;
+					background-color: $gray-primary;
+					.purplelight & {
+						background-color: #fbeaff;
+					}
+					.redbrown & {
+						background-color: #f7d2d8;
+					}
+					.greendark & {
+						background-color: #c0ffb8;
+					}
+    		  .bluelectric & {
+    				background-color: $bluelectric;
+    			}
+				}
+			}
+		}
+		&:last-child {
+			.calendar-date-description {
+				margin-bottom: 0px;
+			}
+		}
+	}
+}

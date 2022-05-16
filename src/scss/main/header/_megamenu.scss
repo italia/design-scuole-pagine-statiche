@@ -1,0 +1,117 @@
+//
+// Megamenu
+// --------------------------------------------------
+
+.menu-dropdown-megamenu {
+  #sub-nav &, .sticky-main-nav & {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+  }
+}
+
+#main-wrapper {
+  .menu-dropdown-megamenu {
+    @include clearfix;
+    width: 100%;
+    background-color: $dark;
+    box-shadow: 0 0.25rem 0.938rem rgba($black, .15);
+  }
+  
+  #sub-nav {
+    ul {
+      &.nav-list {
+        > li {
+          .menu-dropdown-megamenu {
+            padding: 47px 0 47px 0 !important;
+            a {
+              color: #ffffff;
+            }
+            .details {
+              color: #f8e71c;
+              font-size: 1rem;
+              a {
+                color: #f8e71c;
+              }
+  
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .megamenu-list {
+    font-size: 1rem;
+    li {
+      display: block !important;
+      a {
+        padding: 11px 20px 11px 20px;
+        display: block;
+        font-size: 1rem;
+        position: relative;
+        z-index: 0;
+        &:before {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: #ffffff;
+          opacity: 0.2;
+        }
+      }
+      &.current {
+        a {
+          background: rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  
+  .megamenu-content {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .details {
+      position: relative;
+      z-index: 0;
+      padding: 10px 0 0 0;
+      margin: 0 0 20px 0;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #ffffff;
+        opacity: 0.2;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 47px;
+        height: 2px;
+        background: #ffffff;
+      }
+    }
+    h3, .h3 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      padding: 0 50px 0 0;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
+

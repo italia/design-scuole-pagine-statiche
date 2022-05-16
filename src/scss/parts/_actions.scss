@@ -1,0 +1,58 @@
+//
+// Actions
+// --------------------------------------------------
+
+.actions-wrapper {
+	@include clearfix;
+	margin: 20px 0 0 0;
+	@include media-breakpoint-down(sm) {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-top: 10px;
+	}
+	.toggle-actions {
+		display: flex;
+		align-items: center;
+		.purplelight & {
+			color: $purplelight;
+		}
+		.redbrown & {
+			color: $redbrown;
+		}
+		.greendark & {
+			color: $greendark;
+		}
+		.petrol & {
+			color: $petrol;
+		}
+	  .bluelectric & {
+			color: $bluelectric;
+		}
+		svg {
+			width: 12px;
+			height: 12px;
+			display: block;
+			margin: 0 7px 0 0;
+			.purplelight & {
+				fill: $purplelight;
+			}
+			.redbrown & {
+				fill: $redbrown;
+			}
+			.greendark & {
+				fill: $greendark;
+			}
+			.petrol & {
+				fill: $petrol;
+			}
+			.bluelectric & {
+				fill: $bluelectric;
+			}
+		}
+		span {
+			display: block;
+			margin: 0 0 0 0;
+			text-decoration: underline;
+		}
+	}
+}

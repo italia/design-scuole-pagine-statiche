@@ -1,0 +1,101 @@
+//
+// Dot Values
+// --------------------------------------------------
+
+.dot-values-wrapper {
+  @include clearfix;
+  margin: 0 0 20px 0;
+  @media (max-width: 1380px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .redbrown & {
+    color: $redbrown;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+.dot-values-content {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 56px;
+  margin: 0 0 7px 0;
+  @include media-breakpoint-down(lg) {
+    height: 32px;
+  }
+  &:before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    flex-grow: 1;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -1px;
+    .redbrown & {
+      background-color: $redbrown;
+    }
+  }
+}
+
+.dot-value {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+  position: relative;
+  z-index: 1;
+  &:first-child {
+    flex: 0 0 0;
+    max-width: 0;
+    width: 0;
+  }
+  &:before {
+    width: 7px;
+    height: 7px;
+    content: "";
+    border: 1px solid $redbrown;
+    display: block;
+    @include border-radius(50%);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -4px;
+    background-color: #ffffff;
+    right: -3px;
+  }
+  &.dot-value-active {
+    span {
+      position: absolute;
+      z-index: 1;
+      width: 56px;
+      height: 56px;
+      display: block;
+      @include border-radius(50%);
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: $font-family-monospace;
+      font-size: 2rem;
+      top: 0;
+      right: 0;
+      margin-right: -28px;
+      @include media-breakpoint-down(lg) {
+        width: 32px;
+        height: 32px;
+        margin-right: -16px;
+        font-size: 1.14rem;
+      }
+      .redbrown & {
+        background-color: $redbrown;
+      }
+    }
+  }
+}

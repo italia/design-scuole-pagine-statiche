@@ -1,0 +1,31 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb {
+	@include clearfix;
+	margin: 0 0 0 0;
+	@include media-breakpoint-down(sm) {
+		margin: 0 0 0 0;
+	}
+	ol {
+		@include clearfix;
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+		@include media-breakpoint-down(sm) {
+			margin: 0 0 0 0;
+		}
+		li {
+			@include clearfix;
+			&.breadcrumb-item {
+				font-weight: 600;
+				&.active {
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}

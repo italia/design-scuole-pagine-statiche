@@ -1,0 +1,91 @@
+// Bootstrap Italia - funzioni e variabili colore
+@import '../../components/bootstrap-italia-master/src/scss/functions';
+@import '../../components/bootstrap-italia-master/src/scss/utilities/colors_vars';
+
+// variabili colore scuole
+@import 'override/colors';
+
+// Bootstrap Italia - variables
+@import '../../components/bootstrap-italia-master/src/scss/variables';
+
+// Bootstrap Italia - classi colore
+@import '../../components/bootstrap-italia-master/src/scss/utilities/colors';
+
+// Bootstrap - functions & variables
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+// Boostrap - mixins
+@import '../../node_modules/bootstrap/scss/mixins';
+
+// Bootstrap Italia - mixins buttons
+@import '../../components/bootstrap-italia-master/src/scss/custom/mixins/buttons';
+
+// Bootstrap - text emphasis, buttons, background, custom forms & text
+@import '../../node_modules/bootstrap/scss/mixins/text-emphasis';
+@import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/badge';
+@import '../../node_modules/bootstrap/scss/utilities/background';
+@import '../../node_modules/bootstrap/scss/utilities/text';
+@import '../../node_modules/bootstrap/scss/custom-forms';
+
+// Bootstrap Italia - Customizzazioni e nuovi componenti
+@import '../../components/bootstrap-italia-master/src/scss/custom/buttons';
+
+
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+// Override
+@import 'override/type';
+@import 'override/badge';
+@import 'override/modal';
+@import 'override/forms';
+@import 'override/custom-forms';
+@import 'override/cards';
+@import 'override/buttons';
+@import 'override/pagination';
+
+// Components
+@import 'components/jpush-menu';
+@import 'components/owl-carousel';
+@import 'components/perfect-scrollbar';
+@import 'components/responsive-multilevel-menu';
+@import 'components/leaflet';
+@import 'components/responsive-tabs';
+@import 'components/clndr';
+
+// Main
+@import 'main/utils';
+@import 'main/containers';
+@import 'main/sections';
+@import 'main/type';
+@import 'main/header/header';
+@import 'main/header/logo-header';
+@import 'main/header/sub-nav';
+@import 'main/header/dropdown';
+@import 'main/header/megamenu';
+@import 'main/header/hamburger';
+@import 'main/search';
+@import 'main/access';
+@import 'main/menu-mobile/nav-mobile';
+@import 'main/header/menu-user';
+@import 'main/footer';
+
+// Parts
+@import 'parts/breadcrumb';
+@import 'parts/actions';
+@import 'parts/aside';
+@import 'parts/calendars';
+@import 'parts/article';
+@import 'parts/note';
+@import 'parts/accordion';
+@import 'parts/location';
+@import 'parts/hero';
+@import 'parts/quote';
+@import 'parts/gallery';
+@import 'parts/big-data';
+@import 'parts/dot-values';
+@import 'parts/video';
+@import 'parts/social-buttons';

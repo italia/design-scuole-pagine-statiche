@@ -1,0 +1,73 @@
+//
+// Dropdown
+// --------------------------------------------------
+
+#sub-nav, .sticky-main-nav {
+  ul {
+    &.nav-list {
+      .menu-dropdown-simple {
+        background-color: $white;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        box-shadow: 0 0.25rem 0.938rem rgba($black, .15);
+        @include border-radius(4px);
+        margin-top: 10px;
+        min-width: 320px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: $gray-primary;
+        .menu-title {
+          border-bottom: 1px solid #e5e5e5;
+          h3, .h3 {
+            font-size: 1rem;
+            margin: 0 0 0 0;
+            padding: 18px 24px 18px 24px;
+            line-height: 1;
+          }
+        }
+        li:not(.menu-title) {
+          display: block;
+          @include clearfix;
+          position: relative;
+          z-index: 0;
+          a {
+            color: $gray-primary;
+            padding: 12px 24px 12px 24px;
+            display: block;
+            position: relative;
+            z-index: 0;
+            &.toggle-dropdown {
+              padding-right: 34px;
+              &:after {
+                position: absolute;
+                z-index: 1;
+                right: 15px;
+                top: 50%;
+                margin-top: -12px;
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                content: url("data:image/svg+xml; utf8, <svg width='10' height='10' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'><g id='group-check'><rect id='Rectangle-path' x='0' y='0.035' width='32' height='32' style='fill:none;'/><path d='M6.819,30.001c0.238,1.727 2.423,2.625 3.804,1.501c4.798,-4.48 9.288,-9.281 13.93,-13.923c0.822,-0.879 0.861,-2.215 0.108,-3.14c-4.481,-4.799 -9.281,-9.288 -13.923,-13.93c-1.715,-1.603 -5.473,0.882 -3.256,3.256l12.187,12.186l-12.295,12.302c-0.398,0.491 -0.621,0.749 -0.555,1.748Z' style='fill:rgb(69,91,113);'/></g></svg>");
+              }
+              &.active {
+                background-color: #f5f5f5;
+              }
+            }
+          }
+          ul {
+            position: absolute;
+            z-index: 1;
+            left: 320px;
+            width: 320px;
+            background-color: $white;
+            box-shadow: 0 0.25rem 0.938rem rgba($black, .15);
+            @include border-radius(4px);
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}

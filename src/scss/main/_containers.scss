@@ -1,0 +1,31 @@
+//
+// Containers
+// --------------------------------------------------
+
+#main-wrapper {
+	@include clearfix;
+	&.sticked-menu {
+		padding-top: 95px;
+	}
+}
+
+.container {
+	max-width: 100%;
+  @include media-breakpoint-down(sm) {
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+  @include media-breakpoint-only(md) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+  @include media-breakpoint-only(lg) {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	@include media-breakpoint-up(xl) {
+		max-width: 1200px;
+		padding-left: 14px;
+		padding-right: 14px;
+	}
+}

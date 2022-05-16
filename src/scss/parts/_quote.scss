@@ -1,0 +1,134 @@
+//
+// Quote
+// --------------------------------------------------
+
+.big-quote-wrapper {
+  position: relative;
+  z-index: 0;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+}
+
+.big-quote {
+  color: #ffffff;
+  position: relative;
+  z-index: 0;
+  h2, .h2 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+    padding: 180px 0 180px 0;
+    display: block;
+    @include media-breakpoint-down(lg) {
+      padding: 120px 0 120px 0;
+      font-size: 5rem;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 110px 0 110px 0;
+      font-size: 4.5rem;
+      line-height: 1.1;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 4rem;
+      line-height: 1.1;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 3.5rem;
+      line-height: 1.1;
+    }
+  }
+  h3, .h3 {
+    font-size: 2.63rem;
+    line-height: 1.17;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    z-index: 0;
+    padding: 120px 0 120px 0;
+    display: block;
+    @include media-breakpoint-down(lg) {
+      padding: 97px 0 97px 0;
+      font-size: 4.2rem;
+      line-height: 1.07;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 77px 0 77px 0;
+      font-size: 3.8rem;
+      line-height: 1;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 3.2rem;
+      line-height: 1;
+    }
+    @include media-breakpoint-down(xs) {
+      font-size: 2.9rem;
+      line-height: 1;
+    }
+  }
+  &:before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 168px;
+    height: 168px;
+    content: url("data:image/svg+xml; utf8, <svg width='100%' height='100%' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'><rect x='0' y='0' width='32' height='32' style='fill:none;'/><path id='Rectangle-11-Copy' d='M16.764,13.238c0.121,-4.944 4.337,-9.51 9.52,-9.707c0.127,-0.005 0.254,-0.007 0.38,-0.007c0.002,0.508 0.003,1.016 0.005,1.524c-4.248,0.013 -8.208,3.609 -8.377,8.056c-0.002,0.045 -0.003,0.089 -0.004,0.134l13.712,0l0,15.238l-15.238,0l0,-15.238l0.002,0Zm-16.761,0c0.12,-4.941 4.336,-9.51 9.519,-9.707c0.127,-0.005 0.254,-0.007 0.38,-0.007c0.002,0.508 0.004,1.016 0.005,1.524c-4.248,0.013 -8.208,3.609 -8.377,8.056c-0.002,0.045 -0.003,0.089 -0.004,0.134l13.712,0l0,15.238l-15.238,0l0,-15.238l0.003,0Z' style='fill:rgb(255,255,255);'/></svg>");
+    @include media-breakpoint-down(lg) {
+      width: 120px;
+      height: 120px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &:after {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 168px;
+    height: 168px;
+    content: url("data:image/svg+xml; utf8, <svg width='100%' height='100%' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;'><rect x='0' y='0' width='32' height='32' style='fill:none;'/><path id='Rectangle-11-Copy' d='M15.236,18.762c-0.121,4.944 -4.337,9.51 -9.52,9.707c-0.127,0.005 -0.254,0.007 -0.38,0.007c-0.002,-0.508 -0.003,-1.016 -0.005,-1.524c4.248,-0.013 8.208,-3.609 8.377,-8.056c0.002,-0.045 0.003,-0.089 0.004,-0.134l-13.712,0l0,-15.238l15.238,0l0,15.238l-0.002,0Zm16.761,0c-0.12,4.941 -4.336,9.51 -9.519,9.707c-0.127,0.005 -0.254,0.007 -0.38,0.007c-0.002,-0.508 -0.004,-1.016 -0.005,-1.524c4.248,-0.013 8.208,-3.609 8.377,-8.056c0.002,-0.045 0.003,-0.089 0.004,-0.134l-13.712,0l0,-15.238l15.238,0l0,15.238l-0.003,0Z' style='fill:rgb(255,255,255);'/></svg>");
+    @include media-breakpoint-down(lg) {
+      width: 120px;
+      height: 120px;
+    }
+    @include media-breakpoint-down(md) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &.big-quote-secondary {
+    &:before, &:after {
+      width: 100px;
+      height: 100px;
+      @include media-breakpoint-down(lg) {
+        width: 80px;
+        height: 80px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+.big-quote-bg {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  svg {
+    display: block;
+    width: 100%;
+  }
+}
