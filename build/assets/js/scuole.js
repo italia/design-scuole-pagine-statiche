@@ -296,6 +296,7 @@ document.addEventListener('DOMContentLoaded', function () {
           arrows: true,
           perPage: 2,
           perMove: 1,
+          pagination: true,
           breakpoints: {
             1300: {
               arrows: false,
@@ -305,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function () {
               perMove: 1,
             }
           },
-        }).mount();
+        }).mount()
       });
     }, 800);
   }
