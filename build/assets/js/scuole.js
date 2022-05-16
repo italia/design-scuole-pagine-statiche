@@ -403,11 +403,11 @@ $(document).ready(function () {
     var window_top = $(window).scrollTop();
     var div_top = $('#main-wrapper').offset().top;
     if (window_top > div_top) {
-      $(".header-utils").appendTo($(".header-utils-sticky"));
+      // $(".header-utils").appendTo($(".header-utils-sticky"));
       $(".header-utils-wrapper").addClass("utils-moved");
       $("#sub-nav .nav-list-primary").appendTo($(".sticky-main-nav"));
     } else {
-      $(".header-utils").appendTo($(".header-utils-wrapper"));
+      // $(".header-utils").appendTo($(".header-utils-wrapper"));
       $(".header-utils-wrapper").removeClass("utils-moved");
       $(".header-top .nav-list-primary").appendTo($("#sub-nav .nav-container"));
     }
