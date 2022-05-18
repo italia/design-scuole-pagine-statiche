@@ -1,2 +1,3 @@
 node_modules
 build/index.html
+.DS_Store
