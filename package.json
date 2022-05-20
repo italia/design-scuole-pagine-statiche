@@ -2,7 +2,9 @@
   "name": "design-scuole-pagine-statiche",
   "version": "1.0.0",
   "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
-  "scripts": {},
+  "scripts": {
+    "build": "node scripts/generateIndex.js"
+  },
   "author": "Presidenza del Consiglio dei Ministri",
   "license": "BSD-3-Clause",
   "repository": {},
@@ -16,8 +18,9 @@
     "jquery": "^3.4.1",
     "jquery-match-height": "^0.7.2",
     "jquery.easing": "^1.4.1",
-    "jquery.scrollto": "^2.1.2",
-    "leaflet": "^1.6.0",
+    "jquery.scrollto": "^2.1.3",
+    "leaflet": "^1.7.1",
+    "mustache": "^4.2.0",
     "owl.carousel": "^2.3.4",
     "perfect-scrollbar": "^1.4.0",
     "popper.js": "^1.16.0",
