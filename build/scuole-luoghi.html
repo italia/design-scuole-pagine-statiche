@@ -432,7 +432,7 @@
               </div><!-- /col-6 -->
               <div class="col-6 header-utils-wrapper">
                 <div class="header-utils">
-                  <button type="button" class="icon-text" data-toggle="modal" data-target="#access-modal">
+                  <button type="button" class="icon-text" data-toggle="modal" data-target="#access-modal" aria-label="accedi all'area riservata">
                     <span class="mr-2">Accedi</span>
                     <div class="icon-wrapper">
                       <svg class="svg-user">
@@ -652,7 +652,7 @@
                     <div class="col">
                       <div class="h2" id="searchModal">
                         Cerca
-                        <button type="button" class="close dismiss" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close dismiss" data-dismiss="modal" aria-label="Chiudi">
                           <svg class="svg-cancel-large">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-cancel-large"></use>
                           </svg>
@@ -662,8 +662,8 @@
                         <svg class="svg-search">
                           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-search"></use>
                         </svg>
-                        <label>Email address</label>
-                        <input type="email" class="form-control" aria-describedby="search-form"
+                        <label for="search-input">Cerca servizi, notizie o documenti</label>
+                        <input id="search-input" type="email" class="form-control" aria-describedby="search-form"
                           placeholder="Cerca servizi, notizie o documenti">
                       </div>
                       <div class="cat-filters">
@@ -730,23 +730,23 @@
                       <div class="badges-wrapper">
                         <div class="h4">Tag</div>
                         <div class="badges">
-                          <a href="#" aria-label="Famiglia" title="Vai all'argomento: Famiglia"
+                          <a href="#" aria-label="Visualizza gli argomenti per Famiglia" title="Vai all'argomento: Famiglia"
                             class="badge badge-sm badge-pill badge-outline-primary">Famiglia</a>
-                          <a href="#" aria-label="Pagamenti" title="Vai all'argomento: Pagamenti"
+                          <a href="#" aria-label="Visualizza gli argomenti per Pagamenti" title="Vai all'argomento: Pagamenti"
                             class="badge badge-sm badge-pill badge-outline-primary">Pagamenti</a>
-                          <a href="#" aria-label="Alimentazione" title="Vai all'argomento: Alimentazione"
+                          <a href="#" aria-label="Visualizza gli argomenti per Alimentazione" title="Vai all'argomento: Alimentazione"
                             class="badge badge-sm badge-pill badge-outline-primary">Alimentazione</a>
-                          <a href="#" aria-label="Matematica" title="Vai all'argomento: Matematica"
+                          <a href="#" aria-label="Visualizza gli argomenti per Matematica" title="Vai all'argomento: Matematica"
                             class="badge badge-sm badge-pill badge-outline-primary">Matematica</a>
-                          <a href="#" aria-label="Gite scolastiche" title="Vai all'argomento: Gite scolastiche"
+                          <a href="#" aria-label="Visualizza gli argomenti per Gite scolastiche" title="Vai all'argomento: Gite scolastiche"
                             class="badge badge-sm badge-pill badge-outline-primary">Gite scolastiche</a>
-                          <a href="#" aria-label="Calendario didattico" title="Vai all'argomento: Calendario didattico"
+                          <a href="#" aria-label="Visualizza gli argomenti per Calendario didattico" title="Vai all'argomento: Calendario didattico"
                             class="badge badge-sm badge-pill badge-outline-primary">Calendario didattico</a>
-                          <a href="#" aria-label="Rientro pomeridiano" title="Vai all'argomento: Rientro pomeridiano"
+                          <a href="#" aria-label="Visualizza gli argomenti per Rientro pomeridiano" title="Vai all'argomento: Rientro pomeridiano"
                             class="badge badge-sm badge-pill badge-outline-primary">Rientro pomeridiano</a>
                           <a href="#" aria-label="Mensa scolastica" title="Vai all'argomento: Mensa scolastica"
                             class="badge badge-sm badge-pill badge-outline-primary">Mensa scolastica</a>
-                          <a href="#" aria-label="" title="Vai all'argomento: Tutto"
+                          <a href="#" aria-label="Visualizza tutti gli argomenti" title="Vai all'argomento: Tutto"
                             class="badge badge-sm badge-pill badge-outline-primary">...</a>
                         </div><!-- /badges -->
                       </div><!-- /badges-wrapper -->
@@ -772,7 +772,7 @@
                             <h2 class="d-inline" id="access-modal">
                               Accedi ai servizi
                             </h2>
-                            <button type="button" class="close dismiss" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close dismiss" data-dismiss="modal" aria-label="Chiudi">
                               <svg class="svg-cancel-large">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-cancel-large"></use>
                               </svg>
@@ -793,12 +793,12 @@
                               <p class="text-large">Entra nel sito della scuola con le tue credenziali per gestire contenuti, visualizzare circolari e altre funzionalità.</p>
                               <div class="access-login-form">
                                 <div class="form-group">
-                                  <label>Email address</label>
-                                  <input type="email" class="form-control"  placeholder="La tua email">
+                                  <label for="email">Email address</label>
+                                  <input id="email" type="email" class="form-control"  placeholder="La tua email">
                                 </div>
                                 <div class="form-group mb-3">
-                                  <label>Password</label>
-                                  <input type="password" class="form-control"  placeholder="Password">
+                                  <label for="password">Password</label>
+                                  <input id="password" type="password" class="form-control" placeholder="Password">
                                 </div>
                                 
                                 <div class="row variable-gutters mb-4">

@@ -8395,7 +8395,7 @@ h4,
 
 .badge-outline-primary:hover {
   color: white;
-  background-color: #0066cc;
+  background-color: #0066cc !important;
   border-color: #0066cc;
 }
 
@@ -16242,6 +16242,10 @@ button.icon-text {
   font-weight: 600;
   cursor: pointer;
   background-color: transparent;
+}
+
+.custom-control-submit:hover {
+  text-decoration: underline;
 }
 
 .cat-filters {
