@@ -11164,7 +11164,7 @@ body.push-body.push-body-search #main-header:after {
 }
 
 @media (min-width: 1300px) {
-  .simple-two-carousel .splide__pagination li:nth-child(-n+2) {
+  .simple-two-carousel.big .splide__pagination li:nth-child(-n+2) {
     display: none;
   }
 }
@@ -19137,6 +19137,11 @@ button.icon-text {
 .big-quote-bg svg {
   display: block;
   width: 100%;
+}
+
+.history-box {
+  position: relative;
+  z-index: 9999;
 }
 
 .gallery-item figure {
