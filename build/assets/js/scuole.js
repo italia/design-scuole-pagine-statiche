@@ -410,7 +410,7 @@ $(document).ready(function () {
     } else {
       // $(".header-utils").appendTo($(".header-utils-wrapper"));
       $(".header-utils-wrapper").removeClass("utils-moved");
-      $(".header-top .nav-list-primary").appendTo($("#sub-nav .nav-container"));
+      $(".header-top .nav-list-primary").prependTo($("#sub-nav .nav-container"));
     }
   }
   $(function () {
