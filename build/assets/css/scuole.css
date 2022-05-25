@@ -11145,9 +11145,9 @@ body.push-body.push-body-search #main-header:after {
   *display: inline;
 } */
 
-.splide__list {
+/* .splide__list {
   padding: 0 5px !important;
-}
+} */
 
 .splide__track--nav>.splide__list>.splide__slide.is-active {
   border: 0;
