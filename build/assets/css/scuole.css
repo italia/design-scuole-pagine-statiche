@@ -9955,6 +9955,11 @@ h4,
   bottom: auto;
 }
 
+.card.card-bg a.read-more:hover {
+  color: #D1344C;
+  text-decoration: underline;
+}
+
 .card.card-icon .card-title {
   display: flex;
 }
