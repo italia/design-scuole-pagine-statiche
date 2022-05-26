@@ -11307,9 +11307,17 @@ body.push-body.push-body-search #main-header:after {
   max-width: 100%;
 }
 
+.splide__slide {
+  padding: 2px;
+}
+
 .splide__slide img {
   display: block;
   width: 100%;
+}
+
+.splide__slide a:focus {
+  display: block;
 }
 
 .history-carousel .splide__pagination.splide__pagination--ltr {
