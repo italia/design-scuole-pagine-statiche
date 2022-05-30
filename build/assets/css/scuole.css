@@ -19711,6 +19711,14 @@ button.icon-text {
   height: 2px;
 }
 
+.text-underline-hover {
+  text-decoration: underline;
+}
+
+.text-underline-hover:hover {
+  text-decoration: none;
+}
+
 .text-redbrown .nav-link.dropdown-toggle.active::after {
   background-color: #D1344C;
 }
