@@ -16201,10 +16201,10 @@ button.icon-text {
 }
 
 #search-modal .form-group svg {
-  position: absolute;
+  /* position: absolute;
   z-index: 1;
   bottom: 15px;
-  left: 0;
+  left: 0; */
   width: 35px;
   height: 35px;
   fill: #0066cc;
@@ -16218,12 +16218,22 @@ button.icon-text {
   }
 }
 
+#search-modal .form-group .search-btn {
+  border: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+}
+
 #search-modal .form-group .clean-input {
+  display: none;
   border: 0;
   padding: 0;
   position: absolute;
   right: 30px;
-  display: none;
+  bottom: 15px;
+  background-color: transparent;
 }
 
 #search-modal .form-group .clean-input svg {
