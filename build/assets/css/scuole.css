@@ -11106,6 +11106,10 @@ body.push-body.push-body-search #main-header:after {
   opacity: 1;
 }
 
+.splide__arrow:disabled {
+  opacity: 0.3;
+}
+
 .splide .splide__arrow:hover {
   border: 2px solid;
 }
