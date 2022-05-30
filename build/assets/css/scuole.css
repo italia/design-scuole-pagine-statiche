@@ -11103,6 +11103,11 @@ body.push-body.push-body-search #main-header:after {
   -webkit-tap-highlight-color: transparent;
   background: none;
   border: 1px solid;
+  opacity: 1;
+}
+
+.splide .splide__arrow:hover {
+  border: 2px solid;
 }
 
 .splide .splide__arrow [class*='splide__arrow--'] {
@@ -11374,7 +11379,7 @@ body.push-body.push-body-search #main-header:after {
 .carousel-classroom .splide__slide .card .card-body small {
   font-size: 0.875rem;
   font-weight: 400;
-  color: #8b98a6;
+  color: #6A788A;
 }
 
 .carousel-classroom .splide__slide .card.card-1 {
@@ -14605,6 +14610,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   font-family: "Roboto Mono", monospace;
   font-size: 1.125rem;
   padding: 0 20px 0 0;
+  color: #6A788A;
 }
 
 @media (max-width: 1199.98px) {
@@ -19730,4 +19736,37 @@ button.icon-text {
 }
 .text-bluelectric .nav-link.dropdown-toggle.active::after {
   background-color: #0D00FF;
+}
+
+.transcription-accordion {
+  margin-top: 30px;
+  border: 0;
+}
+
+.transcription-accordion .collapse-header [data-toggle=collapse]  {
+  width: auto;
+  border: 0;
+  padding-left: 0;
+}
+
+.transcription-accordion .collapse-header [data-toggle=collapse]::before  {
+  line-height: 1;
+}
+
+.transcription-accordion .collapse-body  {
+  padding-left: 0;
+  font-style: normal;
+  font-family: Lora, Georgia, serif;
+}
+
+.greendark .transcription-accordion .collapse-header [data-toggle=collapse] {
+  color: #0E865c;
+}
+
+.bluelectric .transcription-accordion .collapse-header [data-toggle=collapse] {
+  color: #0D00FF;
+}
+
+.redbrown .transcription-accordion .collapse-header [data-toggle=collapse] {
+  color: #D1344C;
 }
