@@ -16218,6 +16218,24 @@ button.icon-text {
   }
 }
 
+#search-modal .form-group .clean-input {
+  border: 0;
+  padding: 0;
+  position: absolute;
+  right: 30px;
+  display: none;
+}
+
+#search-modal .form-group .clean-input svg {
+  width: 15px;
+  height: 15px;
+  fill: #000;
+}
+
+#search-modal .form-group .clean-input.show {
+  display: block;
+}
+
 #search-modal .dismiss {
   opacity: 1;
   margin: 28px 0 0 0;

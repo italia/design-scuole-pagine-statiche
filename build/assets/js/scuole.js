@@ -494,3 +494,23 @@ function getZoomBrowser() {
   if (isIE()) return zoomIe;
   return zoom;
 }
+
+const searchModal = document.querySelector('#search-modal');
+
+function initCleanInput() {
+  if (!searchModal) return;
+
+  const formInput = searchModal.querySelector('.search-form #search-input');
+  const cleanBtn = searchModal.querySelector('.search-form .clean-input');
+
+  formInput.addEventListener('input', () => {
+    formInput.value.length > 0 ? cleanBtn.classList.add('show') : cleanBtn.classList.remove('show');
+  });
+
+  cleanBtn.addEventListener('click', () => {
+    formInput.value = '';
+    cleanBtn.classList.remove('show')
+  });
+}
+
+initCleanInput();
