@@ -18536,7 +18536,7 @@ button.icon-text {
   font-weight: 700;
   font-size: .75rem;
   text-transform: uppercase;
-  opacity: 0.45;
+  /* opacity: 0.45; */
 }
 
 .responsive-tabs-wrapper .location-list .location-title span {
