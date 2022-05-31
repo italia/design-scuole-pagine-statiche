@@ -18199,15 +18199,12 @@ button.icon-text {
 .note svg,
 .note img {
   max-width: 67px;
-  margin: 0 0 15px 0;
+  height: 64px;
+  margin: 0 0 10px 0;
 }
 
 .note a {
   text-decoration: underline;
-}
-
-.note.cie svg {
-  margin-bottom: 0;
 }
 
 .note.cns img {
