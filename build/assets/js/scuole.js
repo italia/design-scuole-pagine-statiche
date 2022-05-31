@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const year = document.querySelector('.year-carousel');
 
   if (history && year) {
-    var main = new Splide('.history-carousel', {
+    var main = new Splide(history, {
       pagination: false,
       arrows: false,
       perPage: 3,
@@ -178,26 +178,32 @@ document.addEventListener('DOMContentLoaded', function () {
       speed: number = 800,
       breakpoints: {
         800: {
+          pagination: false,
           perPage: 2,
         },
         520: {
+          pagination: false,
           perPage: 1,
         },
       },
     }).mount();
 
-    var secondary = new Splide('.year-carousel', {
+    var secondary = new Splide(year, {
       pagination: false,
       perPage: 3,
       perMove: 1,
       speed: number = 800,
       cloneStatus: false,
-      gap: '0rem',
+      gap: 0,
       breakpoints: {
         800: {
+          gap: '0rem',
+          pagination: false,
           perPage: 2,
         },
         520: {
+          gap: '0rem',
+          pagination: false,
           perPage: 1,
         },
       },
@@ -214,6 +220,7 @@ document.addEventListener('DOMContentLoaded', function () {
     doubles.forEach(element => {
       new Splide(element, {
         pagination: true,
+        arrows: true,
         gap: '2rem',
         perPage: 2,
         perMove: 1,
@@ -221,10 +228,12 @@ document.addEventListener('DOMContentLoaded', function () {
         breakpoints: {
           1300: {
             arrows: false,
+            pagination: true,
           },
           768: {
             perPage: 1,
             arrows: false,
+            pagination: true,
           }
         },
       }).mount();
@@ -246,6 +255,8 @@ document.addEventListener('DOMContentLoaded', function () {
             gap: '2rem',
           },
           600: {
+            pagination: false,
+            arrows: false,
             perPage: 1,
           },
         },
@@ -296,12 +307,13 @@ document.addEventListener('DOMContentLoaded', function () {
           arrows: true,
           perPage: 2,
           perMove: 1,
-          pagination: true,
+          pagination: false,
           breakpoints: {
             1300: {
               arrows: false,
             },
             768: {
+              arrows: false,
               perPage: 1,
               perMove: 1,
             }
@@ -326,6 +338,8 @@ document.addEventListener('DOMContentLoaded', function () {
               padding: { left: '0', right: '0' },
             },
             768: {
+              arrows: false,
+              padding: { left: '0', right: '0' },
               perPage: 1,
               perMove: 1,
             }

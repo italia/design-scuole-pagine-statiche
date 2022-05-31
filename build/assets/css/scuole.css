@@ -11110,7 +11110,7 @@ body.push-body.push-body-search #main-header:after {
   opacity: 0.3;
 }
 
-.splide .splide__arrow:hover {
+.splide .splide__arrow:not(:disabled):hover {
   border: 2px solid;
 }
 
@@ -11189,7 +11189,7 @@ body.push-body.push-body-search #main-header:after {
 
 @media (min-width: 1300px) {
   .simple-two-carousel.big .splide__pagination li:nth-child(-n+2) {
-    display: none;
+    /* display: none; */
   }
 }
 
@@ -11338,6 +11338,17 @@ body.push-body.push-body-search #main-header:after {
 .history-carousel .splide__pagination.splide__pagination--ltr {
   display: none;
 }
+
+.history-carousel .splide__pagination,
+.year-carousel .splide__pagination {
+  display: none;
+}
+
+.year-carousel .splide__slide {
+  padding: 0;
+}
+
+
 
 /* INIZIO CAROUSEL HOURS */
 .carousel-classroom {
@@ -18197,6 +18208,10 @@ button.icon-text {
 
 .note.cie svg {
   margin-bottom: 0;
+}
+
+.note.cns img {
+  background-color: #005a8c;
 }
 
 .purplelight .note a {
