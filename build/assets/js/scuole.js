@@ -176,13 +176,16 @@ document.addEventListener('DOMContentLoaded', function () {
       perMove: 1,
       gap: '1rem',
       speed: number = 800,
+      slideFocus: false,
       breakpoints: {
         800: {
           pagination: false,
+          slideFocus: false,
           perPage: 2,
         },
         520: {
           pagination: false,
+          slideFocus: false,
           perPage: 1,
         },
       },
@@ -194,16 +197,19 @@ document.addEventListener('DOMContentLoaded', function () {
       perMove: 1,
       speed: number = 800,
       cloneStatus: false,
+      slideFocus: false,
       gap: 0,
       breakpoints: {
         800: {
           gap: '0rem',
           pagination: false,
+          slideFocus: false,
           perPage: 2,
         },
         520: {
           gap: '0rem',
           pagination: false,
+          slideFocus: false,
           perPage: 1,
         },
       },
@@ -225,15 +231,18 @@ document.addEventListener('DOMContentLoaded', function () {
         perPage: 2,
         perMove: 1,
         speed: number = 800,
+        slideFocus: false,
         breakpoints: {
           1300: {
             arrows: false,
             pagination: true,
+            slideFocus: false,
           },
           768: {
             perPage: 1,
             arrows: false,
             pagination: true,
+            slideFocus: false,
           }
         },
       }).mount();
@@ -252,9 +261,11 @@ document.addEventListener('DOMContentLoaded', function () {
             perPage: 2,
             perMove: 1,
             speed: number = 800,
+            slideFocus: false,
             gap: '2rem',
           },
           600: {
+            slideFocus: false,
             pagination: false,
             arrows: false,
             perPage: 1,
@@ -277,18 +288,22 @@ document.addEventListener('DOMContentLoaded', function () {
           gap: '1.5rem',
           arrows: true,
           pagination: false,
+          slideFocus: false,
           perMove: 1,
           perPage: 3,
           padding: { left: '200px', right: '200px' },
           breakpoints: {
             1200: {
+              slideFocus: false,
               perPage: 2,
               padding: { left: '120px', right: '120px' },
             },
             768: {
+              slideFocus: false,
               padding: { left: '120px', right: '120px' },
             },
             550: {
+              slideFocus: false,
               gap: '0.5rem',
               perPage: 1,
               padding: { left: '80px', right: '80px' },
@@ -308,12 +323,15 @@ document.addEventListener('DOMContentLoaded', function () {
           perPage: 2,
           perMove: 1,
           pagination: false,
+          slideFocus: false,
           breakpoints: {
             1300: {
               arrows: false,
+              slideFocus: false,
             },
             768: {
               arrows: false,
+              slideFocus: false,
               perPage: 1,
               perMove: 1,
             }
@@ -330,15 +348,18 @@ document.addEventListener('DOMContentLoaded', function () {
           gap: '50px',
           arrows: true,
           perPage: 2,
+          slideFocus: false,
           perMove: 1,
           padding: { left: '50px', right: '50px' },
           breakpoints: {
             1300: {
+              slideFocus: false,
               arrows: false,
               padding: { left: '0', right: '0' },
             },
             768: {
               arrows: false,
+              slideFocus: false,
               padding: { left: '0', right: '0' },
               perPage: 1,
               perMove: 1,
