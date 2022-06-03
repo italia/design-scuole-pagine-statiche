@@ -19753,6 +19753,10 @@ button.icon-text {
   text-decoration: underline;
 }
 
+.toggle-dropdown.active {
+  text-decoration: underline;
+}
+
 /* @media (min-width: 1200px) {
   .nav-link.dropdown-toggle.active::before {
     content: '';
