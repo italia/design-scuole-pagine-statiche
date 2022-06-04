@@ -446,7 +446,7 @@ $(document).ready(function () {
     var navListPrimaryTop = document.querySelector('.header-top .sticky-main-nav .dl-menu.nav-list-primary');
 
     var linkList = document.querySelectorAll('.sticky-main-nav a');
-    
+
     if (window.matchMedia('(min-width: 1200px)').matches) {
       linkList.forEach(element => {
         element.removeAttribute('tabindex');
@@ -462,8 +462,6 @@ $(document).ready(function () {
           navContainer.insertAdjacentElement('afterbegin', navListPrimaryTop);
         }
       }
-    } else {
-      navmobile.insertAdjacentElement('afterbegin', navListPrimary);
     }
   }
   $(function () {
