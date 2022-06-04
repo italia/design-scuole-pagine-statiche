@@ -494,7 +494,6 @@ $(document).ready(function () {
             linkList.forEach(element => {
               element.setAttribute('tabindex', '-1');
             });
-            removeListeners();
           }
         }
       }
@@ -509,13 +508,11 @@ $(document).ready(function () {
   }
 
   function catchFocus(linkList) {
-    console.log('entra nel primo');
+  document.addEventListener('keydown', (e) => {
     var userMenu = document.querySelector('.toggle-user-menu-mobile');
     var modal = document.querySelector('[data-target="#access-modal"]');
-    var closeMenu = document.querySelector('.hamburger');
+    var closeMenu = document.querySelector('.hamburger.is-active');
     var logo = document.querySelector('.logo-header a');
-    
-    document.addEventListener('keydown', (e) => {
       if (e.which == 9 && !e.shiftKey && document.activeElement == linkList[linkList.length - 1]) {
         if (userMenu) {
           userMenu.focus();
@@ -525,14 +522,9 @@ $(document).ready(function () {
       }
 
       if (e.which == 9 && e.shiftKey && document.activeElement === closeMenu) {
-        console.log('qua ?');
         logo.focus();
       }
     });
-  }
-
-  function removeListeners() {
-    console.log('entra nel remove');
   }
 
   tabIndexHmburger();
@@ -697,10 +689,9 @@ function tabIndexUser() {
 }
 
 function catchFocusUser(linkList, buttonList) {
-  console.log('entra');
-  var notification = document.querySelector('.toggle-user-menu-mobile');
-  var logo = document.querySelector('.hamburger');
   document.addEventListener('keydown', (e) => {
+    var notification = document.querySelector('.toggle-user-menu-mobile');
+  var logo = document.querySelector('.hamburger');
     if (e.which == 9 && !e.shiftKey && document.activeElement == linkList[linkList.length - 1]) {
       notification.focus();
     }
