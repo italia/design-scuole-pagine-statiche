@@ -19820,3 +19820,18 @@ button.icon-text {
 .redbrown .transcription-accordion .collapse-header [data-toggle=collapse] {
   color: #D1344C;
 }
+
+.close-user-menu {
+  display: inline-flex;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.close-user-menu svg {
+  width: 15px;
+  height: 15px;
+}

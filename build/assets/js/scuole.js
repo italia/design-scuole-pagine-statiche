@@ -34,6 +34,10 @@ jQuery(document).ready(function ($) {
     closeOnClickLink: false,
     activeClass: 'is-active'
   });
+  $('.close-user-menu').jPushMenu({
+    closeOnClickLink: false,
+    activeClass: 'is-active'
+  });
   $('.menu-mobile-close').click(function () {
     $('.push-body').removeClass('push-body-search');
     $('.push-body').removeClass('push-body-toleft');
@@ -485,10 +489,12 @@ $(document).ready(function () {
             linkList.forEach(element => {
               element.removeAttribute('tabindex');
             });
+            catchFocus(linkList);
           } else {
             linkList.forEach(element => {
               element.setAttribute('tabindex', '-1');
             });
+            removeListeners();
           }
         }
       }
@@ -498,25 +504,35 @@ $(document).ready(function () {
     const observer = new MutationObserver(callback);
     observer.observe(nav, config);
 
-    catchFocus(linkList);
-
     // Later, you can stop observing
     // observer.disconnect();
   }
 
   function catchFocus(linkList) {
+    console.log('entra nel primo');
+    var userMenu = document.querySelector('.toggle-user-menu-mobile');
     var modal = document.querySelector('[data-target="#access-modal"]');
-    var closeMenu = document.querySelector('.toggle-menu');
+    var closeMenu = document.querySelector('.hamburger');
     var logo = document.querySelector('.logo-header a');
+    
     document.addEventListener('keydown', (e) => {
       if (e.which == 9 && !e.shiftKey && document.activeElement == linkList[linkList.length - 1]) {
-        modal.focus();
+        if (userMenu) {
+          userMenu.focus();
+        } else {
+          modal.focus();
+        }
       }
 
-      if (e.which == 9 && e.shiftKey && document.activeElement == closeMenu) {
+      if (e.which == 9 && e.shiftKey && document.activeElement === closeMenu) {
+        console.log('qua ?');
         logo.focus();
       }
     });
+  }
+
+  function removeListeners() {
+    console.log('entra nel remove');
   }
 
   tabIndexHmburger();
@@ -625,3 +641,74 @@ function initCleanInput() {
 }
 
 initCleanInput();
+
+function closeUserMenu() {
+  var btn = document.querySelector('.close-user-menu');
+  var body = document.querySelector('body');
+  var menu = document.querySelector('.cbp-spmenu-right');
+
+  btn.addEventListener('click', () => {
+    body.classList.remove('push-body-toleft');
+    menu.classList.remove('menu-open');
+  });
+}
+
+closeUserMenu();
+
+function tabIndexUser() {
+  var nav = document.querySelector('.cbp-spmenu-vertical.cbp-spmenu-right');
+  var linkList = document.querySelectorAll('.cbp-spmenu-vertical.cbp-spmenu-right a');
+  var buttonList = document.querySelectorAll('.cbp-spmenu-vertical.cbp-spmenu-right button');
+
+  // Options for the observer (which mutations to observe)
+  const config = { attributes: true };
+
+  // Callback function to execute when mutations are observed
+  const callback = function (mutationList, observer) {
+    // Use traditional 'for loops' for IE 11
+    for (const mutation of mutationList) {
+      if (mutation.type === 'attributes') {
+        if (mutation.target.classList.contains('menu-open')) {
+          linkList.forEach(element => {
+            element.removeAttribute('tabindex');
+          });
+          buttonList.forEach(element => {
+            element.removeAttribute('tabindex');
+          });
+          catchFocusUser(linkList, buttonList);
+        } else {
+          linkList.forEach(element => {
+            element.setAttribute('tabindex', '-1');
+          });
+          buttonList.forEach(element => {
+            element.setAttribute('tabindex', '-1');
+          });
+        }
+      }
+    }
+  };
+
+  // Create an observer instance linked to the callback function
+  const observer = new MutationObserver(callback);
+  observer.observe(nav, config);
+
+  // Later, you can stop observing
+  // observer.disconnect();
+}
+
+function catchFocusUser(linkList, buttonList) {
+  console.log('entra');
+  var notification = document.querySelector('.toggle-user-menu-mobile');
+  var logo = document.querySelector('.hamburger');
+  document.addEventListener('keydown', (e) => {
+    if (e.which == 9 && !e.shiftKey && document.activeElement == linkList[linkList.length - 1]) {
+      notification.focus();
+    }
+
+    if (e.which == 9 && e.shiftKey && document.activeElement == buttonList[0]) {
+      logo.focus();
+    }
+  });
+}
+
+tabIndexUser();
