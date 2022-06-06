@@ -19767,11 +19767,19 @@ button.icon-text {
   }
 } */
 
-.text-underline-hover {
+.text-underline-hover{
   text-decoration: underline;
 }
 
 .text-underline-hover:hover {
+  text-decoration: none;
+}
+
+.footer-link a {
+  text-decoration: underline;
+}
+
+.footer-link a:hover {
   text-decoration: none;
 }
 
