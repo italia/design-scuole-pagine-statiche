@@ -620,7 +620,7 @@ function initCleanInput() {
   const formInput = searchModal.querySelector('.search-form #search-input');
   const cleanBtn = searchModal.querySelector('.search-form .clean-input');
 
-  formInput.addEventListener('input', () => {
+  formInput?.addEventListener('input', () => {
     formInput.value.length > 0 ? cleanBtn.classList.add('show') : cleanBtn.classList.remove('show');
   });
 
