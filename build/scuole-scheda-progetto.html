@@ -813,7 +813,7 @@
                       <div class="form-group search-form">
                         
                         <label for="search-input">Cerca servizi, notizie o documenti</label>
-                        <input data-crawler="search-modal-input" type="email" class="form-control" aria-describedby="search-form"
+                        <input data-crawler="search-modal-input" id="search-input" type="email" class="form-control" aria-describedby="search-form"
                           placeholder="Cerca servizi, notizie o documenti">
                           <button type="button" class="clean-input" aria-label="Elimina testo di ricerca">
                             <svg class="svg-cancel-large" role="presentation">
@@ -1052,10 +1052,10 @@
                     expedita distinctio impara</p>
                   <aside class="badges-wrapper badges-main mt-4">
                     <h2 class="h4">Argomenti</h2>
-                    <div class="badges" data-crawler="lista-argomenti">
-                      <a href="#" title="Vai all'argomento: Sagra" aria-label="Vai all'argomento: Sagra"
+                    <div class="badges">
+                      <a href="#" data-crawler="lista-argomenti" title="Vai all'argomento: Sagra" aria-label="Vai all'argomento: Sagra"
                         class="badge badge-sm badge-pill badge-outline-bluelectric">Sagra</a>
-                      <a aria-label="Vai all'argomento: Cultura" href="#" title="Vai all'argomento: Cultura"
+                      <a data-crawler="lista-argomenti" aria-label="Vai all'argomento: Cultura" href="#" title="Vai all'argomento: Cultura"
                         class="badge badge-sm badge-pill badge-outline-bluelectric">Cultura</a>
                     </div><!-- /badges -->
                   </aside><!-- /badges-wrapper -->
