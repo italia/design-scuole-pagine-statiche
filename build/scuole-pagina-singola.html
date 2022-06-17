@@ -519,10 +519,10 @@
                           <div class="h3"><a href="#" aria-label="Panoramica" tabindex="-1">Panoramica</a></div>
                         </li>
                         <li role="menuitem">
-                          <a href="#" aria-label="Servizi per il personale scolastico" tabindex="-1">Servizi per il personale scolastico</a>
+                          <a href="#" aria-label="Servizi per il personale scolastico" tabindex="-1" data-crawler="service-type">Servizi per il personale scolastico</a>
                         </li>
                         <li role="menuitem">
-                          <a href="#" aria-label="Servizi per famiglie e studenti" tabindex="-1">Servizi per famiglie e studenti</a>
+                          <a href="#" aria-label="Servizi per famiglie e studenti" tabindex="-1" data-crawler="service-link">Servizi per famiglie e studenti</a>
                         </li>
                         <li role="menuitem">
                           <a href="#" aria-label="Percorsi di studio" tabindex="-1">Percorsi di studio</a>
@@ -617,7 +617,7 @@
             <div class="col-4 d-flex align-items-center justify-content-end">
               <div class="header-search d-flex align-items-center">
                 <button type="button" class="d-flex align-items-center search-btn" data-toggle="modal"
-                  data-target="#search-modal" aria-label="Cerca nel sito" id="search-button-modal">
+                  data-target="#search-modal" aria-label="Cerca nel sito" data-crawler="search-button-modal">
                   <span class="d-none d-lg-block mr-2"><strong>Cerca</strong></span>
                   <svg class="svg-search">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-search"></use>
@@ -705,10 +705,10 @@
                           </li>
                           <li role="menuitem">
                             <a href="#" class="list-item" aria-label="Servizi per il personale
-                          scolastico">Servizi per il personale scolastico</a>
+                          scolastico" data-crawler="service-type">Servizi per il personale scolastico</a>
                           </li>
                           <li role="menuitem">
-                            <a href="#" class="list-item" aria-label="Servizi per famiglie e studenti">Servizi per
+                            <a href="#" class="list-item" aria-label="Servizi per famiglie e studenti" data-crawler="service-link">Servizi per
                               famiglie e studenti</a>
                           </li>
                           <li role="menuitem">
@@ -814,14 +814,14 @@
                       <div class="form-group search-form">
                         
                         <label for="search-input">Cerca servizi, notizie o documenti</label>
-                        <input id="search-input" type="email" class="form-control" aria-describedby="search-form"
+                        <input data-crawler="search-modal-input" type="email" class="form-control" aria-describedby="search-form"
                           placeholder="Cerca servizi, notizie o documenti">
                           <button type="button" class="clean-input" aria-label="Elimina testo di ricerca">
                             <svg class="svg-cancel-large" role="presentation">
                               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-cancel-large"></use>
                             </svg>
                           </button>
-                          <button type="button" class="search-btn" aria-label="avvia la ricerca" id="bottone-ricerca">
+                          <button type="button" class="search-btn" aria-label="avvia la ricerca" data-crawler="search-button">
                             <svg class="svg-search">
                               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-search"></use>
                             </svg>
@@ -1237,8 +1237,8 @@
             <ul id="menu-footer" class="footer-inline-menu">
               <li><a class="text-underline-hover" href="#" aria-label="Amministrazione Trasparente">Amministrazione Trasparente</a></li>
               <li><a class="text-underline-hover" href="#" aria-label="Albo online">Albo online</a></li>
-              <li><a class="text-underline-hover" href="#" id="privacy-policy" aria-label="Privacy Policy">Privacy Policy</a></li>
-                <li><a class="text-underline-hover" href="#" id="dichiarazione-accessibilita" aria-label="Dichiarazioni d'accessibilita">Dichiarazioni di accessibilita</a></li>
+              <li><a class="text-underline-hover" href="#" data-crawler="privacy-policy-link" aria-label="Privacy Policy">Privacy Policy</a></li>
+                <li><a class="text-underline-hover" href="#" data-crawler="a11y-link" aria-label="Dichiarazioni d'accessibilita">Dichiarazioni di accessibilita</a></li>
             </ul>
             <div class="footer-social">
               <span>Seguici su:</span>
