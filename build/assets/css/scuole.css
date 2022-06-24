@@ -17148,7 +17148,7 @@ button.icon-text {
 
   .footer-wrapper .logo-footer h1,
   .footer-wrapper .logo-footer .h1 {
-    font-size: .88rem;
+    font-size: 10px;
     margin-left: 15px;
   }
 }
@@ -17181,14 +17181,17 @@ button.icon-text {
 .footer-inline-menu {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-weight: 600;
   list-style: none;
   padding: 0;
+  row-gap: 10px;
+  column-gap: 30px;
 }
 
-.footer-inline-menu li {
+/* .footer-inline-menu li {
   padding-right: 30px;
-}
+} */
 
 .footer-text {
   font-size: 0.875rem;
@@ -17977,6 +17980,35 @@ button.icon-text {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 1rem;
+  }
+}
+
+.logos-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 375px) {
+  .logos-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logos-wrapper {
+    align-items: center;
+    gap: 30px;
+  }
+}
+.ue-logo {
+  max-width: 60%;
+}
+@media (min-width: 992px) {
+  .ue-logo {
+    height: 80px;
   }
 }
 
