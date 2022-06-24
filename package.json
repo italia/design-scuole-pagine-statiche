@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
   "scripts": {
-    "build": "node scripts/generateIndex.js"
+    "build": "node scripts/generateIndex.js",
+    "documentation-deploy-to-gh-pages": "./gh-pages.sh && gh-pages -d dist -m 'chore: update documentation'"
   },
   "author": "Presidenza del Consiglio dei Ministri",
   "license": "BSD-3-Clause",
@@ -27,5 +28,8 @@
     "responsive-tabs": "^1.6.3",
     "sticky-kit": "^1.1.3",
     "svgxuse": "^1.2.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
