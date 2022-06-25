@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,37 @@
     <link rel="stylesheet" href="assets/css/bootstrap-italia.css" />
     <title>Design scuole pagine statiche</title>
 </head>
+
 <body>
-    <h1>Design scuole pagine statiche</h1>
-    <ul>
-        {{#links}}
-        <li><a href="{{.}}">{{.}}</a></li> 
-        {{/links}}
-    </ul>
+    <div class="container px-4 my-4">
+        <div class="row">
+            <div class="col-12 px-lg-4 py-lg-2">
+                <h1>Template HTML scuole</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="it-list-wrapper">
+                    <ul class="it-list">
+                        {{#links}}
+                        <li>
+                            <a href="{{.}}" target="_blank" class="list-item" data-focus-mouse="false">
+                                <div class="it-right-zone">
+                                    <span class="text">{{#removePrefix}}{{.}}{{/removePrefix}}
+                                        <em>{{.}}</em>
+                                    </span>
+                                    <span class="it-multiple"><span class="metadata">Apri in una nuova
+                                            pagina</span></span>
+                                </div>
+                            </a>
+                        </li>
+                        {{/links}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/bootstrap-italia.js"></script>
 </body>
+
 </html>
