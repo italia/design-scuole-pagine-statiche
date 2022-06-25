@@ -15,6 +15,11 @@ Ti invitiamo infine ad aiutarci a segnalare eventuali bug e a prendere contatto 
 
 Buon lavoro!
 
+## Preview
+
+- [Versione corrente](https://italia.github.io/design-scuole-pagine-statiche/)
+- [Versione 1.0.0](https://italia.github.io/design-scuole-pagine-statiche/1.x)
+
 ## Indice
 
 - [Come iniziare](#come-iniziare)
@@ -24,9 +29,13 @@ Buon lavoro!
 
 ## Come iniziare
 
-Per utilizzare i templates delle Scuole all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/master/build). Per scaricare le dipendenze esterne, è sufficiente utilizzare uno dei seguenti comandi.
+Per utilizzare i templates delle Scuole all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/main/build). Per scaricare le dipendenze esterne, è sufficiente utilizzare uno dei seguenti comandi.
 
-`npm install` oppure `yarn install`
+`npm install` oppure `yarn`
+
+dopodichè buildare il tutto con
+
+`npm run build` oppure `yarn build`
 
 ## Architettura Informazione
 
