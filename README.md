@@ -1,15 +1,15 @@
 [![Join the #design-siti-scuole channel](https://img.shields.io/badge/Slack%20channel-%23design-blue.svg)](https://app.slack.com/client/T6C27AXE0/CQ7J0KANT)
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
-Benvenuto nel repository ufficiale contenente i template del progetto “I siti web delle Scuole Italiane”.
+Benvenuto nel _repository_ ufficiale contenente i template HTML del modello “Il sito delle scuole italiane”.
 
-Questo repo, assieme alla documentazione tecnica, completa il kit che abbiamo realizzato per farti conoscere meglio il progetto e per metterti subito nelle condizioni di iniziare a sperimentarlo.
+Questo _repo_, assieme alla documentazione tecnica, completa il kit che abbiamo realizzato per farti conoscere meglio il progetto e per metterti subito nelle condizioni di iniziare a sperimentarlo.
 
 All’interno di questo spazio troverai:
 
-- l'Architettura dell'Informazione
+- l'architettura dell'informazione
 - il codice già pronto all’uso
-- Componenti di terze parti utilizzati
+- componenti di terze parti utilizzati
 
 Ti invitiamo infine ad aiutarci a segnalare eventuali bug e a prendere contatto con noi su [Slack](https://slack.developers.italia.it/) qualora avessi bisogno di ulteriore supporto.
 
@@ -23,13 +23,13 @@ Buon lavoro!
 ## Indice
 
 - [Come iniziare](#come-iniziare)
-- [Architettura dell'Informazione](#architettura-informazione)
+- [Architettura dell'informazione](#architettura-informazione)
 - [Come contribuire](#come-contribuire)
 - [Licenze software dei componenti di terze parti](#licenze-software-dei-componenti-di-terze-parti)
 
 ## Come iniziare
 
-Per utilizzare i templates delle Scuole all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/main/build). Per scaricare le dipendenze esterne, è sufficiente utilizzare uno dei seguenti comandi.
+Per utilizzare i template del sito scolastico all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/main/build). Per scaricare le dipendenze esterne, è sufficiente utilizzare uno dei seguenti comandi:
 
 `npm install` oppure `yarn`
 
@@ -37,13 +37,13 @@ dopodichè buildare il tutto con
 
 `npm run build` oppure `yarn build`
 
-## Architettura Informazione
+## Architettura dell'informazione
 
 L’architettura dell’informazione su cui si basa il sito è presentata in questo documento che illustra i tipi di contenuti, i vocabolari controllati e le tassonomie, il sistema di navigazione.
 
-L’architettura dell’informazione è basata sulle linee guida di design dei siti della pubblica amministrazione. Il documento inoltre propone diversi esempi di scrittura dei contenuti, come una lista di servizi tipici di una scuola e alcuni esempi del modo più corretto per descriverli.
+L’architettura dell’informazione è basata sulle linee guida di design dei siti della Pubblica Amministrazione. Il documento inoltre propone diversi esempi di scrittura dei contenuti, come una lista di servizi tipici di una scuola e alcuni esempi del modo più corretto per descriverli.
 
-Infine, nel documento sono contenute alcune indicazioni per la migrazione e/o riscrittura di contenuti dal sito esistente al nuovo sito che si sta creando oltre a suggerimenti per la corretta gestione dei contenuti del sito di una scuola.
+Infine, nel documento sono contenute alcune indicazioni per la migrazione e/o riscrittura di contenuti dal sito esistente al nuovo sito scolastico che si sta creando, oltre a suggerimenti per la corretta gestione dei contenuti.
 
 [Vai al documento di architettura dell'informazione:](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing)
 
