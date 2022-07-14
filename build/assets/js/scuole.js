@@ -172,6 +172,37 @@ $(document).ready(function () {
   }
 });// end ready
 /* End Accordion */
+document.addEventListener('DOMContentLoaded', function () {
+  function accessibilityMobile() {
+    const hamburger = document.querySelector('.hamburger.toggle-menu');
+    const generalSearchBar = document.querySelector('.cbp-spmenu.cbp-spmenu-vertical.cbp-spmenu-left');
+    const focussables = generalSearchBar.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');
+
+    if (window.matchMedia('(min-width: 1200px)').matches) {
+      focussables.forEach(element => {
+        element.setAttribute('aria-hidden', 'true');
+        element.setAttribute('tabindex', '-1');
+      });
+      hamburger.setAttribute('aria-hidden', 'true');
+      hamburger.setAttribute('tabindex', '-1');
+    } else {
+      focussables.forEach(element => {
+        element.removeAttribute('aria-hidden');
+        element.removeAttribute('tabindex');
+      });
+      hamburger.removeAttribute('aria-hidden');
+      hamburger.removeAttribute('tabindex');
+    }
+  }
+
+  let resizeId;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeId);
+    resizeId = setTimeout(accessibilityMobile(), 500);
+  });
+
+  accessibilityMobile();
+});
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -525,11 +556,11 @@ $(document).ready(function () {
   }
 
   function catchFocus(linkList) {
-  document.addEventListener('keydown', (e) => {
-    var userMenu = document.querySelector('.toggle-user-menu-mobile');
-    var modal = document.querySelector('[data-target="#access-modal"]');
-    var closeMenu = document.querySelector('.hamburger.is-active');
-    var logo = document.querySelector('.logo-header a');
+    document.addEventListener('keydown', (e) => {
+      var userMenu = document.querySelector('.toggle-user-menu-mobile');
+      var modal = document.querySelector('[data-target="#access-modal"]');
+      var closeMenu = document.querySelector('.hamburger.is-active');
+      var logo = document.querySelector('.logo-header a');
       if (e.which == 9 && !e.shiftKey && document.activeElement == linkList[linkList.length - 1]) {
         if (userMenu) {
           userMenu.focus();
@@ -708,7 +739,7 @@ function tabIndexUser() {
 function catchFocusUser(linkList, buttonList) {
   document.addEventListener('keydown', (e) => {
     var notification = document.querySelector('.toggle-user-menu-mobile');
-  var logo = document.querySelector('.hamburger');
+    var logo = document.querySelector('.hamburger');
     if (e.which == 9 && !e.shiftKey && document.activeElement == linkList[linkList.length - 1]) {
       notification.focus();
     }
