@@ -19,4 +19,19 @@ function accordion() {
 	        $(this).next().slideToggle().toggleClass('accordion-open');
 	    }
 	});
+
+  $('.accordion-header').keydown(function (event) {
+    if ( event.which == 13 ) {
+      event.preventDefault();
+      if($(this).is('.accordion-inactive')) {
+        $('.accordion-active').toggleClass('accordion-active accordion-inactive').next().slideToggle().toggleClass('accordion-open');
+        $(this).toggleClass('accordion-active accordion-inactive');
+        $(this).next().slideToggle().toggleClass('accordion-open');
+    } else {
+        $(this).toggleClass('accordion-active accordion-inactive');
+        $(this).next().slideToggle().toggleClass('accordion-open');
+    }
+  }
+
+});
 }
