@@ -13,7 +13,7 @@
   "repository": {},
   "dependencies": {
     "bootstrap": "^4.6.1",
-    "bootstrap-italia": "^1.6.2",
+    "bootstrap-italia": "^1.6.4",
     "bootstrap-select": "^1.13.12",
     "clndr": "^1.5.1",
     "fitvids": "^2.1.1",
