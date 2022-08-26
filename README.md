@@ -18,7 +18,6 @@ Buon lavoro!
 ## Preview
 
 - [Versione corrente](https://italia.github.io/design-scuole-pagine-statiche/)
-- [Versione 1.0.0](https://italia.github.io/design-scuole-pagine-statiche/1.x)
 
 ## Indice
 
