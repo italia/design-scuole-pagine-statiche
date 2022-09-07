@@ -19881,10 +19881,9 @@ button.icon-text {
   opacity: 1;
 }
 
-.nav-link.dropdown-toggle.active {
-  text-decoration: underline;
-}
-
+.nav-link:hover,
+.menu-dropdown .link-list .list-item:hover,
+.nav-link.dropdown-toggle.active,
 .toggle-dropdown.active {
   text-decoration: underline;
 }
