@@ -9727,7 +9727,7 @@ h4,
 }
 
 .card.card-bg:hover:has(> a) {
-  background-color: #ebeced;
+  background-color: #fafafa;
 }
 
 .card.card-no-shadow {
