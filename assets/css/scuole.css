@@ -9632,7 +9632,6 @@ h4,
 }
 
 .card.card-bg a:not(.badge):hover {
-  text-decoration: none;
   color: inherit;
   opacity: 0.7;
 }
@@ -9724,6 +9723,10 @@ h4,
 
 .card.card-bg.bg-bluedark a {
   color: #ffffff;
+}
+
+.card.card-bg:hover:has(> a) {
+  background-color: #fafafa;
 }
 
 .card.card-no-shadow {
@@ -17568,6 +17571,11 @@ button.icon-text {
   font-size: 1rem;
 }
 
+.aside-main .link-list-wrapper ul li a:hover {
+  text-decoration: underline;
+}
+
+
 .purplelight .aside-main .link-list-wrapper ul li a {
   color: #B21DD0;
 }
@@ -19881,10 +19889,9 @@ button.icon-text {
   opacity: 1;
 }
 
-.nav-link.dropdown-toggle.active {
-  text-decoration: underline;
-}
-
+.nav-link:hover,
+.menu-dropdown .link-list .list-item:hover,
+.nav-link.dropdown-toggle.active,
 .toggle-dropdown.active {
   text-decoration: underline;
 }
