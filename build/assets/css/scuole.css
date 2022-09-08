@@ -17568,6 +17568,11 @@ button.icon-text {
   font-size: 1rem;
 }
 
+.aside-main .link-list-wrapper ul li a:hover {
+  text-decoration: underline;
+}
+
+
 .purplelight .aside-main .link-list-wrapper ul li a {
   color: #B21DD0;
 }
