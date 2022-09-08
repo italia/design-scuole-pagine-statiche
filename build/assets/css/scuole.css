@@ -9632,7 +9632,6 @@ h4,
 }
 
 .card.card-bg a:not(.badge):hover {
-  text-decoration: none;
   color: inherit;
   opacity: 0.7;
 }
