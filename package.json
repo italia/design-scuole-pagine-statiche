@@ -4,7 +4,7 @@
   "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
   "scripts": {
     "build": "node scripts/generateIndex.js && cp -R build dist",
-    "build:sass": "sass --load-path=. src/scss/index.scss:build/assets/css/scuole.min.css --style=compressed",
+    "build:sass": "sass --load-path=. --watch src/scss/index.scss:build/assets/css/scuole.min.css --style=compressed",
     "documentation-deploy-to-gh-pages": "npm run build && gh-pages -d dist -m 'chore: update documentation'",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && node scripts/wait-confirm && git add CHANGELOG.md",
     "postversion": "echo \"You can now publish your tag with 'git push --follow-tags'\""
