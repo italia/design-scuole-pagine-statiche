@@ -47,12 +47,14 @@ Infine, nel documento sono contenute alcune indicazioni per la migrazione e/o ri
 [Vai al documento di architettura dell'informazione:](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing)
 
 ## Come contribuire
+Vorresti dare una mano contribuendo allo sviluppo del progetto?
 
-Vorresti dare una mano sul progetto? **Sei nel posto giusto!**
- 
-Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza sulle
-[linee guida di design per i servizi web della PA](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/),
-e unisciti a noi nel [canale Slack #design-siti-scuole](https://app.slack.com/client/T6C27AXE0/CQ7J0KANT).
+Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza su l'[Architettura dell'Informazione dei siti web delle Scuole Italiane](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit#gid=782511705) e fai riferimento alle [indicazioni su come contribuire](https://github.com/italia/design-scuole-wordpress-theme/blob/main/CONTRIBUTING.md).
+
+A questo punto, è necessario scaricare una copia in locale del tema tramite il comando `git fork https://github.com/italia/design-scuole-pagine-statiche.git` da terminale o cliccando sul pulsante Fork <br>
+![fork](https://user-images.githubusercontent.com/69706/188419656-21fa5b0e-c52a-4168-a1d1-8ea9a149da6a.png)
+
+Una volta terminate le modifiche è necessario aprire una _pull request_ per sottoporle alla revisione del team.
 
 ## Licenze software dei componenti di terze parti
 
