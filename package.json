@@ -1,6 +1,6 @@
 {
   "name": "design-scuole-pagine-statiche",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
   "scripts": {
     "build": "node scripts/generateIndex.js && cp -R build dist",
