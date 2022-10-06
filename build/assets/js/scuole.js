@@ -751,3 +751,27 @@ function catchFocusUser(linkList, buttonList) {
 }
 
 tabIndexUser();
+
+
+/* Navscroll progress bar on list-item click */
+
+ function progressWidth() {
+  const progress = document.getElementById('progress-bar');
+  const container = document.getElementById('col-container');
+
+
+  if (!progress && !container) return;
+
+  window.addEventListener('scroll', () => {
+    const headerHeight = document.querySelector('header').offsetHeight;
+    const top = container.getBoundingClientRect().top;
+    const height = container.getBoundingClientRect().height;
+    const percentage = (Math.abs(top) - headerHeight) * 100 / height;
+
+    if(top <= 137 && Math.abs(percentage) <= 100){
+      progress.style.width = Math.abs(percentage) + '%';
+    }
+  });
+}
+
+progressWidth(); 

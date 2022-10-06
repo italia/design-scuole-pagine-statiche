@@ -17601,7 +17601,16 @@ button.icon-text {
   z-index: 0;
 }
 
-.aside-title:before {
+.aside-title .progress {
+  background: #e7eaed;
+}
+
+.aside-title .progress .progress-bar{
+  background: #0E865C;
+  min-width: 4%;
+}
+
+/* .aside-title .progress-bar {
   content: "";
   position: absolute;
   z-index: 1;
@@ -17621,7 +17630,7 @@ button.icon-text {
   width: 37px;
   height: 4px;
   background: #455b71;
-}
+}  */
 
 .purplelight .aside-title:after {
   background: #B21DD0;
