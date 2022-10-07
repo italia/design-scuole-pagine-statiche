@@ -16,11 +16,11 @@ $usermenu.responsiveDom({
   appendTo: '.menu-user-mobile',
   mediaQuery: '(max-width: 1200px)'
 });
-var $description = $('.article-description');
-$description.responsiveDom({
-  appendTo: '.article-description-mobile',
-  mediaQuery: '(max-width: 768px)'
-});
+// var $description = $('.article-description');
+// $description.responsiveDom({
+//   appendTo: '.article-description-mobile',
+//   mediaQuery: '(max-width: 768px)'
+// });
 var $searchfilters = $('.search-results-filters');
 $searchfilters.responsiveDom({
   appendTo: '.search-results-filters-mobile',
