@@ -71,7 +71,7 @@ $(document).ready(function () {
   function sticky_relocate() {
     var window_top = $(window).scrollTop();
     var div_top = $('#main-wrapper').offset().top;
-    if (Math.round(window.devicePixelRatio * 100) < 250) {
+    if (getZoomBrowser() < 3) {
       if (window_top > div_top) {
         $('#main-header').addClass('is-sticky');
         $('#main-wrapper').addClass('sticked-menu');
@@ -95,7 +95,7 @@ $(document).ready(function () {
 });
 
 jQuery(window).resize(function () {
-  if (Math.round(window.devicePixelRatio * 100) >= 250) {
+  if (getZoomBrowser() >= 3) {
     $('#main-header').addClass('zoom');
     $('.cbp-spmenu-vertical.cbp-spmenu-left').addClass('zoom');
   } else {
@@ -752,13 +752,11 @@ function catchFocusUser(linkList, buttonList) {
 
 tabIndexUser();
 
+/* Navscroll with progressbar on scrolling */
 
-/* Navscroll progress bar on list-item click */
-
- function progressWidth() {
+function progressWidth() {
   const progress = document.getElementById('progress-bar');
   const container = document.getElementById('col-container');
-
 
   if (!progress && !container) return;
 
