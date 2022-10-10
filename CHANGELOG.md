@@ -1,3 +1,13 @@
+## [2.1.2](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.1.1...v2.1.2) (2022-10-06)
+
+
+### Bug Fixes
+
+* add link to card name ([21e8205](https://github.com/italia/design-scuole-pagine-statiche/commit/21e82059ab3c7338f15c949d3a97e7101a5b8d0d))
+* correct gradient svg ([99ac85f](https://github.com/italia/design-scuole-pagine-statiche/commit/99ac85f4e2d383c69903d31032c4cce0502a0670))
+
+
+
 ## [2.1.1](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.1.0...v2.1.1) (2022-09-08)
 
 
