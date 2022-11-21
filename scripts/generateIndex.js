@@ -3,7 +3,7 @@ const Mustache = require('mustache');
 const fs = require('fs');
 const package = require('../package.json')
 
-const filesToIndex = searchInDir('build', '.html', false);
+const filesToIndex = searchInDir('src', '.html', false);
 const renderedIndex = Mustache.render(
     fs.readFileSync('./templates/index_tpl.html', 'utf8'), 
     { 
@@ -17,4 +17,4 @@ const renderedIndex = Mustache.render(
         }
     }
 );
-fs.writeFileSync('./build/index.html', renderedIndex)
+fs.writeFileSync('./src/index.html', renderedIndex)

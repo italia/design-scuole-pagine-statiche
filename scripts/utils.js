@@ -18,6 +18,22 @@ function searchInDir(startPath, filter, subfolders=true) {
     return collection;
 };
 
+function walk(dir, callback) {
+    fs.readdir(dir, function (err, files) {
+        if (err) throw err;
+        files.forEach(function (file) {
+            var filepath = path.join(dir, file);
+            fs.stat(filepath, function (err, stats) {
+                if (stats.isDirectory()) {
+                    walk(filepath, callback);
+                } else if (stats.isFile()) {
+                    callback(filepath, stats);
+                }
+            });
+        });
+    });
+}
+
 module.exports = {
-    searchInDir
+    searchInDir, walk
 }
