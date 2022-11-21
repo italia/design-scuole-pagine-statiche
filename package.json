@@ -6,7 +6,9 @@
     "build": "node scripts/generateIndex.js && cp -R build dist",
     "documentation-deploy-to-gh-pages": "npm run build && gh-pages -d dist -m 'chore: update documentation'",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && node scripts/wait-confirm && git add CHANGELOG.md",
-    "postversion": "echo \"You can now publish your tag with 'git push --follow-tags'\""
+    "postversion": "echo \"You can now publish your tag with 'git push --follow-tags'\"",
+    "minify:css": "",
+    "minify:js": "uglifyjs --compress --mangle -- ./build/assets/js/*.js"
   },
   "author": "Presidenza del Consiglio dei Ministri",
   "license": "BSD-3-Clause",
@@ -32,8 +34,10 @@
     "svgxuse": "^1.2.6"
   },
   "devDependencies": {
+    "clean-css-cli": "^5.6.1",
     "conventional-changelog": "^3.1.25",
     "conventional-changelog-cli": "^2.2.2",
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "uglify-js": "^3.17.4"
   }
 }
