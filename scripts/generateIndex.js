@@ -17,4 +17,4 @@ const renderedIndex = Mustache.render(
         }
     }
 );
-fs.writeFileSync('./build/index.html', renderedIndex)
+fs.writeFileSync('./src/index.html', renderedIndex)
