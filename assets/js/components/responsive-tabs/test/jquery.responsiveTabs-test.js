@@ -1,18 +1,1 @@
-/*global QUnit:false, module:false, test:false, asyncTest:false, expect:false*/
-/*global start:false, stop:false ok:false, equal:false, notEqual:false, deepEqual:false*/
-/*global notDeepEqual:false, strictEqual:false, notStrictEqual:false, raises:false*/
-(function($, QUnit) {
-
-    QUnit.module('responsive-tabs');
-
-    QUnit.test('creatable', function(assert) {
-        var $tabs = $('#horizontalTab');
-
-        assert.ok($tabs.responsiveTabs(), 'can be added');
-        assert.equal($tabs.hasClass('r-tabs'), true, 'container class was added correctly');
-        assert.equal($tabs.find('> ul').hasClass('r-tabs-nav'), true, 'nav class was added correctly');
-        assert.equal($tabs.find('> ul > li').hasClass('r-tabs-tab'), true, 'nav class was added correctly');
-        assert.equal($tabs.find('#tab-1').hasClass('r-tabs-panel'), true, 'panel class was added correctly');
-    });
-
-}(jQuery, QUnit));
+!function(e,a){a.module("responsive-tabs"),a.test("creatable",function(a){var s=e("#horizontalTab");a.ok(s.responsiveTabs(),"can be added"),a.equal(s.hasClass("r-tabs"),!0,"container class was added correctly"),a.equal(s.find("> ul").hasClass("r-tabs-nav"),!0,"nav class was added correctly"),a.equal(s.find("> ul > li").hasClass("r-tabs-tab"),!0,"nav class was added correctly"),a.equal(s.find("#tab-1").hasClass("r-tabs-panel"),!0,"panel class was added correctly")})}(jQuery,QUnit);
