@@ -1,3 +1,14 @@
+## [2.1.3](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.1.2...v2.1.3) (2022-11-30)
+
+
+### Bug Fixes
+
+* header icon ([63c113d](https://github.com/italia/design-scuole-pagine-statiche/commit/63c113dd4699656c04259df0cc251bc3a3546e5f))
+* secondary nav items ([aba434a](https://github.com/italia/design-scuole-pagine-statiche/commit/aba434a02f683f9069dfeca9113843c259c03380))
+* various fixes to align design to theme
+
+
+
 ## [2.1.2](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.1.1...v2.1.2) (2022-10-06)
 
 
