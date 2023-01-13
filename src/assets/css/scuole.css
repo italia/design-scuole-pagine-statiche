@@ -17729,12 +17729,14 @@ button.icon-text {
 
 .calendar-vertical .calendar-date {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .calendar-vertical .calendar-date .calendar-date-day {
   width: 100px;
   flex-shrink: 0;
   position: relative;
+  font-weight: 400;
   z-index: 0;
   padding: 7px 0 0 0;
 }
