@@ -12,10 +12,10 @@
 <body>
   <div class="container px-4 my-4">
     <div class="row">
-      <div class="col-12 px-lg-4 py-lg-2">
+      <div class="col-12 px-lg-2 py-lg-2">
         <h1>I templates HTML del modello per le scuole</h1>
       </div>
-      <div class="col-12 px-lg-4 py-lg-2">
+      <div class="col-12 px-lg-2 py-lg-2">
         <a class="text-muted text-decoration-none" href="https://github.com/italia/design-scuole-pagine-statiche/releases/latest" target="_blank" alt="Link alla release su Github" title="Vai alla release">
           <svg class="icon icon-sm icon-secondary">
             <use href="/assets/bootstrap-italia/dist/svg/sprites.svg#it-github"></use>
@@ -26,9 +26,49 @@
     </div>
 
     <div class="row mt-4">
-      <div class="col-12">
+      <div class="col-md-4 px-lg-2 py-lg-2 sticky-top">
+        <nav class="navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll" data-bs-navscroll>
+          <button class="custom-navbar-toggler" type="button" aria-controls="navbarNavB" aria-expanded="false"
+            aria-label="Toggle navigation" data-bs-toggle="navbarcollapsible" data-bs-target="#navbarNavB"><span
+              class="it-list"></span>Indice templates
+          </button>
+          <div class="navbar-collapsable" id="navbarNavB">
+            <div class="overlay"></div>
+            <div class="close-div visually-hidden">
+              <button class="btn close-menu" type="button"><span class="it-close"></span>close
+              </button>
+            </div>
+            <a class="it-back-button" href="#"><svg class="icon icon-sm icon-primary align-top">
+                <use href="/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use>
+              </svg><span>Back </span></a>
+            <div class="menu-wrapper">
+              <div class="link-list-wrapper">
+                <h3>INDICE</h3>
+                <ul class="link-list">
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="#generali"><span>Generali</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#scuola"><span>Scuola</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servizi"><span>Servizi</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#novita"><span>Novità</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#didattica"><span>Didattica</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-12 col-md-8 px-lg-2 py-lg-2">
         <div class="it-list-wrapper">
-          <section class="mb-5">
+          <section id="generali" class="mb-5">
             <h2 class="mb-3">Generali</h2>
             <ul class="it-list">
               <li>
@@ -64,8 +104,8 @@
             </ul>
           </section>
 
-          <section class="mb-5">
-            <h2 class="mb-3">Sezione Scuola</h2>
+          <section id="scuola" class="mb-5">
+            <h2 class="mb-3">Scuola</h2>
             <ul class="it-list">
               <li>
                 <a href="scuole-la-scuola.html" target="_blank" class="list-item" data-focus-mouse="false">
@@ -170,7 +210,7 @@
             </ul>
           </section>
 
-          <section class="mb-5">
+          <section id="servizi" class="mb-5">
             <h2 class="mb-3">
               Servizi
             </h2>
@@ -219,7 +259,7 @@
             </ul>
           </section>
 
-          <section class="mb-5">
+          <section id="novita" class="mb-5">
             <h2 class="mb-3">Novità</h2>
             <ul class="it-list">
               <li>
@@ -285,7 +325,7 @@
             </ul>
           </section>
 
-          <section class="mb-5">
+          <section id="didattica" class="mb-5">
             <h2 class="mb-3">Didattica</h2>
             <ul class="it-list">
               <li>
