@@ -16703,15 +16703,15 @@ button.icon-text {
 }
 
 #access-modal .form-group .form-control::-webkit-input-placeholder {
-  color: #8da0af !important;
+  color: #fff !important;
 }
 
 #access-modal .form-group .form-control:-ms-input-placeholder {
-  color: #8da0af !important;
+  color: #fff !important;
 }
 
 #access-modal .form-group .form-control::placeholder {
-  color: #8da0af !important;
+  color: #fff !important;
 }
 
 #access-modal .form-group svg {
@@ -17729,12 +17729,14 @@ button.icon-text {
 
 .calendar-vertical .calendar-date {
   display: flex;
+  flex-direction: row-reverse;
 }
 
 .calendar-vertical .calendar-date .calendar-date-day {
   width: 100px;
   flex-shrink: 0;
   position: relative;
+  font-weight: 400;
   z-index: 0;
   padding: 7px 0 0 0;
 }
