@@ -1,3 +1,20 @@
+# [2.2.0](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.1.3...v2.2.0) (2023-03-03)
+
+
+### Bug Fixes
+
+* a11y issues ([62c25c2](https://github.com/italia/design-scuole-pagine-statiche/commit/62c25c29e9c1ac3d2bffa0b8839643ddbc3ac72a)), closes [#223](https://github.com/italia/design-scuole-pagine-statiche/issues/223) [#222](https://github.com/italia/design-scuole-pagine-statiche/issues/222) [#219](https://github.com/italia/design-scuole-pagine-statiche/issues/219) [#218](https://github.com/italia/design-scuole-pagine-statiche/issues/218) [#215](https://github.com/italia/design-scuole-pagine-statiche/issues/215) [#213](https://github.com/italia/design-scuole-pagine-statiche/issues/213)
+* secondary nav items ([#30](https://github.com/italia/design-scuole-pagine-statiche/issues/30)) ([787133f](https://github.com/italia/design-scuole-pagine-statiche/commit/787133f61fab1b59975536e6c286dea90362fd72))
+* change headings ([#35](https://github.com/italia/design-scuole-pagine-statiche/pull/35)) ([787133f](https://github.com/italia/design-scuole-pagine-statiche/commit/5ac323686345766129a99303b014a7410a1c16ba))
+
+
+### Features
+
+* add new `data-element`s ([5ac3236](https://github.com/italia/design-scuole-pagine-statiche/commit/5ac323686345766129a99303b014a7410a1c16ba))
+* templates index update ([#34](https://github.com/italia/design-scuole-pagine-statiche/issues/34)) ([d3034fb](https://github.com/italia/design-scuole-pagine-statiche/commit/d3034fb299179a205b016c58ac67d79c4558e8fa))
+
+
+
 ## [2.1.3](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.1.2...v2.1.3) (2022-11-30)
 
 
