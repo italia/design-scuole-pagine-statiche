@@ -3,9 +3,9 @@
 
 Benvenuto nel _repository_ ufficiale contenente i template HTML del modello “Il sito delle scuole italiane”.
 
-Questo _repo_, assieme alla documentazione tecnica, completa il kit che abbiamo realizzato per farti conoscere meglio il progetto e per metterti subito nelle condizioni di iniziare a sperimentarlo.
+Questo _repository_, assieme alla documentazione tecnica, completa il kit che abbiamo realizzato per farti conoscere meglio il progetto e per metterti subito nelle condizioni di iniziare a lavorarci.
 
-All’interno di questo spazio troverai:
+All’interno di questo spazio trovi:
 
 - l'architettura dell'informazione
 - il codice già pronto all’uso
@@ -28,11 +28,13 @@ Buon lavoro!
 
 ## Come iniziare
 
-Per utilizzare i template del sito scolastico all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/main/build). Per scaricare le dipendenze esterne, è sufficiente utilizzare uno dei seguenti comandi:
+Per utilizzare i template del sito scolastico all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/main/build). 
+
+Inizia scaricando le dipendenze esterne del progetto, utilizzando uno dei seguenti comandi:
 
 `npm install` oppure `yarn`
 
-dopodichè buildare il tutto con
+Dopodichè, puoi compilare il progetto con uno dei seguenti comandi:
 
 `npm run build` oppure `yarn build`
 
