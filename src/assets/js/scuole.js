@@ -751,3 +751,12 @@ function catchFocusUser(linkList, buttonList) {
 }
 
 tabIndexUser();
+
+/* Collapse elementi luoghi */
+$(".dsi_more").on("click", function() {
+  if($(this).text() == "Visualizza altro") {
+    $(this).text("Visualizza meno");
+  } else {
+    $(this).text("Visualizza altro");
+  }
+});
