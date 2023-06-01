@@ -14580,6 +14580,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   right: 0;
   background-color: #f5f5f5;
   padding: 15px 10px;
+  touch-action: auto;
 }
 
 @media (max-width: 991.98px) {
