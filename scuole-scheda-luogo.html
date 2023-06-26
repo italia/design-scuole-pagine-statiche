@@ -525,9 +525,6 @@
                         <li>
                           <a href="#" tabindex="-1">Percorsi di studio</a>
                         </li>
-                        <li>
-                          <a href="#" tabindex="-1">Tutti i servizi</a>
-                        </li>
                       </ul>
                     </li>
                     <li class="text-greendark menu-dropdown-simple-wrapper">
@@ -710,9 +707,6 @@
                           </li>
                           <li>
                             <a href="#" class="list-item">Percorsi di studio</a>
-                          </li>
-                          <li>
-                            <a href="#" class="list-item">Tutti i servizi</a>
                           </li>
                         </ul>
                       </div>
@@ -1008,7 +1002,7 @@
                   <ol class="breadcrumbs-list" data-element="breadcrumb">
                     <li class="breadcrumb-item"><a href="#" title="Vai alla pagina: Home">Home</a></li>
                     <li class="breadcrumb-item"><a href="#" title="Vai alla pagina: Scuola">Scuola</a></li>
-                    <li class="breadcrumb-item"><a href="#" title="Vai alla pagina: Luoghi">Luoghi</a></li>
+                    <li class="breadcrumb-item"><a href="#" title="Vai alla pagina: I luoghi">I luoghi</a></li>
                     <li class="breadcrumb-item"><a href="#" title="Vai alla pagina: Palestre">Palestre</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><span>La palestra dell'Istituto Comprensivo
                         Padre Semeria</span></li>
@@ -1226,26 +1220,25 @@
                     <div class="card-deck card-deck-spaced mb-4 card_container_accordion">
                       <div class="card card-bg card-bg-simple rounded card_accordion">
                         <div class="card-body">
-                          <div id="dsi_description_container_0" style="height: 108.438px;">
+                          <div id="dsi_description_container_0">
                             <p>Lorem ipsum</p>
                             <small>
                               <span id="dsi_description_0">Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit.</span>
+                                elit...</span>
+                              <span class="collapse" id="dsi_description_more_0">ipsum dolor sit amet consectetur adipisicing elit</span>
                             </small>
                           </div>
-                          <a href="#" class="small dsi_more show" data-id="0">Visualizza altro</a>
+                          <button type="button" class="btn btn-link btn-sm text-underline p-0 mt-2 float-right dsi_more" data-toggle="collapse" data-target="#dsi_description_more_0">Visualizza altro</button>
                         </div><!-- /card-body -->
                       </div><!-- /card card-bg card-icon rounded -->
                       <div class="card card-bg card-bg-simple rounded card_accordion">
                         <div class="card-body">
-                          <div id="dsi_description_container_1" style="height: 108.438px;">
+                          <div id="dsi_description_container_1">
                             <p>Lorem ipsum dolor</p>
                             <small>
-                              <span id="dsi_description_1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatem voluptatibus...</span>
+                              <span id="dsi_description_1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                             </small>
                           </div>
-                          <a href="#" class="small dsi_more show" data-id="1">Visualizza altro</a>
                         </div><!-- /card-body -->
                       </div><!-- /card card-bg card-icon rounded -->
                     </div>
@@ -1882,7 +1875,6 @@
                 <li><a class="text-underline-hover" href="#">Famiglie e studenti</a></li>
                 <li><a class="text-underline-hover" href="#">Percorsi di studio</a>
                 </li>
-                <li><a class="text-underline-hover" href="#">Tutti i servizi</a></li>
               </ul>
             </div>
             <h2 class="h3">Didattica</h2>
@@ -1912,6 +1904,7 @@
         <div class="row variable-gutters">
           <div class="col-lg-12 sub-footer">
             <ul id="menu-footer" class="footer-inline-menu">
+              <li><a class="text-underline-hover" href="#" data-element="legal-notes">Note Legali</a></li>
               <li><a class="text-underline-hover" href="#">Amministrazione
                   Trasparente</a></li>
               <li><a class="text-underline-hover" href="#">Albo online</a></li>
