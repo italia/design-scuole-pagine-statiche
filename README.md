@@ -46,12 +46,12 @@ L’architettura dell’informazione è basata sulle linee guida di design dei s
 
 Infine, nel documento sono contenute alcune indicazioni per la migrazione e/o riscrittura di contenuti dal sito esistente al nuovo sito scolastico che si sta creando, oltre a suggerimenti per la corretta gestione dei contenuti.
 
-[Vai al documento di architettura dell'informazione:](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing)
+[Vai al documento di architettura dell'informazione (ODS 337)](https://designers.italia.it/files/resources/modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/Architettura-informazione-sito-scuole.ods)
 
 ## Come contribuire
 Vorresti dare una mano contribuendo allo sviluppo del progetto?
 
-Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza su l'[Architettura dell'Informazione dei siti web delle Scuole Italiane](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit#gid=782511705) e fai riferimento alle [indicazioni su come contribuire](https://github.com/italia/design-scuole-wordpress-theme/blob/main/CONTRIBUTING.md).
+Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza sul [documento di architettura dell'informazione (ODS 337)](https://designers.italia.it/files/resources/modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/Architettura-informazione-sito-scuole.ods) e fai riferimento alle [indicazioni su come contribuire](https://github.com/italia/design-scuole-wordpress-theme/blob/main/CONTRIBUTING.md).
 
 A questo punto, è necessario scaricare una copia in locale del tema tramite il comando `git fork https://github.com/italia/design-scuole-pagine-statiche.git` da terminale o cliccando sul pulsante Fork <br>
 ![fork](https://user-images.githubusercontent.com/69706/188419656-21fa5b0e-c52a-4168-a1d1-8ea9a149da6a.png)
