@@ -9827,7 +9827,7 @@ h4,
 
 .card.card-icon-main .card-icon-content {
   display: flex;
-  align-items: left;
+  align-items: start;
   flex-direction: column;
 }
 
