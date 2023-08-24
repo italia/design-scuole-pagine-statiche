@@ -153,18 +153,6 @@ $(document).ready(function () {
 }); */
 /* End Mobile Menu Back Text */
 
-/* Scroll Anchor Offset */
-$(function () {
-  $('.scroll-anchor-offset').bind('click', function (event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top - 150
-    }, 200, 'easeInOutExpo');
-    event.preventDefault();
-  });
-});
-/* End Scroll Anchor Offset */
-
 /* Accordion */
 $(document).ready(function () {
   if ($(".accordion-wrapper").length) {
