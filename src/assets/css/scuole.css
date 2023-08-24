@@ -7381,6 +7381,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+scroll-padding-top: 9rem!important;
+scroll-behavior: smooth!important;
+	@media (max-width:767.98px){
+		scroll-padding-top: 0rem!important;
+		}
+	}
+}
+
 a {
   color: #455b71;
   text-decoration: none;
