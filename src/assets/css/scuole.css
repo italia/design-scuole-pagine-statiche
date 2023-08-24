@@ -18127,6 +18127,12 @@ button.icon-text {
   text-decoration: underline;
 }
 
+.article-wrapper .card>a,
+.article-wrapper a.btn
+{
+  text-decoration:none
+}
+
 .article-wrapper ol {
   font-family: Lora, Georgia, serif;
   margin: 0 0 40px 0;
