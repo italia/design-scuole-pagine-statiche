@@ -18123,6 +18123,10 @@ button.icon-text {
   }
 }
 
+.article-wrapper a {
+  text-decoration: underline;
+}
+
 .article-wrapper ol {
   font-family: Lora, Georgia, serif;
   margin: 0 0 40px 0;
