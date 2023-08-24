@@ -1,3 +1,27 @@
+# [2.3.0](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.2.0...v2.3.0) (2023-07-04)
+
+
+### Bug Fixes
+
+* breadcrumbx titles ([#51](https://github.com/italia/design-scuole-pagine-statiche/issues/51)) ([4780d54](https://github.com/italia/design-scuole-pagine-statiche/commit/4780d5425e3eaed3c169a96f428304105388959b))
+* content and design ([ade2b79](https://github.com/italia/design-scuole-pagine-statiche/commit/ade2b79dc236caad2384d46e4ac274cceee7669a))
+* document page index ([1e1dc6f](https://github.com/italia/design-scuole-pagine-statiche/commit/1e1dc6ff490d4384427678c99b8abf5c0725e88c))
+* elementi luogo ([1bb5b47](https://github.com/italia/design-scuole-pagine-statiche/commit/1bb5b47ef38a67c9cedaa59e52bc6cc8c451d92e))
+* office name ([6d95dfa](https://github.com/italia/design-scuole-pagine-statiche/commit/6d95dfa877e8c4c144b71bb7c849e2f3b0b20598))
+* removed media slider ([6464dae](https://github.com/italia/design-scuole-pagine-statiche/commit/6464daeb84648af763785c9d78590380b75fee35))
+* removed secondary nav item ([#45](https://github.com/italia/design-scuole-pagine-statiche/issues/45)) ([c277039](https://github.com/italia/design-scuole-pagine-statiche/commit/c2770392c6c17bf35ccbd8615c00df22467b6699))
+* scrolling mobile page places with map ([432b451](https://github.com/italia/design-scuole-pagine-statiche/commit/432b451b892a662ecf2e2c1d9143fb3274fdd7a2))
+* update service data element ([#37](https://github.com/italia/design-scuole-pagine-statiche/issues/37)) ([b6a346a](https://github.com/italia/design-scuole-pagine-statiche/commit/b6a346a517f81810ed767917fb4f600e63c20b17))
+* wrong data-element ([ffb9c8e](https://github.com/italia/design-scuole-pagine-statiche/commit/ffb9c8e420224a7ea17a46f236fb6878c0f9cdc2))
+
+
+### Features
+
+* add note legali in footer with data-elements ([7f85e2d](https://github.com/italia/design-scuole-pagine-statiche/commit/7f85e2de9a7c2d23009619d52006d3671394ce49))
+* add sitemap ([c68cf17](https://github.com/italia/design-scuole-pagine-statiche/commit/c68cf178625bdb7758a597798af6248c6dcc3b7d))
+
+
+
 # [2.2.0](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.1.3...v2.2.0) (2023-03-03)
 
 
