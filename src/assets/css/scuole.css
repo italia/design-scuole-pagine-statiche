@@ -14383,7 +14383,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .section.section-red-gradient .red-gradient-location-bg svg {
   display: block;
-  width: 100% \9;
   height: auto;
   max-width: 1024px;
   margin-left: auto;
@@ -18125,6 +18124,12 @@ button.icon-text {
 
 .article-wrapper a {
   text-decoration: underline;
+}
+
+.article-wrapper .card>a,
+.article-wrapper a.btn
+{
+  text-decoration:none
 }
 
 .article-wrapper ol {
