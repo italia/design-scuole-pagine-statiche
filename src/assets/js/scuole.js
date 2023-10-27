@@ -160,7 +160,6 @@ $(function () {
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top - 150
     }, 200, 'easeInOutExpo');
-    event.preventDefault();
   });
 });
 /* End Scroll Anchor Offset */
