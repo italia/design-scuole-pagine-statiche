@@ -19990,3 +19990,49 @@ button.icon-text {
   width: 15px;
   height: 15px;
 }
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+    max-width:100%;
+    height:auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+    max-width:100%;
+    height:auto;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+    max-width:100%;
+    height:auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
