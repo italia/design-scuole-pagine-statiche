@@ -14521,6 +14521,31 @@ svg.leaflet-image-layer.leaflet-interactive path {
   color: #ffffff;
 }
 
+.section.bg-petrolgradient {
+  color: #ffffff;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#51758d+0,395160+100 */
+  background: #51758d;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #51758d 0%, #395160 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #51758d 0%, #395160 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #51758d 0%, #395160 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#51758d', endColorstr='#395160', GradientType=1);
+  /* IE6-9 */
+}
+
+.section.bg-petrolgradient h1,
+.section.bg-petrolgradient .h1,
+.section.bg-petrolgradient h2,
+.section.bg-petrolgradient .h2,
+.section.bg-petrolgradient h3,
+.section.bg-petrolgradient .h3,
+.section.bg-petrolgradient p {
+  color: #ffffff;
+}
+
 .section.bg-greendarkgradient {
   color: #ffffff;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f842e+0,5cc984+100 */
@@ -14620,6 +14645,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .purple-oval-forms svg {
+  width: 578px;
+  height: 359px;
+}
+
+.petrol-oval-forms {
+  width: 578px;
+  height: 359px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 40px;
+}
+
+.petrol-oval-forms svg {
   width: 578px;
   height: 359px;
 }
