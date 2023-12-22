@@ -1,3 +1,19 @@
+# [2.4.0](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.3.0...v2.4.0) (2023-12-22)
+
+
+### Bug Fixes
+
+* **a11y:** focus on element using keyboard ([534a188](https://github.com/italia/design-scuole-pagine-statiche/commit/534a1882b3e74e9c06fb200ad39c9eb807b25c0f))
+* missing classes ([7f4aed2](https://github.com/italia/design-scuole-pagine-statiche/commit/7f4aed2b2933d62200629f8bc4b62bfddfadd4d0))
+* removed ie9 classes and minor improvements to css
+
+
+### Features
+
+* pagina argomenti ([#63](https://github.com/italia/design-scuole-pagine-statiche/issues/63)) ([57178c9](https://github.com/italia/design-scuole-pagine-statiche/commit/57178c9ffdc4605b59c9eba0efd3cf757ec81d82))
+
+
+
 # [2.3.0](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.2.0...v2.3.0) (2023-07-04)
 
 
