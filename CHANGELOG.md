@@ -1,3 +1,18 @@
+## [2.4.1](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.4.0...v2.4.1) (2024-01-08)
+
+
+### Bug Fixes
+
+* changed `.container` padding ([bcf66b5](https://github.com/italia/design-scuole-pagine-statiche/commit/bcf66b556202b92597a4bf442c0e7e58941552ba))
+* changed cols size ([a9fc3bf](https://github.com/italia/design-scuole-pagine-statiche/commit/a9fc3bff98175d6e967df9c0d4d976fc4680aabe))
+
+
+### Features
+
+* changed 'didattica' sections colors ([#70](https://github.com/italia/design-scuole-pagine-statiche/issues/70)) ([2d474c7](https://github.com/italia/design-scuole-pagine-statiche/commit/2d474c751463ef458ea1129b68560a70bfeeee20))
+
+
+
 # [2.4.0](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.3.0...v2.4.0) (2023-12-22)
 
 
