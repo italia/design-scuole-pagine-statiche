@@ -1,11 +1,11 @@
 {
   "name": "design-scuole-pagine-statiche",
-  "version": "2.3.0",
+  "version": "2.4.1",
   "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
   "scripts": {
     "build": "rm -rf dist && cp -R src dist && npm run minify:css && npm run minify:js",
     "documentation-deploy-to-gh-pages": "npm run build && gh-pages -d dist -m 'chore: update documentation'",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && node scripts/wait-confirm && git add CHANGELOG.md",
+    "version": "node ./scripts/generateIndex.js && conventional-changelog -p angular -i CHANGELOG.md -s && node scripts/wait-confirm && git add CHANGELOG.md && git add src/index.html",
     "postversion": "echo \"You can now publish your tag with 'git push --follow-tags'\"",
     "minify:css": "node scripts/minify-css.js",
     "minify:js": "node scripts/minify-js.js"
