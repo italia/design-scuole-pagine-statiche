@@ -17974,6 +17974,7 @@ button.icon-text {
   background-color: #455b71;
   background-size: cover;
   background-attachment: scroll;
+  background-position: center;
 }
 
 @media (max-width: 767.98px) {
@@ -18795,6 +18796,7 @@ button.icon-text {
   background-color: #455b71;
   background-size: cover;
   background-attachment: scroll;
+  background-position: center;
 }
 
 @media (max-width: 767.98px) {
@@ -19063,6 +19065,7 @@ button.icon-text {
   background-color: #455b71;
   background-size: cover;
   background-attachment: scroll;
+  background-position: center;
 }
 
 @media (max-width: 767.98px) {
