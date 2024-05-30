@@ -9,17 +9,15 @@
   <meta name="author" content="">
   <meta name="generator" content="">
 
-  <title>Onde gravitazionali: la prima volta di Ligo</title>
+  <title>Argomenti</title>
 
   <!-- favicon -->
 
   <link rel="stylesheet" href="assets/css/bootstrap-italia.css" />
-  <link rel="stylesheet" href="assets/css/splide.min.css" />
 
   <link rel="stylesheet" href="assets/css/scuole.css">
 
   <script src="assets/js/modernizr.custom.js"></script>
-
 
 </head>
 
@@ -416,7 +414,6 @@
   </nav>
   <!-- End Right menu element-->
 
-
   <div id="main-wrapper" class="push_container" id="page_top">
     <div class="skiplink">
       <a class="sr-only sr-only-focusable" href="#main-container">Vai ai contenuti</a>
@@ -431,12 +428,12 @@
       <div id="pre-header" class="bg-petrol">
         <div class="container">
           <div class="row variable-gutters">
-            <div class="col-8">
+            <div class="col-6">
               <a href="https://www.miur.gov.it/" target="_blank"
                 aria-label="Ministero dell'Istruzione e del Merito - Collegamento esterno - Apre su nuova scheda"><strong>Ministero
                   dell'Istruzione e del Merito</strong></a>
-            </div>
-            <div class="col-4 header-utils-wrapper">
+            </div><!-- /col-6 -->
+            <div class="col-6 header-utils-wrapper">
               <div class="header-utils">
                 <button type="button" class="icon-text" data-toggle="modal" data-target="#access-modal">
                   <span class="mr-2">Accedi</span>
@@ -446,7 +443,7 @@
                     </svg>
                 </button>
               </div><!-- /header-utils -->
-            </div>
+            </div><!-- /col-6 -->
           </div><!-- /row -->
         </div><!-- /container -->
       </div>
@@ -715,7 +712,7 @@
                     </div>
                   </li>
                   <li class="text-greendark menu-dropdown-simple-wrapper">
-                    <a class="nav-link dropdown-toggle active" role="button" href="#" data-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" role="button" href="#" data-toggle="dropdown"
                       aria-expanded="false" id="mainNavDropdown3">Novità</a>
                     <div class="dropdown-menu menu-dropdown dl-submenu menu-dropdown-simple"
                       aria-labelledby="mainNavDropdown3" data-element="news-submenu">
@@ -826,29 +823,28 @@
                       </button>
                     </div>
                     <div class="cat-filters">
-                      <div class="custom-control custom-checkbox custom-checkbox-primary">
-                        <input type="checkbox" class="custom-control-input" id="tutto" checked>
-                        <label class="custom-control-label" for="tutto">Tutto</label>
+                      <div class="custom-control custom-submit-redbrown">
+                        <button type="submit" class="custom-control-submit " id="scuola" name="type"
+                          value="school">Cerca nella sezione <strong
+                            class="text-uppercase text-small-bold">scuola</strong></button>
                       </div>
-                      <div class="custom-control custom-checkbox custom-checkbox-redbrown">
-                        <input type="checkbox" class="custom-control-input" id="scuola">
-                        <label class="custom-control-label" for="scuola">Scuola</label>
+                      <div class="custom-control custom-submit-greendark">
+                        <button type="submit" class="custom-control-submit " id="notizie" name="type" value="news">Cerca
+                          tra le <strong class="text-uppercase text-small-bold">novità</strong></button>
                       </div>
-                      <div class="custom-control custom-checkbox custom-checkbox-greendark">
-                        <input type="checkbox" class="custom-control-input" id="notizie">
-                        <label class="custom-control-label" for="notizie">Notizie</label>
+                      <div class="custom-control custom-submit-purplelight">
+                        <button type="submit" class="custom-control-submit " id="servizi" name="type"
+                          value="service">Cerca nei <strong
+                            class="text-uppercase text-small-bold">servizi</strong></button>
                       </div>
-                      <div class="custom-control custom-checkbox custom-checkbox-purplelight">
-                        <input type="checkbox" class="custom-control-input" id="servizi">
-                        <label class="custom-control-label" for="servizi">Servizi</label>
+                      <div class="custom-control custom-submit-bluelectric">
+                        <button type="submit" class="custom-control-submit " id="didattica" name="type"
+                          value="education">Cerca nella <strong
+                            class="text-uppercase text-small-bold">didattica</strong></button>
                       </div>
-                      <div class="custom-control custom-checkbox custom-checkbox-bluelectric">
-                        <input type="checkbox" class="custom-control-input" id="didattica">
-                        <label class="custom-control-label" for="didattica">Didattica</label>
-                      </div>
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="la-mia-classe">
-                        <label class="custom-control-label" for="la-mia-classe">La mia classe</label>
+                      <div class="custom-control custom-submit-primary">
+                        <button type="submit" class="custom-control-submit " id="tutto" name="type" value="any">Cerca
+                          in <strong class="text-uppercase text-small-bold">tutto il sito</strong></button>
                       </div>
                     </div>
                   </div>
@@ -868,7 +864,6 @@
                         </li>
                         <li>
                           <a href="#">Trasporto scolastico</a>
-
                         </li>
                         <li>
                           <a href="#">Festività natalizie</a>
@@ -994,7 +989,7 @@
 
 
 
-    <main id="main-container" class="main-container greendark">
+    <main id="main-container" class="main-container petrol">
 
       <section class="section py-2 bg-white d-none d-sm-block">
         <div class="container">
@@ -1004,10 +999,7 @@
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumbs-list" data-element="breadcrumb">
                     <li class="breadcrumb-item"><a href="#" title="Vai alla pagina: Home">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#" title="Vai alla pagina: Home">Novità</a></li>
-                    <li class="breadcrumb-item"><a href="#" title="Vai alla pagina: Notizie">Le notizie</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><span>Onde gravitazionali: la prima volta di
-                        Ligo</span></li>
+                    <li class="breadcrumb-item active" aria-current="page"><span>Argomenti</span></li>
                   </ol>
                 </nav>
               </div><!-- /breadcrumbs -->
@@ -1017,707 +1009,413 @@
       </section><!-- /section -->
 
 
-      <section class="section bg-white article-title article-title-author">
-        <div class="title-img" style="background-image: url('assets/placeholders/placeholder-1280x960.jpg');"></div>
+      <section
+        class="section bg-petrol bg-petrolgradient py-5 position-relative d-flex align-items-center overflow-hidden">
+        <div class="petrol-oval-forms">
+          <svg width="100%" height="100%" viewBox="0 0 578 359" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g id="Group-2">
+              <path id="Oval-2" d="M578,359c0,-159.61 -129.39,-289 -289,-289c-159.61,0 -289,129.39 -289,289l578,0Z"
+                style="fill:url(#_Linear1);fill-rule:nonzero;" />
+              <path id="Oval-2-Copy" d="M578,0c0,159.61 -129.39,289 -289,289c-159.61,0 -289,-129.39 -289,-289l578,0Z"
+                style="fill:url(#_Linear2);fill-rule:nonzero;" />
+            </g>
+            <defs>
+              <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
+                gradientTransform="matrix(1.76961e-14,289,-289,1.76961e-14,289,70)">
+                <stop offset="0" style="stop-color:#314A5E;stop-opacity:1" />
+                <stop offset="1" style="stop-color:#6A9AB7;stop-opacity:0.61" />
+              </linearGradient>
+              <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse"
+                gradientTransform="matrix(-578,-7.07846e-14,7.07846e-14,-578,578,144.5)">
+                <stop offset="0" style="stop-color:#233A4C;stop-opacity:0" />
+                <stop offset="1" style="stop-color:#6A9AB7;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
         <div class="container">
           <div class="row variable-gutters">
-            <div class="col-md-6 article-title-author-container">
-              <div class="title-content">
-                <h1>Onde gravitazionali: la prima volta di Ligo</h1>
-                <p class="mb-0">Tutti i segreti della scoperta che cambierà il modo di “leggere” l’Universo</p>
-              </div><!-- /title-content -->
-              <div class="card card-avatar card-comments">
-                <div class="card-body p-0">
-                  <div class="card-avatar-img">
-                    <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                  </div><!-- /card-avatar-img -->
-                  <div class="card-avatar-content">
-                    <p class="font-weight-normal">da <strong class="text-underline"><u>Nome Cognome</u></strong></p>
-                    <small>Fisica - Direttrice del CERN</small>
-                  </div><!-- /card-avatar-content -->
-                  <div class="comments ml-auto">
-                    <p>344</p>
-                  </div><!-- /comments -->
-                </div><!-- /card-body -->
-              </div><!-- /card card-avatar -->
-            </div><!-- /col-md-6 -->
+            <div class="col-md-5">
+              <div class="hero-title text-left">
+                <h1 class="p-0 mb-2">Argomenti</h1>
+                <p class="h4 font-weight-normal">Ritrova le informazioni in base agli argomenti scelti dal nostro istituto</p>
+              </div><!-- /hero-title -->
+            </div><!-- /col-md-5 -->
           </div><!-- /row -->
         </div><!-- /container -->
       </section><!-- /section -->
 
-      <section class="section bg-white pt-5">
+      <section class="section bg-white py-5">
         <div class="container">
-          <div class="row variable-gutters">
-            <div class="col-lg-9 col-md-8 order-lg-1">
-              <article class="article-wrapper pt-4">
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <p class="first-letter">Oggi è stata annunciata la scoperta delle onde gravitazionali. Per
-                      scoprirle, il team di <a href="https://www.ligo.caltech.edu/">LIGO (Laser Interferometer Gravitational-Wave Observatory)</a> ha costruito
-                      due rilevatori: uno a Livingston, in Louisiana, l’altra a Hanford, Washington. I ricercatori
-                      sono risaliti all’evento che ha generato le onde gravitazionali, tramite l’analisi del segnale
-                      durato appena una frazione di secondi. Scrive Claudia Grisanti su Internazionale che a produrlo
-                    </p>
-                  </div><!-- /col-lg-8 -->
-                  <div class="col-lg-4">
-                    <div class="note">
-                      <p><strong>Nota 1</strong>. Viaggio nel mondo del giornalismo che cambia <a href="#"
-                          aria-label="www.valigiablu.it - link esterno - apertura nuova scheda">www.valigiablu.it</a>
-                      </p>
-                    </div>
-                  </div><!-- /col-lg-4 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <blockquote>…sarebbe stato il movimento a spirale sempre più veloce di due buchi neri fino alla
-                      collisione e alla fusione. I ricercatori hanno calcolato che i buchi neri avevano una massa pari
-                      a circa 29 e 36 volte quella del Sole e si trovavano a 1,3 miliardi di anni luce di distanza
-                      dalla Terra. Sono stati fatti controlli per eliminare la possibilità di errori, ma i segnali
-                      misurati corrispondono alle previsioni sulle onde gravitazionali.</blockquote>
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <p>La scoperta, pubblicata online sulla rivista Physical Review Letters (e in altri 12 articoli
-                      sul sito ArXiv), è stata diffusa in contemporanea negli Stati Uniti e in Italia, a Cascina
-                      (Pisa), dove si trova lo strumento Virgo che insieme a Ligo ha analizzato i dati raccolti.</p>
-                    <p>Ma cos’è un’onda gravitazionale? Ecco un video con sottotitoli in italiano dove viene spiegato
-                      in modo molto chiaro e semplice.</p>
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <div class="video-container mb-4">
-                      <iframe title="Descrizione video" aria-label="Descrizione video" width="560" height="315"
-                        src="https://www.youtube-nocookie.com/embed/4GbWfNHtHRg" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                      <div id="accordionDiv1" class="collapse-div transcription-accordion">
-                        <div class="collapse-header" id="headingA2">
-                          <button data-toggle="collapse" data-target="#accordion2" aria-expanded="false"
-                            aria-controls="accordion2">
-                            Trascrizione del video
-                          </button>
-                        </div>
-                        <div id="accordion2" class="collapse" role="region" aria-labelledby="headingA2"
-                          data-parent="#accordionDiv1">
-                          <div class="collapse-body">
-                            Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
-                            aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable
-                            VHS.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <p>In questo audio invece si può sentirne il “rumore”, cioè la conversione in onde sonore delle
-                      onde gravitazionali prodotte dalla collisione dei due buchi neri.</p>
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-11">
-                    <h2 class="h4"><strong>Multimedia</strong></h2>
+          <div class="title-section mb-5">
+            <h2 class="h4">Tutti gli argomenti</h2>
+          </div><!-- /title-large -->
 
-                    <!-- CAROSELLO SPLIDE-->
-                    <div class="splide splide-double mb-5" data-bs-carousel-splide>
-                      <div class="splide__track">
-                        <ul class="splide__list">
-                          <!-- Prima immagine -->
-                          <li class="splide__slide">
-                            <div class="">
-                              <div class="card-wrapper">
-                                <div class="card card-img no-after">
-
-                                  <div class="img-responsive">
-                                    <!-- RELATIVE -->
-                                    <div class="w-100">
-                                      <img src="assets/placeholders/placeholder-1000x665.jpg"
-                                        alt="descrizione immagine 1" class="img-fluid">
-                                    </div>
-                                    <span class="position-absolute d-block didascalia-text p-3">Foto: didascalia della
-                                      foto 1</span>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <!-- Seconda immagine -->
-                          <li class="splide__slide">
-                            <div class="">
-                              <div class="card-wrapper">
-                                <div class="card card-img no-after">
-
-                                  <div class="img-responsive">
-                                    <!-- RELATIVE -->
-                                    <div class="w-100">
-                                      <img src="assets/placeholders/placeholder-1000x665.jpg"
-                                        alt="descrizione immagine 1" class="img-fluid">
-                                    </div>
-                                    <span class="position-absolute d-block didascalia-text p-3">Foto: didascalia della
-                                      foto 2</span>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <!-- Video -->
-                          <li class="splide__slide">
-                            <div class="">
-                              <div class="card-wrapper">
-                                <div class="card card-img no-after">
-
-                                  <div class="video-wrapper shadow-none rounded-0">
-                                    <a href="#">
-                                      <svg class="svg-play">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-play"></use>
-                                      </svg>
-                                      <img src="assets/placeholders/placeholder-1000x665.jpg"
-                                        alt="Descrizione immagine">
-                                    </a>
-                                  </div><!-- /video-wrapper -->
-
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <!-- Quarta immagine -->
-                          <li class="splide__slide">
-                            <div class="">
-                              <div class="card-wrapper">
-                                <div class="card card-img no-after">
-
-                                  <div class="img-responsive">
-                                    <!-- RELATIVE -->
-                                    <div class="w-100">
-                                      <img src="assets/placeholders/placeholder-1000x665.jpg"
-                                        alt="descrizione immagine 1" class="img-fluid">
-                                    </div>
-                                    <span class="position-absolute d-block didascalia-text p-3">Foto: didascalia della
-                                      foto 4</span>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                          <!-- Quinta immagine -->
-                          <li class="splide__slide">
-                            <div class="">
-                              <div class="card-wrapper">
-                                <div class="card card-img no-after">
-
-                                  <div class="img-responsive">
-                                    <!-- RELATIVE -->
-                                    <div class="w-100">
-                                      <img src="assets/placeholders/placeholder-1000x665.jpg"
-                                        alt="descrizione immagine 1" class="img-fluid">
-                                    </div>
-                                    <span class="position-absolute d-block didascalia-text p-3">Foto: didascalia della
-                                      foto 5</span>
-                                  </div>
-
-                                </div>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <!--/CAROSELLO SPLIDE-->
-
-
-                  </div><!-- /col-lg-12 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <p>Emanuele Berti, ricercatore del Dipartimento di Astronomia dell’Università del Mississippi e
-                      del Dipartimento di Fisica dell’Università di Lisbona, ha sintetizzato sulla rivista Physical
-                      Review Letters i possibili impatti di questa scoperta: «stiamo entrando nell’alba dell’era
-                      dell’astronomia delle onde gravitazionali. Saremo in grado di ascoltare quel che prima si poteva
-                      solo vedere». «È molto significativo — continua Berti — che il primo “suono” raccolto sia venuto
-                      dalla fusione di buchi neri. Si tratta di oggetti che non si possono vedere con la radiazione
-                      elettromagnetica»</p>
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <p>Si tratta di una scoperta che conferma un’importante previsione fatta più di 100 anni fa da
-                      Albert Einstein nella sua teoria della relatività e apre una nuova finestra senza precedenti sul
-                      cosmo.</p>
-                  </div><!-- /col-lg-8 -->
-                  <div class="col-lg-4">
-                    <div class="note">
-                      <p><strong>Nota 1</strong>. Albert Einstein è stato un fisico e filosofo tedesco naturalizzato
-                        svizzero e statunitense <a href="#"
-                          aria-label="it.wikipedia.org/wiki/Albert_Einstein - link esterno - apertura nuova scheda">it.wikipedia.org/wiki/Albert_Einstein</a>
-                      </p>
-                    </div>
-                  </div><!-- /col-lg-4 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <img class="img-fluid mb-4" src="assets/placeholders/placeholder-1000x665.jpg" alt="" title="">
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <p>In un’”esclusiva” immaginaria di New Scientist, il famoso fisico premio Nobel ha così
-                      commentato la scoperta di oggi:</p>
-                    <blockquote>Se mi chiedete se esistono o meno le onde gravitazionali devo rispondere che non lo
-                      so. Ma è un problema molto interessante.</blockquote>
-                    <p>E al giornalista che gli ribatte “Ma le abbiamo trovate, qual è la sua reazione?”, Einstein
-                      risponde:</p>
-                    <blockquote>La teoria trova la giustificazione per la sua esistenza nel fatto che correla un
-                      grande numero di singole osservazioni ed è proprio qui che la verità della teoria si trova.
-                    </blockquote>
-                    <p>Emanuele Berti, ricercatore del Dipartimento di Astronomia dell’Università del Mississippi e
-                      del Dipartimento di Fisica dell’Università di Lisbona, ha sintetizzato sulla rivista Physical
-                      Review Letters i possibili impatti di questa scoperta: «stiamo entrando nell’alba dell’era
-                      dell’astronomia delle onde gravitazionali. Saremo in grado di ascoltare quel che prima si poteva
-                      solo vedere». «È molto significativo — continua Berti — che il primo “suono” raccolto sia venuto
-                      dalla fusione di buchi neri. Si tratta di oggetti che non si possono vedere con la radiazione
-                      elettromagnetica»</p>
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <div class="in-evidence">
-                      <p>«Due cose sono infinite: l'universo e la stupidità umana, ma riguardo l'universo ho ancora
-                        dei dubbi.».</p>
-                      <em>Albert Einstein</em>
-                    </div>
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <p>Osservare le onde gravitazionali prodotte dai buchi neri potrebbe anche dirci qualcosa sulla
-                      natura della gravità. La gravità si comporta proprio come previsto da Einstein in prossimità dei
-                      buchi neri, dove i campi sono molto forti? Possono l’energia oscura e l’accelerazione
-                      dell’universo essere spiegate se modifichiamo la gravità di Einstein? Questa scoperta, spiegano
-                      i ricercatori, consente di cominciare a rispondere a queste domande.</p>
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-                <h2 id="art-par-08" class="h4 mb-4">Documenti</h2>
-                <div class="row variable-gutters">
-                  <div class="col-lg-12">
-                    <div class="card-deck card-deck-spaced">
-                      <div class="card card-bg card-icon rounded">
-                        <a href="#">
-                          <div class="card-body">
-                            <svg class="icon it-pdf-document">
-                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-pdf-document"></use>
-                            </svg>
-                            <div class="card-icon-content">
-                              <p><strong>Modalità di iscrizione</strong></p>
-                              <small>255 kb</small>
-                            </div><!-- /card-icon-content -->
-                          </div><!-- /card-body -->
-                        </a>
-                      </div><!-- /card card-bg card-icon rounded -->
-                      <div class="card card-bg card-icon rounded">
-                        <a href="#">
-                          <div class="card-body">
-                            <svg class="icon it-pdf-document">
-                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-pdf-document"></use>
-                            </svg>
-                            <div class="card-icon-content">
-                              <p><strong>Modalità di pagamento</strong></p>
-                              <small>300 kb</small>
-                            </div><!-- /card-icon-content -->
-                          </div><!-- /card-body -->
-                        </a>
-                      </div><!-- /card card-bg card-icon rounded -->
-                    </div><!-- /card-deck card-deck-spaced -->
-                  </div><!-- /col-lg-12 -->
-                </div><!-- /row -->
-                <div class="row variable-gutters">
-                  <div class="col-lg-8">
-                    <div class="article-footer">
-                      <p><strong>Pubblicato:</strong> 12.02.2022 <span>-</span> <strong>Revisione:</strong> 15.04.2022
-                      </p>
-                      <p>Eccetto dove diversamente specificato, questo articolo è stato rilasciato sotto Licenza
-                        Creative Commons Attribuzione 4.0 Italia.</p>
-                    </div><!-- /article-footer -->
-                  </div><!-- /col-lg-8 -->
-                </div><!-- /row -->
-              </article>
-            </div><!-- /col-lg-8 -->
-            <div class="col-lg-3 col-md-4 order-lg-0">
-              <div class="actions-wrapper actions-main">
-                <a class="toggle-actions" href="#" title="Vedi azioni" data-target="#modal-more-items"
-                  data-toggle="modal">
-                  <svg class="it-more-items">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-more-items"></use>
+		    <div class="row">
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
                   </svg>
-                  <span>Stampa / Condividi</span>
-                </a>
-                <div class="modal fade modal-actions" id="modal-more-items" tabindex="-1" role="dialog"
-                  aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <div class="link-list-wrapper">
-                          <ul class="link-list">
-                            <li>
-                              <a href="#" class="list-item left-icon" title="Stampa il contenuto">
-                                <svg class="icon it-print">
-                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-print"></use>
-                                </svg>
-                                <span>Stampa</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="#" class="list-item left-icon" title="Invia il contenuto">
-                                <svg class="icon it-email">
-                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-email"></use>
-                                </svg>
-                                <span>Invia</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a class="list-item collapsed link-toggle" role="button" title="Menu Condividi"
-                                href="#social-share" data-toggle="collapse" aria-expanded="false"
-                                aria-controls="social-share" id="share-control">
-                                <svg class="icon it-share">
-                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-share"></use>
-                                </svg>
-                                <span>Condividi</span>
-                                <svg class="icon icon-toggle svg-arrow-down-small">
-                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arrow-down-small">
-                                  </use>
-                                </svg>
-                              </a>
-                              <ul class="link-sublist collapse" id="social-share" role="region"
-                                aria-labelledby="share-control">
-                                <li>
-                                  <a class="list-item" href="#" title="Condividi su: Facebook">
-                                    <svg class="icon it-social-facebook">
-                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-facebook">
-                                      </use>
-                                    </svg>
-                                    <span>Facebook</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="list-item" href="#" title="Condividi su: Twitter">
-                                    <svg class="icon it-social-twitter">
-                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-twitter">
-                                      </use>
-                                    </svg>
-                                    <span>Twitter</span>
-                                  </a>
-                                </li>
-                                <li>
-                                  <a class="list-item" href="#" title="Condividi su: Linkedin">
-                                    <svg class="icon it-social-linkedin">
-                                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#it-social-linkedin">
-                                      </use>
-                                    </svg>
-                                    <span>Linkedin</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                      </div><!-- /modal-body -->
-                    </div><!-- /modal-content -->
-                  </div><!-- /modal-dialog -->
-                </div><!-- /modal -->
-              </div><!-- /actions-wrapper -->
-
-              <aside class="badges-wrapper badges-main">
-                <h2 class="h4">Argomenti</h2>
-                <div class="badges">
-                  <a href="#" data-element="topic-list"
-                    class="badge badge-sm badge-pill badge-outline-greendark">Scienza</a>
-                  <a href="#" data-element="topic-list"
-                    class="badge badge-sm badge-pill badge-outline-greendark">Esami</a>
-                  <a href="#" data-element="topic-list"
-                    class="badge badge-sm badge-pill badge-outline-greendark">Tecnologia</a>
-                  <a href="#" data-element="topic-list"
-                    class="badge badge-sm badge-pill badge-outline-greendark">Famiglia</a>
-                </div><!-- /badges -->
-              </aside><!-- /badges-wrapper -->
-
-
-              <div class="cards-aside mt-4">
-                <h2 class="h4">Le persone</h2>
-                <div class="card card-avatar card-comments">
-                  <a href="#">
-                    <div class="card-body p-0">
-                      <div class="card-avatar-img">
-                        <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                      </div><!-- /card-avatar-img -->
-                      <div class="card-avatar-content">
-                        <p class="font-weight-normal"><strong class="text-underline"><u>Nome Cognome</u></strong></p>
-                        <small>Ruolo</small>
-                      </div><!-- /card-avatar-content -->
-                    </div><!-- /card-body -->
-                  </a>
-                </div><!-- /card card-avatar -->
-                <div class="card card-avatar card-comments">
-                  <a href="#">
-                    <div class="card-body p-0">
-                      <div class="card-avatar-img">
-                        <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                      </div><!-- /card-avatar-img -->
-                      <div class="card-avatar-content">
-                        <p class="font-weight-normal"><strong class="text-underline"><u>Nome Cognome</u></strong></p>
-                        <small>Ruolo</small>
-                      </div><!-- /card-avatar-content -->
-                    </div><!-- /card-body -->
-                  </a>
-                </div><!-- /card card-avatar -->
-              </div><!-- /cards-avatar -->
-
-              <div class="cards-aside mt-4">
-                <h2 class="h4">Luoghi</h2>
-                <div class="card card-icon-main">
-                  <a href="#">
-                    <div class="card-body p-0">
-                      <svg class="icon" width="100%" height="100%" viewBox="0 0 100 100" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xml:space="preserve" xmlns:serif="http://www.serif.com/"
-                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-                        <g>
-                          <path
-                            d="M99.219,68.716l-9.745,-6.497l0,-18.359c0,-0.97 -0.786,-1.755 -1.755,-1.755l-7.017,0l0,-7.017c0,-0.97 -0.786,-1.755 -1.755,-1.755l-14.132,0c-0.796,-7.578 -6.677,-13.537 -13.938,-13.988l0,-3.556l10.527,0c0.968,0 1.754,-0.784 1.754,-1.754l0,-8.772c0,-0.97 -0.786,-1.754 -1.754,-1.754l-10.527,0l-1.754,0l-1.755,0l0,16.051c-6.436,1.22 -11.452,6.815 -12.183,13.773l-14.132,0c-0.969,0 -1.755,0.785 -1.755,1.755l0,7.017l-7.017,0c-0.969,0 -1.755,0.785 -1.755,1.755l0,18.359l-9.745,6.497c-0.488,0.325 -0.781,0.874 -0.781,1.459l0,24.562c0,0.97 0.786,1.754 1.754,1.754l96.492,0c0.968,0 1.754,-0.784 1.754,-1.754l0,-24.562c0,-0.585 -0.293,-1.134 -0.781,-1.459Z"
-                            style="fill:$greendark;fill-rule:nonzero;" />
-                          <rect x="50.877" y="7.018" width="8.772" height="5.263" style="fill:#c8edc3;" />
-                          <path
-                            d="M50,22.807c5.733,0 10.479,4.586 11.273,10.526l-22.546,0c0.794,-5.94 5.54,-10.526 11.273,-10.526Z"
-                            style="fill:#fff;fill-rule:nonzero;" />
-                          <rect x="22.807" y="36.842" width="54.386" height="5.263" style="fill:#c8edc3;" />
-                          <path d="M3.509,71.114l7.017,-4.679l0,26.547l-7.017,0l0,-21.868Z"
-                            style="fill:#c8edc3;fill-rule:nonzero;" />
-                          <path
-                            d="M14.035,63.158l0,-17.544l71.93,0l0,47.368l-7.018,0l0,-24.561c0,-0.97 -0.785,-1.754 -1.754,-1.754l-7.018,0c-0.968,0 -1.754,0.784 -1.754,1.754l0,24.561l-5.263,0l0,-24.561c0,-0.97 -0.786,-1.754 -1.754,-1.754l-7.018,0c-0.969,0 -1.754,0.784 -1.754,1.754l0,24.561l-5.264,0l0,-24.561c0,-0.97 -0.785,-1.754 -1.754,-1.754l-7.018,0c-0.968,0 -1.754,0.784 -1.754,1.754l0,24.561l-5.263,0l0,-24.561c0,-0.97 -0.786,-1.754 -1.754,-1.754l-7.018,0c-0.969,0 -1.754,0.784 -1.754,1.754l0,24.561l-7.018,0l0,-29.824Z"
-                            style="fill:#fff;fill-rule:nonzero;" />
-                          <rect x="24.561" y="70.175" width="3.509" height="22.807" style="fill:#c8edc3;" />
-                          <rect x="40.351" y="70.175" width="3.509" height="22.807" style="fill:#c8edc3;" />
-                          <rect x="56.14" y="70.175" width="3.509" height="22.807" style="fill:#c8edc3;" />
-                          <rect x="71.93" y="70.175" width="3.509" height="22.807" style="fill:#c8edc3;" />
-                          <path d="M96.491,92.982l-7.017,0l0,-26.547l7.017,4.679l0,21.868Z"
-                            style="fill:#c8edc3;fill-rule:nonzero;" />
-                          <path
-                            d="M22.807,61.404l7.018,0c0.968,0 1.754,-0.785 1.754,-1.755l0,-7.017c0,-0.97 -0.786,-1.755 -1.754,-1.755l-7.018,0c-0.969,0 -1.754,0.785 -1.754,1.755l0,7.017c0,0.97 0.785,1.755 1.754,1.755Z"
-                            style="fill:$greendark;fill-rule:nonzero;" />
-                          <path
-                            d="M38.596,61.404l7.018,0c0.969,0 1.754,-0.785 1.754,-1.755l0,-7.017c0,-0.97 -0.785,-1.755 -1.754,-1.755l-7.018,0c-0.968,0 -1.754,0.785 -1.754,1.755l0,7.017c0,0.97 0.786,1.755 1.754,1.755Z"
-                            style="fill:$greendark;fill-rule:nonzero;" />
-                          <path
-                            d="M54.386,61.404l7.018,0c0.968,0 1.754,-0.785 1.754,-1.755l0,-7.017c0,-0.97 -0.786,-1.755 -1.754,-1.755l-7.018,0c-0.969,0 -1.754,0.785 -1.754,1.755l0,7.017c0,0.97 0.785,1.755 1.754,1.755Z"
-                            style="fill:$greendark;fill-rule:nonzero;" />
-                          <path
-                            d="M70.175,61.404l7.018,0c0.969,0 1.754,-0.785 1.754,-1.755l0,-7.017c0,-0.97 -0.785,-1.755 -1.754,-1.755l-7.018,0c-0.968,0 -1.754,0.785 -1.754,1.755l0,7.017c0,0.97 0.786,1.755 1.754,1.755Z"
-                            style="fill:$greendark;fill-rule:nonzero;" />
-                          <rect x="24.561" y="54.386" width="3.509" height="3.509" style="fill:#c8edc3;" />
-                          <rect x="40.351" y="54.386" width="3.509" height="3.509" style="fill:#c8edc3;" />
-                          <rect x="56.14" y="54.386" width="3.509" height="3.509" style="fill:#c8edc3;" />
-                          <rect x="71.93" y="54.386" width="3.509" height="3.509" style="fill:#c8edc3;" />
-                        </g>
-                      </svg>
-                      <div class="card-icon-content">
-                        <p><strong>Scuola</strong></p>
-                      </div><!-- /card-icon-content -->
-                    </div><!-- /card-body -->
-                  </a>
-                </div><!-- /card card-bg card-icon-main rounded -->
-              </div><!-- /cards-avatar -->
-            </div><!-- /col-lg-3 -->
-          </div><!-- /row -->
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
+          <div class="col-lg-4 mb-4">
+						<div class="card card-bg card-icon rounded h-100">
+              <a href="#" class="" data-focus-mouse="false">
+                <div class="card-body">
+                  <svg class="icon svg-marker-simple" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-bookmark-solid"></use>
+                  </svg>
+                  <div class="card-icon-content" id="card-desc-299">
+                      <p><strong>Argomento</strong></p>
+                      <small>Descrizione breve</small>
+                  </div><!-- /card-icon-content -->
+                </div><!-- /card-body -->
+              </a>
+            </div><!-- /card card-bg card-icon rounded -->								
+          </div>
         </div><!-- /container -->
-      </section>
-
-      <section class="section bg-gray-gradient py-5">
-        <div class="container pt-3">
-
-          <div class="row variable-gutters">
-            <div class="col-lg-12">
-              <h2 class="h3 mb-5 text-center semi-bold text-gray-primary">Contenuti correlati</h2>
-              <div class="it-carousel-wrapper carousel-notice it-carousel-landscape-abstract-three-cols splide"
-                data-bs-carousel-splide>
-                <div class="splide__track ps-lg-3 pe-lg-3">
-                  <ul class="splide__list it-carousel-all">
-                    <li class="splide__slide">
-                      <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
-                        <div class="card-body">
-                          <div class="card-content">
-                            <h3 class="h5"><a href="#">Svelato il mistero dei "barioni nascosti", la materia che
-                                mancava nell'Universo</a></h3>
-                            <p>Un team di ricercatori, guidati dall'italiano Fabrizio Nicastro dell'Inaf, è riuscito
-                              a…</p>
-                          </div>
-                          <div class="card-thumb">
-                            <img src="assets/placeholders/placeholder-190x290.jpg" alt="">
-                          </div>
-                        </div><!-- /card-body -->
-                        <div class="card-comments-wrapper">
-                          <div class="card-avatar-img">
-                            <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                          </div><!-- /card-avatar-img -->
-                          <div class="card-avatar-content">
-                            <p class="font-weight-normal">da <strong class="text-underline"><u>Nome
-                                  Cognome</u></strong></p>
-                            <small>Professore</small>
-                          </div><!-- /card-avatar-content -->
-                          <div class="comments">
-                            <p>344</p>
-                          </div><!-- /comments -->
-                        </div><!-- /card-comments-wrapper -->
-                      </div><!-- /card -->
-                    </li>
-                    <li class="splide__slide">
-                      <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
-                        <div class="card-body">
-                          <div class="card-content">
-                            <h3 class="h5"><a href="#">Svelato il mistero dei "barioni nascosti", la materia che
-                                mancava nell'Universo</a></h3>
-                            <p>Un team di ricercatori, guidati dall'italiano Fabrizio Nicastro dell'Inaf, è riuscito
-                              a…</p>
-                          </div>
-                        </div><!-- /card-body -->
-                        <div class="card-comments-wrapper">
-                          <div class="card-avatar-img">
-                            <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                          </div><!-- /card-avatar-img -->
-                          <div class="card-avatar-content">
-                            <p class="font-weight-normal">da <strong class="text-underline"><u>Nome
-                                  Cognome</u></strong></p>
-                            <small>Professore</small>
-                          </div><!-- /card-avatar-content -->
-                          <div class="comments">
-                            <p>344</p>
-                          </div><!-- /comments -->
-                        </div><!-- /card-comments-wrapper -->
-                      </div><!-- /card -->
-                    </li>
-                    <li class="splide__slide">
-                      <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
-                        <div class="card-body">
-                          <div class="card-content">
-                            <h3 class="h5"><a href="#">Svelato il mistero dei "barioni nascosti", la materia che
-                                mancava nell'Universo</a></h3>
-                            <p>Un team di ricercatori, guidati dall'italiano Fabrizio Nicastro dell'Inaf, è riuscito
-                              a…</p>
-                          </div>
-                          <div class="card-thumb">
-                            <img src="assets/placeholders/placeholder-190x290.jpg" alt="">
-                          </div>
-                        </div><!-- /card-body -->
-                        <div class="card-comments-wrapper">
-                          <div class="card-avatar-img">
-                            <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                          </div><!-- /card-avatar-img -->
-                          <div class="card-avatar-content">
-                            <p class="font-weight-normal">da <strong class="text-underline"><u>Nome
-                                  Cognome</u></strong></p>
-                            <small>Professore</small>
-                          </div><!-- /card-avatar-content -->
-                          <div class="comments">
-                            <p>344</p>
-                          </div><!-- /comments -->
-                        </div><!-- /card-comments-wrapper -->
-                      </div><!-- /card -->
-                    </li>
-                    <li class="splide__slide">
-                      <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
-                        <div class="card-body">
-                          <div class="card-content">
-                            <h3 class="h5"><a href="#">Svelato il mistero dei "barioni nascosti", la materia che
-                                mancava nell'Universo</a></h3>
-                            <p>Un team di ricercatori, guidati dall'italiano Fabrizio Nicastro dell'Inaf, è riuscito
-                              a…</p>
-                          </div>
-                          <div class="card-thumb">
-                            <img src="assets/placeholders/placeholder-190x290.jpg" alt="">
-                          </div>
-                        </div><!-- /card-body -->
-                        <div class="card-comments-wrapper">
-                          <div class="card-avatar-img">
-                            <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                          </div><!-- /card-avatar-img -->
-                          <div class="card-avatar-content">
-                            <p class="font-weight-normal">da <strong class="text-underline"><u>Nome
-                                  Cognome</u></strong></p>
-                            <small>Professore</small>
-                          </div><!-- /card-avatar-content -->
-                          <div class="comments">
-                            <p>344</p>
-                          </div><!-- /comments -->
-                        </div><!-- /card-comments-wrapper -->
-                      </div><!-- /card -->
-                    </li>
-                    <li class="splide__slide">
-                      <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
-                        <div class="card-body">
-                          <div class="card-content">
-                            <h3 class="h5"><a href="#">Svelato il mistero dei "barioni nascosti", la materia che
-                                mancava nell'Universo</a></h3>
-                            <p>Un team di ricercatori, guidati dall'italiano Fabrizio Nicastro dell'Inaf, è riuscito
-                              a…</p>
-                          </div>
-                          <div class="card-thumb">
-                            <img src="assets/placeholders/placeholder-190x290.jpg" alt="">
-                          </div>
-                        </div><!-- /card-body -->
-                        <div class="card-comments-wrapper">
-                          <div class="card-avatar-img">
-                            <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                          </div><!-- /card-avatar-img -->
-                          <div class="card-avatar-content">
-                            <p class="font-weight-normal">da <strong class="text-underline"><u>Nome
-                                  Cognome</u></strong></p>
-                            <small>Professore</small>
-                          </div><!-- /card-avatar-content -->
-                          <div class="comments">
-                            <p>344</p>
-                          </div><!-- /comments -->
-                        </div><!-- /card-comments-wrapper -->
-                      </div><!-- /card -->
-                    </li>
-                    <li class="splide__slide">
-                      <div class="card card-bg card-vertical-thumb bg-white card-thumb-rounded">
-                        <div class="card-body">
-                          <div class="card-content">
-                            <h3 class="h5"><a href="#">Svelato il mistero dei "barioni nascosti", la materia che
-                                mancava nell'Universo</a></h3>
-                            <p>Un team di ricercatori, guidati dall'italiano Fabrizio Nicastro dell'Inaf, è riuscito
-                              a…</p>
-                          </div>
-                          <div class="card-thumb">
-                            <img src="assets/placeholders/placeholder-190x290.jpg" alt="">
-                          </div>
-                        </div><!-- /card-body -->
-                        <div class="card-comments-wrapper">
-                          <div class="card-avatar-img">
-                            <img src="assets/placeholders/img-avatar-250x250.png" alt="Immagine profilo">
-                          </div><!-- /card-avatar-img -->
-                          <div class="card-avatar-content">
-                            <p class="font-weight-normal">da <strong class="text-underline"><u>Nome
-                                  Cognome</u></strong></p>
-                            <small>Professore</small>
-                          </div><!-- /card-avatar-content -->
-                          <div class="comments">
-                            <p>344</p>
-                          </div><!-- /comments -->
-                        </div><!-- /card-comments-wrapper -->
-                      </div><!-- /card -->
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div><!-- /col-lg-12 -->
-          </div><!-- /row -->
-        </div><!-- /container -->
-      </section>
+      </section><!-- /section -->
 
     </main>
 
@@ -1859,13 +1557,11 @@
 
   </div><!-- /push_container -->
 
-  <script src="assets/js/splide.min.js"></script>
   <!-- aggiornato path di bootstrap per i font -->
   <script>
     window.__PUBLIC_PATH__ = 'assets/fonts'
   </script>
   <script src="assets/js/bootstrap-italia.js"></script>
-
   <script src="assets/js/components/jquery-easing/jquery.easing.js"></script>
   <script src="assets/js/components/jquery.scrollto/jquery.scrollTo.js"></script>
   <script src="assets/js/components/ResponsiveDom/js/jquery.responsive-dom.js"></script>

@@ -14170,27 +14170,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .container {
   max-width: 100%;
-}
-
-@media (max-width: 767.98px) {
-  .container {
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 @media (min-width: 1200px) {
@@ -14521,6 +14502,31 @@ svg.leaflet-image-layer.leaflet-interactive path {
   color: #ffffff;
 }
 
+.section.bg-petrolgradient {
+  color: #ffffff;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#51758d+0,395160+100 */
+  background: #51758d;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #51758d 0%, #395160 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #51758d 0%, #395160 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #51758d 0%, #395160 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#51758d', endColorstr='#395160', GradientType=1);
+  /* IE6-9 */
+}
+
+.section.bg-petrolgradient h1,
+.section.bg-petrolgradient .h1,
+.section.bg-petrolgradient h2,
+.section.bg-petrolgradient .h2,
+.section.bg-petrolgradient h3,
+.section.bg-petrolgradient .h3,
+.section.bg-petrolgradient p {
+  color: #ffffff;
+}
+
 .section.bg-greendarkgradient {
   color: #ffffff;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0f842e+0,5cc984+100 */
@@ -14620,6 +14626,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .purple-oval-forms svg {
+  width: 578px;
+  height: 359px;
+}
+
+.petrol-oval-forms {
+  width: 578px;
+  height: 359px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 40px;
+}
+
+.petrol-oval-forms svg {
   width: 578px;
   height: 359px;
 }
@@ -17954,6 +17974,7 @@ button.icon-text {
   background-color: #455b71;
   background-size: cover;
   background-attachment: scroll;
+  background-position: center;
 }
 
 @media (max-width: 767.98px) {
@@ -18775,6 +18796,7 @@ button.icon-text {
   background-color: #455b71;
   background-size: cover;
   background-attachment: scroll;
+  background-position: center;
 }
 
 @media (max-width: 767.98px) {
@@ -19043,6 +19065,7 @@ button.icon-text {
   background-color: #455b71;
   background-size: cover;
   background-attachment: scroll;
+  background-position: center;
 }
 
 @media (max-width: 767.98px) {
@@ -19989,4 +20012,50 @@ button.icon-text {
 .close-user-menu svg {
   width: 15px;
   height: 15px;
+}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+    max-width:100%;
+    height:auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+    max-width:100%;
+    height:auto;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+    max-width:100%;
+    height:auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
