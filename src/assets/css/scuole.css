@@ -18882,9 +18882,8 @@ button.icon-text {
 }
 
 .hero-title small {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  text-transform: uppercase;
   margin: 0 0 25px 0;
   display: block;
 }
