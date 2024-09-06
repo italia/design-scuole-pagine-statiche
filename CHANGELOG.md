@@ -1,3 +1,12 @@
+## [2.4.2](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.4.1...v2.4.2) (2024-07-31)
+
+
+### Bug Fixes
+
+* remove uppercase and several bugs ([9e7ea9c](https://github.com/italia/design-scuole-pagine-statiche/commit/9e7ea9c28073f30c86cd26000022c51400feb4d2))
+
+
+
 ## [2.4.1](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.4.0...v2.4.1) (2024-01-08)
 
 
