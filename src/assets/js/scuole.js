@@ -758,4 +758,6 @@ $(".dsi_more").on("click", function() {
   } else {
     $(this).text("Visualizza altro");
   }
-});
+}),
+/* Close mobile menu with Esc */
+document.addEventListener('DOMContentLoaded',function(){const e = document.querySelector('.hamburger');document.addEventListener('keyup', function (event){if(event.key === 'Escape') {if (e.classList.contains('is-active')){e.click();}}})});
