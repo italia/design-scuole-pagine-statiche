@@ -1,3 +1,13 @@
+## [2.4.3](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.4.2...v2.4.3) (2024-09-25)
+
+
+### Bug Fixes
+
+* aligned home for school theme
+* close mobile menu pressing esc button
+
+
+
 ## [2.4.2](https://github.com/italia/design-scuole-pagine-statiche/compare/v2.4.1...v2.4.2) (2024-07-31)
 
 
