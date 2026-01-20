@@ -14,8 +14,8 @@
   "license": "BSD-3-Clause",
   "repository": {},
   "dependencies": {
-    "bootstrap": "^4.6.1",
-    "bootstrap-italia": "^1.6.4",
+    "bootstrap": "^5.3.3",
+    "bootstrap-italia": "^2.9.1",
     "bootstrap-select": "^1.13.12",
     "clndr": "^1.5.1",
     "fitvids": "^2.1.1",
