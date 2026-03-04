@@ -1,11 +1,9 @@
 name: Preview Deploy (branch)
 
 on:
-  push:
-    branches:
-      - '**'
   pull_request:
     types: [opened, synchronize, reopened]
+  workflow_dispatch: {}
 
 permissions:
   contents: read
@@ -24,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '24'
           cache: 'pnpm'
 
       - name: Install pnpm
@@ -37,7 +35,7 @@ jobs:
         run: pnpm build
 
       - name: Ensure HTML in dist root
-        run: node ./scripts/move-pages-to-root.js || true
+        run: node ./scripts/move-pages-to-root.cjs || true
 
       - name: Prepare preview folder name
         id: vars
@@ -61,16 +59,15 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const branch = context.payload.ref ? context.payload.ref.replace('refs/heads/','') : (context.payload.pull_request?.head?.ref || '')
-            const url = `https://
-${process.env.GITHUB_REPOSITORY_OWNER}.github.io/${process.env.GITHUB_REPOSITORY.split('/')[1]}/previews/${branch}/`;
-            const issue = context.issue.number || (context.payload.pull_request && context.payload.pull_request.number)
+            const branch = context.payload.ref ? context.payload.ref.replace('refs/heads/','') : (context.payload.pull_request?.head?.ref || '');
+            const url = `https://${process.env.GITHUB_REPOSITORY_OWNER}.github.io/${process.env.GITHUB_REPOSITORY.split('/')[1]}/previews/${branch}/`;
+            const issue = context.issue.number || (context.payload.pull_request && context.payload.pull_request.number);
             if (issue) {
               github.rest.issues.createComment({
                 ...context.repo,
                 issue_number: issue,
                 body: `Preview available: ${url}`
-              })
+              });
             } else {
-              console.log('No PR/issue to comment on. Preview URL:', url)
+              console.log('No PR/issue to comment on. Preview URL:', url);
             }
