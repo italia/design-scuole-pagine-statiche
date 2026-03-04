@@ -45,8 +45,8 @@ jobs:
           publish_branch: gh-pages
           destination_dir: previews/${{ steps.vars.outputs.branch }}
           user_name: github-actions[bot]
-          commit_message: "ci(preview): deploy ${{ steps.vars.outputs.branch }} preview"
-
+          user_email: github-actions[bot]@users.noreply.github.com
+          commit_message: 'ci(preview): deploy ${{ steps.vars.outputs.branch }} preview'
       - name: Comment preview URL
         if: success()
         uses: actions/github-script@v7
