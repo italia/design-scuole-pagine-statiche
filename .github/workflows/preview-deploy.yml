@@ -47,21 +47,5 @@ jobs:
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
           commit_message: 'ci(preview): deploy ${{ steps.vars.outputs.branch }} preview'
-      - name: Comment preview URL
-        if: success()
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const branch = context.payload.ref ? context.payload.ref.replace('refs/heads/','') : (context.payload.pull_request?.head?.ref || '');
-            const url = `https://${process.env.GITHUB_REPOSITORY_OWNER}.github.io/${process.env.GITHUB_REPOSITORY.split('/')[1]}/previews/${branch}/`;
-            const issue = context.issue.number || (context.payload.pull_request && context.payload.pull_request.number);
-            if (issue) {
-              github.rest.issues.createComment({
-                ...context.repo,
-                issue_number: issue,
-                body: `Preview available: ${url}`
-              });
-            } else {
-              console.log('No PR/issue to comment on. Preview URL:', url);
-            }
+      # Commenting on the PR is handled by a separate `pull_request_target` workflow
+      # to avoid permission issues for PRs from forks.
