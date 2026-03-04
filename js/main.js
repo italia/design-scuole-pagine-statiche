@@ -1,1 +1,1 @@
-import '@italia/dev-kit-italia/elements.js'
+import '@italia/dev-kit-italia/elements.js';

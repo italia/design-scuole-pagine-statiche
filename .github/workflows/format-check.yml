@@ -1,0 +1,30 @@
+name: Format Check
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  format:
+    name: format-check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js environment
+        uses: ./.github/actions/node_env_setup
+        with:
+          node-version-file: .nvmrc
+          pnpm-version: "10"
+          install-dependencies: "false"
+
+      - name: Prettier check
+        run: pnpm install --frozen-lockfile && pnpm run format:check
