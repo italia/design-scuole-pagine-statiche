@@ -1,0 +1,27 @@
+{
+  "name": "modelli-comuni-new",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open /pages/index.html",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:html": "html-validate \"pages/**/*.html\"",
+    "documentation-deploy-to-gh-pages": "pnpm run build && gh-pages -d dist -m 'chore: update documentation'",
+    "release:zip": "sh ./scripts/create-release-attachment.sh"
+  },
+  "dependencies": {
+    "@italia/dev-kit-italia": "latest"
+  },
+  "devDependencies": {
+    "extract-changelog-release": "^1.0.0",
+    "gh-pages": "^6.3.0",
+    "html-validate": "^9.7.1",
+    "vite": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.0.0"
+}

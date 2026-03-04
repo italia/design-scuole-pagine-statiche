@@ -1,0 +1,53 @@
+name: Generate new release
+
+on:
+  push:
+    tags:
+      - "v2*"
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Set up Node.js environment
+        uses: ./.github/actions/node_env_setup
+        with:
+          node-version-file: .nvmrc
+          pnpm-version: "10"
+          install-dependencies: "true"
+
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+      - run: sudo apt-get update && sudo apt-get install -y zip
+      - run: pnpm run build
+      - run: pnpm dlx extract-changelog-release > RELEASE_BODY.md || echo "Release ${GITHUB_REF_NAME}" > RELEASE_BODY.md
+      - run: pnpm run release:zip
+
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "./dist/zip/*.zip"
+          bodyFile: "RELEASE_BODY.md"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish on gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          pnpm run documentation-deploy-to-gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
