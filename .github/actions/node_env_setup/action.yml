@@ -18,10 +18,15 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v4
-      with:
-        version: ${{ inputs.pnpm-version }}
+    - name: Setup pnpm (via Corepack)
+      shell: bash
+      run: |
+        corepack enable
+        if [ -n "${{ inputs.pnpm-version }}" ]; then
+          corepack prepare pnpm@${{ inputs.pnpm-version }} --activate || corepack prepare pnpm@latest --activate
+        else
+          corepack prepare pnpm@latest --activate
+        fi
 
     - name: Setup Node.js
       uses: actions/setup-node@v4

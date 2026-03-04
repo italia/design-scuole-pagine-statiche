@@ -1,7 +1,8 @@
 {
-  "name": "modelli-comuni-new",
-  "version": "0.1.0",
+  "name": "design-scuole-pagine-statiche",
+  "version": "3.0.0-alpha1",
   "private": true,
+  "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
   "type": "module",
   "scripts": {
     "dev": "vite --open /pages/index.html",
