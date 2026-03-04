@@ -1,4 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname "$0")/_/husky.sh"
+#
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
 
-pnpm exec --no-install lint-staged
+# Use pnpm to run lint-staged without attempting a global exec install
+# `pnpm -s lint-staged` runs the script silently and works across pnpm versions
+pnpm -s lint-staged
