@@ -1,0 +1,38 @@
+name: Cleanup preview on PR merge
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: github.repository == 'RedTurtle/design-scuole-pagine-statiche' && github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Prepare branch env
+        id: vars
+        run: echo "BRANCH=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
+
+      - name: Clone gh-pages branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git clone --depth 1 --branch gh-pages https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} gh-pages
+
+      - name: Remove preview folder
+        env:
+          BRANCH: ${{ env.BRANCH }}
+        run: |
+          cd gh-pages
+          if [ -d "previews/${BRANCH}" ]; then
+            git rm -r "previews/${BRANCH}" || true
+            git commit -m "chore(ci): remove preview for ${BRANCH}" || true
+            git push origin gh-pages
+            echo "Removed preview for ${BRANCH}"
+          else
+            echo "No preview for ${BRANCH} to remove"
+          fi

@@ -1,3 +1,5 @@
+/* dev-kit vendor CSS is inlined as critical in page heads; keep only project styles here */
+
 .page-container {
   padding: 2rem;
   max-width: 960px;

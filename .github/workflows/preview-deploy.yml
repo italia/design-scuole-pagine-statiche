@@ -1,0 +1,76 @@
+name: Preview Deploy (branch)
+
+on:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  preview:
+    if: github.repository == 'RedTurtle/design-scuole-pagine-statiche' && github.ref != 'refs/heads/main' && github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        run: npm i -g pnpm@latest
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Ensure HTML in dist root
+        run: node ./scripts/move-pages-to-root.js || true
+
+      - name: Prepare preview folder name
+        id: vars
+        run: |
+          BRANCH=${GITHUB_REF##*/}
+          echo "branch=$BRANCH" >> $GITHUB_OUTPUT
+
+      - name: Deploy preview to gh-pages/<branch>
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          destination_dir: previews/${{ steps.vars.outputs.branch }}
+          user_name: github-actions[bot]
+          commit_message: "ci(preview): deploy ${{ steps.vars.outputs.branch }} preview"
+
+      - name: Comment preview URL
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const branch = context.payload.ref ? context.payload.ref.replace('refs/heads/','') : (context.payload.pull_request?.head?.ref || '')
+            const url = `https://
+${process.env.GITHUB_REPOSITORY_OWNER}.github.io/${process.env.GITHUB_REPOSITORY.split('/')[1]}/previews/${branch}/`;
+            const issue = context.issue.number || (context.payload.pull_request && context.payload.pull_request.number)
+            if (issue) {
+              github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: issue,
+                body: `Preview available: ${url}`
+              })
+            } else {
+              console.log('No PR/issue to comment on. Preview URL:', url)
+            }

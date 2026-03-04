@@ -15,6 +15,9 @@ importers:
       extract-changelog-release:
         specifier: ^1.0.0
         version: 1.0.2
+      fast-glob:
+        specifier: ^3.3.0
+        version: 3.3.3
       gh-pages:
         specifier: ^6.3.0
         version: 6.3.0
