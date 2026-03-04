@@ -31,6 +31,21 @@ jobs:
       - name: Ensure HTML in dist root
         run: node ./scripts/move-pages-to-root.cjs || true
 
+      - name: Inspect dist output
+        run: |
+          echo "Dist folder listing:";
+          if [ ! -d ./dist ]; then
+            echo "ERROR: ./dist does not exist";
+            ls -la || true;
+            exit 1;
+          fi
+          echo "Contents of ./dist:";
+          ls -la ./dist || true;
+          if [ -z "$(ls -A ./dist)" ]; then
+            echo "ERROR: ./dist is empty — build didn't output files or postbuild didn't copy pages.";
+            exit 1;
+          fi
+
       - name: Prepare preview folder name
         id: vars
         run: |
