@@ -42,16 +42,13 @@
   },
   "lint-staged": {
     "pages/**/*.html": [
-      "pnpm run lint:html:fix",
-      "git add"
+      "pnpm run lint:html:fix"
     ],
     "js/**/*.js": [
-      "pnpm run lint:js:fix",
-      "git add"
+      "pnpm run lint:js:fix"
     ],
     "styles/**/*.css": [
-      "pnpm run lint:css:fix",
-      "git add"
+      "pnpm run lint:css:fix"
     ]
   },
   "engines": {

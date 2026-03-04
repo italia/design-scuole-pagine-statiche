@@ -1,5 +1,5 @@
 {
-  "pages/**/*.html": ["prettier --write", "pnpm run lint:html:fix", "git add"],
-  "js/**/*.js": ["prettier --write", "pnpm run lint:js:fix", "git add"],
-  "styles/**/*.css": ["prettier --write", "pnpm run lint:css:fix", "git add"]
+  "pages/**/*.html": ["prettier --write", "pnpm run lint:html:fix"],
+  "js/**/*.js": ["prettier --write", "pnpm run lint:js:fix"],
+  "styles/**/*.css": ["prettier --write", "pnpm run lint:css:fix"]
 }
