@@ -18,8 +18,11 @@ if (files.length === 0) {
 for (const f of files) {
   const src = path.join(pagesDir, f)
   const dest = path.join(dist, f)
-  fs.copyFileSync(src, dest)
-  console.log(`Copied ${src} -> ${dest}`)
+  // Rewrite asset paths: HTML was in dist/pages/ so Vite wrote ../assets/
+  // After moving to dist/ root they must become ./assets/
+  const content = fs.readFileSync(src, 'utf8').replace(/(['"])\.\.\//g, '$1./')
+  fs.writeFileSync(dest, content)
+  console.log(`Moved ${src} -> ${dest} (paths rewritten)`)
 }
 
 console.log('Pages moved to dist root.')
