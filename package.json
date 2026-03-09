@@ -1,43 +1,57 @@
 {
   "name": "design-scuole-pagine-statiche",
-  "version": "2.4.3",
+  "version": "3.0.0-alpha1",
+  "private": true,
   "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
+  "type": "module",
   "scripts": {
-    "build": "rm -rf dist && cp -R src dist && npm run minify:css && npm run minify:js",
-    "documentation-deploy-to-gh-pages": "npm run build && gh-pages -d dist -m 'chore: update documentation'",
-    "version": "node ./scripts/generateIndex.js && conventional-changelog -p angular -i CHANGELOG.md -s && node scripts/wait-confirm && git add CHANGELOG.md && git add src/index.html",
-    "postversion": "echo \"You can now publish your tag with 'git push --follow-tags'\"",
-    "minify:css": "node scripts/minify-css.js",
-    "minify:js": "node scripts/minify-js.js"
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint:html": "html-validate \"src/pages/**/*.html\"",
+    "lint:html:fix": "html-validate --fix \"src/pages/**/*.html\"",
+    "format": "prettier --write --ignore-path .prettierignore \"**/*.{js,css,html,json,md}\"",
+    "format:check": "prettier --check --ignore-path .prettierignore \"**/*.{js,css,html,json,md}\"",
+    "lint:js": "eslint \"src/js/**/*.js\"",
+    "lint:js:fix": "eslint --fix \"src/js/**/*.js\"",
+    "lint:css": "stylelint \"src/styles/**/*.css\"",
+    "lint:css:fix": "stylelint --fix \"src/styles/**/*.css\"",
+    "prepare": "husky install",
+    "documentation-deploy-to-gh-pages": "pnpm run build && pnpm dlx gh-pages -d dist -m 'chore: update documentation'  --nojekyll",
+    "release:zip": "sh ./scripts/create-release-attachment.sh"
   },
-  "author": "Presidenza del Consiglio dei Ministri",
-  "license": "BSD-3-Clause",
-  "repository": {},
   "dependencies": {
-    "bootstrap": "^4.6.1",
-    "bootstrap-italia": "^1.6.4",
-    "bootstrap-select": "^1.13.12",
-    "clndr": "^1.5.1",
-    "fitvids": "^2.1.1",
-    "hamburgers": "^1.2.1",
-    "jquery": "^3.6.0",
-    "jquery-match-height": "^0.7.2",
-    "jquery.easing": "^1.4.1",
-    "jquery.scrollto": "^2.1.3",
-    "leaflet": "^1.7.1",
-    "mustache": "^4.2.0",
-    "owl.carousel": "^2.3.4",
-    "perfect-scrollbar": "^1.5.5",
-    "popper.js": "^1.16.0",
-    "responsive-tabs": "^1.6.3",
-    "sticky-kit": "^1.1.3",
-    "svgxuse": "^1.2.6"
+    "@italia/dev-kit-italia": "latest"
   },
   "devDependencies": {
-    "clean-css-cli": "^5.6.1",
-    "conventional-changelog": "^3.1.25",
-    "conventional-changelog-cli": "^2.2.2",
-    "gh-pages": "^5.0.0",
-    "uglify-js": "^3.17.4"
-  }
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.0",
+    "prettier": "^2.8.8",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "stylelint-config-prettier": "^9.0.0",
+    "eslint": "^8.50.0",
+    "stylelint": "^15.0.0",
+    "stylelint-config-standard": "^32.0.0",
+    "extract-changelog-release": "^1.0.0",
+    "gh-pages": "^6.3.0",
+    "html-validate": "^9.7.1",
+    "fast-glob": "^3.3.0",
+    "vite": "^6.2.0"
+  },
+  "lint-staged": {
+    "src/pages/**/*.html": [
+      "pnpm run lint:html:fix"
+    ],
+    "src/js/**/*.js": [
+      "pnpm run lint:js:fix"
+    ],
+    "src/styles/**/*.css": [
+      "pnpm run lint:css:fix"
+    ]
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.0.0"
 }
