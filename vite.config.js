@@ -2,15 +2,20 @@ import { resolve, basename } from 'node:path';
 import { defineConfig } from 'vite';
 import fg from 'fast-glob';
 
-// base: './' makes every asset reference relative so the build works
-// whether served at / or at /repo/previews/branch/.
-const pages = fg.sync('pages/*.html');
-const input = Object.fromEntries(pages.map((p) => [basename(p, '.html'), resolve(__dirname, p)]));
+const root = resolve(__dirname, 'src');
+const pages = fg.sync('pages/*.html', { cwd: root });
+const input = {
+  // root redirect (key must not clash with page names)
+  root: resolve(root, 'index.html'),
+  // one entry per page
+  ...Object.fromEntries(pages.map((p) => [basename(p, '.html'), resolve(root, p)])),
+};
 
 export default defineConfig({
+  root,
   base: './',
   build: {
-    outDir: 'dist',
+    outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,
     rollupOptions: { input },
   },

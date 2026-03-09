@@ -5,18 +5,17 @@
   "description": "Template HTML del progetto per la realizzazione dei siti web delle Scuole Italiane",
   "type": "module",
   "scripts": {
-    "dev": "vite --open /pages/index.html",
+    "dev": "vite --open",
     "build": "vite build",
-    "postbuild": "node ./scripts/move-pages-to-root.cjs",
     "preview": "vite preview",
-    "lint:html": "html-validate \"pages/**/*.html\"",
-    "lint:html:fix": "html-validate --fix \"pages/**/*.html\"",
+    "lint:html": "html-validate \"src/pages/**/*.html\"",
+    "lint:html:fix": "html-validate --fix \"src/pages/**/*.html\"",
     "format": "prettier --write --ignore-path .prettierignore \"**/*.{js,css,html,json,md}\"",
     "format:check": "prettier --check --ignore-path .prettierignore \"**/*.{js,css,html,json,md}\"",
-    "lint:js": "eslint \"js/**/*.js\"",
-    "lint:js:fix": "eslint --fix \"js/**/*.js\"",
-    "lint:css": "stylelint \"styles/**/*.css\"",
-    "lint:css:fix": "stylelint --fix \"styles/**/*.css\"",
+    "lint:js": "eslint \"src/js/**/*.js\"",
+    "lint:js:fix": "eslint --fix \"src/js/**/*.js\"",
+    "lint:css": "stylelint \"src/styles/**/*.css\"",
+    "lint:css:fix": "stylelint --fix \"src/styles/**/*.css\"",
     "prepare": "husky install",
     "documentation-deploy-to-gh-pages": "pnpm run build && pnpm dlx gh-pages -d dist -m 'chore: update documentation'  --nojekyll",
     "release:zip": "sh ./scripts/create-release-attachment.sh"
@@ -41,13 +40,13 @@
     "vite": "^6.2.0"
   },
   "lint-staged": {
-    "pages/**/*.html": [
+    "src/pages/**/*.html": [
       "pnpm run lint:html:fix"
     ],
-    "js/**/*.js": [
+    "src/js/**/*.js": [
       "pnpm run lint:js:fix"
     ],
-    "styles/**/*.css": [
+    "src/styles/**/*.css": [
       "pnpm run lint:css:fix"
     ]
   },
