@@ -18,7 +18,7 @@
     "lint:css": "stylelint \"styles/**/*.css\"",
     "lint:css:fix": "stylelint --fix \"styles/**/*.css\"",
     "prepare": "husky install",
-    "documentation-deploy-to-gh-pages": "pnpm run build && gh-pages -d dist -m 'chore: update documentation'",
+    "documentation-deploy-to-gh-pages": "pnpm run build && pnpm dlx gh-pages -d dist -m 'chore: update documentation'  --nojekyll",
     "release:zip": "sh ./scripts/create-release-attachment.sh"
   },
   "dependencies": {
