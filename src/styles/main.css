@@ -3,8 +3,8 @@
 @import url('../styles/variables.css');
 
 .page-container {
-  padding: 2rem;
   max-width: 960px;
+  padding: 2rem;
   margin: 0 auto;
 }
 
