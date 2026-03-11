@@ -1,33 +1,33 @@
 @import url('../styles/main.css');
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .pre-header {
-  background-color: #49131b;
+  display: flex;
   height: 40px;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
+  background-color: #49131b;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 40px;
-  font-size: 0.875rem;
-  display: flex;
-  justify-content: space-between;
 }
 
 .pre-header-text {
+  padding-right: 50px;
+  padding-left: 50px;
+  margin: 0;
   color: var(--it-color-white);
   font-family: 'Titillium Web', Geneva, Tahoma, sans-serif;
   font-size: var(-it-font-size-1);
-  margin: 0;
-  padding-right: 50px;
-  padding-left: 50px;
 }
