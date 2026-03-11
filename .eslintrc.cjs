@@ -10,6 +10,11 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    // project-specific rules can go here
+    // disabled rules that enforce comment/empty-line requirements per request
+    'padding-line-between-statements': 'off',
+    'no-multiple-empty-lines': 'off',
+    'lines-between-class-members': 'off',
+    'line-comment-position': 'off',
+    'no-inline-comments': 'off'
   },
 };
