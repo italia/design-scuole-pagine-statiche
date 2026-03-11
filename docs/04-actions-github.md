@@ -2,65 +2,54 @@
 
 ## Chi builda
 
-Build e deploy vengono eseguiti da **GitHub Actions** su runner hosted `ubuntu-latest`.
-In pratica, è GitHub (non una persona) che esegue i job quando parte un trigger.
+Build e deploy vengono eseguiti da **GitHub Actions** su runner `ubuntu-latest`.
+È GitHub (non una persona) che esegue i job quando parte un trigger.
 
 ## Workflow presenti
 
-### 1) CI (`.github/workflows/ci.yml`)
+### 1) Lint (`.github/workflows/lint.yml`)
 
-Eseguito su `push` e `pull_request`.
+Eseguito su ogni **pull request**.
 
 Fa:
-
-- setup Node da `.nvmrc` (Node 24)
-- setup unificato tramite action locale `.github/actions/node_env_setup`
-- install dipendenze (`pnpm install --frozen-lockfile`)
+- format check con Prettier
 - lint HTML (`pnpm run lint:html`)
-- build (`pnpm run build`)
+- lint JS (`pnpm run lint:js`)
+- lint CSS (`pnpm run lint:css`)
 
 ### 2) Deploy Pages (`.github/workflows/pages.yml`)
 
-Eseguito su push su branch `main`.
+Eseguito **manualmente** da GitHub (`workflow_dispatch`).
 
 Fa:
-
-- build progetto
-- upload artifact statico (`dist`)
-- deploy automatico su GitHub Pages
-
-### 3) Generate new release (`.github/workflows/publish-release.yml`)
-
-Compatibile con il flusso del repository `design-scuole-pagine-statiche`.
-
-Fa:
-
-- trigger su tag `v*`
 - build del progetto
-- generazione zip release (`dist/zip/*.zip`)
-- pubblicazione GitHub Release
-- pubblicazione documentazione su branch `gh-pages`
+- upload artifact statico (`dist/`)
+- deploy su GitHub Pages (environment `github-pages`)
 
-Nota: il trigger è impostato a `v2*` per allineamento al repo scuole.
+### 3) Preview (`.github/workflows/preview.yml`)
 
-### 4) Update documentation (`.github/workflows/update_docs.yml`)
-
-Compatibile con il flusso del repository `design-scuole-pagine-statiche`.
+Eseguito su ogni **pull request** (open, sync, close).
 
 Fa:
+- **deploy**: build + push di `dist/` in `previews/<branch>/` sulla branch `gh-pages`
+- **commento PR**: posta o aggiorna un commento con l'URL della preview
+- **cleanup**: alla chiusura della PR rimuove la cartella preview da `gh-pages`
 
-- trigger manuale (`workflow_dispatch`)
-- build + deploy documentazione su `gh-pages`
+### 4) CodeQL
 
-## Modernizzazione e uniformità
+Gestito dal **default setup** di GitHub (Settings → Code security → Code scanning).
+Nessun file di workflow nel repo — gira automaticamente su push/PR su `main` e con schedule settimanale.
 
-Rispetto al flusso storico scuole, qui sono stati aggiunti:
+### 5) Generate release (`.github/workflows/publish-release.yml`)
 
-- action composita riusabile per setup ambiente (`.github/actions/node_env_setup`)
-- `permissions` espliciti per principio di minimo privilegio
-- `concurrency` per evitare esecuzioni duplicate
-- runtime aggiornato (`Node 24` + `pnpm`)
+Eseguito su tag `v2*`.
 
-## Risultato
+Fa:
+- build e zip del progetto
+- pubblicazione GitHub Release con allegato zip
 
-Il repo supporta sia il flusso CI moderno sia i workflow legacy-compatibili del repo scuole per agevolare un merge futuro plug-and-play.
+## Note
+
+- Il **deploy su Pages è manuale**: si lancia a mano da GitHub Actions quando si vuole pubblicare.
+- Le **preview dei branch** sono automatiche su ogni PR e si trovano a `https://<org>.github.io/<repo>/previews/<branch>/`.
+- La branch `gh-pages` viene gestita dai workflow — non modificarla a mano.

@@ -10,9 +10,9 @@
   --it-color-black-25:#00000040; /** Colore neutro */
   --it-color-black-50:#00000080; /** Colore neutro */
   --it-color-black-85:#000000d9; /** Colore neutro */
-  --it-color-black-100:#000000; /** Colore neutro */
+  --it-color-black-100:#000; /** Colore neutro */
   --it-color-black-05:#0000000d;/** Colore neutro */
-  --it-color-white: #ffffff; /** Colore neutro */
+  --it-color-white: #fff; /** Colore neutro */
   --it-color-red-cherry-98: #fdf7f8; /** colore tema default */
   --it-color-redcherry-97: #fdf7f8; /** colore tema default */
   --it-color-red-cherry-95: #faebed;/** colore tema default */
@@ -151,3 +151,7 @@
 .section-spacing {
   margin-top: 2rem;
 }
+/* Stili custom del progetto.
+   Il design system è Bootstrap Italia, importato tramite @italia/dev-kit-italia.
+   Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
+   Aggiungi qui solo override o stili davvero specifici del progetto. */
