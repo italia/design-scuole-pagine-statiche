@@ -106,49 +106,48 @@
   --it-color-background-primary-dark: var(--color-red-cherry-24); /** sfondo primario */
   --it-color-background-primary: var(--color-red-cherry-34); /** sfondo primario */
   --it-color-background-vivid: var(--color-red-cherry-52); /** sfondo primario */
-  --it-color-background-primary-light: var(--color-red-cherry-84);
-
-  /** sfondo con contrasto leggero */
-  --it-color-background-primary-lighter: var(--color-red-cherry-95);
-
-  /** sfondo di colore primario con contrasto ridotto */
-  --it-color-background-primary-lighest: var(--color-redcherry-97);
-
-  /** sfondo di colore primario con contrasto ridotto */
-  --it-color-background-primary-hover: var(--color-red-cherry-24);
-
-  /** sfondo utilizzato su componenti primari interattivi nello stato di :hover */
-  --it-color-background-primary-active: var(--color-red-cherry-18);
-
-  /** sfondo utilizzato su componenti primari interattivi nello stato di :active */
-  --it-color-background-accent: var(--color-red-cherry-52);
-
-  /** sfondo di colore accent che dà enfasi a una sezione */
-  --it-color-background-header-top: var(--color-red-cherry-18);
-
-  /** sfondo utilizzato su componenti primari interattivi nello stato di :hover */
+  --it-color-background-primary-light: var(
+    --color-red-cherry-84
+  ); /** sfondo con contrasto leggero */
+  --it-color-background-primary-lighter: var(
+    --color-red-cherry-95
+  ); /** sfondo di colore primario con contrasto ridotto */
+  --it-color-background-primary-lighest: var(
+    --color-redcherry-97
+  ); /** sfondo di colore primario con contrasto ridotto */
+  --it-color-background-primary-hover: var(
+    --color-red-cherry-24
+  ); /** sfondo utilizzato su componenti primari interattivi nello stato di :hover */
+  --it-color-background-primary-active: var(
+    --color-red-cherry-18
+  ); /** sfondo utilizzato su componenti primari interattivi nello stato di :active */
+  --it-color-background-accent: var(
+    --color-red-cherry-52
+  ); /** sfondo di colore accent che dà enfasi a una sezione */
+  --it-color-background-header-top: var(
+    --color-red-cherry-18
+  ); /** sfondo utilizzato su componenti primari interattivi nello stato di :hover */
   --it-color-background-header-middle: var(--it-color-white); /** sfondo primario */
-  --itcolor-background-header-bottom: var(--it-color-white);
-
-  /** sfondo di colore primario con contrasto ridotto */
+  --itcolor-background-header-bottom: var(
+    --it-color-white
+  ); /** sfondo di colore primario con contrasto ridotto */
   --it-color-background-footer: var(--color-red-cherry-18); /** sfondo utilizzato per il footer */
   --it-color-border-primary: var(--color-red-cherry-34); /** bordo primario */
-  --it-color-border-primary-hover: var(--it-color-red-cherry-24);
-
-  /** bordo primario per stato interattivo hover */
-  --it-color-border-primary-active: var(--color-red-cherry-18);
-
-  /** bordo primario per stato interattivo active */
-  --it-color-border-primary-light: var(--color-red-cherry-84);
-
-  /** bordo primario per stato interattivo active */
+  --it-color-border-primary-hover: var(
+    --it-color-red-cherry-24
+  ); /** bordo primario per stato interattivo hover */
+  --it-color-border-primary-active: var(
+    --color-red-cherry-18
+  ); /** bordo primario per stato interattivo active */
+  --it-color-border-primary-light: var(
+    --color-red-cherry-84
+  ); /** bordo primario per stato interattivo active */
   --it-color-border-accent: var(--color-red-cherry-52); /** bordo accent */
   --it-color-text-primary: var(--color-red-cherry-34); /** testo con link */
   --it-color-text-primary-hover: var(--color-red-cherry-24); /** testo con link nello stato hover */
   --it-color-text-primary-active: var(
     --color-red-cherry-18
   ); /** testo con link nello stato active */
-
   --it-color-text-accent: var(--color-red-cherry-52); /** testo di accento */
   --it-color-text-secondary: var(--color-secondary); /** testo di contesto */
   --it-color-icon-primary: var(--color-red-cherry-34); /** icona base */
