@@ -5,3 +5,11 @@ dist/
 # optional: ignore build helpers
 scripts/*.cjs
 
+
+
+# ignore package files and lockfiles
+package.json
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+

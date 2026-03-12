@@ -1,6 +1,23 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "extends": [
+    "stylelint-config-idiomatic-order",
+    "stylelint-config-standard",
+    "stylelint-prettier/recommended"
+  ],
   "rules": {
-    "at-rule-no-unknown": [true, { "ignoreAtRules": ["extends", "tailwind"] }]
+    "no-descending-specificity": null,
+    "no-invalid-position-at-import-rule": null,
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      }
+    ],
+    "at-rule-no-unknown": [true, { "ignoreAtRules": ["extends", "tailwind"] }],
+    "rule-empty-line-before": null,
+    "at-rule-empty-line-before": null,
+    "declaration-empty-line-before": null,
+    "comment-empty-line-before": null
   }
 }

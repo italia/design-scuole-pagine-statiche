@@ -1,5 +1,6 @@
 {
-  "pages/**/*.html": ["prettier --write", "pnpm run lint:html"],
-  "js/**/*.js": ["prettier --write", "pnpm run lint:js:fix"],
-  "styles/**/*.css": ["prettier --write", "pnpm run lint:css:fix"]
+  "src/pages/**/*.html": ["html-validate"],
+  "src/js/**/*.js": ["eslint --fix"],
+  "src/styles/**/*.css": ["stylelint --fix"],
+  "*.{json,md}": ["prettier --write"]
 }

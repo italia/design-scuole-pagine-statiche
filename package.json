@@ -21,37 +21,28 @@
     "release:zip": "sh ./scripts/create-release-attachment.sh"
   },
   "dependencies": {
-    "@italia/dev-kit-italia": "latest"
-  },
-  "devDependencies": {
-    "husky": "^8.0.0",
-    "lint-staged": "^14.0.0",
-    "prettier": "^2.8.8",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "stylelint-config-prettier": "^9.0.0",
-    "eslint": "^8.50.0",
-    "stylelint": "^15.0.0",
-    "stylelint-config-standard": "^32.0.0",
-    "extract-changelog-release": "^1.0.0",
-    "gh-pages": "^6.3.0",
-    "html-validate": "^9.7.1",
-    "fast-glob": "^3.3.0",
-    "vite": "^6.2.0"
-  },
-  "lint-staged": {
-    "src/pages/**/*.html": [
-      "pnpm run lint:html:fix"
-    ],
-    "src/js/**/*.js": [
-      "pnpm run lint:js:fix"
-    ],
-    "src/styles/**/*.css": [
-      "pnpm run lint:css:fix"
-    ]
+    "@italia/dev-kit-italia": "1.0.0-alpha.6"
   },
   "engines": {
     "node": ">=24"
   },
-  "packageManager": "pnpm@10.0.0"
+  "packageManager": "pnpm@10.0.0",
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "extract-changelog-release": "^1.0.2",
+    "fast-glob": "^3.3.3",
+    "gh-pages": "^6.3.0",
+    "html-validate": "^10.11.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.3",
+    "prettier": "3.5.2",
+    "stylelint": "16.18.0",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-standard": "36.0.1",
+    "stylelint-order": "8.0.0",
+    "stylelint-prettier": "5.0.3",
+    "vite": "^7.3.1"
+  }
 }

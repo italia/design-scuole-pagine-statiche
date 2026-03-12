@@ -1,3 +1,22 @@
+/* dev-kit vendor CSS is inlined as critical in page heads; keep only project styles here */
+
+@import url('../styles/variables.css');
+
+.page-container {
+  max-width: 960px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.actions-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.section-spacing {
+  margin-top: 2rem;
+}
+
 /* Stili custom del progetto.
    Il design system è Bootstrap Italia, importato tramite @italia/dev-kit-italia.
    Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
