@@ -36,16 +36,12 @@ const sezioniServizi = {
 
 const mainHeader = {
   scuola: {
-    nome: 'Liceo C. Lorenzini',
+    nome: 'Istituto comprensivo F. Hernandez',
     denominazione: '',
-    citta: 'Pescia (PT)',
+    citta: 'Livorno',
   },
 };
 /*render */
-
-document.getElementById('main-header');
-
-document.getElementById('in-evidenza');
 
 const risultato = render(templates.serviceSection, { titolo: sezioniServizi.titolo });
 
