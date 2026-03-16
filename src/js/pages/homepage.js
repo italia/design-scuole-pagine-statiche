@@ -4,11 +4,13 @@ import { render, renderList, fromHTML } from '../templates.js';
 import serviceSectionHTML from '../../templates/inEvidenceSection.html?raw';
 import serviceCardHTML from '../../templates/inEvidenceCard.html?raw';
 import headerHTML from '../../templates/headerCopy.html?raw';
+import heroHTML from '../../templates/hero-copy.html?raw';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
   serviceCard: fromHTML(serviceCardHTML),
   header: fromHTML(headerHTML),
+  hero: fromHTML(heroHTML),
 };
 
 const sezioniServizi = {
@@ -36,39 +38,51 @@ const sezioniServizi = {
 
 const mainHeader = {
   scuola: {
-    nome: 'Istituto comprensivo F. Hernandez',
-    denominazione: '',
+    nome: 'Liceo Scientifico Statale',
+    denominazione: 'Federico Hernandez',
     citta: 'Livorno',
   },
 };
+
+const Hero = {
+  scuola: {
+    denominazione: "Istituto comprensivo",
+    nome:"Federico Hernandez",
+    citta: "Livorno", 
+    descrizione: "Lo scopo della scuola è quello di trasformare gli specchi in finestre",
+  },
+};
+
 /*render */
 
 const risultato = render(templates.serviceSection, { titolo: sezioniServizi.titolo });
 
-const header = render(templates.header, { nome: mainHeader.scuola.nome });
-
 const cardsContainer = risultato.querySelector('[data-cards]');
-
-const headerContainer = header.querySelector('[school-name]');
 
 const cardsListFragment = renderList(templates.serviceCard, sezioniServizi.cards);
 
-/*documentFragment [#text, header, #text] */
-const headerFragment = render(templates.header, mainHeader.scuola);
-
 cardsContainer.appendChild(cardsListFragment);
 
-/* prova è documentFragment []*/
-headerContainer.appendChild(headerFragment);
-
 const mainContainer = document.getElementById('in-evidenza');
-
-const mainHeaderContainer = document.getElementById('main-header');
 
 if (mainContainer) {
   mainContainer.appendChild(risultato);
 }
 
+/*render header */
+const headerFragment = render(templates.header, mainHeader.scuola);
+
+const mainHeaderContainer = document.getElementById('main-header');
+
 if (mainHeaderContainer) {
-  mainHeaderContainer.appendChild(header);
+  mainHeaderContainer.appendChild(headerFragment);
+}
+
+/*render hero*/
+const heroFragment = render(templates.hero, Hero.scuola);
+
+const mainHeroContainer = document.getElementById('hero');
+
+if (mainHeroContainer) {
+  mainHeroContainer.appendChild(heroFragment);
 }
