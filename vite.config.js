@@ -13,7 +13,12 @@ const input = {
 
 export default defineConfig({
   root,
-  base: './',
+  base: '/',
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
+  },
   build: {
     outDir: resolve(__dirname, 'dist'),
     emptyOutDir: true,

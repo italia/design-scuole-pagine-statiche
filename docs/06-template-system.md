@@ -34,7 +34,7 @@ Vite lo importa come stringa (`?raw`) a build time — zero fetch a runtime.
 <template>
   <section class="hero">
     <h1 data-tpl="titolo"></h1>
-    <p  data-tpl="descrizione"></p>
+    <p data-tpl="descrizione"></p>
   </section>
 </template>
 ```
@@ -65,7 +65,7 @@ render(tpl.hero, {
 ```js
 const cards = [
   { titolo: 'Iscrizioni', descrizione: '...', url: '#' },
-  { titolo: 'Pagamenti',  descrizione: '...', url: '#' },
+  { titolo: 'Pagamenti', descrizione: '...', url: '#' },
 ];
 
 // riempie il container con una card per ogni elemento dell'array
@@ -90,7 +90,7 @@ rootSections.append(sectionFrag);
 3. Importa i template che ti servono:
    ```js
    import { render, renderList, fromHTML } from '../templates.js';
-   import heroHTML from '../../templates/hero.html?raw';
+   import heroHTML from '@/templates/hero.html?raw';
    const tpl = { hero: fromHTML(heroHTML) };
    ```
 4. Definisci i dati e chiama `render()` / `renderList()`.
@@ -109,18 +109,18 @@ rootSections.append(sectionFrag);
    ```
 2. Importalo nel JS della pagina:
    ```js
-   import mioHTML from '../../templates/mio-template.html?raw';
+   import mioHTML from '@/templates/mio-template.html?raw';
    const tpl = { mio: fromHTML(mioHTML) };
    ```
 3. Usalo con `render(tpl.mio, { titolo: '...', url: '#', etichetta: '...' })`.
 
 ## API dell'helper (`src/js/templates.js`)
 
-| Funzione | Parametri | Restituisce | Descrizione |
-|---|---|---|---|
-| `fromHTML(html)` | `string` | `HTMLTemplateElement` | Parsa una stringa `?raw` e restituisce il `<template>` |
-| `render(tpl, data)` | `HTMLTemplateElement`, `object` | `DocumentFragment` | Clona il template e riempie gli slot |
-| `renderList(tpl, items)` | `HTMLTemplateElement`, `object[]` | `DocumentFragment` | Chiama `render` per ogni elemento dell'array |
+| Funzione                 | Parametri                         | Restituisce           | Descrizione                                            |
+| ------------------------ | --------------------------------- | --------------------- | ------------------------------------------------------ |
+| `fromHTML(html)`         | `string`                          | `HTMLTemplateElement` | Parsa una stringa `?raw` e restituisce il `<template>` |
+| `render(tpl, data)`      | `HTMLTemplateElement`, `object`   | `DocumentFragment`    | Clona il template e riempie gli slot                   |
+| `renderList(tpl, items)` | `HTMLTemplateElement`, `object[]` | `DocumentFragment`    | Chiama `render` per ogni elemento dell'array           |
 
 ## Riferimento — pagina esempio
 

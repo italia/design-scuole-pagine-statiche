@@ -1,13 +1,13 @@
-import '../main.js';
-import { render, renderList, fromHTML } from '../templates.js';
-
+import '@/js/main.js';
+import { render, renderList, fromHTML } from '@/js/templates.js';
+import { downloadStaticHTML } from '@/js/downloadHTML.js';
 // Vite importa i file HTML come stringhe a build time — zero fetch a runtime
-import headerHTML from '../../templates/header.html?raw';
-import footerHTML from '../../templates/footer.html?raw';
-import breadcrumbHTML from '../../templates/breadcrumb.html?raw';
-import heroHTML from '../../templates/hero.html?raw';
-import serviceSectionHTML from '../../templates/service-section.html?raw';
-import serviceCardHTML from '../../templates/service-card.html?raw';
+import headerHTML from '@/templates/header.html?raw';
+import footerHTML from '@/templates/footer.html?raw';
+import breadcrumbHTML from '@/templates/breadcrumb.html?raw';
+import heroHTML from '@/templates/hero.html?raw';
+import serviceSectionHTML from '@/templates/service-section.html?raw';
+import serviceCardHTML from '@/templates/cards/service-card.html?raw';
 
 // ── Parse templates ──────────────────────────────────────────────────────────
 const tpl = {
@@ -109,3 +109,11 @@ for (const sezione of sezioniServizi) {
 }
 
 document.getElementById('root-footer').append(render(tpl.footer, scuola));
+// Se premi Ctrl + Shift + S, scarica la pagina compilata
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey && e.shiftKey && e.key === 'S') {
+    e.preventDefault();
+    downloadStaticHTML(window.location.pathname.split('/').pop() || 'index.html');
+    console.log('🎉 HTML statico esportato!');
+  }
+});
