@@ -7,7 +7,7 @@ import fg from 'fast-glob';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '../src');
-const outDir = path.resolve(__dirname, '../dist-ssr');
+const outDir = path.resolve(__dirname, '../statics');
 
 async function generate() {
   console.log('Avvio generazione SSR...');
