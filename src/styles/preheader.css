@@ -28,11 +28,11 @@ body {
   justify-content: space-between;
 }
 
-.pre-header-text {
+.pre-header a {
   color: var(--it-color-white);
-  font-family: 'Titillium Web', Geneva, Tahoma, sans-serif;
-  font-size: var(-it-font-size-1);
   margin: 0;
   padding-right: 50px;
   padding-left: 50px;
+  text-decoration: none;
+
 }
