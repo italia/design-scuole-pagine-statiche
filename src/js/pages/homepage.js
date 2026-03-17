@@ -130,6 +130,7 @@ const studiaConNoi = {
   ],
 };
 
+// eslint-disable-next-line no-unused-vars
 const circolariEServizi = {
   circolari: {
     titolo: 'Circolari',
