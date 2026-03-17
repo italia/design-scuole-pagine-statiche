@@ -2,12 +2,14 @@ import '../main.js';
 import { render, renderList, fromHTML } from '../templates.js';
 
 import serviceSectionHTML from '../../templates/inEvidenceSection.html?raw';
-import serviceCardHTML from '../../templates/inEvidenceCard.html?raw';
+import serviceCardHTML from '../../templates/cards/service-card.html?raw';
 import preheaderHTML from '../../templates/preheader.html?raw';
 import headerHTML from '../../templates/headerCopy.html?raw';
 import heroHTML from '../../templates/hero-copy.html?raw';
 import studyHTML from '../../templates/studywithus.html?raw';
-import studycardsHTML from '../../templates/studycards.html?raw';
+import studycardsHTML from '../../templates/cards/studycards.html?raw';
+import circolariEServiziHTML from '../../templates/circolarieservizi-section.html?raw';
+import circolariCardsHTML from '../../templates/cards/card-editoriale.html?raw';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
@@ -17,7 +19,11 @@ const templates = {
   preheader: fromHTML(preheaderHTML),
   study: fromHTML(studyHTML),
   studycards: fromHTML(studycardsHTML),
+  circolariEServizi: fromHTML(circolariEServiziHTML),
+  circolariEServiziCards: fromHTML(circolariCardsHTML),
 };
+
+console.log(templates);
 
 const preHeader = {
   ministero: "Ministero dell'Istruzione e del Merito",
@@ -92,36 +98,91 @@ const studiaConNoi = {
   },
   cards: [
     {
-      cardTitle: 'Uscite didattiche',
-      cardDescription: "Esperienze fuori dall'aula",
+      title: 'Uscite didattiche',
+      description: "Esperienze fuori dall'aula",
       url: '#',
     },
     {
-      cardTitle: 'Corsi e certificazioni',
-      cardDescription: 'Attività pratiche e sperimentali',
+      title: 'Corsi e certificazioni',
+      description: 'Attività pratiche e sperimentali',
       url: '#',
     },
     {
-      cardTitle: 'Progetti di orientamento',
-      cardDescription: 'Supporto alle scelte future',
+      title: 'Progetti di orientamento',
+      description: 'Supporto alle scelte future',
       url: '#',
     },
     {
-      cardTitle: 'Laboratori didattici',
-      cardDescription: 'Attività pratiche e sperimentali',
+      title: 'Laboratori didattici',
+      description: 'Attività pratiche e sperimentali',
       url: '#',
     },
     {
-      cardTitle: 'Gare e concorsi',
-      cardDescription: 'Sfide educative e creative',
+      title: 'Gare e concorsi',
+      description: 'Sfide educative e creative',
       url: '#',
     },
     {
-      cardTitle: 'Progetti territorio e ambiente',
-      cardDescription: 'Scoperta e cura del territorio',
+      title: 'Progetti territorio e ambiente',
+      description: 'Scoperta e cura del territorio',
       url: '#',
     },
   ],
+};
+
+const circolariEServizi = {
+  circolari: {
+    titolo: 'Circolari',
+    descrizione: 'Le ultime circolari pubblicate',
+    circolariDataCards: [
+      {
+        titolo: 'titolo della 1 circolare',
+        contenuto: 'contenuto della 1 circolare',
+        data: '15 novembre 2025',
+      },
+      {
+        titolo: 'titolo della 2 circolare',
+        contenuto: 'contenuto della 2 circolare',
+        data: '22 dicembre 2025',
+      },
+      {
+        titolo: 'titolo della 3 circolare',
+        contenuto: 'contenuto della 3 circolare',
+        data: '5 gennaio 2026',
+      },
+      {
+        titolo: 'titolo della 4 circolare',
+        contenuto: 'contenuto della 4 circolare',
+        data: '30 marzo 2026',
+      },
+    ],
+  },
+  Servizi: {
+    titolo: 'Servizi',
+    descrizione: 'I servizi offerti dalla nostra scuola',
+    serviziCards: [
+      {
+        titolo: 'titolo della 1 circolare',
+        contenuto: 'contenuto della 1 circolare',
+        data: '15 novembre 2025',
+      },
+      {
+        titolo: 'titolo della 2 circolare',
+        contenuto: 'contenuto della 2 circolare',
+        data: '22 dicembre 2025',
+      },
+      {
+        titolo: 'titolo della 3 circolare',
+        contenuto: 'contenuto della 3 circolare',
+        data: '5 gennaio 2026',
+      },
+      {
+        titolo: 'titolo della 4 circolare',
+        contenuto: 'contenuto della 4 circolare',
+        data: '30 marzo 2026',
+      },
+    ],
+  },
 };
 
 /*render */
@@ -178,14 +239,9 @@ const datiBase = {
 
 const studyFragment = render(templates.study, datiBase);
 
-const studyContainer = document.getElementById('studia-con-noi');
-if (studyContainer) {
-  studyContainer.appendChild(studyFragment);
-}
+const studyCardsContainer = studyFragment.querySelector('[study-card]');
 
-/* render study cards */
-
-const studyCardsContainer = document.querySelector('[study-card]');
+console.log(studyCardsContainer);
 
 renderList(templates.studycards, studiaConNoi.cards);
 
@@ -193,3 +249,9 @@ if (studyCardsContainer) {
   const studyCardsList = renderList(templates.studycards, studiaConNoi.cards);
   studyCardsContainer.appendChild(studyCardsList);
 }
+const studyContainer = document.getElementById('studia-con-noi');
+
+if (studyContainer) {
+  studyContainer.appendChild(studyFragment);
+}
+/*render circolari e servizi*/

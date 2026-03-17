@@ -21,7 +21,7 @@
     "release:zip": "sh ./scripts/create-release-attachment.sh"
   },
   "dependencies": {
-    "@italia/dev-kit-italia": "latest"
+    "@italia/dev-kit-italia": "^1.0.0-alpha.6"
   },
   "devDependencies": {
     "husky": "^8.0.0",
