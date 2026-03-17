@@ -4,10 +4,10 @@ module.exports = {
     browser: true,
     es2024: true,
   },
-  extends: ["eslint:recommended", "plugin:prettier/recommended"],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   parserOptions: {
     ecmaVersion: 2024,
-    sourceType: "module",
+    sourceType: 'module',
   },
   rules: {
     // disabled rules that enforce comment/empty-line requirements per request
@@ -15,6 +15,6 @@ module.exports = {
     'no-multiple-empty-lines': 'off',
     'lines-between-class-members': 'off',
     'line-comment-position': 'off',
-    'no-inline-comments': 'off'
+    'no-inline-comments': 'off',
   },
 };

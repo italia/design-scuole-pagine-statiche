@@ -5,12 +5,12 @@
 }
 
 .container-header-top a {
+  list-style-type: none;
   text-decoration: none;
 }
 
-
 .school-logo {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .school-name {
@@ -18,17 +18,11 @@
   text-decoration: none;
 }
 
-.container-header-top a {
-	text-decoration:none;
-	list-style-type: none;
-}
 .main-nav ul {
   list-style: none;
 }
 
 .main-nav a {
-	color: var( --it-color-red-cherry-34);
-	text-decoration: none;
+  color: var(--it-color-red-cherry-34);
+  text-decoration: none;
 }
-
-

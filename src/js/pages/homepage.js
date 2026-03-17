@@ -1,15 +1,15 @@
-import '../main.js';
-import { render, renderList, fromHTML } from '../templates.js';
+import '@/js/main.js';
+import { render, renderList, fromHTML } from '@/js/templates.js';
 
-import serviceSectionHTML from '../../templates/inEvidenceSection.html?raw';
-import serviceCardHTML from '../../templates/cards/service-card.html?raw';
-import preheaderHTML from '../../templates/preheader.html?raw';
-import headerHTML from '../../templates/headerCopy.html?raw';
-import heroHTML from '../../templates/hero-copy.html?raw';
-import studyHTML from '../../templates/studywithus.html?raw';
-import studycardsHTML from '../../templates/cards/studycards.html?raw';
-import circolariEServiziHTML from '../../templates/circolarieservizi-section.html?raw';
-import circolariCardsHTML from '../../templates/cards/card-editoriale.html?raw';
+import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
+import serviceCardHTML from '@/templates/cards/service-card.html?raw';
+import preheaderHTML from '@/templates/preheader.html?raw';
+import headerHTML from '@/templates/headerCopy.html?raw';
+import heroHTML from '@/templates/hero-copy.html?raw';
+import studyHTML from '@/templates/studywithus.html?raw';
+import studycardsHTML from '@/templates/cards/studycards.html?raw';
+import circolariEServiziHTML from '@/templates/circolarieservizi-section.html?raw';
+import circolariCardsHTML from '@/templates/cards/card-editoriale.html?raw';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
@@ -130,6 +130,7 @@ const studiaConNoi = {
   ],
 };
 
+// eslint-disable-next-line no-unused-vars
 const circolariEServizi = {
   circolari: {
     titolo: 'Circolari',

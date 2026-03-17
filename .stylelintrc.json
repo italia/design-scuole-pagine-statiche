@@ -1,13 +1,9 @@
 {
-  "extends": ["stylelint-config-idiomatic-order"],
+  "extends": ["stylelint-config-standard", "stylelint-config-idiomatic-order"],
   "plugins": ["stylelint-prettier"],
   "rules": {
     "prettier/prettier": true,
     "no-descending-specificity": null,
-    "scss/no-global-function-names": null,
-    "scss/comment-no-empty": null,
-    "scss/at-if-no-null": null,
-    "scss/at-extend-no-missing-placeholder": null,
     "no-invalid-position-at-import-rule": null,
     "rule-empty-line-before": [
       "always-multi-line",
