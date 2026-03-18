@@ -2,37 +2,31 @@ import '@/js/main.js';
 import { render, renderList, fromHTML } from '@/js/templates.js';
 
 import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
-import serviceCardHTML from '@/templates/cards/service-card.html?raw';
+import cardInlineMini from '@/templates/cards/card-inline-mini.html?raw';
+import cardInformativa from '@/templates/cards/card-info.html?raw';
+import cardEditoriale from '@/templates/cards/card-editoriale.html?raw';
 import preheaderHTML from '@/templates/preheader.html?raw';
 import headerHTML from '@/templates/headerCopy.html?raw';
 import heroHTML from '@/templates/hero-copy.html?raw';
 import studyHTML from '@/templates/studywithus.html?raw';
-import studycardsHTML from '@/templates/cards/studycards.html?raw';
 import circolariEServiziHTML from '@/templates/circolarieservizi-section.html?raw';
-import circolariCardsHTML from '@/templates/cards/card-editoriale.html?raw';
 import strumentiHTML from '@/templates/tools.html?raw';
-import strumenticardsHTML from '@/templates/cards/tools-card.html?raw';
 import finanziamentiHTML from '@/templates/finanziamenti.html?raw';
-import finanziamenticardHTML from '@/templates/cards/finanziamenticards.html?raw';
-import pubblicitacardsHTML from '@/templates/cards/pubblicitacard.html?raw';
 import pubblicitaHTML from '@/templates/pubblicitasection.html?raw';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
-  serviceCard: fromHTML(serviceCardHTML),
+  inlineMini: fromHTML(cardInlineMini),
+  cardinfo: fromHTML(cardInformativa),
+  cardEdit: fromHTML(cardEditoriale),
   header: fromHTML(headerHTML),
   hero: fromHTML(heroHTML),
   preheader: fromHTML(preheaderHTML),
   study: fromHTML(studyHTML),
-  studycards: fromHTML(studycardsHTML),
   circolariEServizi: fromHTML(circolariEServiziHTML),
-  circolariEServiziCards: fromHTML(circolariCardsHTML),
   strumenti: fromHTML(strumentiHTML),
-  strumenticardsHTML: fromHTML(strumenticardsHTML),
   finanziamenti: fromHTML(finanziamentiHTML),
-  finanziamentiCards: fromHTML(finanziamenticardHTML),
   pubblicita: fromHTML(pubblicitaHTML),
-  pubblicitacards: fromHTML(pubblicitacardsHTML),
 };
 
 const preHeader = {
@@ -44,21 +38,25 @@ const sezioniServizi = {
   titolo: 'In evidenza',
   cards: [
     {
-      titolo: 'Open day nella sede centrale',
-      descrizione: '',
+      title: 'Open day nella sede centrale',
+      text: '',
+      category: 'Categoria',
       url: '#',
+      date: '18 marzo 2026',
     },
     {
-      titolo: 'Spettacolo finale per il corso di teatro per le primarie',
-      descrizione:
-        'Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.',
+      title: 'Spettacolo finale per il corso di teatro per le primarie',
+      text: 'Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.',
+      category: 'Categoria',
       url: '#',
+      date: '18 marzo 2026',
     },
     {
-      titolo: 'Orientamento per le classi di terza media',
-      descrizione:
-        'Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.',
+      title: 'Orientamento per le classi di terza media',
+      text: 'Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.',
+      category: 'Categoria',
       url: '#',
+      date: '18 marzo 2026',
     },
   ],
 };
@@ -109,32 +107,32 @@ const studiaConNoi = {
   cards: [
     {
       title: 'Uscite didattiche',
-      description: "Esperienze fuori dall'aula",
+      text: "Esperienze fuori dall'aula",
       url: '#',
     },
     {
       title: 'Corsi e certificazioni',
-      description: 'Attività pratiche e sperimentali',
+      text: 'Attività pratiche e sperimentali',
       url: '#',
     },
     {
       title: 'Progetti di orientamento',
-      description: 'Supporto alle scelte future',
+      text: 'Supporto alle scelte future',
       url: '#',
     },
     {
       title: 'Laboratori didattici',
-      description: 'Attività pratiche e sperimentali',
+      text: 'Attività pratiche e sperimentali',
       url: '#',
     },
     {
       title: 'Gare e concorsi',
-      description: 'Sfide educative e creative',
+      text: 'Sfide educative e creative',
       url: '#',
     },
     {
       title: 'Progetti territorio e ambiente',
-      description: 'Scoperta e cura del territorio',
+      text: 'Scoperta e cura del territorio',
       url: '#',
     },
   ],
@@ -146,23 +144,23 @@ const circolariEServizi = {
     circolariDataCards: [
       {
         title: 'titolo della 1 circolare',
-        description: 'contenuto della 1 circolare',
-        data: '15 novembre 2025',
+        text: 'contenuto della 1 circolare',
+        date: '15 novembre 2025',
       },
       {
         title: 'titolo della 2 circolare',
-        description: 'contenuto della 2 circolare',
-        data: '22 dicembre 2025',
+        text: 'contenuto della 2 circolare',
+        date: '22 dicembre 2025',
       },
       {
         title: 'titolo della 3 circolare',
-        description: 'contenuto della 3 circolare',
-        data: '5 gennaio 2026',
+        text: 'contenuto della 3 circolare',
+        date: '5 gennaio 2026',
       },
       {
         title: 'titolo della 4 circolare',
-        description: 'contenuto della 4 circolare',
-        data: '30 marzo 2026',
+        text: 'contenuto della 4 circolare',
+        date: '30 marzo 2026',
       },
     ],
   },
@@ -172,27 +170,23 @@ const circolariEServizi = {
     serviziDataCards: [
       {
         title: 'Mensa',
-        description:
-          'Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durate la giornata scolastica',
-        data: '',
+        text: 'Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durate la giornata scolastica',
+        date: '',
       },
       {
         title: 'Piedibus',
-        description:
-          'Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile',
-        data: '',
+        text: 'Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile',
+        date: '',
       },
       {
         title: 'Scuolabus',
-        description:
-          'Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite',
-        data: '',
+        text: 'Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite',
+        date: '',
       },
       {
         title: 'Doposcuola',
-        description:
-          'Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato da personale qualificato.',
-        data: '',
+        text: 'Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato da personale qualificato.',
+        date: '',
       },
     ],
   },
@@ -200,23 +194,33 @@ const circolariEServizi = {
 
 const tools = {
   titolo: 'I nostri strumenti digitali',
-  cards: [{ titolo: 'Scuola in Chiaro' }, { titolo: 'UNICA' }, { titolo: 'Registro elettronico' }],
+  cards: [
+    { title: 'Scuola in Chiaro', text: '', category: '' },
+    { title: 'UNICA', text: '', category: '' },
+    { title: 'Registro elettronico', text: '', category: '' },
+  ],
 };
 
 const fin = {
   titolo: 'I nostri finanziamenti',
   cards: [
     {
-      titolo: 'PNRR Futura',
-      descrizione: 'Programma del PNRR per innovazione e digitalizzazione della scuola',
+      title: 'PNRR Futura',
+      text: 'Programma del PNRR per innovazione e digitalizzazione della scuola',
+      category: '',
+      date: '',
     },
     {
-      titolo: 'PON - Ricerca e innovazione 2014-2020',
-      descrizione: 'Fondi europei per progetti di ricerca e sviluppo nelle scuole',
+      title: 'PON - Ricerca e innovazione 2014-2020',
+      text: 'Fondi europei per progetti di ricerca e sviluppo nelle scuole',
+      category: '',
+      date: '',
     },
     {
-      titolo: 'PON inclusione',
-      descrizione: "Programma europeo per il sostegno e l'inclusione sociale",
+      title: 'PON inclusione',
+      text: "Programma europeo per il sostegno e l'inclusione sociale",
+      category: '',
+      date: '',
     },
   ],
 };
@@ -225,16 +229,14 @@ const pub = {
   titolo: 'Pubblicità legale e trasparenza',
   cards: [
     {
-      titolo: 'Albo online',
-      descrizione:
-        'Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore legale e sempre aggiornati',
-      link: "Vai all'Albo online",
+      title: 'Albo online',
+      text: 'Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore legale e sempre aggiornati',
+      category: "Vai all'Albo online",
     },
     {
-      titolo: 'Amministrazione Trasparente',
-      descrizione:
-        "Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza",
-      link: 'Vai alla sezione',
+      title: 'Amministrazione Trasparente',
+      text: "Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza",
+      category: 'Vai alla sezione',
     },
   ],
 };
@@ -244,7 +246,7 @@ const risultato = render(templates.serviceSection, { titolo: sezioniServizi.tito
 
 const cardsContainer = risultato.querySelector('[data-cards]');
 
-const cardsListFragment = renderList(templates.serviceCard, sezioniServizi.cards);
+const cardsListFragment = renderList(templates.inlineMini, sezioniServizi.cards);
 
 cardsContainer.appendChild(cardsListFragment);
 
@@ -294,10 +296,10 @@ const studyFragment = render(templates.study, datiBase);
 
 const studyCardsContainer = studyFragment.querySelector('[study-card]');
 
-renderList(templates.studycards, studiaConNoi.cards);
+renderList(templates.cardinfo, studiaConNoi.cards);
 
 if (studyCardsContainer) {
-  const studyCardsList = renderList(templates.studycards, studiaConNoi.cards);
+  const studyCardsList = renderList(templates.cardinfo, studiaConNoi.cards);
   studyCardsContainer.appendChild(studyCardsList);
 }
 const studyContainer = document.getElementById('studia-con-noi');
@@ -320,14 +322,14 @@ const fragment = render(templates.circolariEServizi, datiCompleti);
 const circolariCardsContainer = fragment.querySelector('[data-tpl="circolari-data-cards"]');
 if (circolariCardsContainer) {
   circolariCardsContainer.appendChild(
-    renderList(templates.circolariEServiziCards, circolariEServizi.circolari.circolariDataCards)
+    renderList(templates.cardinfo, circolariEServizi.circolari.circolariDataCards)
   );
 }
 
 const serviziCardsContainer = fragment.querySelector('[data-tpl="servizi-data-cards"]');
 if (serviziCardsContainer) {
   serviziCardsContainer.appendChild(
-    renderList(templates.circolariEServiziCards, circolariEServizi.Servizi.serviziDataCards)
+    renderList(templates.cardinfo, circolariEServizi.Servizi.serviziDataCards)
   );
 }
 
@@ -341,7 +343,7 @@ const fragmentStrumenti = render(templates.strumenti, tools);
 
 const strumentiCardsContainer = fragmentStrumenti.querySelector('[data-tpl="data-cards"]');
 if (strumentiCardsContainer) {
-  strumentiCardsContainer.appendChild(renderList(templates.strumenticardsHTML, tools.cards));
+  strumentiCardsContainer.appendChild(renderList(templates.inlineMini, tools.cards));
 }
 
 const circolariContainer = document.getElementById('strumenti-digitali');
@@ -355,7 +357,7 @@ const fragmentFinan = render(templates.finanziamenti, fin);
 const finanCardsContainer = fragmentFinan.querySelector('[data-tpl="data-cards"]');
 
 if (finanCardsContainer) {
-  finanCardsContainer.appendChild(renderList(templates.finanziamentiCards, fin.cards));
+  finanCardsContainer.appendChild(renderList(templates.cardEdit, fin.cards));
 }
 
 const finanContainer = document.getElementById('finanziamenti');
@@ -369,7 +371,7 @@ const fragmentpub = render(templates.pubblicita, pub);
 const pubCardsContainer = fragmentpub.firstElementChild.querySelector('[data-tpl="data-cards"]');
 
 if (pubCardsContainer) {
-  pubCardsContainer.appendChild(renderList(templates.pubblicitacards, pub.cards));
+  pubCardsContainer.appendChild(renderList(templates.inlineMini, pub.cards));
 }
 
 const pubContainer = document.getElementById('trasparenza');
