@@ -23,8 +23,6 @@ const templates = {
   circolariEServiziCards: fromHTML(circolariCardsHTML),
 };
 
-console.log(templates);
-
 const preHeader = {
   ministero: "Ministero dell'Istruzione e del Merito",
   areariservata: "Accedi all'area riservata",
@@ -129,31 +127,29 @@ const studiaConNoi = {
     },
   ],
 };
-
-// eslint-disable-next-line no-unused-vars
 const circolariEServizi = {
   circolari: {
     titolo: 'Circolari',
     descrizione: 'Le ultime circolari pubblicate',
     circolariDataCards: [
       {
-        titolo: 'titolo della 1 circolare',
-        contenuto: 'contenuto della 1 circolare',
+        title: 'titolo della 1 circolare',
+        description: 'contenuto della 1 circolare',
         data: '15 novembre 2025',
       },
       {
-        titolo: 'titolo della 2 circolare',
-        contenuto: 'contenuto della 2 circolare',
+        title: 'titolo della 2 circolare',
+        description: 'contenuto della 2 circolare',
         data: '22 dicembre 2025',
       },
       {
-        titolo: 'titolo della 3 circolare',
-        contenuto: 'contenuto della 3 circolare',
+        title: 'titolo della 3 circolare',
+        description: 'contenuto della 3 circolare',
         data: '5 gennaio 2026',
       },
       {
-        titolo: 'titolo della 4 circolare',
-        contenuto: 'contenuto della 4 circolare',
+        title: 'titolo della 4 circolare',
+        description: 'contenuto della 4 circolare',
         data: '30 marzo 2026',
       },
     ],
@@ -161,26 +157,30 @@ const circolariEServizi = {
   Servizi: {
     titolo: 'Servizi',
     descrizione: 'I servizi offerti dalla nostra scuola',
-    serviziCards: [
+    serviziDataCards: [
       {
-        titolo: 'titolo della 1 circolare',
-        contenuto: 'contenuto della 1 circolare',
-        data: '15 novembre 2025',
+        title: 'Mensa',
+        description:
+          'Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durate la giornata scolastica',
+        data: '',
       },
       {
-        titolo: 'titolo della 2 circolare',
-        contenuto: 'contenuto della 2 circolare',
-        data: '22 dicembre 2025',
+        title: 'Piedibus',
+        description:
+          'Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile',
+        data: '',
       },
       {
-        titolo: 'titolo della 3 circolare',
-        contenuto: 'contenuto della 3 circolare',
-        data: '5 gennaio 2026',
+        title: 'Scuolabus',
+        description:
+          'Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite',
+        data: '',
       },
       {
-        titolo: 'titolo della 4 circolare',
-        contenuto: 'contenuto della 4 circolare',
-        data: '30 marzo 2026',
+        title: 'Doposcuola',
+        description:
+          'Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato da personale qualificato.',
+        data: '',
       },
     ],
   },
@@ -242,8 +242,6 @@ const studyFragment = render(templates.study, datiBase);
 
 const studyCardsContainer = studyFragment.querySelector('[study-card]');
 
-console.log(studyCardsContainer);
-
 renderList(templates.studycards, studiaConNoi.cards);
 
 if (studyCardsContainer) {
@@ -255,4 +253,33 @@ const studyContainer = document.getElementById('studia-con-noi');
 if (studyContainer) {
   studyContainer.appendChild(studyFragment);
 }
-/*render circolari e servizi*/
+
+/*render circolari e servizi */
+
+const datiCompleti = {
+  titolo: circolariEServizi.circolari.titolo,
+  descrizione: circolariEServizi.circolari.descrizione,
+  titoloServizi: circolariEServizi.Servizi.titolo,
+  descrizioneServizi: circolariEServizi.Servizi.descrizione,
+};
+
+const fragment = render(templates.circolariEServizi, datiCompleti);
+
+const circolariCardsContainer = fragment.querySelector('[data-tpl="circolari-data-cards"]');
+if (circolariCardsContainer) {
+  circolariCardsContainer.appendChild(
+    renderList(templates.circolariEServiziCards, circolariEServizi.circolari.circolariDataCards)
+  );
+}
+
+const serviziCardsContainer = fragment.querySelector('[data-tpl="servizi-data-cards"]');
+if (serviziCardsContainer) {
+  serviziCardsContainer.appendChild(
+    renderList(templates.circolariEServiziCards, circolariEServizi.Servizi.serviziDataCards)
+  );
+}
+
+const container = document.getElementById('circolari-e-servizi');
+if (container) {
+  container.appendChild(fragment);
+}

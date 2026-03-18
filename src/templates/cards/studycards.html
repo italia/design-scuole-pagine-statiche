@@ -1,10 +1,6 @@
 <template>
   <it-card class="study-card">
-    <a data-tpl-href="url">
-      <div class="study-card__body">
-        <p class="study-card__title"><strong data-tpl="cardTitle"></strong></p>
-        <p class="study-card__description" data-tpl="cardDescription"></p>
-      </div>
-    </a>
+    <a slot="title" data-tpl="title" data-tpl-href="url" href="#">Caricamento</a>
+    <span slot="text" data-tpl="description"></span>
   </it-card>
 </template>
