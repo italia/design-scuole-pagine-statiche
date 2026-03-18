@@ -12,6 +12,10 @@ import circolariEServiziHTML from '@/templates/circolarieservizi-section.html?ra
 import circolariCardsHTML from '@/templates/cards/card-editoriale.html?raw';
 import strumentiHTML from '@/templates/tools.html?raw';
 import strumenticardsHTML from '@/templates/cards/tools-card.html?raw';
+import finanziamentiHTML from '@/templates/finanziamenti.html?raw';
+import finanziamenticardHTML from '@/templates/cards/finanziamenticards.html?raw';
+import pubblicitacardsHTML from '@/templates/cards/pubblicitacard.html?raw';
+import pubblicitaHTML from '@/templates/pubblicitasection.html?raw';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
@@ -25,6 +29,10 @@ const templates = {
   circolariEServiziCards: fromHTML(circolariCardsHTML),
   strumenti: fromHTML(strumentiHTML),
   strumenticardsHTML: fromHTML(strumenticardsHTML),
+  finanziamenti: fromHTML(finanziamentiHTML),
+  finanziamentiCards: fromHTML(finanziamenticardHTML),
+  pubblicita: fromHTML(pubblicitaHTML),
+  pubblicitacards: fromHTML(pubblicitacardsHTML),
 };
 
 const preHeader = {
@@ -195,6 +203,41 @@ const tools = {
   cards: [{ titolo: 'Scuola in Chiaro' }, { titolo: 'UNICA' }, { titolo: 'Registro elettronico' }],
 };
 
+const fin = {
+  titolo: 'I nostri finanziamenti',
+  cards: [
+    {
+      titolo: 'PNRR Futura',
+      descrizione: 'Programma del PNRR per innovazione e digitalizzazione della scuola',
+    },
+    {
+      titolo: 'PON - Ricerca e innovazione 2014-2020',
+      descrizione: 'Fondi europei per progetti di ricerca e sviluppo nelle scuole',
+    },
+    {
+      titolo: 'PON inclusione',
+      descrizione: "Programma europeo per il sostegno e l'inclusione sociale",
+    },
+  ],
+};
+
+const pub = {
+  titolo: 'Pubblicità legale e trasparenza',
+  cards: [
+    {
+      titolo: 'Albo online',
+      descrizione:
+        'Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore legale e sempre aggiornati',
+      link: "Vai all'Albo online",
+    },
+    {
+      titolo: 'Amministrazione Trasparente',
+      descrizione:
+        "Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza",
+      link: 'Vai alla sezione',
+    },
+  ],
+};
 /*render */
 
 const risultato = render(templates.serviceSection, { titolo: sezioniServizi.titolo });
@@ -304,4 +347,32 @@ if (strumentiCardsContainer) {
 const circolariContainer = document.getElementById('strumenti-digitali');
 if (circolariContainer) {
   circolariContainer.appendChild(fragmentStrumenti);
+}
+
+/* render sezione finanziamenti*/
+const fragmentFinan = render(templates.finanziamenti, fin);
+
+const finanCardsContainer = fragmentFinan.querySelector('[data-tpl="data-cards"]');
+
+if (finanCardsContainer) {
+  finanCardsContainer.appendChild(renderList(templates.finanziamentiCards, fin.cards));
+}
+
+const finanContainer = document.getElementById('finanziamenti');
+if (finanContainer) {
+  finanContainer.appendChild(fragmentFinan);
+}
+
+/*render pubblicità legale*/
+const fragmentpub = render(templates.pubblicita, pub);
+
+const pubCardsContainer = fragmentpub.firstElementChild.querySelector('[data-tpl="data-cards"]');
+
+if (pubCardsContainer) {
+  pubCardsContainer.appendChild(renderList(templates.pubblicitacards, pub.cards));
+}
+
+const pubContainer = document.getElementById('trasparenza');
+if (pubContainer) {
+  pubContainer.appendChild(fragmentpub);
 }
