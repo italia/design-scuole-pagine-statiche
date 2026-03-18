@@ -10,6 +10,8 @@ import studyHTML from '@/templates/studywithus.html?raw';
 import studycardsHTML from '@/templates/cards/studycards.html?raw';
 import circolariEServiziHTML from '@/templates/circolarieservizi-section.html?raw';
 import circolariCardsHTML from '@/templates/cards/card-editoriale.html?raw';
+import strumentiHTML from '@/templates/tools.html?raw';
+import strumenticardsHTML from '@/templates/cards/tools-card.html?raw';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
@@ -21,6 +23,8 @@ const templates = {
   studycards: fromHTML(studycardsHTML),
   circolariEServizi: fromHTML(circolariEServiziHTML),
   circolariEServiziCards: fromHTML(circolariCardsHTML),
+  strumenti: fromHTML(strumentiHTML),
+  strumenticardsHTML: fromHTML(strumenticardsHTML),
 };
 
 const preHeader = {
@@ -186,6 +190,11 @@ const circolariEServizi = {
   },
 };
 
+const tools = {
+  titolo: 'I nostri strumenti digitali',
+  cards: [{ titolo: 'Scuola in Chiaro' }, { titolo: 'UNICA' }, { titolo: 'Registro elettronico' }],
+};
+
 /*render */
 
 const risultato = render(templates.serviceSection, { titolo: sezioniServizi.titolo });
@@ -282,4 +291,17 @@ if (serviziCardsContainer) {
 const container = document.getElementById('circolari-e-servizi');
 if (container) {
   container.appendChild(fragment);
+}
+
+/* render sezione strumenti*/
+const fragmentStrumenti = render(templates.strumenti, tools);
+
+const strumentiCardsContainer = fragmentStrumenti.querySelector('[data-tpl="data-cards"]');
+if (strumentiCardsContainer) {
+  strumentiCardsContainer.appendChild(renderList(templates.strumenticardsHTML, tools.cards));
+}
+
+const circolariContainer = document.getElementById('strumenti-digitali');
+if (circolariContainer) {
+  circolariContainer.appendChild(fragmentStrumenti);
 }
