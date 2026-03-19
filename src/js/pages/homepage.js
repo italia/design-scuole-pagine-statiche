@@ -13,6 +13,10 @@ import circolariEServiziHTML from '@/templates/circolarieservizi-section.html?ra
 import strumentiHTML from '@/templates/tools.html?raw';
 import finanziamentiHTML from '@/templates/finanziamenti.html?raw';
 import pubblicitaHTML from '@/templates/pubblicitasection.html?raw';
+import personaleHTML from '@/templates/personale.html?raw';
+import carouselHTML from '@/templates/carousel.html?raw';
+import footerHTML from '@/templates/footer.html?raw';
+import ratingHTML from '@/templates/rating.html?raw';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
@@ -27,12 +31,21 @@ const templates = {
   strumenti: fromHTML(strumentiHTML),
   finanziamenti: fromHTML(finanziamentiHTML),
   pubblicita: fromHTML(pubblicitaHTML),
+  personale: fromHTML(personaleHTML),
+  carousel: fromHTML(carouselHTML),
+  footer: fromHTML(footerHTML),
+  rating: fromHTML(ratingHTML),
 };
 
 const preHeader = {
   ministero: "Ministero dell'Istruzione e del Merito",
   areariservata: "Accedi all'area riservata",
 };
+
+/*
+const carouselSection = {
+	title: "Un'anteprima dell'istituto"
+}*/
 
 const sezioniServizi = {
   titolo: 'In evidenza',
@@ -240,6 +253,18 @@ const pub = {
     },
   ],
 };
+
+const areaPersonale = {
+  title: 'Per il personale scolastico',
+  subtitle: "Accedi all'area riservata al personale scolastico",
+  button: "Accedi all'area personale",
+};
+
+const footerSection = {
+  name: 'F. Hernandez',
+  denominazione: 'Istituto comprensivo F. Hernandez',
+  citta: 'Livorno',
+};
 /*render */
 
 const risultato = render(templates.serviceSection, { titolo: sezioniServizi.titolo });
@@ -377,4 +402,41 @@ if (pubCardsContainer) {
 const pubContainer = document.getElementById('trasparenza');
 if (pubContainer) {
   pubContainer.appendChild(fragmentpub);
+}
+
+/*render area personale*/
+const personaleFragment = render(templates.personale, areaPersonale);
+
+const personaleContainer = document.getElementById('personale-scolastico');
+
+if (personaleContainer) {
+  personaleContainer.appendChild(personaleFragment);
+}
+
+/*render carousel
+const carouselFragment = render(templates.carousel, carouselSection);
+
+const carouselContainer = document.getElementById('carousel');
+
+if (carouselContainer) {
+  carouselContainer.appendChild(carouselFragment);
+}
+  */
+
+/*render footer*/
+const footerFragment = render(templates.footer, footerSection);
+
+const footerContainer = document.getElementById('footer');
+
+if (footerContainer) {
+  footerContainer.appendChild(footerFragment);
+}
+
+/*render rating*/
+const ratingFragment = render(templates.rating);
+
+const ratingContainer = document.getElementById('rating');
+
+if (ratingContainer) {
+  ratingContainer.appendChild(ratingFragment);
 }
