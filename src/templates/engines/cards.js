@@ -20,3 +20,4 @@ export function cardInline(dati) {
 export function cardInfo(dati) {
   return renderList(templates.info, dati);
 }
+
