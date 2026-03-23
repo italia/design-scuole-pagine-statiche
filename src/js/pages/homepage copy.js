@@ -1,8 +1,11 @@
 import '@/js/main.js';
-import { render, fromHTML } from '@/js/templates.js';
-import { cardEditoriale, cardInline, cardInfo } from '@/templates/engines/cards.js';
+import { render, renderList, fromHTML } from '@/js/templates.js';
+import '@/templates/engines/cards.js';
 
 import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
+import cardInlineMini from '@/templates/cards/card-inline-mini.html?raw';
+import cardInformativa from '@/templates/cards/card-info.html?raw';
+import cardEditoriale from '@/templates/cards/card-editoriale.html?raw';
 import preheaderHTML from '@/templates/preheader.html?raw';
 import headerHTML from '@/templates/headerCopy.html?raw';
 import heroHTML from '@/templates/hero-copy.html?raw';
@@ -20,6 +23,9 @@ import ratingHTML from '@/templates/rating.html?raw';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
+  inlineMini: fromHTML(cardInlineMini),
+  cardinfo: fromHTML(cardInformativa),
+  cardEdit: fromHTML(cardEditoriale),
   header: fromHTML(headerHTML),
   hero: fromHTML(heroHTML),
   preheader: fromHTML(preheaderHTML),
@@ -270,7 +276,7 @@ const risultato = render(templates.serviceSection, { titolo: sezioniServizi.tito
 
 const cardsContainer = risultato.querySelector('[data-cards]');
 
-const cardsListFragment = cardInline(sezioniServizi.cards);
+const cardsListFragment = renderList(templates.inlineMini, sezioniServizi.cards);
 
 cardsContainer.appendChild(cardsListFragment);
 
@@ -309,7 +315,6 @@ if (preHeaderContainer) {
 
 /*render studia-con-noi */
 
-// render sezione "studia con noi"
 const datiBase = {
   titoloSezione: studiaConNoi.titoloSezione,
   ...studiaConNoi.percorsiDiStudio,
@@ -320,11 +325,18 @@ const datiBase = {
 const studyFragment = render(templates.study, datiBase);
 
 const studyCardsContainer = studyFragment.querySelector('[study-card]');
-if (studyCardsContainer) {
-  studyCardsContainer.appendChild(cardInfo(studiaConNoi.cards));
-}
 
-document.getElementById('studia-con-noi').appendChild(studyFragment);
+renderList(templates.cardinfo, studiaConNoi.cards);
+
+if (studyCardsContainer) {
+  const studyCardsList = renderList(templates.cardinfo, studiaConNoi.cards);
+  studyCardsContainer.appendChild(studyCardsList);
+}
+const studyContainer = document.getElementById('studia-con-noi');
+
+if (studyContainer) {
+  studyContainer.appendChild(studyFragment);
+}
 
 /*render circolari e servizi */
 
@@ -339,12 +351,16 @@ const fragment = render(templates.circolariEServizi, datiCompleti);
 
 const circolariCardsContainer = fragment.querySelector('[data-tpl="circolari-data-cards"]');
 if (circolariCardsContainer) {
-  circolariCardsContainer.appendChild(cardInfo(circolariEServizi.circolari.circolariDataCards));
+  circolariCardsContainer.appendChild(
+    renderList(templates.cardinfo, circolariEServizi.circolari.circolariDataCards)
+  );
 }
 
 const serviziCardsContainer = fragment.querySelector('[data-tpl="servizi-data-cards"]');
 if (serviziCardsContainer) {
-  serviziCardsContainer.appendChild(cardInfo(circolariEServizi.Servizi.serviziDataCards));
+  serviziCardsContainer.appendChild(
+    renderList(templates.cardinfo, circolariEServizi.Servizi.serviziDataCards)
+  );
 }
 
 const container = document.getElementById('circolari-e-servizi');
@@ -357,7 +373,7 @@ const fragmentStrumenti = render(templates.strumenti, tools);
 
 const strumentiCardsContainer = fragmentStrumenti.querySelector('[data-tpl="data-cards"]');
 if (strumentiCardsContainer) {
-  strumentiCardsContainer.appendChild(cardInline(tools.cards));
+  strumentiCardsContainer.appendChild(renderList(templates.inlineMini, tools.cards));
 }
 
 const circolariContainer = document.getElementById('strumenti-digitali');
@@ -371,7 +387,7 @@ const fragmentFinan = render(templates.finanziamenti, fin);
 const finanCardsContainer = fragmentFinan.querySelector('[data-tpl="data-cards"]');
 
 if (finanCardsContainer) {
-  finanCardsContainer.appendChild(cardEditoriale(fin.cards));
+  finanCardsContainer.appendChild(renderList(templates.cardEdit, fin.cards));
 }
 
 const finanContainer = document.getElementById('finanziamenti');
@@ -385,7 +401,7 @@ const fragmentpub = render(templates.pubblicita, pub);
 const pubCardsContainer = fragmentpub.firstElementChild.querySelector('[data-tpl="data-cards"]');
 
 if (pubCardsContainer) {
-  pubCardsContainer.appendChild(cardInline(pub.cards));
+  pubCardsContainer.appendChild(renderList(templates.inlineMini, pub.cards));
 }
 
 const pubContainer = document.getElementById('trasparenza');
