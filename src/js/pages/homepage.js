@@ -32,16 +32,21 @@ const templates = {
   rating: fromHTML(ratingHTML),
 };
 
+/* rendering */
+
 /* render in evidenza */
 const risultato = render(templates.serviceSection, { titolo: data.sezioniServizi.titolo });
 
 const cardsContainer = risultato.querySelector('[data-cards]');
-cardsContainer.appendChild(cardInline(data.sezioniServizi.cards));
 
+const prova = cardsContainer.appendChild(cardInline(data.sezioniServizi.cards));
+
+console.log(prova);
 const mainContainer = document.getElementById('in-evidenza');
 if (mainContainer) {
   mainContainer.appendChild(risultato);
 }
+console.log(cardsContainer);
 
 /* render header */
 const headerFragment = render(templates.header, data.mainHeader.scuola);

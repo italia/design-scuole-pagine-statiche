@@ -1,22 +1,59 @@
-import { fromHTML, renderList } from '@/js/templates.js';
+import { fromHTML } from '@/js/templates.js';
 import cardInlineMiniHTML from '@/templates/cards/card-inline-mini.html?raw';
 import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
 import cardEditorialeHTML from '@/templates/cards/card-editoriale.html?raw';
+import data from '@/data.json';
 
-const templates = {
-  editoriale: fromHTML(cardEditorialeHTML),
-  inlineMini: fromHTML(cardInlineMiniHTML),
-  info: fromHTML(cardInformativaHTML),
-};
+const templateMini = fromHTML(cardInlineMiniHTML);
+const templateEdit = fromHTML(cardEditorialeHTML);
+const templateInfo = fromHTML(cardInformativaHTML);
 
-export function cardEditoriale(dati) {
-  return renderList(templates.editoriale, dati);
+// Funzione per le card editoriali
+export function cardEditoriale(listaDati) {
+  const contenitore = document.createDocumentFragment();
+  listaDati.forEach((dato) => {
+    const nuovaCard = templateEdit.content.firstElementChild.cloneNode(true);
+    if (dato.title) nuovaCard.querySelector('[data-tpl="title"]').textContent = data.title;
+    if (dato.text) nuovaCard.querySelector('[data-tpl="text"]').textContent = data.text;
+    if (dato.category)
+      nuovaCard.querySelector('[data-tpl="category"]').textContent = data.category;
+    if (dato.date) nuovaCard.querySelector('[data-tpl="date"]').textContent = data.date;
+    contenitore.appendChild(nuovaCard);
+  });
+  return contenitore;
 }
 
-export function cardInline(dati) {
-  return renderList(templates.inlineMini, dati);
+/*funzione per le cardInLine*/
+export function cardInline(listaDati) {
+  const contenitore = document.createDocumentFragment();
+
+  listaDati.forEach((dato) => {
+    const nuovaCard = templateMini.content.firstElementChild.cloneNode(true);
+    if (dato.title) nuovaCard.querySelector('[data-tpl="title"]').textContent = dato.title;
+    if (dato.text)
+      nuovaCard.querySelector('[data-tpl="text"]').textContent = dato.text;
+    if (dato.category)
+      nuovaCard.querySelector('[data-tpl="category"]').textContent = dato.category;
+    if (dato.date) nuovaCard.querySelector('[data-tpl="date"]').textContent = dato.date;
+    contenitore.appendChild(nuovaCard);
+  });
+
+  return contenitore;
 }
 
-export function cardInfo(dati) {
-  return renderList(templates.info, dati);
+// Funzione per le card informative
+export function cardInfo(listaDati) {
+  const contenitore = document.createDocumentFragment();
+
+  listaDati.forEach((dato) => {
+    const nuovaCard = templateInfo.content.firstElementChild.cloneNode(true);
+
+    if (dato.title) nuovaCard.querySelector('[data-tpl="title"]').textContent = dato.title;
+    if (dato.text)
+      nuovaCard.querySelector('[data-tpl="text"]').textContent = dato.text;
+
+    contenitore.appendChild(nuovaCard);
+  });
+
+  return contenitore;
 }
