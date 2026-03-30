@@ -1,5 +1,5 @@
 import '@/js/main.js';
-import { render, fromHTML } from '@/js/templates.js';
+import { render, fromHTML } from '@/templates/utils/templates.js';
 import { cardEditoriale, cardInline, cardInfo } from '@/templates/engines/cards.js';
 
 import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
