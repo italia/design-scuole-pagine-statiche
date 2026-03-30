@@ -1,5 +1,5 @@
 import '@/js/main.js';
-import { render, renderList, fromHTML } from '@/js/templates.js';
+import { render, renderList, fromHTML } from '@/templates/utils/templates.js';
 
 // Vite importa i file HTML come stringhe a build time — zero fetch a runtime
 import headerHTML from '@/templates/header.html?raw';
