@@ -4,8 +4,8 @@ import { cardEditoriale, cardInline, cardInfo } from '@/templates/engines/cards.
 
 import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
 import preheaderHTML from '@/templates/preheader.html?raw';
-import headerHTML from '@/templates/headerCopy.html?raw';
-import heroHTML from '@/templates/hero-copy.html?raw';
+import headerHTML from '@/templates/header.html?raw';
+import heroHTML from '@/templates/hero.html?raw';
 import studyHTML from '@/templates/studywithus.html?raw';
 import circolariEServiziHTML from '@/templates/circolarieservizi-section.html?raw';
 import strumentiHTML from '@/templates/tools.html?raw';
@@ -39,14 +39,12 @@ const risultato = render(templates.serviceSection, { titolo: data.sezioniServizi
 
 const cardsContainer = risultato.querySelector('[data-cards]');
 
-const prova = cardsContainer.appendChild(cardInline(data.sezioniServizi.cards));
+cardsContainer.appendChild(cardInline(data.sezioniServizi.cards));
 
-console.log(prova);
 const mainContainer = document.getElementById('in-evidenza');
 if (mainContainer) {
   mainContainer.appendChild(risultato);
 }
-console.log(cardsContainer);
 
 /* render header */
 const headerFragment = render(templates.header, data.mainHeader.scuola);
