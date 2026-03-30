@@ -6,13 +6,12 @@
 export function fromHTML(html) {
   return new DOMParser().parseFromString(html, 'text/html').querySelector('template');
 }
-
 /**
  * Clona il template e riempie gli slot dati, restituisce un DocumentFragment.
  *
  * Slot supportati:
- *   data-tpl="chiave"       → el.textContent = data[chiave]
- *   data-tpl-href="chiave"  → el.href        = data[chiave]
+ * data-tpl="chiave"          → el.textContent = data[chiave]
+ * data-tpl-[attr]="chiave"   → el.setAttribute(attr, data[chiave])
  *
  * @param {HTMLTemplateElement} tpl
  * @param {Record<string, string>} data
@@ -21,14 +20,29 @@ export function fromHTML(html) {
 export function render(tpl, data = {}) {
   const clone = tpl.content.cloneNode(true);
 
-  for (const el of clone.querySelectorAll('[data-tpl]')) {
-    const val = data[el.dataset.tpl];
-    if (val !== undefined) el.textContent = val;
-  }
+  // Usiamo TreeWalker: il modo più veloce in assoluto per scansionare il DOM.
+  // Filtriamo solo i nodi di tipo ELEMENT_NODE, i tag veri e propri.
+  const walker = document.createTreeWalker(clone, NodeFilter.SHOW_ELEMENT);
 
-  for (const el of clone.querySelectorAll('[data-tpl-href]')) {
-    const val = data[el.dataset.tplHref];
-    if (val !== undefined) el.setAttribute('href', val);
+  let el;
+  while ((el = walker.nextNode())) {
+    const attrs = el.attributes;
+
+    for (let i = 0; i < attrs.length; i++) {
+      const { name, value: dataKey } = attrs[i];
+
+      if (!name.startsWith('data-tpl')) continue;
+
+      const val = data[dataKey];
+      if (val === undefined) continue;
+
+      if (name === 'data-tpl') {
+        el.textContent = val;
+      } else {
+        // "data-tpl-href" -> slice(9) -> "href"
+        el.setAttribute(name.slice(9), val);
+      }
+    }
   }
 
   return clone;

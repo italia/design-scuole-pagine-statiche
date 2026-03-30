@@ -28,6 +28,22 @@
 - naming chiaro dei file (`home.html`, `servizio-x.html`, ecc.)
 - non modificare `dist/` a mano — è generato dal build
 
+## Strategia di Rendering
+
+Per permettere agli integratori di ricevere HTML statico già popolato ma privo di logica JS complessa, usiamo un sistema di data-binding basato su attributi data-tpl.
+
+### Regole di popolamento (Templates)
+
+Il motore di rendering utilizza un TreeWalker per scansionare il DOM in modo efficiente:
+
+Testo: data-tpl="chiave" -> Inserisce il valore come textContent.
+
+Attributi: data-tpl-[attr]="chiave" -> Inserisce il valore nell'attributo specificato.
+
+Esempio: data-tpl-href="url" scriverà l'URL nel parametro href.
+
+Usa questa semantica nei tuoi script per consistenza.
+
 ## Strategia di migrazione dal repo storico
 
 - partire dalle pagine prioritarie

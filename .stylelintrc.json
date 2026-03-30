@@ -4,6 +4,7 @@
     "stylelint-config-standard",
     "stylelint-prettier/recommended"
   ],
+  "plugins": ["stylelint-prettier"],
   "rules": {
     "no-descending-specificity": null,
     "no-invalid-position-at-import-rule": null,
@@ -15,7 +16,6 @@
       }
     ],
     "at-rule-no-unknown": [true, { "ignoreAtRules": ["extends", "tailwind"] }],
-    "rule-empty-line-before": null,
     "at-rule-empty-line-before": null,
     "declaration-empty-line-before": null,
     "comment-empty-line-before": null

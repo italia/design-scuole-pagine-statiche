@@ -1,0 +1,192 @@
+{
+  "preHeader": {
+    "ministero": "Ministero dell'Istruzione e del Merito",
+    "areariservata": "Accedi all'area riservata"
+  },
+  "sezioniServizi": {
+    "titolo": "In evidenza",
+    "cards": [
+      {
+        "title": "Open day nella sede centrale",
+        "text": "",
+        "category": "Categoria",
+        "url": "#",
+        "date": "18 marzo 2026"
+      },
+      {
+        "title": "Spettacolo finale per il corso di teatro per le primarie",
+        "text": "Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.",
+        "category": "Categoria",
+        "url": "#",
+        "date": "18 marzo 2026"
+      },
+      {
+        "title": "Orientamento per le classi di terza media",
+        "text": "Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.",
+        "category": "Categoria",
+        "url": "#",
+        "date": "18 marzo 2026"
+      }
+    ]
+  },
+  "mainHeader": {
+    "scuola": {
+      "nome": "Liceo Scientifico Statale",
+      "denominazione": "Federico Hernandez",
+      "citta": "Livorno"
+    }
+  },
+  "hero": {
+    "scuola": {
+      "denominazione": "Istituto comprensivo",
+      "nome": "Federico Hernandez",
+      "citta": "Livorno",
+      "descrizione": " \"Lo scopo della scuola è quello di trasformare gli specchi in finestre\" "
+    }
+  },
+  "studiaConNoi": {
+    "titoloSezione": "Studia con noi",
+    "percorsiDiStudio": {
+      "titlePercorsi": "I nostri percorsi di studio",
+      "description1Percorsi": "L'istituto offre diversi percorsi di studio pensati per accompagnare ogni studente nella propria crescita educativa",
+      "description2Percorsi": "Ogni indirizzo propone attività, metodologie e opportunità formative specifiche, così da rispondere ai diversi interessi, attitudini e obiettivi personali",
+      "testoLink1Percorsi": "Esplora le nostre offerte formative",
+      "testoLink2Percorsi": "Consulta il Piano di Offerta Formativa (PTOF)"
+    },
+    "tipiScuole": {
+      "infanzia": "Scuola dell'infanzia",
+      "descrizioneTipo1": "Percorsi attivi: tempo ridotto, tempo pieno",
+      "elementari": "Scuola primaria",
+      "descrizioneTipo2": "Percorsi attivi: tempo normale, tempo pieno",
+      "medie": "Scuola secondaria di primo grado"
+    },
+    "progettiIstituto": {
+      "titleProgetti": "I progetti dell'istituto",
+      "description1Progetti": "L'istituto promuove ogni anno un ampio programma di progetti e attività pensati per arricchire il percorso formativo degli studenti",
+      "description2Progetti": "Esperienze didattiche, laboratoriali e culturali si integrano alla vita scolastica per favorire partecipazione, crescita personale, inclusione e scoperta del territorio",
+      "testolinkProgetti": "Vai a tutti i progetti"
+    },
+    "cards": [
+      { "title": "Uscite didattiche", "text": "Esperienze fuori dall'aula", "url": "#" },
+      { "title": "Corsi e certificazioni", "text": "Attività pratiche e sperimentali", "url": "#" },
+      { "title": "Progetti di orientamento", "text": "Supporto alle scelte future", "url": "#" },
+      { "title": "Laboratori didattici", "text": "Attività pratiche e sperimentali", "url": "#" },
+      { "title": "Gare e concorsi", "text": "Sfide educative e creative", "url": "#" },
+      {
+        "title": "Progetti territorio e ambiente",
+        "text": "Scoperta e cura del territorio",
+        "url": "#"
+      }
+    ]
+  },
+  "circolariEServizi": {
+    "circolari": {
+      "titolo": "Circolari",
+      "descrizione": "Le ultime circolari pubblicate",
+      "circolariDataCards": [
+        {
+          "title": "titolo della 1 circolare",
+          "text": "contenuto della 1 circolare",
+          "date": "15 novembre 2025"
+        },
+        {
+          "title": "titolo della 2 circolare",
+          "text": "contenuto della 2 circolare",
+          "date": "22 dicembre 2025"
+        },
+        {
+          "title": "titolo della 3 circolare",
+          "text": "contenuto della 3 circolare",
+          "date": "5 gennaio 2026"
+        },
+        {
+          "title": "titolo della 4 circolare",
+          "text": "contenuto della 4 circolare",
+          "date": "30 marzo 2026"
+        }
+      ]
+    },
+    "servizi": {
+      "titolo": "Servizi",
+      "descrizione": "I servizi offerti dalla nostra scuola",
+      "serviziDataCards": [
+        {
+          "title": "Mensa",
+          "text": "Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durate la giornata scolastica",
+          "date": ""
+        },
+        {
+          "title": "Piedibus",
+          "text": "Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile",
+          "date": ""
+        },
+        {
+          "title": "Scuolabus",
+          "text": "Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite",
+          "date": ""
+        },
+        {
+          "title": "Doposcuola",
+          "text": "Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato da personale qualificato.",
+          "date": ""
+        }
+      ]
+    }
+  },
+  "tools": {
+    "titolo": "I nostri strumenti digitali",
+    "cards": [
+      { "title": "Scuola in Chiaro", "text": "", "category": "" },
+      { "title": "UNICA", "text": "", "category": "" },
+      { "title": "Registro elettronico", "text": "", "category": "" }
+    ]
+  },
+  "fin": {
+    "titolo": "I nostri finanziamenti",
+    "cards": [
+      {
+        "title": "PNRR Futura",
+        "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
+        "category": "",
+        "date": ""
+      },
+      {
+        "title": "PON - Ricerca e innovazione 2014-2020",
+        "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
+        "category": "",
+        "date": ""
+      },
+      {
+        "title": "PON inclusione",
+        "text": "Programma europeo per il sostegno e l'inclusione sociale",
+        "category": "",
+        "date": ""
+      }
+    ]
+  },
+  "pub": {
+    "titolo": "Pubblicità legale e trasparenza",
+    "cards": [
+      {
+        "title": "Albo online",
+        "text": "Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore legale e sempre aggiornati",
+        "category": "Vai all'Albo online"
+      },
+      {
+        "title": "Amministrazione Trasparente",
+        "text": "Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza",
+        "category": "Vai alla sezione"
+      }
+    ]
+  },
+  "areaPersonale": {
+    "title": "Per il personale scolastico",
+    "subtitle": "Accedi all'area riservata al personale scolastico",
+    "button": "Accedi all'area personale"
+  },
+  "footerSection": {
+    "name": "F. Hernandez",
+    "denominazione": "Istituto comprensivo F. Hernandez",
+    "citta": "Livorno"
+  }
+}

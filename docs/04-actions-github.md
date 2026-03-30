@@ -12,6 +12,7 @@ Build e deploy vengono eseguiti da **GitHub Actions** su runner `ubuntu-latest`.
 Eseguito su ogni **pull request**.
 
 Fa:
+
 - format check con Prettier
 - lint HTML (`pnpm run lint:html`)
 - lint JS (`pnpm run lint:js`)
@@ -22,6 +23,7 @@ Fa:
 Eseguito **manualmente** da GitHub (`workflow_dispatch`).
 
 Fa:
+
 - build del progetto
 - upload artifact statico (`dist/`)
 - deploy su GitHub Pages (environment `github-pages`)
@@ -31,6 +33,7 @@ Fa:
 Eseguito su ogni **pull request** (open, sync, close).
 
 Fa:
+
 - **deploy**: build + push di `dist/` in `previews/<branch>/` sulla branch `gh-pages`
 - **commento PR**: posta o aggiorna un commento con l'URL della preview
 - **cleanup**: alla chiusura della PR rimuove la cartella preview da `gh-pages`
@@ -45,6 +48,7 @@ Nessun file di workflow nel repo — gira automaticamente su push/PR su `main` e
 Eseguito su tag `v2*`.
 
 Fa:
+
 - build e zip del progetto
 - pubblicazione GitHub Release con allegato zip
 

@@ -11,6 +11,10 @@ body {
   margin: 0;
 }
 
+.main-nav {
+  color: var(--it-color-red-cherry-34);
+}
+
 .pre-header {
   display: flex;
   height: 40px;
@@ -23,11 +27,10 @@ body {
   line-height: 40px;
 }
 
-.pre-header-text {
+.pre-header a {
   padding-right: 50px;
   padding-left: 50px;
   margin: 0;
   color: var(--it-color-white);
-  font-family: 'Titillium Web', Geneva, Tahoma, sans-serif;
-  font-size: 11px;
+  text-decoration: none;
 }

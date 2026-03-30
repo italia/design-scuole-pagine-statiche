@@ -7,21 +7,22 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vite build",
+    "build:ssr": "node scripts/generate-ssr.js",
     "preview": "vite preview",
     "lint:html": "html-validate \"src/pages/**/*.html\"",
-    "lint:html:fix": "html-validate --fix \"src/pages/**/*.html\"",
-    "format": "prettier --write --ignore-path .prettierignore \"**/*.{js,css,html,json}\"",
-    "format:check": "prettier --check --ignore-path .prettierignore \"**/*.{js,css,html,json}\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:css": "stylelint --fix \"src/styles/**/*.css\"",
     "lint:js": "eslint \"src/js/**/*.js\"",
     "lint:js:fix": "eslint --fix \"src/js/**/*.js\"",
     "lint:css": "stylelint \"src/styles/**/*.css\"",
-    "lint:css:fix": "stylelint --fix \"src/styles/**/*.css\"",
     "prepare": "husky install",
-    "documentation-deploy-to-gh-pages": "pnpm run build && pnpm dlx gh-pages -d dist -m 'chore: update documentation'  --nojekyll",
+    "documentation-deploy-to-gh-pages": "pnpm run build && pnpm dlx gh-pages -d dist -m 'chore: update documentation' --nojekyll",
     "release:zip": "sh ./scripts/create-release-attachment.sh"
   },
   "dependencies": {
-    "@italia/dev-kit-italia": "1.0.0-alpha.6"
+    "@italia/dev-kit-italia": "1.0.0-alpha.6",
+    "package.json": "^2.0.1"
   },
   "engines": {
     "node": ">=24"
@@ -36,6 +37,7 @@
     "gh-pages": "^6.3.0",
     "html-validate": "^10.11.1",
     "husky": "^9.1.7",
+    "linkedom": "^0.18.12",
     "lint-staged": "^16.3.3",
     "prettier": "3.5.2",
     "stylelint": "16.18.0",
