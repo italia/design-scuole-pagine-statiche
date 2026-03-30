@@ -7,7 +7,7 @@ import footerHTML from '@/templates/footer.html?raw';
 import breadcrumbHTML from '@/templates/breadcrumb.html?raw';
 import heroHTML from '@/templates/hero.html?raw';
 import serviceSectionHTML from '@/templates/service-section.html?raw';
-import serviceCardHTML from '@/templates/cards/service-card.html?raw';
+import serviceCardHTML from '@/templates/service-card.html?raw';
 
 // ── Parse templates ──────────────────────────────────────────────────────────
 const tpl = {
