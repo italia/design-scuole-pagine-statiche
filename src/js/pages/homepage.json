@@ -6,7 +6,7 @@
   "sezioniServizi": {
     "titolo": "In evidenza",
     "cards": [
-      { 
+      {
         "type": "inline",
         "title": "Open day nella sede centrale",
         "text": "",
@@ -70,17 +70,38 @@
       "testolinkProgetti": "Vai a tutti i progetti"
     },
     "cards": [
-      { "type": "informativa",
-        "title": "Uscite didattiche", "text": "Esperienze fuori dall'aula", "url": "#" },
-      { "type": "informativa",
-        "title": "Corsi e certificazioni", "text": "Attività pratiche e sperimentali", "url": "#" },
-      { "type": "informativa",
-        "title": "Progetti di orientamento", "text": "Supporto alle scelte future", "url": "#" },
-      { "type": "informativa",
-        "title": "Laboratori didattici", "text": "Attività pratiche e sperimentali", "url": "#" },
-      { "type": "informativa",
-        "title": "Gare e concorsi", "text": "Sfide educative e creative", "url": "#" },
-      { "type": "informativa",
+      {
+        "type": "informativa",
+        "title": "Uscite didattiche",
+        "text": "Esperienze fuori dall'aula",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Corsi e certificazioni",
+        "text": "Attività pratiche e sperimentali",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Progetti di orientamento",
+        "text": "Supporto alle scelte future",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Laboratori didattici",
+        "text": "Attività pratiche e sperimentali",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Gare e concorsi",
+        "text": "Sfide educative e creative",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
         "title": "Progetti territorio e ambiente",
         "text": "Scoperta e cura del territorio",
         "url": "#"
@@ -92,22 +113,26 @@
       "titolo": "Circolari",
       "descrizione": "Le ultime circolari pubblicate",
       "circolariDataCards": [
-        { "type": "informativa",
+        {
+          "type": "informativa",
           "title": "titolo della 1 circolare",
           "text": "contenuto della 1 circolare",
           "date": "15 novembre 2025"
         },
-        { "type": "informativa",
+        {
+          "type": "informativa",
           "title": "titolo della 2 circolare",
           "text": "contenuto della 2 circolare",
           "date": "22 dicembre 2025"
         },
-        { "type": "informativa",
+        {
+          "type": "informativa",
           "title": "titolo della 3 circolare",
           "text": "contenuto della 3 circolare",
           "date": "5 gennaio 2026"
         },
-        { "type": "informativa",
+        {
+          "type": "informativa",
           "title": "titolo della 4 circolare",
           "text": "contenuto della 4 circolare",
           "date": "30 marzo 2026"
@@ -118,22 +143,26 @@
       "titolo": "Servizi",
       "descrizione": "I servizi offerti dalla nostra scuola",
       "serviziDataCards": [
-        { "type": "informativa",
+        {
+          "type": "informativa",
           "title": "Mensa",
           "text": "Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durate la giornata scolastica",
           "date": ""
         },
-        { "type": "informativa",
+        {
+          "type": "informativa",
           "title": "Piedibus",
           "text": "Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile",
           "date": ""
         },
-        { "type": "informativa",
+        {
+          "type": "informativa",
           "title": "Scuolabus",
           "text": "Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite",
           "date": ""
         },
-        { "type": "informativa",
+        {
+          "type": "informativa",
           "title": "Doposcuola",
           "text": "Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato da personale qualificato.",
           "date": ""
@@ -144,27 +173,30 @@
   "tools": {
     "titolo": "I nostri strumenti digitali",
     "cards": [
-      { "type": "inline","title": "Scuola in Chiaro", "text": "", "category": "" },
-      { "type": "inline","title": "UNICA", "text": "", "category": "" },
-      { "type": "inline","title": "Registro elettronico", "text": "", "category": "" }
+      { "type": "inline", "title": "Scuola in Chiaro", "text": "", "category": "" },
+      { "type": "inline", "title": "UNICA", "text": "", "category": "" },
+      { "type": "inline", "title": "Registro elettronico", "text": "", "category": "" }
     ]
   },
   "fin": {
     "titolo": "I nostri finanziamenti",
     "cards": [
-      { "type": "editoriale",
+      {
+        "type": "editoriale",
         "title": "PNRR Futura",
         "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
         "category": "",
         "date": ""
       },
-      { "type": "editoriale",
+      {
+        "type": "editoriale",
         "title": "PON - Ricerca e innovazione 2014-2020",
         "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
         "category": "",
         "date": ""
       },
-      { "type": "editoriale",
+      {
+        "type": "editoriale",
         "title": "PON inclusione",
         "text": "Programma europeo per il sostegno e l'inclusione sociale",
         "category": "",
@@ -175,12 +207,14 @@
   "pub": {
     "titolo": "Pubblicità legale e trasparenza",
     "cards": [
-      { "type": "inline",
+      {
+        "type": "inline",
         "title": "Albo online",
         "text": "Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore legale e sempre aggiornati",
         "category": "Vai all'Albo online"
       },
-      { "type": "inline",
+      {
+        "type": "inline",
         "title": "Amministrazione Trasparente",
         "text": "Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza",
         "category": "Vai alla sezione"
