@@ -1,6 +1,6 @@
 import '@/js/main.js';
 import { render, fromHTML } from '@/templates/utils/templates.js';
-import { cardEditoriale, cardInline, cardInfo } from '@/templates/engines/cards.js';
+import { renderCards } from '../../templates/engines/cards';
 
 import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
 import preheaderHTML from '@/templates/preheader.html?raw';
@@ -15,7 +15,7 @@ import personaleHTML from '@/templates/personale.html?raw';
 import footerHTML from '@/templates/footer.html?raw';
 import ratingHTML from '@/templates/rating.html?raw';
 
-import data from '@/data.json';
+import data from '@/js/pages/homepage.json';
 
 const templates = {
   serviceSection: fromHTML(serviceSectionHTML),
@@ -39,7 +39,7 @@ const risultato = render(templates.serviceSection, { titolo: data.sezioniServizi
 
 const cardsContainer = risultato.querySelector('[data-cards]');
 
-cardsContainer.appendChild(cardInline(data.sezioniServizi.cards));
+cardsContainer.appendChild(renderCards(data.sezioniServizi.cards));
 
 const mainContainer = document.getElementById('in-evidenza');
 if (mainContainer) {
@@ -82,7 +82,7 @@ const studyFragment = render(templates.study, datiBase);
 
 const studyCardsContainer = studyFragment.querySelector('[study-card]');
 if (studyCardsContainer) {
-  studyCardsContainer.appendChild(cardInfo(data.studiaConNoi.cards));
+  studyCardsContainer.appendChild(renderCards(data.studiaConNoi.cards));
 }
 
 document.getElementById('studia-con-noi').appendChild(studyFragment);
@@ -100,13 +100,13 @@ const fragment = render(templates.circolariEServizi, datiCompleti);
 const circolariCardsContainer = fragment.querySelector('[data-tpl="circolari-data-cards"]');
 if (circolariCardsContainer) {
   circolariCardsContainer.appendChild(
-    cardInfo(data.circolariEServizi.circolari.circolariDataCards)
+    renderCards(data.circolariEServizi.circolari.circolariDataCards)
   );
 }
 
 const serviziCardsContainer = fragment.querySelector('[data-tpl="servizi-data-cards"]');
 if (serviziCardsContainer) {
-  serviziCardsContainer.appendChild(cardInfo(data.circolariEServizi.servizi.serviziDataCards));
+  serviziCardsContainer.appendChild(renderCards(data.circolariEServizi.servizi.serviziDataCards));
 }
 
 const container = document.getElementById('circolari-e-servizi');
@@ -119,7 +119,7 @@ const fragmentStrumenti = render(templates.strumenti, data.tools);
 
 const strumentiCardsContainer = fragmentStrumenti.querySelector('[data-tpl="data-cards"]');
 if (strumentiCardsContainer) {
-  strumentiCardsContainer.appendChild(cardInline(data.tools.cards));
+  strumentiCardsContainer.appendChild(renderCards(data.tools.cards));
 }
 
 const circolariContainer = document.getElementById('strumenti-digitali');
@@ -132,7 +132,7 @@ const fragmentFinan = render(templates.finanziamenti, data.fin);
 
 const finanCardsContainer = fragmentFinan.querySelector('[data-tpl="data-cards"]');
 if (finanCardsContainer) {
-  finanCardsContainer.appendChild(cardEditoriale(data.fin.cards));
+  finanCardsContainer.appendChild(renderCards(data.fin.cards));
 }
 
 const finanContainer = document.getElementById('finanziamenti');
@@ -145,7 +145,7 @@ const fragmentpub = render(templates.pubblicita, data.pub);
 
 const pubCardsContainer = fragmentpub.firstElementChild.querySelector('[data-tpl="data-cards"]');
 if (pubCardsContainer) {
-  pubCardsContainer.appendChild(cardInline(data.pub.cards));
+  pubCardsContainer.appendChild(renderCards(data.pub.cards));
 }
 
 const pubContainer = document.getElementById('trasparenza');
