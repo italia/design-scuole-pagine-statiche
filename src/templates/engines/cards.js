@@ -4,8 +4,8 @@ import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
 import cardEditorialeHTML from '@/templates/cards/card-editoriale.html?raw';
 
 const templates = {
-  editoriale: fromHTML(cardEditorialeHTML),
-  inline: fromHTML(cardInlineMiniHTML),
+  editorialeStandard: fromHTML(cardEditorialeHTML),
+  inlineMini: fromHTML(cardInlineMiniHTML),
   informativa: fromHTML(cardInformativaHTML),
 };
 
