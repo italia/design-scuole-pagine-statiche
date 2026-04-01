@@ -1,6 +1,6 @@
 import '@/js/main.js';
 import { render, fromHTML } from '@/templates/utils/templates.js';
-import { renderCards } from '../../templates/engines/cards';
+import { renderCards } from '@/templates/engines/cards';
 
 import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
 import preheaderHTML from '@/templates/preheader.html?raw';
