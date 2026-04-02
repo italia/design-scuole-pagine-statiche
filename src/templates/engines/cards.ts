@@ -1,7 +1,10 @@
-import { fromHTML } from '@/templates/utils/templates.js';
+import { fromHTML } from '@/templates/utils/templates';
 import cardInlineMiniHTML from '@/templates/cards/card-inline-mini.html?raw';
 import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
 import cardEditorialeHTML from '@/templates/cards/card-editoriale.html?raw';
+
+
+type CardType = 'editorialeStandard' | 'inlineMini' | 'informativa';
 
 const templates = {
   editorialeStandard: fromHTML(cardEditorialeHTML),
@@ -9,7 +12,7 @@ const templates = {
   informativa: fromHTML(cardInformativaHTML),
 };
 
-export function renderCards(listaDati) {
+export function renderCards(listaDati: any): DocumentFragment {
   const contenitore = document.createDocumentFragment();
   /*cicla gli elementi dell'array*/
   for (const dato of listaDati) {
