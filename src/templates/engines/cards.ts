@@ -3,13 +3,12 @@ import cardInlineMiniHTML from '@/templates/cards/card-inline-mini.html?raw';
 import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
 import cardEditorialeHTML from '@/templates/cards/card-editoriale.html?raw';
 
-
 type CardType = 'editorialeStandard' | 'inlineMini' | 'informativa';
 
 interface CardData {
   type: CardType;
-  [key: string]: string | CardType;
-} 
+  [key: string]: string;
+}
 
 const templates = {
   editorialeStandard: fromHTML(cardEditorialeHTML),
@@ -24,7 +23,9 @@ export function renderCards(listaDati: CardData[]): DocumentFragment {
     //prende il template giusto in base a dato.type
     const template = templates[dato.type];
     /*genera la card*/
-    const nuovaCard = template.content.firstElementChild.cloneNode(true) as HTMLElement;
+    const firstChild = template.content.firstElementChild;
+    if (!firstChild) continue;
+    const nuovaCard = firstChild.cloneNode(true) as HTMLElement;
     /*per ogni chiave dell'array delle proprietà*/
     for (const key of Object.keys(dato)) {
       /*cerca il data-tpl*/

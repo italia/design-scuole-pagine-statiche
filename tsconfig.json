@@ -1,34 +1,33 @@
 {
   "compilerOptions": {
-    // Environment Settings
-    "module": "nodenext",
-    "target": "esnext",
-    "types": [],
-    "baseUrl": ".",
+    // Environment
+    "target": "ES2020",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    // Path aliases (mirrors Vite resolve.alias)
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["./src/*"]
     },
 
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
+    // Type-check only — Vite handles transpilation
+    "noEmit": true,
 
-    // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Stricter Typechecking Options
+    // Strict type checking
+    "strict": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
 
-    // Recommended Options
-    "strict": true,
-    "jsx": "react-jsx",
+    // Interop / module hygiene
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true
-  }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "scripts"]
 }
