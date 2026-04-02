@@ -1,4 +1,4 @@
-import { fromHTML } from '@/js/utils/templates';
+import { fromHTML, render } from '@/js/utils/templates';
 import type { Card, CardType } from '@/js/types/data';
 import { isCardType } from '@/js/types/data';
 import cardInlineMiniHTML from '@/templates/cards/card-inline-mini.html?raw';
@@ -18,15 +18,7 @@ export const renderCards = (listaDati: readonly Card[]): DocumentFragment => {
       console.warn(`Invalid card type: ${card.type}`);
       continue;
     }
-    const tpl = templates[card.type].content.firstElementChild?.cloneNode(true) as
-      | HTMLElement
-      | undefined;
-    if (!tpl) continue;
-    Object.entries(card).forEach(([key, value]) => {
-      const el = tpl.querySelector(`[data-tpl="${key}"]`);
-      if (el) el.textContent = String(value);
-    });
-    frag.appendChild(tpl);
+    frag.appendChild(render(templates[card.type], card));
   }
   return frag;
 };
