@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homepage</title>
+  </head>
+
+  <body>
+    <div id="site-preheader">
+      <div class="pre-header" site-preheader="">
+        <a href="https://www.mim.gov.it/">Ministero dell'Istruzione e del Merito</a>
+        <a href="#">Accedi all'area riservata</a>
+      </div>
+    </div>
+    <header id="main-header" class="bg-white">
+      <header site-header="">
+        <div class="container header-top">
+          <a href="#" class="school-logo" aria-label="Torna alla home">
+            <div class="school-name" school-name="">
+              <span>Liceo Scientifico Statale</span>
+              <strong>Federico Hernandez</strong>
+              <span>Livorno</span>
+            </div>
+          </a>
+          <nav class="main-nav" aria-label="Principale">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Scuola</a></li>
+              <li><a href="#" aria-current="page">Servizi</a></li>
+              <li><a href="#">Novità</a></li>
+              <li><a href="#">Didattica</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </header>
+    <div id="hero">
+      <it-section class="hero" hero="">
+        <div class="container">
+          <div class="denominazione" scuola="">
+            <h2>Istituto comprensivo</h2>
+            <h1>Federico Hernandez</h1>
+            <h2>Livorno</h2>
+          </div>
+          <div class="descrizione" scuola=""></div>
+          <p>"Lo scopo della scuola è quello di trasformare gli specchi in finestre"</p>
+        </div>
+        <p><a href="#"> Scopri l'istituto </a></p>
+      </it-section>
+    </div>
+    <div id="in-evidenza">
+      <it-section class="service-section">
+        <div class="container">
+          <h2 class="service-section__title">In evidenza</h2>
+          <!-- data-cards: punto di iniezione per le card, gestito da servizio.js -->
+          <div class="service-grid" data-cards="">
+            <it-card variant="inline">
+              <a slot="title" href="#">Open day nella sede centrale</a>
+              <span slot="text"></span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden">Categoria</span>
+                  Categoria
+                </a>
+              </div>
+              <time slot="footer" class="it-card-date" datetime="2026-04-22">18 marzo 2026</time>
+              <figure slot="image" class="figure img-full">
+                <img
+                  src="https://placeholderimage.eu/api/city/800/600"
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                />
+              </figure>
+            </it-card>
+
+            <it-card variant="inline">
+              <a slot="title" href="#">Spettacolo finale per il corso di teatro per le primarie</a>
+              <span slot="text"
+                >Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro
+                righe, senza troncamento.</span
+              >
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden">Categoria</span>
+                  Categoria
+                </a>
+              </div>
+              <time slot="footer" class="it-card-date" datetime="2026-04-22">18 marzo 2026</time>
+              <figure slot="image" class="figure img-full">
+                <img
+                  src="https://placeholderimage.eu/api/city/800/600"
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                />
+              </figure>
+            </it-card>
+
+            <it-card variant="inline">
+              <a slot="title" href="#">Orientamento per le classi di terza media</a>
+              <span slot="text"
+                >Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro
+                righe, senza troncamento.</span
+              >
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden">Categoria</span>
+                  Categoria
+                </a>
+              </div>
+              <time slot="footer" class="it-card-date" datetime="2026-04-22">18 marzo 2026</time>
+              <figure slot="image" class="figure img-full">
+                <img
+                  src="https://placeholderimage.eu/api/city/800/600"
+                  alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+                />
+              </figure>
+            </it-card>
+          </div>
+        </div>
+      </it-section>
+    </div>
+    <div id="carousel"></div>
+    <div id="studia-con-noi">
+      <it-section class="service-section">
+        <div class="container">
+          <h2 class="service-section__title">Studia con noi</h2>
+
+          <div class="percorsiDistudio">
+            <h2 class="percorsi__title">I nostri percorsi di studio</h2>
+            <p class="percorsi__description">
+              L'istituto offre diversi percorsi di studio pensati per accompagnare ogni studente nella propria crescita
+              educativa
+            </p>
+            <p class="percorsi__description">
+              Ogni indirizzo propone attività, metodologie e opportunità formative specifiche, così da rispondere ai
+              diversi interessi, attitudini e obiettivi personali
+            </p>
+            <it-button variant="danger" type="button">
+              <a href="#">Esplora le nostre offerte formative</a>
+            </it-button>
+            <p><a class="percorsi__link" href="#">Consulta il Piano di Offerta Formativa (PTOF)</a></p>
+          </div>
+
+          <div class="tipiScuole">
+            <p>Scuola dell'infanzia</p>
+            <p>Percorsi attivi: tempo ridotto, tempo pieno</p>
+            <p>Scuola primaria</p>
+            <p>Percorsi attivi: tempo normale, tempo pieno</p>
+            <p>Scuola secondaria di primo grado</p>
+          </div>
+
+          <div class="progettiIstituto">
+            <h2 class="progetti__title">I progetti dell'istituto</h2>
+            <p class="progetti__description">
+              L'istituto promuove ogni anno un ampio programma di progetti e attività pensati per arricchire il percorso
+              formativo degli studenti
+            </p>
+            <p class="progetti__description">
+              Esperienze didattiche, laboratoriali e culturali si integrano alla vita scolastica per favorire
+              partecipazione, crescita personale, inclusione e scoperta del territorio
+            </p>
+            <p><a class="progetti__link" href="#">Vai a tutti i progetti</a></p>
+          </div>
+          <div study-card="">
+            <it-card full-height="">
+              <a slot="title" href="#">Uscite didattiche</a>
+              <span slot="text">Esperienze fuori dall'aula</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">Corsi e certificazioni</a>
+              <span slot="text">Attività pratiche e sperimentali</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">Progetti di orientamento</a>
+              <span slot="text">Supporto alle scelte future</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">Laboratori didattici</a>
+              <span slot="text">Attività pratiche e sperimentali</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">Gare e concorsi</a>
+              <span slot="text">Sfide educative e creative</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">Progetti territorio e ambiente</a>
+              <span slot="text">Scoperta e cura del territorio</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+          </div>
+        </div>
+      </it-section>
+    </div>
+    <div id="circolari-e-servizi">
+      <it-section class="service-section">
+        <div class="container">
+          <h2 class="service-section__title">Circolari</h2>
+          <p class="service-section__description">Le ultime circolari pubblicate</p>
+          <div class="service-grid">
+            <it-card full-height="">
+              <a slot="title" href="#">titolo della 1 circolare</a>
+              <span slot="text">contenuto della 1 circolare</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">titolo della 2 circolare</a>
+              <span slot="text">contenuto della 2 circolare</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">titolo della 3 circolare</a>
+              <span slot="text">contenuto della 3 circolare</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">titolo della 4 circolare</a>
+              <span slot="text">contenuto della 4 circolare</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+          </div>
+        </div>
+        <div class="container">
+          <h2 class="service-section__title">Servizi</h2>
+          <p class="service-section__description">I servizi offerti dalla nostra scuola</p>
+          <div class="service-grid">
+            <it-card full-height="">
+              <a slot="title" href="#">Mensa</a>
+              <span slot="text"
+                >Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta
+                alimentazione durate la giornata scolastica</span
+              >
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">Piedibus</a>
+              <span slot="text"
+                >Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e
+                mobilità sostenibile</span
+              >
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">Scuolabus</a>
+              <span slot="text"
+                >Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza,
+                secondo orari e fermate predefinite</span
+              >
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">Doposcuola</a>
+              <span slot="text"
+                >Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato
+                da personale qualificato.</span
+              >
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-link">
+                  <span class="visually-hidden">Categoria correlata: </span>
+                </a>
+              </div>
+            </it-card>
+          </div>
+        </div>
+      </it-section>
+    </div>
+    <div id="strumenti-digitali">
+      <div class="container">
+        <h2>I nostri strumenti digitali</h2>
+        <div class="service-grid">
+          <it-card variant="inline">
+            <a slot="title" href="#">Scuola in Chiaro</a>
+            <span slot="text"></span>
+            <div slot="footer" class="it-card-taxonomy">
+              <a href="#" class="it-card-category it-card-link">
+                <span class="visually-hidden"></span>
+                Categoria
+              </a>
+            </div>
+            <time slot="footer" class="it-card-date" datetime="2026-04-22"> 22 aprile 2026 </time>
+            <figure slot="image" class="figure img-full">
+              <img
+                src="https://placeholderimage.eu/api/city/800/600"
+                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+              />
+            </figure>
+          </it-card>
+
+          <it-card variant="inline">
+            <a slot="title" href="#">UNICA</a>
+            <span slot="text"></span>
+            <div slot="footer" class="it-card-taxonomy">
+              <a href="#" class="it-card-category it-card-link">
+                <span class="visually-hidden"></span>
+                Categoria
+              </a>
+            </div>
+            <time slot="footer" class="it-card-date" datetime="2026-04-22"> 22 aprile 2026 </time>
+            <figure slot="image" class="figure img-full">
+              <img
+                src="https://placeholderimage.eu/api/city/800/600"
+                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+              />
+            </figure>
+          </it-card>
+
+          <it-card variant="inline">
+            <a slot="title" href="#">Registro elettronico</a>
+            <span slot="text"></span>
+            <div slot="footer" class="it-card-taxonomy">
+              <a href="#" class="it-card-category it-card-link">
+                <span class="visually-hidden"></span>
+                Categoria
+              </a>
+            </div>
+            <time slot="footer" class="it-card-date" datetime="2026-04-22"> 22 aprile 2026 </time>
+            <figure slot="image" class="figure img-full">
+              <img
+                src="https://placeholderimage.eu/api/city/800/600"
+                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+              />
+            </figure>
+          </it-card>
+        </div>
+      </div>
+    </div>
+    <div id="finanziamenti">
+      <div class="container">
+        <h2>I nostri finanziamenti</h2>
+        <div class="service-grid">
+          <it-card full-height="">
+            <a slot="title" href="#">PNRR Futura</a>
+            <figure slot="image" class="figure img-full">
+              <img
+                src="https://placeholderimage.eu/api/city/800/600"
+                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+              />
+            </figure>
+            <span slot="text">Programma del PNRR per innovazione e digitalizzazione della scuola</span>
+            <div slot="footer" class="it-card-taxonomy">
+              <a href="#" class="it-card-category it-card-link">
+                <span class="visually-hidden"></span>
+                Categoria
+              </a>
+            </div>
+            <time slot="footer" class="it-card-date" datetime="2026-04-22"></time>
+          </it-card>
+
+          <it-card full-height="">
+            <a slot="title" href="#">PON - Ricerca e innovazione 2014-2020</a>
+            <figure slot="image" class="figure img-full">
+              <img
+                src="https://placeholderimage.eu/api/city/800/600"
+                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+              />
+            </figure>
+            <span slot="text">Fondi europei per progetti di ricerca e sviluppo nelle scuole</span>
+            <div slot="footer" class="it-card-taxonomy">
+              <a href="#" class="it-card-category it-card-link">
+                <span class="visually-hidden"></span>
+                Categoria
+              </a>
+            </div>
+            <time slot="footer" class="it-card-date" datetime="2026-04-22"></time>
+          </it-card>
+
+          <it-card full-height="">
+            <a slot="title" href="#">PON inclusione</a>
+            <figure slot="image" class="figure img-full">
+              <img
+                src="https://placeholderimage.eu/api/city/800/600"
+                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+              />
+            </figure>
+            <span slot="text">Programma europeo per il sostegno e l'inclusione sociale</span>
+            <div slot="footer" class="it-card-taxonomy">
+              <a href="#" class="it-card-category it-card-link">
+                <span class="visually-hidden"></span>
+                Categoria
+              </a>
+            </div>
+            <time slot="footer" class="it-card-date" datetime="2026-04-22"></time>
+          </it-card>
+        </div>
+        <a href="#"> Esplora tutti i finanziamenti </a>
+      </div>
+    </div>
+    <div id="trasparenza">
+      <div class="container">
+        <h2>Pubblicità legale e trasparenza</h2>
+        <div class="service-grid">
+          <it-card variant="inline">
+            <a slot="title" href="#">Albo online</a>
+            <span slot="text"
+              >Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore
+              legale e sempre aggiornati</span
+            >
+            <div slot="footer" class="it-card-taxonomy">
+              <a href="#" class="it-card-category it-card-link">
+                <span class="visually-hidden">Vai all'Albo online</span>
+                Categoria
+              </a>
+            </div>
+            <time slot="footer" class="it-card-date" datetime="2026-04-22"> 22 aprile 2026 </time>
+            <figure slot="image" class="figure img-full">
+              <img
+                src="https://placeholderimage.eu/api/city/800/600"
+                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+              />
+            </figure>
+          </it-card>
+
+          <it-card variant="inline">
+            <a slot="title" href="#">Amministrazione Trasparente</a>
+            <span slot="text"
+              >Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività
+              dell'istituto, nel rispetto degli obblighi di trasparenza</span
+            >
+            <div slot="footer" class="it-card-taxonomy">
+              <a href="#" class="it-card-category it-card-link">
+                <span class="visually-hidden">Vai alla sezione</span>
+                Categoria
+              </a>
+            </div>
+            <time slot="footer" class="it-card-date" datetime="2026-04-22"> 22 aprile 2026 </time>
+            <figure slot="image" class="figure img-full">
+              <img
+                src="https://placeholderimage.eu/api/city/800/600"
+                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+              />
+            </figure>
+          </it-card>
+        </div>
+      </div>
+    </div>
+    <div id="personale-scolastico">
+      <div>
+        <h2>Per il personale scolastico</h2>
+        <p>Accedi all'area riservata al personale scolastico</p>
+        <it-button variant="danger" type="button">Accedi all'area personale</it-button>
+      </div>
+    </div>
+    <div id="rating">
+      <it-rating name="rating" value="0" icon="it-star-outline" max-elements="5">
+        <span slot="label">Valuta questo contenuto</span>
+        <it-rating-item value="1">
+          <span slot="label">1 stella</span>
+        </it-rating-item>
+        <it-rating-item value="2">
+          <span slot="label">2 stelle</span>
+        </it-rating-item>
+        <it-rating-item value="3">
+          <span slot="label">3 stelle</span>
+        </it-rating-item>
+        <it-rating-item value="4">
+          <span slot="label">4 stelle</span>
+        </it-rating-item>
+        <it-rating-item value="5">
+          <span slot="label">5 stelle</span>
+        </it-rating-item>
+      </it-rating>
+    </div>
+    <div id="footer">
+      <footer class="site-footer">
+        <div class="container footer-body">
+          <div class="footer-school">
+            <div class="school-name">
+              <span></span>
+              <strong>Istituto comprensivo F. Hernandez</strong>
+              <span>Livorno</span>
+            </div>
+            <p class="footer-tagline">Idea e progetto di <a href="https://designers.italia.it">Designers Italia</a></p>
+          </div>
+          <nav aria-label="Footer">
+            <ul>
+              <li><a href="#">Note legali</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Amministrazione trasparente</a></li>
+              <li><a href="#">Dichiarazione di accessibilità</a></li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
