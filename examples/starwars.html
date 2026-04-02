@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SSG + Hydration Demo</title>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-8">
+          <h1>Star Wars Characters</h1>
+          <p>Clicca su una card per vedere i dettagli estratti dallo <strong>Stato SSR</strong>.</p>
+          <div id="starwars-list"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="sticky-top" style="top: 20px">
+            <h3>Dettagli Live</h3>
+            <div id="character-details">
+              <p class="text-muted">Seleziona un personaggio...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./starwars.js"></script>
+  </body>
+</html>

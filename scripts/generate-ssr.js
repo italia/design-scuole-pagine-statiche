@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 // https://github.com/WebReflection/linkedom instead of JSDom for speed and zero dependencies (no native modules, no compilation)
-import { parseHTML, DOMParser } from 'linkedom';
+import { parseHTML, DOMParser, NodeFilter } from 'linkedom';
 import fg from 'fast-glob';
 import * as prettier from 'prettier';
 
@@ -71,6 +71,7 @@ async function generate() {
     global.document = document;
     global.DocumentFragment = DocumentFragment;
     global.DOMParser = DOMParser;
+    global.NodeFilter = NodeFilter;
 
     try {
       // ----------------------------
