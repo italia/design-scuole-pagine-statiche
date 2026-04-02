@@ -11,6 +11,16 @@ const cardTplRaw = `
 
 const tpl = { card: fromHTML(cardTplRaw) };
 
+function escapeHTML(str) {
+  if (str == null) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 async function init() {
   const listContainer = document.getElementById('starwars-list');
   const detailsContainer = document.getElementById('character-details');
@@ -60,10 +70,10 @@ async function init() {
       if (data) {
         detailsContainer.innerHTML = `
           <div class="alert alert-success shadow-sm border-2">
-            <h4 class="h5 mb-2">${data.titolo}</h4>
+            <h4 class="h5 mb-2">${escapeHTML(data.titolo)}</h4>
             <ul class="list-unstyled mb-0 small">
-              <li><strong>Info:</strong> ${data.extra || 'Dati da SSR'}</li>
-              <li><strong>Descrizione:</strong> ${data.descrizione}</li>
+              <li><strong>Info:</strong> ${escapeHTML(data.extra || 'Dati da SSR')}</li>
+              <li><strong>Descrizione:</strong> ${escapeHTML(data.descrizione)}</li>
             </ul>
             <hr>
             <p class="mb-0 text-muted" style="font-size: 0.75rem;">
