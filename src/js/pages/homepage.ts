@@ -1,6 +1,6 @@
-import '@/js/main.js';
-import { render, fromHTML } from '@/templates/utils/templates.js';
-import { renderCards } from '@/templates/engines/cards';
+import '@/js/main';
+import { render, fromHTML } from '@/js/utils/templates';
+import { renderCards } from '@/js/engines/cards';
 
 import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
 import preheaderHTML from '@/templates/preheader.html?raw';
@@ -39,7 +39,7 @@ const risultato = render(templates.serviceSection, { titolo: data.sezioniServizi
 
 const cardsContainer = risultato.querySelector('[data-cards]');
 
-cardsContainer.appendChild(renderCards(data.sezioniServizi.cards));
+cardsContainer?.appendChild(renderCards(data.sezioniServizi.cards));
 
 const mainContainer = document.getElementById('in-evidenza');
 if (mainContainer) {
@@ -85,7 +85,10 @@ if (studyCardsContainer) {
   studyCardsContainer.appendChild(renderCards(data.studiaConNoi.cards));
 }
 
-document.getElementById('studia-con-noi').appendChild(studyFragment);
+const studyContainer = document.getElementById('studia-con-noi');
+if (studyContainer) {
+  studyContainer.appendChild(studyFragment);
+}
 
 /* render circolari e servizi */
 const datiCompleti = {
@@ -143,7 +146,7 @@ if (finanContainer) {
 /* render pubblicità legale */
 const fragmentpub = render(templates.pubblicita, data.pub);
 
-const pubCardsContainer = fragmentpub.firstElementChild.querySelector('[data-tpl="data-cards"]');
+const pubCardsContainer = fragmentpub.firstElementChild?.querySelector('[data-tpl="data-cards"]');
 if (pubCardsContainer) {
   pubCardsContainer.appendChild(renderCards(data.pub.cards));
 }

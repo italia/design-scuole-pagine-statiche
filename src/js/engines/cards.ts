@@ -1,14 +1,10 @@
-import { fromHTML } from '@/templates/utils/templates';
+import { fromHTML } from '@/js/utils/templates';
+import type { Card } from '@/js/types/data';
 import cardInlineMiniHTML from '@/templates/cards/card-inline-mini.html?raw';
 import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
 import cardEditorialeHTML from '@/templates/cards/card-editoriale.html?raw';
 
 type CardType = 'editorialeStandard' | 'inlineMini' | 'informativa';
-
-interface CardData {
-  type: CardType;
-  [key: string]: string;
-}
 
 const templates = {
   editorialeStandard: fromHTML(cardEditorialeHTML),
@@ -16,12 +12,17 @@ const templates = {
   informativa: fromHTML(cardInformativaHTML),
 };
 
-export function renderCards(listaDati: CardData[]): DocumentFragment {
+export function renderCards(listaDati: readonly Card[]): DocumentFragment {
   const contenitore = document.createDocumentFragment();
   /*cicla gli elementi dell'array*/
   for (const dato of listaDati) {
     //prende il template giusto in base a dato.type
-    const template = templates[dato.type];
+    const type = dato.type as CardType;
+    const template = templates[type];
+    if (!template) {
+      console.warn(`Unknown card type: ${type}`);
+      continue;
+    }
     /*genera la card*/
     const firstChild = template.content.firstElementChild;
     if (!firstChild) continue;
@@ -31,7 +32,7 @@ export function renderCards(listaDati: CardData[]): DocumentFragment {
       /*cerca il data-tpl*/
       const el = nuovaCard.querySelector(`[data-tpl="${key}"]`);
       /*se l'elemento esiste imposta il testo con il valore del json*/
-      if (el) el.textContent = dato[key] as string;
+      if (el) el.textContent = String(dato[key]);
     }
 
     contenitore.appendChild(nuovaCard);

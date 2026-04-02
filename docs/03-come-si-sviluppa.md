@@ -11,22 +11,25 @@
 ## Aggiungere una nuova pagina
 
 1. Crea `src/pages/nuova-pagina.html` — Vite la raccoglie automaticamente come entry point.
-2. Crea `src/js/pages/nuova-pagina.js` con almeno:
-   ```js
-   import '../main.js';
+2. Crea `src/js/pages/nuova-pagina.ts` (TypeScript) con almeno:
+   ```ts
+   import '@/js/main';
    ```
 3. Aggiungi il `<script>` nell'HTML:
    ```html
-   <script type="module" src="../js/pages/nuova-pagina.js"></script>
+   <script type="module" src="../js/pages/nuova-pagina.ts"></script>
    ```
 4. Aggiungi il link in `src/index.html`.
+5. Valida i tipi prima di fare commit: `pnpm run typecheck`
 
 ## Regole pratiche
 
-- una pagina per file
-- JS separato per pagina
-- naming chiaro dei file (`home.html`, `servizio-x.html`, ecc.)
+- una pagina per file HTML e un file TypeScript corrispondente
+- naming chiaro dei file (`home.html`, `home.ts`, `servizio-x.html`, `servizio-x.ts`, ecc.)
+- importazioni con alias `@/` per i file che vivono in `src/`
+- usare type-safe rendering: evitare `any`, preferire `unknown` con type guards
 - non modificare `dist/` a mano — è generato dal build
+- eseguire `pnpm run lint` prima di aprire una PR
 
 ## Strategia di Rendering
 
