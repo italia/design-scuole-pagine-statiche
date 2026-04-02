@@ -11,6 +11,12 @@ const templates: Record<CardType, HTMLTemplateElement> = {
   informativa: fromHTML(cardInformativaHTML),
 };
 
+/**
+ * Transforms card data for rendering.
+ * Centralized here so card-specific logic doesn't leak into base render().
+ */
+const cardToRenderData = (card: Card): Record<string, unknown> => card;
+
 export const renderCards = (listaDati: readonly Card[]): DocumentFragment => {
   const frag = document.createDocumentFragment();
   for (const card of listaDati) {
@@ -18,7 +24,7 @@ export const renderCards = (listaDati: readonly Card[]): DocumentFragment => {
       console.warn(`Invalid card type: ${card.type}`);
       continue;
     }
-    frag.appendChild(render(templates[card.type], card));
+    frag.appendChild(render(templates[card.type], cardToRenderData(card)));
   }
   return frag;
 };
