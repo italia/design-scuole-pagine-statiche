@@ -1,14 +1,22 @@
 <template>
-  <it-section class="hero" hero>
-    <div class="container">
-      <div class="denominazione" scuola>
+<it-hero>
+  <img
+    title="titolo immagine"
+    alt="descrizione immagine"
+    slot="background"
+    src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+  />
+  <div slot="text" class="it-hero-text-wrapper bg-dark">
+    <div class="denominazione" scuola>
         <h2 data-tpl="denominazione"></h2>
         <h1 data-tpl="nome"></h1>
         <h2 data-tpl="citta"></h2>
       </div>
       <div class="descrizione" scuola></div>
       <p data-tpl="descrizione"></p>
+      <p><a href="../index.html"> Scopri l'istituto </a></p>
     </div>
-    <p><a href="../index.html"> Scopri l'istituto </a></p>
-  </it-section>
+    </div>
+  </div>
+</it-hero>
 </template>
