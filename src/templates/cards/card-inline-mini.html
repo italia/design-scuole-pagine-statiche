@@ -1,24 +1,30 @@
 <template>
-  <it-card variant="inline">
-    <a slot="title" href="#" data-tpl="title">Titolo contenuto editoriale</a>
-    <span slot="text" data-tpl="text">
-      Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre
-      o quattro righe, senza troncamento.
-    </span>
-    <div slot="footer" class="it-card-taxonomy">
-      <a href="#" class="it-card-category it-card-link">
-        <span class="visually-hidden" data-tpl="category">Categoria correlata: </span>
-        Categoria
+  <div class="col-12 col-lg-4 mb-4">
+    <it-card variant="inline" class="h-80 d-flex flex-row overflow-hidden">
+      
+      <figure slot="image" class="figure img-full w-40 m-0" data-tpl="image">
+        <img
+          src="https://placeholderimage.eu/api/city/800/600"
+          alt="Immagine"
+          class="h-100 object-fit-cover"
+        />
+      </figure>
+
+      <a slot="title" href="#" data-tpl="title" class="text-decoration-none d-block text-truncate-2 ps-2 pt-2 h6 font-weight-bold">
+        Titolo contenuto editoriale
       </a>
-    </div>
-    <time slot="footer" class="it-card-date" datetime="2026-04-22" data-tpl="date">
-      22 aprile 2026
-    </time>
-    <figure slot="image" class="figure img-full" data-tpl="image">
-      <img
-        src="https://placeholderimage.eu/api/city/800/600"
-        alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
-      />
-    </figure>
-  </it-card>
+      
+      <span slot="text" data-tpl="text" class="d-block ps-2 pe-1 text-truncate-3" style="font-size: 0.85rem; line-height: 1.2;">
+        Questo è un testo breve che riassume il contenuto della pagina.
+      </span>
+
+      <div slot="footer" class="it-card-footer d-flex justify-content-between align-items-center w-100 ps-2 pb-2">
+        <span class="it-card-taxonomy">
+          <a href="#" class="it-card-category it-card-link" data-tpl="category" style="font-size: 0.75rem;">Categoria</a>
+        </span>
+        <time class="it-card-date" data-tpl="date" style="font-size: 0.75rem;">18 mar 2026</time>
+      </div>
+
+    </it-card>
+  </div>
 </template>
