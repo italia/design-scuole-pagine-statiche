@@ -1,7 +1,6 @@
 <template>
   <div class="col-12 col-lg-4 mb-4">
     <it-card variant="inline" class="h-80 d-flex flex-row overflow-hidden">
-      
       <figure slot="image" class="figure img-full w-40 m-0" data-tpl="image">
         <img
           src="https://placeholderimage.eu/api/city/800/600"
@@ -10,21 +9,39 @@
         />
       </figure>
 
-      <a slot="title" href="#" data-tpl="title" class="text-decoration-none d-block text-truncate-2 ps-2 pt-2 h6 font-weight-bold">
+      <a
+        slot="title"
+        href="#"
+        data-tpl="title"
+        class="text-decoration-none d-block text-truncate-2 ps-2 pt-2 h6 font-weight-bold"
+      >
         Titolo contenuto editoriale
       </a>
-      
-      <span slot="text" data-tpl="text" class="d-block ps-2 pe-1 text-truncate-3" style="font-size: 0.85rem; line-height: 1.2;">
+
+      <span
+        slot="text"
+        data-tpl="text"
+        class="d-block ps-2 pe-1 text-truncate-3"
+        style="font-size: 0.85rem; line-height: 1.2"
+      >
         Questo è un testo breve che riassume il contenuto della pagina.
       </span>
 
-      <div slot="footer" class="it-card-footer d-flex justify-content-between align-items-center w-100 ps-2 pb-2">
+      <div
+        slot="footer"
+        class="it-card-footer d-flex justify-content-between align-items-center w-100 ps-2 pb-2"
+      >
         <span class="it-card-taxonomy">
-          <a href="#" class="it-card-category it-card-link" data-tpl="category" style="font-size: 0.75rem;">Categoria</a>
+          <a
+            href="#"
+            class="it-card-category it-card-link"
+            data-tpl="category"
+            style="font-size: 0.75rem"
+            >Categoria</a
+          >
         </span>
-        <time class="it-card-date" data-tpl="date" style="font-size: 0.75rem;">18 mar 2026</time>
+        <time class="it-card-date" data-tpl="date" style="font-size: 0.75rem">18 mar 2026</time>
       </div>
-
     </it-card>
   </div>
 </template>
