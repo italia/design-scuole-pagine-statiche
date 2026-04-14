@@ -19,7 +19,12 @@ src/
 │   ├── service-section.html  # sezione con griglia di card
 │   └── service-card.html     # singola card di servizio
 └── js/
-    └── templates.js          # helper: fromHTML, render, renderList
+    ├── utils/
+    │   └── templates.ts      # helper type-safe: fromHTML, render, renderList
+    ├── engines/
+    │   └── cards.ts          # renderCards per card typizzate
+    └── types/
+        └── data.ts           # type definitions (auto-inferred da JSON)
 ```
 
 ## Come funziona un template
@@ -62,8 +67,8 @@ render(tpl.hero, {
 
 ### Liste — `renderList`
 
-```js
-const cards = [
+```ts
+const cards: readonly unknown[] = [
   { titolo: 'Iscrizioni', descrizione: '...', url: '#' },
   { titolo: 'Pagamenti', descrizione: '...', url: '#' },
 ];
@@ -75,26 +80,30 @@ contenitore.append(renderList(tpl.serviceCard, cards));
 ### Template con container per lista — `data-cards`
 
 Il template `service-section.html` contiene un `<div data-cards>` che serve
-come punto di iniezione per le card. Il JS lo trova e ci inietta la lista:
+come punto di iniezione per le card. Il TypeScript lo trova e ci inietta la lista:
 
-```js
+```ts
 const sectionFrag = render(tpl.serviceSection, { titolo: sezione.titolo });
-sectionFrag.querySelector('[data-cards]').append(renderList(tpl.serviceCard, sezione.cards));
+const cardsContainer = sectionFrag.querySelector('[data-cards]');
+if (cardsContainer) {
+  cardsContainer.append(renderList(tpl.serviceCard, sezione.cards));
+}
 rootSections.append(sectionFrag);
 ```
 
 ## Aggiungere una nuova pagina con template
 
 1. Crea `src/pages/mia-pagina.html` (shell minimale — solo `<div id="root-*">`).
-2. Crea `src/js/pages/mia-pagina.js`.
-3. Importa i template che ti servono:
-   ```js
-   import { render, renderList, fromHTML } from '../templates.js';
+2. Crea `src/js/pages/mia-pagina.ts` (TypeScript).
+3. Importa i template e le utility type-safe:
+   ```ts
+   import { render, renderList, fromHTML } from '@/js/utils/templates';
    import heroHTML from '@/templates/hero.html?raw';
    const tpl = { hero: fromHTML(heroHTML) };
    ```
-4. Definisci i dati e chiama `render()` / `renderList()`.
+4. Definisci i dati (utilizzando `Record<string, unknown>` per i dati dinamici) e chiama `render()` / `renderList()`.
 5. Aggiungi il link in `src/index.html`.
+6. Esegui `pnpm run typecheck` prima di fare commit.
 
 ## Aggiungere un nuovo template
 
@@ -107,20 +116,28 @@ rootSections.append(sectionFrag);
      </div>
    </template>
    ```
-2. Importalo nel JS della pagina:
-   ```js
+2. Importalo nel TypeScript della pagina:
+   ```ts
    import mioHTML from '@/templates/mio-template.html?raw';
    const tpl = { mio: fromHTML(mioHTML) };
    ```
-3. Usalo con `render(tpl.mio, { titolo: '...', url: '#', etichetta: '...' })`.
+3. Usalo con type-safe data:
+   ```ts
+   const data: Record<string, unknown> = {
+     titolo: '...',
+     url: '#',
+     etichetta: '...',
+   };
+   render(tpl.mio, data);
+   ```
 
-## API dell'helper (`src/js/templates.js`)
+## API dell'helper (`src/js/utils/templates.ts`)
 
-| Funzione                 | Parametri                         | Restituisce           | Descrizione                                            |
-| ------------------------ | --------------------------------- | --------------------- | ------------------------------------------------------ |
-| `fromHTML(html)`         | `string`                          | `HTMLTemplateElement` | Parsa una stringa `?raw` e restituisce il `<template>` |
-| `render(tpl, data)`      | `HTMLTemplateElement`, `object`   | `DocumentFragment`    | Clona il template e riempie gli slot                   |
-| `renderList(tpl, items)` | `HTMLTemplateElement`, `object[]` | `DocumentFragment`    | Chiama `render` per ogni elemento dell'array           |
+| Funzione                 | Parametri                                        | Restituisce           | Descrizione                                            |
+| ------------------------ | ------------------------------------------------ | --------------------- | ------------------------------------------------------ |
+| `fromHTML(html)`         | `string`                                         | `HTMLTemplateElement` | Parsa una stringa `?raw` e restituisce il `<template>` |
+| `render(tpl, data)`      | `HTMLTemplateElement`, `Record<string, unknown>` | `DocumentFragment`    | Clona il template e riempie gli slot con type safety   |
+| `renderList(tpl, items)` | `HTMLTemplateElement`, `readonly unknown[]`      | `DocumentFragment`    | Chiama `render` per ogni elemento dell'array           |
 
 ## Riferimento — pagina esempio
 

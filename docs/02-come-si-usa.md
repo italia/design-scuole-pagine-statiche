@@ -18,11 +18,15 @@ Il dev server si apre su `http://localhost:5173` con la pagina indice.
 ## Comandi utili
 
 ```bash
+pnpm run typecheck      # verifica i tipi TypeScript
+pnpm run lint:js        # valida il TypeScript (src/js/**/*.ts)
+pnpm run lint:ts        # valida tutti i file TypeScript (src/**/*.ts)
 pnpm run lint:html      # valida gli HTML
-pnpm run lint:js        # linta il JS
 pnpm run lint:css       # linta il CSS
+pnpm run lint           # esegue tutti i linter
 pnpm run format:check   # controlla la formattazione con Prettier
 pnpm run build          # build di produzione in dist/
+pnpm run build:ssr      # genera pagine HTML static pre-renderizzate
 pnpm run preview        # anteprima del build
 ```
 
@@ -35,10 +39,14 @@ src/
 │   ├── index.html        # pagina di test rapida
 │   └── servizio.html     # esempio pagina servizio
 ├── js/
-│   ├── main.js           # import CSS/font/componenti Dev Kit
+│   ├── main.ts           # import CSS/font/componenti Dev Kit
+│   ├── types/            # definizioni di tipo TypeScript
+│   ├── utils/            # utility functions (templates.ts, etc.)
+│   ├── engines/          # engine specializzati (cards.ts, etc.)
 │   └── pages/
-│       ├── index.js      # JS specifico per index
-│       └── servizio.js   # JS specifico per servizio
+│       ├── index.ts      # TypeScript specifico per index
+│       ├── index.json    # dati JSON per la pagina
+│       └── servizio.ts   # TypeScript specifico per servizio
 └── styles/
     └── main.css          # stili del progetto
 ```
