@@ -1,11 +1,11 @@
 <template>
-  <div class="col-md-4">
-    <it-card variant="inline" class="card h-50 d-flex flex-row">
-      <figure slot="image" class="figure w-20 m-0" data-tpl="image">
+  <div class="col-md-4 d-flex">
+    <it-card variant="inline" class="card w-100 d-flex flex-column">
+      <figure slot="image" class="figure m-0 flex-shrink-0" data-tpl="image" style="height: 120px">
         <img
           src="https://placeholderimage.eu/api/city/800/600"
           alt="Immagine"
-          class="h-100 object-fit-cover"
+          class="h-100 w-100 object-fit-cover"
         />
       </figure>
 
@@ -13,7 +13,7 @@
         slot="title"
         href="#"
         data-tpl="title"
-        class="text-decoration-none d-block text-truncate-2 ps-2 pt-2 h6 font-weight-bold"
+        class="text-decoration-none d-block ps-2 pt-2 h6 fw-bold"
       >
         Titolo contenuto editoriale
       </a>
@@ -21,7 +21,7 @@
       <span
         slot="text"
         data-tpl="text"
-        class="d-block ps-2 pe-1 text-truncate-3"
+        class="d-block ps-2 pe-1"
         style="font-size: 0.85rem; line-height: 1.2"
       >
         Questo è un testo breve che riassume il contenuto della pagina.
