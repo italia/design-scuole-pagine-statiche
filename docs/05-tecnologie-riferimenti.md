@@ -3,11 +3,13 @@
 ## Tecnologie
 
 - HTML5
-- JavaScript ES Modules
-- Vite
+- TypeScript 6.x con strict mode
+- Vite 7.x (ES Modules, ESNext target)
 - Dev Kit Italia (Web Components)
-- pnpm
-- GitHub Actions
+- ESLint 8.x + @typescript-eslint (type-aware linting)
+- Prettier (code formatting)
+- pnpm 10+
+- GitHub Actions (CI/CD)
 
 ## Riferimenti online
 

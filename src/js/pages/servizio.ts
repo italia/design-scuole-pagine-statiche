@@ -1,5 +1,5 @@
-import '@/js/main.js';
-import { render, renderList, fromHTML } from '@/templates/utils/templates.js';
+import '@/js/main';
+import { render, renderList, fromHTML } from '@/js/utils/templates';
 
 // Vite importa i file HTML come stringhe a build time — zero fetch a runtime
 import headerHTML from '@/templates/header.html?raw';
@@ -20,13 +20,32 @@ const tpl = {
 };
 
 // ── Dati della pagina ────────────────────────────────────────────────────────
-const scuola = {
+interface SchoolInfo {
+  nome: string;
+  denominazione: string;
+  citta: string;
+  [key: string]: string;
+}
+
+interface ServiceCard {
+  titolo: string;
+  descrizione: string;
+  url: string;
+  [key: string]: string;
+}
+
+interface ServiceSection {
+  titolo: string;
+  cards: ServiceCard[];
+}
+
+const scuola: SchoolInfo & Record<string, string> = {
   nome: 'Liceo Scientifico Statale',
   denominazione: 'Federigo Enriques',
   citta: 'Livorno',
 };
 
-const sezioniServizi = [
+const sezioniServizi: ServiceSection[] = [
   {
     titolo: 'Famiglie e studenti',
     cards: [
@@ -89,23 +108,40 @@ const sezioniServizi = [
 ];
 
 // ── Render ────────────────────────────────────────────────────────────────────
-document.getElementById('root-header').append(render(tpl.header, scuola));
-
-document.getElementById('root-breadcrumb').append(render(tpl.breadcrumb, { pagina: 'Servizi' }));
-
-document.getElementById('root-hero').append(
-  render(tpl.hero, {
-    titolo: 'Servizi',
-    descrizione:
-      'I servizi offerti dalla scuola dedicati a studenti, famiglie e personale scolastico.',
-  })
-);
-
-const rootSections = document.getElementById('root-sections');
-for (const sezione of sezioniServizi) {
-  const sectionFrag = render(tpl.serviceSection, { titolo: sezione.titolo });
-  sectionFrag.querySelector('[data-cards]').append(renderList(tpl.serviceCard, sezione.cards));
-  rootSections.append(sectionFrag);
+const headerContainer = document.getElementById('root-header');
+if (headerContainer) {
+  headerContainer.append(render(tpl.header, scuola));
 }
 
-document.getElementById('root-footer').append(render(tpl.footer, scuola));
+const breadcrumbContainer = document.getElementById('root-breadcrumb');
+if (breadcrumbContainer) {
+  breadcrumbContainer.append(render(tpl.breadcrumb, { pagina: 'Servizi' }));
+}
+
+const heroContainer = document.getElementById('root-hero');
+if (heroContainer) {
+  heroContainer.append(
+    render(tpl.hero, {
+      titolo: 'Servizi',
+      descrizione:
+        'I servizi offerti dalla scuola dedicati a studenti, famiglie e personale scolastico.',
+    })
+  );
+}
+
+const rootSections = document.getElementById('root-sections');
+if (rootSections) {
+  for (const sezione of sezioniServizi) {
+    const sectionFrag = render(tpl.serviceSection, { titolo: sezione.titolo });
+    const containerEl = sectionFrag.querySelector('[data-cards]');
+    if (containerEl) {
+      containerEl.append(renderList(tpl.serviceCard, sezione.cards));
+    }
+    rootSections.append(sectionFrag);
+  }
+}
+
+const footerContainer = document.getElementById('root-footer');
+if (footerContainer) {
+  footerContainer.append(render(tpl.footer, scuola));
+}

@@ -13,8 +13,12 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "format:css": "stylelint --fix \"src/styles/**/*.css\"",
-    "lint:js": "eslint \"src/js/**/*.js\"",
-    "lint:js:fix": "eslint --fix \"src/js/**/*.js\"",
+    "lint:js": "eslint \"src/js/**/*.ts\"",
+    "lint:js:fix": "eslint --fix \"src/js/**/*.ts\"",
+    "lint:ts": "eslint \"src/**/*.ts\"",
+    "lint:ts:fix": "eslint --fix \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "lint": "pnpm run lint:js && pnpm run lint:ts && pnpm run lint:css && pnpm run lint:html && pnpm run typecheck",
     "lint:css": "stylelint \"src/styles/**/*.css\"",
     "prepare": "husky install",
     "documentation-deploy-to-gh-pages": "pnpm run build && pnpm dlx gh-pages -d dist -m 'chore: update documentation' --nojekyll",
@@ -30,9 +34,12 @@
   },
   "packageManager": "pnpm@10.0.0",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7",
+    "@typescript-eslint/parser": "^7",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
+    "express": "^5.2.1",
     "extract-changelog-release": "^1.0.2",
     "fast-glob": "^3.3.3",
     "gh-pages": "^6.3.0",
@@ -46,6 +53,7 @@
     "stylelint-config-standard": "36.0.1",
     "stylelint-order": "8.0.0",
     "stylelint-prettier": "5.0.3",
+    "typescript": "^6.0.2",
     "vite": "^7.3.1"
   }
 }
