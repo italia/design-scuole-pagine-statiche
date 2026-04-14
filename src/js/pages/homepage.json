@@ -7,6 +7,7 @@
     "titolo": "In evidenza",
     "cards": [
       {
+        "type": "inlineMini",
         "title": "Open day nella sede centrale",
         "text": "",
         "category": "Categoria",
@@ -14,6 +15,7 @@
         "date": "18 marzo 2026"
       },
       {
+        "type": "inlineMini",
         "title": "Spettacolo finale per il corso di teatro per le primarie",
         "text": "Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.",
         "category": "Categoria",
@@ -21,6 +23,7 @@
         "date": "18 marzo 2026"
       },
       {
+        "type": "inlineMini",
         "title": "Orientamento per le classi di terza media",
         "text": "Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.",
         "category": "Categoria",
@@ -67,12 +70,38 @@
       "testolinkProgetti": "Vai a tutti i progetti"
     },
     "cards": [
-      { "title": "Uscite didattiche", "text": "Esperienze fuori dall'aula", "url": "#" },
-      { "title": "Corsi e certificazioni", "text": "Attività pratiche e sperimentali", "url": "#" },
-      { "title": "Progetti di orientamento", "text": "Supporto alle scelte future", "url": "#" },
-      { "title": "Laboratori didattici", "text": "Attività pratiche e sperimentali", "url": "#" },
-      { "title": "Gare e concorsi", "text": "Sfide educative e creative", "url": "#" },
       {
+        "type": "informativa",
+        "title": "Uscite didattiche",
+        "text": "Esperienze fuori dall'aula",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Corsi e certificazioni",
+        "text": "Attività pratiche e sperimentali",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Progetti di orientamento",
+        "text": "Supporto alle scelte future",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Laboratori didattici",
+        "text": "Attività pratiche e sperimentali",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Gare e concorsi",
+        "text": "Sfide educative e creative",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
         "title": "Progetti territorio e ambiente",
         "text": "Scoperta e cura del territorio",
         "url": "#"
@@ -85,21 +114,25 @@
       "descrizione": "Le ultime circolari pubblicate",
       "circolariDataCards": [
         {
+          "type": "informativa",
           "title": "titolo della 1 circolare",
           "text": "contenuto della 1 circolare",
           "date": "15 novembre 2025"
         },
         {
+          "type": "informativa",
           "title": "titolo della 2 circolare",
           "text": "contenuto della 2 circolare",
           "date": "22 dicembre 2025"
         },
         {
+          "type": "informativa",
           "title": "titolo della 3 circolare",
           "text": "contenuto della 3 circolare",
           "date": "5 gennaio 2026"
         },
         {
+          "type": "informativa",
           "title": "titolo della 4 circolare",
           "text": "contenuto della 4 circolare",
           "date": "30 marzo 2026"
@@ -111,21 +144,25 @@
       "descrizione": "I servizi offerti dalla nostra scuola",
       "serviziDataCards": [
         {
+          "type": "informativa",
           "title": "Mensa",
           "text": "Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durate la giornata scolastica",
           "date": ""
         },
         {
+          "type": "informativa",
           "title": "Piedibus",
           "text": "Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile",
           "date": ""
         },
         {
+          "type": "informativa",
           "title": "Scuolabus",
           "text": "Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite",
           "date": ""
         },
         {
+          "type": "informativa",
           "title": "Doposcuola",
           "text": "Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato da personale qualificato.",
           "date": ""
@@ -136,27 +173,30 @@
   "tools": {
     "titolo": "I nostri strumenti digitali",
     "cards": [
-      { "title": "Scuola in Chiaro", "text": "", "category": "" },
-      { "title": "UNICA", "text": "", "category": "" },
-      { "title": "Registro elettronico", "text": "", "category": "" }
+      { "type": "inlineMini", "title": "Scuola in Chiaro", "text": "", "category": "" },
+      { "type": "inlineMini", "title": "UNICA", "text": "", "category": "" },
+      { "type": "inlineMini", "title": "Registro elettronico", "text": "", "category": "" }
     ]
   },
   "fin": {
     "titolo": "I nostri finanziamenti",
     "cards": [
       {
+        "type": "editorialeStandard",
         "title": "PNRR Futura",
         "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
         "category": "",
         "date": ""
       },
       {
+        "type": "editorialeStandard",
         "title": "PON - Ricerca e innovazione 2014-2020",
         "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
         "category": "",
         "date": ""
       },
       {
+        "type": "editorialeStandard",
         "title": "PON inclusione",
         "text": "Programma europeo per il sostegno e l'inclusione sociale",
         "category": "",
@@ -168,11 +208,13 @@
     "titolo": "Pubblicità legale e trasparenza",
     "cards": [
       {
+        "type": "inlineMini",
         "title": "Albo online",
         "text": "Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore legale e sempre aggiornati",
         "category": "Vai all'Albo online"
       },
       {
+        "type": "inlineMini",
         "title": "Amministrazione Trasparente",
         "text": "Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza",
         "category": "Vai alla sezione"
