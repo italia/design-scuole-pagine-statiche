@@ -8,7 +8,7 @@
   --it-color-black-05: #0000000d; /** Colore neutro */
   --it-color-white: #fff; /** Colore neutro */
   --it-color-red-cherry-98: #fdf7f8; /** colore tema default */
-  --it-color-redcherry-97: #fdf7f8; /** colore tema default */
+  --it-color-red-cherry-97: #fdf7f8; /** colore tema default */
   --it-color-red-cherry-95: #faebed; /** colore tema default */
   --it-color-red-cherry-84: #eebec5; /** colore tema default */
   --it-color-red-cherry-55: #d0495d; /** colore tema default */
@@ -40,68 +40,74 @@
   --it-color-gray-90: #e5e5e5; /** Colore neutro */
   --it-color-gray-96: #f5f5f5; /** Colore neutro */
   --it-color-gray-98: #fafafa; /** Colore neutro */
-  --it-color-background-primary-darker: var(--color-red-cherry-18); /** sfondo primario */
-  --it-color-background-primary-dark: var(--color-red-cherry-24); /** sfondo primario */
-  --it-color-background-primary: var(--color-red-cherry-34); /** sfondo primario */
-  --it-color-background-vivid: var(--color-red-cherry-52); /** sfondo primario */
+  --it-color-background-primary-darker: var(--it-color-red-cherry-18); /** sfondo primario */
+  --it-color-background-primary-dark: var(--it-color-red-cherry-24); /** sfondo primario */
+  --it-color-background-primary: var(--it-color-red-cherry-34); /** sfondo primario */
+  --it-color-background-vivid: var(--it-color-red-cherry-52); /** sfondo primario */
   --it-color-background-primary-light: var(
-    --color-red-cherry-84
+    --it-color-red-cherry-84
   ); /** sfondo con contrasto leggero */
 
   --it-color-background-primary-lighter: var(
-    --color-red-cherry-95
+    --it-color-red-cherry-95
   ); /** sfondo di colore primario con contrasto ridotto */
 
   --it-color-background-primary-lighest: var(
-    --color-redcherry-97
+    --it-color-red-cherry-97
   ); /** sfondo di colore primario con contrasto ridotto */
 
   --it-color-background-primary-hover: var(
-    --color-red-cherry-24
+    --it-color-red-cherry-24
   ); /** sfondo utilizzato su componenti primari interattivi nello stato di :hover */
 
   --it-color-background-primary-active: var(
-    --color-red-cherry-18
+    --it-color-red-cherry-18
   ); /** sfondo utilizzato su componenti primari interattivi nello stato di :active */
 
   --it-color-background-accent: var(
-    --color-red-cherry-52
+    --it-color-red-cherry-52
   ); /** sfondo di colore accent che dà enfasi a una sezione */
 
   --it-color-background-header-top: var(
-    --color-red-cherry-18
+    --it-color-red-cherry-18
   ); /** sfondo utilizzato su componenti primari interattivi nello stato di :hover */
 
   --it-color-background-header-middle: var(--it-color-white); /** sfondo primario */
-  --itcolor-background-header-bottom: var(
+  --it-color-background-header-bottom: var(
     --it-color-white
   ); /** sfondo di colore primario con contrasto ridotto */
 
-  --it-color-background-footer: var(--color-red-cherry-18); /** sfondo utilizzato per il footer */
-  --it-color-border-primary: var(--color-red-cherry-34); /** bordo primario */
+  --it-color-background-footer: var(
+    --it-color-red-cherry-18
+  ); /** sfondo utilizzato per il footer */
+
+  --it-color-border-primary: var(--it-color-red-cherry-34); /** bordo primario */
   --it-color-border-primary-hover: var(
     --it-color-red-cherry-24
   ); /** bordo primario per stato interattivo hover */
 
   --it-color-border-primary-active: var(
-    --color-red-cherry-18
+    --it-color-red-cherry-18
   ); /** bordo primario per stato interattivo active */
 
   --it-color-border-primary-light: var(
-    --color-red-cherry-84
+    --it-color-red-cherry-84
   ); /** bordo primario per stato interattivo active */
 
-  --it-color-border-accent: var(--color-red-cherry-52); /** bordo accent */
-  --it-color-text-primary: var(--color-red-cherry-34); /** testo con link */
-  --it-color-text-primary-hover: var(--color-red-cherry-24); /** testo con link nello stato hover */
+  --it-color-border-accent: var(--it-color-red-cherry-52); /** bordo accent */
+  --it-color-text-primary: var(--it-color-red-cherry-34); /** testo con link */
+  --it-color-text-primary-hover: var(
+    --it-color-red-cherry-24
+  ); /** testo con link nello stato hover */
+
   --it-color-text-primary-active: var(
-    --color-red-cherry-18
+    --it-color-red-cherry-18
   ); /** testo con link nello stato active */
 
-  --it-color-text-accent: var(--color-red-cherry-52); /** testo di accento */
-  --it-color-text-secondary: var(--color-secondary); /** testo di contesto */
-  --it-color-icon-primary: var(--color-red-cherry-34); /** icona base */
-  --it-color-icon-primary-hover: var(--color-red-cherry-24); /** icona nello stato hover */
-  --it-color-icon-primary-active: var(--color-red-cherry-18); /** icona nello stato active */
-  --it-color-icon-accent: var(--color-red-cherry-52); /** icona base */
+  --it-color-text-accent: var(--it-color-red-cherry-52); /** testo di accento */
+  --it-color-text-secondary: var(--it-color-secondary); /** testo di contesto */
+  --it-color-icon-primary: var(--it-color-red-cherry-34); /** icona base */
+  --it-color-icon-primary-hover: var(--it-color-red-cherry-24); /** icona nello stato hover */
+  --it-color-icon-primary-active: var(--it-color-red-cherry-18); /** icona nello stato active */
+  --it-color-icon-accent: var(--it-color-red-cherry-52); /** icona base */
 }
