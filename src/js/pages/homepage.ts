@@ -14,6 +14,7 @@ import pubblicitaHTML from '@/templates/pubblicitasection.html?raw';
 import personaleHTML from '@/templates/personale.html?raw';
 import footerHTML from '@/templates/footer.html?raw';
 import ratingHTML from '@/templates/rating.html?raw';
+import carouselHTML from '@/templates/carousel.html?raw';
 
 import data from '@/js/pages/homepage.json';
 
@@ -30,10 +31,18 @@ const templates = {
   personale: fromHTML(personaleHTML),
   footer: fromHTML(footerHTML),
   rating: fromHTML(ratingHTML),
+  carousel: fromHTML(carouselHTML),
 };
 
 /* rendering */
 
+/*render carousel*/
+const carouselFragment = render(templates.carousel, data.carousel);
+
+const carouselContainer = document.getElementById('carousel');
+if (carouselContainer) {
+  carouselContainer.appendChild(carouselFragment);
+}
 /* render in evidenza */
 const risultato = render(templates.serviceSection, { titolo: data.sezioniServizi.titolo });
 
