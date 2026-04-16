@@ -21,3 +21,12 @@
    Il design system è Bootstrap Italia, importato tramite @italia/dev-kit-italia.
    Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
    Aggiungi qui solo override o stili davvero specifici del progetto. */
+
+it-carousel::part(arrow-prev),
+it-carousel::part(arrow-next) {
+  background: #812230;
+}
+
+it-carousel::part(pagination-dot) {
+  background: #812230;
+}
