@@ -110,4 +110,5 @@
   --it-color-icon-primary-hover: var(--it-color-red-cherry-24); /** icona nello stato hover */
   --it-color-icon-primary-active: var(--it-color-red-cherry-18); /** icona nello stato active */
   --it-color-icon-accent: var(--it-color-red-cherry-52); /** icona base */
+  --bsi-color-link: var(--it-color-red-cherry-34);
 }
