@@ -1,7 +1,18 @@
 <template>
-  <div>
+   <it-section
+    image="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+    inverse=""
+  >
+    <img
+      title="titolo immagine"
+      alt="descrizione immagine"
+      slot="background"
+      image="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+    />
+  <div> 
     <h2 data-tpl="title"></h2>
     <p data-tpl="subtitle"></p>
-    <it-button variant="danger" type="button" data-tpl="button"> </it-button>
+    <it-button variant="danger-outline" type="button" data-tpl="button"> </it-button>
   </div>
+  </it-section>
 </template>
