@@ -11,6 +11,9 @@ importers:
       '@italia/dev-kit-italia':
         specifier: 1.0.0-alpha.6
         version: 1.0.0-alpha.6(lit@3.3.2)
+      bootstrap-italia:
+        specifier: ^2.18.0
+        version: 2.18.0
       package.json:
         specifier: ^2.0.1
         version: 2.0.1
@@ -790,6 +793,9 @@ packages:
 
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+
+  bootstrap-italia@2.18.0:
+    resolution: {integrity: sha512-YyvtRqCfbFp3+32a8FfjT/sR1e0thkuH4RobsI4kaVhUE2BkKZY7o07dvVZP+3rCBEcx2QmkDlzo51RLwcjxrg==}
 
   bootstrap-italia@3.0.0-alpha.4:
     resolution: {integrity: sha512-km3WmCLIh/sdhh/0vZbY11VsZOUCOJPkm7yvmWK8Zh13ofr0B8Xzuv9N/oFuhuDw/ZFCCv1u1VnTMjFTSxJPlg==}
@@ -3126,6 +3132,19 @@ snapshots:
       - supports-color
 
   boolbase@1.0.0: {}
+
+  bootstrap-italia@2.18.0:
+    dependencies:
+      '@popperjs/core': 2.11.8
+      '@splidejs/splide': 4.1.4
+      '@types/bootstrap': 5.2.10
+      animejs: 3.2.2
+      design-tokens-italia: 1.3.3
+      just-validate: 4.3.0
+      minimasonry: 1.3.2
+      progressbar.js: 1.1.1
+      uuid: 8.3.2
+      video.js: 8.23.7
 
   bootstrap-italia@3.0.0-alpha.4:
     dependencies:
