@@ -14,7 +14,7 @@
   --it-color-red-cherry-55: #d0495d; /** colore tema default */
   --it-color-red-cherry-52: #cd3c52; /** colore tema default */
   --it-color-red-cherry-34: #812230; /** colore tema default - valore base */
-  --it-color-red-cherry-24: #611924; /** colore tema default */
+  --it-color-red-cherry-24: #611a24; /** colore tema default */
   --it-color-red-cherry-18: #49131b; /** colore tema default */
   --it-color-secondary-lighter: #f6f7f9; /** colore tema default */
   --it-color-secondary: #455b71; /** colore tema secondario - valore base */
@@ -111,4 +111,7 @@
   --it-color-icon-primary-active: var(--it-color-red-cherry-18); /** icona nello stato active */
   --it-color-icon-accent: var(--it-color-red-cherry-52); /** icona base */
   --bsi-color-link: var(--it-color-red-cherry-34);
+  --bsi-dark-rgb: var(--it-color-red-cherry-24);
+  --it-color-background-primary-muted: #202a2e;
+  --it-color-background-primary-deep: #202a2e;
 }
