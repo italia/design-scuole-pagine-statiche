@@ -54,7 +54,7 @@
         <div class="container w-100">
           <div class="row align-items-center">
             <div class="col-12 col-lg-6 text-lg-start p-0">
-              <div class="py-4 container m-0 row row-cols-1 g-3">
+              <div class="py-4 container m-0 row row-cols-1 g-2 g-lg-3">
                 <h2 class="p-0 m-0" style="font-weight: 400">Istituto comprensivo</h2>
                 <h1 class="p-0 m-0">Federico Hernandez</h1>
                 <h4 class="p-0 m-0" style="font-weight: 400">Livorno</h4>
@@ -639,89 +639,263 @@
       </div>
     </div>
     <div id="trasparenza">
-      <div class="container">
-        <h2>Pubblicità legale e trasparenza</h2>
-        <div class="service-grid">
-          <it-card variant="inline-mini" full-height="">
-            <a slot="title" href="#">Albo online<span class="visually-hidden"> (link a XYZ)</span></a>
+      <div style="background-color: #faebed">
+        <it-section>
+          <div class="container">
+            <h2 style="color: #2f475e">Pubblicità legale e trasparenza</h2>
+            <div class="service-grid row row-cols-1 row-cols-md-3 g-2 g-lg-3 align-items-stretch">
+              <it-card variant="inline-mini" full-height="">
+                <a slot="title" href="#">Albo online<span class="visually-hidden"> (link a XYZ)</span></a>
 
-            <span slot="text"
-              >Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore
-              legale e sempre aggiornati</span
-            >
+                <span slot="text"
+                  >Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore
+                  legale e sempre aggiornati</span
+                >
 
-            <div slot="footer" class="it-card-taxonomy">
-              <a href="#" class="it-card-category it-card-link"
-                >Vai all'Albo online<span class="visually-hidden">Categoria correlata: </span></a
-              >
+                <div slot="footer" class="it-card-taxonomy">
+                  <a href="#" class="it-card-category it-card-link"
+                    >Vai all'Albo online<span class="visually-hidden">Categoria correlata: </span></a
+                  >
+                </div>
+                <time slot="footer" class="it-card-date">18 mar 2026</time>
+              </it-card>
+
+              <it-card variant="inline-mini" full-height="">
+                <a slot="title" href="#"
+                  >Amministrazione Trasparente<span class="visually-hidden"> (link a XYZ)</span></a
+                >
+
+                <span slot="text"
+                  >Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e
+                  sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza</span
+                >
+
+                <div slot="footer" class="it-card-taxonomy">
+                  <a href="#" class="it-card-category it-card-link"
+                    >Vai alla sezione<span class="visually-hidden">Categoria correlata: </span></a
+                  >
+                </div>
+                <time slot="footer" class="it-card-date">18 mar 2026</time>
+              </it-card>
             </div>
-            <time slot="footer" class="it-card-date">18 mar 2026</time>
-          </it-card>
-
-          <it-card variant="inline-mini" full-height="">
-            <a slot="title" href="#">Amministrazione Trasparente<span class="visually-hidden"> (link a XYZ)</span></a>
-
-            <span slot="text"
-              >Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività
-              dell'istituto, nel rispetto degli obblighi di trasparenza</span
-            >
-
-            <div slot="footer" class="it-card-taxonomy">
-              <a href="#" class="it-card-category it-card-link"
-                >Vai alla sezione<span class="visually-hidden">Categoria correlata: </span></a
-              >
-            </div>
-            <time slot="footer" class="it-card-date">18 mar 2026</time>
-          </it-card>
-        </div>
+          </div>
+        </it-section>
       </div>
     </div>
     <div id="personale-scolastico">
-      <div>
-        <h2>Per il personale scolastico</h2>
-        <p>Accedi all'area riservata al personale scolastico</p>
-        <it-button variant="danger" type="button">Accedi all'area personale</it-button>
-      </div>
+      <it-section image="../illustrations/hero-homepage-large.svg" inverse="">
+        <div class="container">
+          <div class="d-flex flex-column text-white">
+            <h2 class="no_toc">Per il personale scolastico</h2>
+            <p class="d-none d-lg-block">Informazioni, modulistica e strumenti per i docenti dell'Istituto.</p>
+            <div class="it-btn-container">
+              <a class="btn btn-sm" href="#" style="background-color: #fff"
+                >Azione primaria
+                <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </it-section>
     </div>
     <div id="rating">
-      <it-rating name="rating" value="0" icon="it-star-outline" max-elements="5">
-        <span slot="label">Valuta questo contenuto</span>
-        <it-rating-item value="1">
-          <span slot="label">1 stella</span>
-        </it-rating-item>
-        <it-rating-item value="2">
-          <span slot="label">2 stelle</span>
-        </it-rating-item>
-        <it-rating-item value="3">
-          <span slot="label">3 stelle</span>
-        </it-rating-item>
-        <it-rating-item value="4">
-          <span slot="label">4 stelle</span>
-        </it-rating-item>
-        <it-rating-item value="5">
-          <span slot="label">5 stelle</span>
-        </it-rating-item>
-      </it-rating>
+      <div class="bg-dark py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto bg-white p-4 rounded">
+              <it-rating name="rating" value="0" icon="it-star-outline" max-elements="5">
+                <span slot="label">Quanto sono chiare le informazioni su questa pagina?</span>
+                <it-rating-item value="1">
+                  <span slot="label">1 stella</span>
+                </it-rating-item>
+                <it-rating-item value="2">
+                  <span slot="label">2 stelle</span>
+                </it-rating-item>
+                <it-rating-item value="3">
+                  <span slot="label">3 stelle</span>
+                </it-rating-item>
+                <it-rating-item value="4">
+                  <span slot="label">4 stelle</span>
+                </it-rating-item>
+                <it-rating-item value="5">
+                  <span slot="label">5 stelle</span>
+                </it-rating-item>
+              </it-rating>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="footer">
-      <footer class="site-footer">
-        <div class="container footer-body">
-          <div class="footer-school">
-            <div class="school-name">
-              <span></span>
-              <strong>Istituto comprensivo F. Hernandez</strong>
-              <span>Livorno</span>
-            </div>
-            <p class="footer-tagline">Idea e progetto di <a href="https://designers.italia.it">Designers Italia</a></p>
+      <footer class="it-footer">
+        <div class="it-footer-main">
+          <div class="container">
+            <section class="pb-4">
+              <div class="row clearfix">
+                <div class="col-sm-12">
+                  <div class="it-brand-wrapper">
+                    <a href="#">
+                      <it-icon name="it-code-circle" size="xl" color="inverse"></it-icon>
+                      <div class="it-brand-text">
+                        <h2 class="no_toc">Nome Ente</h2>
+                        <h3 class="no_toc">Tagline</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
+                  <h4>
+                    <a href="#" title="Vai alla pagina: Amministrazione">Amministrazione</a>
+                  </h4>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li><a class="list-item" href="#">Giunta e consiglio</a></li>
+                      <li><a class="list-item" href="#">Aree di competenza</a></li>
+                      <li><a class="list-item" href="#">Dipendenti</a></li>
+                      <li><a class="list-item" href="#">Luoghi</a></li>
+                      <li>
+                        <a class="list-item" href="#">Associazioni e società partecipate</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
+                  <h4>
+                    <a href="#" title="Vai alla pagina: Servizi">Servizi</a>
+                  </h4>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li><a class="list-item" href="#">Pagamenti</a></li>
+                      <li><a class="list-item" href="#">Sostegno</a></li>
+                      <li><a class="list-item" href="#">Domande e iscrizioni</a></li>
+                      <li><a class="list-item" href="#">Segnalazioni</a></li>
+                      <li>
+                        <a class="list-item" href="#">Autorizzazioni e concessioni</a>
+                      </li>
+                      <li>
+                        <a class="list-item" href="#">Certificati e dichiarazioni</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
+                  <h4>
+                    <a href="#" title="Vai alla pagina: Novità">Novità</a>
+                  </h4>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li><a class="list-item" href="#">Notizie</a></li>
+                      <li><a class="list-item" href="#">Eventi</a></li>
+                      <li><a class="list-item" href="#">Comunicati stampa</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                  <h4>
+                    <a href="#" title="Vai alla pagina: Documenti">Documenti</a>
+                  </h4>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li><a class="list-item" href="#">Progetti e attività</a></li>
+                      <li>
+                        <a class="list-item" href="#">Delibere, determine e ordinanze</a>
+                      </li>
+                      <li><a class="list-item" href="#">Bandi</a></li>
+                      <li><a class="list-item" href="#">Concorsi</a></li>
+                      <li><a class="list-item" href="#">Albo pretorio</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="py-4 border-white border-top">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 pb-2">
+                  <h4>Contatti</h4>
+                  <p>
+                    <strong>Nome Ente</strong><br />
+                    Via Roma 0 - 00000 Città - Codice fiscale / P. IVA: 000000000
+                  </p>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li>
+                        <a class="list-item" href="#">Posta Elettronica Certificata</a>
+                      </li>
+                      <li>
+                        <a class="list-item" href="#">URP - Ufficio Relazioni con il Pubblico</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 pb-2">
+                  <div class="pb-2">
+                    <h4>Seguici su</h4>
+                    <ul class="list-inline text-left social">
+                      <li class="list-inline-item">
+                        <a class="p-2" href="#"
+                          ><it-icon color="inverse" size="sm" name="it-designers-italia"></it-icon
+                          ><span class="visually-hidden">Designers Italia (link esterno)</span></a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="p-2" href="#"
+                          ><it-icon color="inverse" size="sm" name="it-twitter"></it-icon
+                          ><span class="visually-hidden">X (link esterno)</span></a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="p-2" href="#"
+                          ><it-icon color="inverse" size="sm" name="it-medium"></it-icon
+                          ><span class="visually-hidden">Medium (link esterno)</span></a
+                        >
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="p-2" href="#"
+                          ><it-icon color="inverse" size="sm" name="it-behance"></it-icon
+                          ><span class="visually-hidden">Behance (link esterno)</span></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4 mt-2">
+                  <h4>Newsletter</h4>
+                  <div class="form-group d-flex gap-1">
+                    <it-input
+                      slotted=""
+                      type="text"
+                      id="exampleFormGroup"
+                      size="sm"
+                      placeholder="Inserisci la tua email"
+                      label-hidden=""
+                      ><span slot="label">Inserisci la tua emial</span>
+                      <it-button type="submit" variant="primary" slot="append">Iscriviti</it-button>
+                    </it-input>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
-          <nav aria-label="Footer">
-            <ul>
-              <li><a href="#">Note legali</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Amministrazione trasparente</a></li>
-              <li><a href="#">Dichiarazione di accessibilità</a></li>
+        </div>
+        <div class="it-footer-small-prints clearfix">
+          <div class="container">
+            <!-- <h3 class="visually-hidden">Sezione Link Utili</h3> -->
+            <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+              <li class="list-inline-item"><a href="#">Media policy</a></li>
+              <li class="list-inline-item"><a href="#">Note legali</a></li>
+              <li class="list-inline-item"><a href="#">Privacy policy</a></li>
+              <li class="list-inline-item"><a href="#">Mappa del sito</a></li>
+              <li class="list-inline-item">
+                <a href="https://form.agid.gov.it/view/xyz"
+                  >Dichiarazione di accessibilità <span class="visually-hidden">(link esterno su sito AgID)</span></a
+                >
+              </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </footer>
     </div>
