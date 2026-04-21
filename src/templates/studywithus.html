@@ -2,18 +2,18 @@
   <div style="background-color: #faebed">
     <it-section class="service-section">
       <div class="container">
-        <h2 class="service-section__title" data-tpl="titoloSezione"></h2>
+        <h2 data-tpl="titoloSezione"></h2>
 
-        <div class="percorsiDistudio">
+        <div class="pt-4">
           <div class="row align-items-start gy-4">
             <div class="col-12 col-lg-5">
-              <h2 class="percorsi__title" data-tpl="titlePercorsi"></h2>
+              <h3 class="percorsi__title" data-tpl="titlePercorsi"></h3>
               <p class="percorsi__description" data-tpl="description1Percorsi"></p>
               <p class="percorsi__description" data-tpl="description2Percorsi"></p>
               <it-button type="button" variant="primary" data-tpl="testoLink1Percorsi" href="#">
               </it-button>
               <p class="mt-3">
-                <a class="fw-semibold text-danger" data-tpl="testoLink2Percorsi" href="#"></a>
+                <a class="fw-semibold" data-tpl="testoLink2Percorsi" href="#"><it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon></a>
               </p>
             </div>
 
@@ -21,18 +21,18 @@
               <div class="card border-0 shadow-sm rounded p-4 bg-white">
                 <div class="row g-3">
                   <div class="col-12 col-md-4">
-                    <img src="src/icons/Infanzia-Small.svg" size="lg" class="mb-2" />
-                    <p class="fw-semibold mb-1" data-tpl="infanzia"></p>
+                    <img src="../icons/Infanzia-Large.svg" size="lg" class="mb-2" />
+                    <h5 class="fw-semibold text-secondary mb-1" data-tpl="infanzia"></h5>
                     <p class="small text-muted mb-0" data-tpl="descrizioneTipo1"></p>
                   </div>
                   <div class="col-12 col-md-4">
-                    <img src="src/icons/Elementari-Large.svg" size="lg" class="mb-2" />
-                    <p class="fw-semibold mb-1" data-tpl="elementari"></p>
+                    <img src="../icons/Elementari-Large.svg" size="lg" class="mb-2" />
+                    <h5 class="fw-semibold text-secondary mb-1" data-tpl="elementari"></h5>
                     <p class="small text-muted mb-0" data-tpl="descrizioneTipo2"></p>
                   </div>
                   <div class="col-12 col-md-4">
-                    <img src="src/icons/Medie-Large.svg" size="lg" class="mb-2" />
-                    <p class="fw-semibold mb-1" data-tpl="medie"></p>
+                    <img src="../icons/Medie-Large.svg" size="lg" class="mb-2" />
+                    <h5 class="fw-semibold text-secondary mb-1" data-tpl="medie"></h5>
                     <p class="small text-muted mb-0" data-tpl="descrizioneTipo3"></p>
                   </div>
                 </div>
@@ -50,12 +50,12 @@
               <p class="progetti__description" data-tpl="description1Progetti"></p>
               <p class="progetti__description" data-tpl="description2Progetti"></p>
               <p class="mt-3">
-                <a class="fw-semibold text-danger" data-tpl="testolinkProgetti" href="#"></a>
+                <a class="fw-semibold" data-tpl="testolinkProgetti" href="#"> <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon></a>
               </p>
             </div>
 
             <div class="col-12 col-lg-7">
-              <div class="row row-cols-2 g-2" study-card></div>
+              <div class="row row-cols-2 g-4" study-card></div>
             </div>
           </div>
         </div>

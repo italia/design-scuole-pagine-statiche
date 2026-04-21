@@ -1,35 +1,38 @@
 <template>
+  <style>
+    @media (max-width: 576px) {
+      #hero section { padding-bottom: 0 !important; }
+      div:has(> figure) { padding: 0 !important; }
+      figure, figure img { width: 100vw; max-width: 100vw; }
+    }
+  </style>
   <it-section
-    image="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+    image="../illustrations/hero-homepage-large.svg"
     inverse=""
   >
-    <img
-      title="titolo immagine"
-      alt="descrizione immagine"
-      slot="background"
-      image="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
-    />
+    
 
-    <div slot="text" class="it-hero-text-wrapper w-100">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 col-lg-6 text-lg-start">
-            <div class="denominazione" scuola>
-              <h2 data-tpl="denominazione"></h2>
-              <h1 data-tpl="nome"></h1>
-              <h2 data-tpl="citta"></h2>
+  <div class="container w-100">
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 text-lg-start p-0">
+          <div class="py-4 container m-0 row row-cols-1 g-3">
+            <h2 data-tpl="denominazione" class="p-0 m-0" style="font-weight: 400;"></h2>
+            <h1 data-tpl="nome" class="p-0 m-0"></h1>
+            <h4 data-tpl="citta" class="p-0 m-0" style="font-weight: 400;"></h4>
+
+            <div class="row row-cols-1 g-4 p-0">
+              <p data-tpl="descrizione" class="font-serif" style="font-style: italic;"></p>
+              <a href="../index.html" class="text-white mt-4">Scopri l'istituto<it-icon name="it-arrow-right" color="inverse" size="sm" class="ms-2"></it-icon></a>
             </div>
+            </div>
+        </div>
 
-            <div class="descrizione" scuola></div>
-            <p data-tpl="descrizione"></p>
-            <p><a href="../index.html" class="btn btn-primary text-white">Scopri l'istituto</a></p>
-          </div>
-
-          <div
-            class="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center mt-4 mt-lg-0"
-          >
-            <img src="https://picsum.photos/500/300" alt="immagine istituto" class="img-fluid" />
-          </div>
+        <div
+          class="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center mt-4 mt-lg-0"
+        >
+          <figure class="figure img-full mb-0 ratio ratio-16x9">
+            <img src="../images/hero-homepage.jpg" alt="immagine istituto" width="540" height="304" />
+          </figure>
         </div>
       </div>
     </div>

@@ -111,4 +111,10 @@
   --it-color-icon-primary-active: var(--it-color-red-cherry-18); /** icona nello stato active */
   --it-color-icon-accent: var(--it-color-red-cherry-52); /** icona base */
   --bsi-color-link: var(--it-color-red-cherry-34);
+  --bsi-color-link-hover: var(--it-color-red-cherry-18);
+  /* Fix section emphasis */
+  --it-color-background-emphasis: var(--it-color-background-primary-dark);
+
+  /* Fix section muted */
+  --it-color-background-muted: var(--it-color-red-cherry-52);
 }

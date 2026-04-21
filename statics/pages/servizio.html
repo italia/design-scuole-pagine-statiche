@@ -41,17 +41,48 @@
         </nav>
       </div>
       <div id="root-hero">
-        <it-section class="hero" hero="">
-          <div class="container">
-            <div class="denominazione" scuola="">
-              <h2></h2>
-              <h1></h1>
-              <h2></h2>
+        <style>
+          @media (max-width: 576px) {
+            #hero section {
+              padding-bottom: 0 !important;
+            }
+            div:has(> figure) {
+              padding: 0 !important;
+            }
+            figure,
+            figure img {
+              width: 100vw;
+              max-width: 100vw;
+            }
+          }
+        </style>
+        <it-section image="../illustrations/hero-homepage-large.svg" inverse="">
+          <div class="container w-100">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 text-lg-start p-0">
+                <div class="py-4 container m-0 row row-cols-1 g-3">
+                  <h2 class="p-0 m-0" style="font-weight: 400"></h2>
+                  <h1 class="p-0 m-0"></h1>
+                  <h4 class="p-0 m-0" style="font-weight: 400"></h4>
+
+                  <div class="row row-cols-1 g-4 p-0">
+                    <p class="font-serif" style="font-style: italic">
+                      I servizi offerti dalla scuola dedicati a studenti, famiglie e personale scolastico.
+                    </p>
+                    <a href="#" class="text-white mt-4"
+                      >Scopri l'istituto<it-icon name="it-arrow-right" color="inverse" size="sm" class="ms-2"></it-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+                <figure class="figure img-full mb-0 ratio ratio-16x9">
+                  <img src="../images/hero-homepage.jpg" alt="immagine istituto" width="540" height="304" />
+                </figure>
+              </div>
             </div>
-            <div class="descrizione" scuola=""></div>
-            <p>I servizi offerti dalla scuola dedicati a studenti, famiglie e personale scolastico.</p>
           </div>
-          <p><a href="#"> Scopri l'istituto </a></p>
         </it-section>
       </div>
       <div id="root-sections">
@@ -59,51 +90,61 @@
           <div class="container">
             <h2 class="service-section__title">Famiglie e studenti</h2>
             <!-- data-cards: punto di iniezione per le card, gestito da servizio.js -->
-            <div class="service-grid" data-cards="">
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Iscrizioni online</strong></p>
-                    <p class="service-card__description">Procedura per l'iscrizione al primo anno</p>
-                  </div>
-                </a>
-              </article>
+            <div data-cards="">
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Iscrizioni online</strong></p>
+                      <p class="service-card__description">Procedura per l'iscrizione al primo anno</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Pagamenti scolastici</strong></p>
-                    <p class="service-card__description">Tasse, contributi e servizi vari</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Pagamenti scolastici</strong></p>
+                      <p class="service-card__description">Tasse, contributi e servizi vari</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Colloqui genitori-docenti</strong></p>
-                    <p class="service-card__description">Prenotazione colloqui individuali</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Colloqui genitori-docenti</strong></p>
+                      <p class="service-card__description">Prenotazione colloqui individuali</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Comunicazioni e circolari</strong></p>
-                    <p class="service-card__description">Avvisi e comunicazioni della scuola</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Comunicazioni e circolari</strong></p>
+                      <p class="service-card__description">Avvisi e comunicazioni della scuola</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Registro elettronico</strong></p>
-                    <p class="service-card__description">Accesso al registro voti e presenze</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Registro elettronico</strong></p>
+                      <p class="service-card__description">Accesso al registro voti e presenze</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
             </div>
           </div>
         </it-section>
@@ -112,42 +153,50 @@
           <div class="container">
             <h2 class="service-section__title">Personale scolastico</h2>
             <!-- data-cards: punto di iniezione per le card, gestito da servizio.js -->
-            <div class="service-grid" data-cards="">
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Gestione assenze</strong></p>
-                    <p class="service-card__description">Richiesta e documentazione assenze</p>
-                  </div>
-                </a>
-              </article>
+            <div data-cards="">
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Gestione assenze</strong></p>
+                      <p class="service-card__description">Richiesta e documentazione assenze</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Certificati di servizio</strong></p>
-                    <p class="service-card__description">Richiesta certificati di servizio</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Certificati di servizio</strong></p>
+                      <p class="service-card__description">Richiesta certificati di servizio</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Modulistica interna</strong></p>
-                    <p class="service-card__description">Moduli e documenti amministrativi</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Modulistica interna</strong></p>
+                      <p class="service-card__description">Moduli e documenti amministrativi</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Supplenze</strong></p>
-                    <p class="service-card__description">Gestione delle supplenze temporanee</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Supplenze</strong></p>
+                      <p class="service-card__description">Gestione delle supplenze temporanee</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
             </div>
           </div>
         </it-section>
@@ -156,33 +205,39 @@
           <div class="container">
             <h2 class="service-section__title">Percorsi di studio</h2>
             <!-- data-cards: punto di iniezione per le card, gestito da servizio.js -->
-            <div class="service-grid" data-cards="">
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Piano di studi</strong></p>
-                    <p class="service-card__description">Offerta formativa e materie per indirizzo</p>
-                  </div>
-                </a>
-              </article>
+            <div data-cards="">
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Piano di studi</strong></p>
+                      <p class="service-card__description">Offerta formativa e materie per indirizzo</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Orientamento</strong></p>
-                    <p class="service-card__description">Attività di orientamento in entrata e in uscita</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Orientamento</strong></p>
+                      <p class="service-card__description">Attività di orientamento in entrata e in uscita</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
 
-              <article class="service-card">
-                <a href="#">
-                  <div class="service-card__body">
-                    <p class="service-card__title"><strong>Libri di testo</strong></p>
-                    <p class="service-card__description">Elenco adozioni librarie per anno scolastico</p>
-                  </div>
-                </a>
-              </article>
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Libri di testo</strong></p>
+                      <p class="service-card__description">Elenco adozioni librarie per anno scolastico</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
             </div>
           </div>
         </it-section>

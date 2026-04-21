@@ -30,3 +30,7 @@ it-carousel::part(arrow-next) {
 it-carousel::part(pagination-dot) {
   background: #812230;
 }
+
+it-card .it-card-link {
+  color: var(--bsi-color-link) !important;
+}

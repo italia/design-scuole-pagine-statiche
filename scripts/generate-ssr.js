@@ -162,6 +162,15 @@ async function generate() {
     }
   }
 
+  // Copy static assets (icons, illustrations) so the statics output is self-contained
+  const publicDir = path.resolve(root, 'public');
+  for (const assetFolder of ['icons', 'illustrations']) {
+    const src = path.join(publicDir, assetFolder);
+    const dest = path.join(outDir, assetFolder);
+    await fs.cp(src, dest, { recursive: true });
+    console.log(`📁 Copiato: ${assetFolder}/`);
+  }
+
   setTimeout(async () => {
     await vite.close();
     console.log('🎉 Generazione SSR completata nella cartella /dist-ssr');
