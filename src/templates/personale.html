@@ -1,6 +1,6 @@
 <template>
-   <it-section
-    image="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
+<section class="it-hero-wrapper it-hero-small-size it-overlay it-hero-centered"
+   image="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
     inverse=""
   >
     <img
@@ -9,10 +9,25 @@
       slot="background"
       image="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg"
     />
-  <div> 
-    <h2 data-tpl="title"></h2>
-    <p data-tpl="subtitle"></p>
-    <it-button variant="danger-outline" type="button" data-tpl="button"> </it-button>
+>
+  <div class="img-responsive-wrapper">
+    <div class="img-responsive">
+      <div class="img-wrapper">
+      </div>
+    </div>
   </div>
-  </it-section>
+  <div class="container">
+    <div class="row">
+      <div class="col-7">
+        <div class="it-hero-text-wrapper bg-dark">
+          <h1 class="no_toc">Per il personale scolastico</h1>
+          <p class="d-none d-lg-block">Informazioni, modulistica e strumenti per i docenti dell'Istituto.</p>
+          <div class="it-btn-container">
+            <a class="btn btn-sm btn-outline-primary btn-me" href="#">Azione primaria</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </template>
