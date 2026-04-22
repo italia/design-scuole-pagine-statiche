@@ -120,4 +120,5 @@
   --bsi-dark-rgb: var(--it-color-red-cherry-24);
   --it-color-background-primary-muted: #202a2e;
   --it-color-background-primary-deep: #202a2e;
+  --bsi-form-control-label-color: var(--it-color-slate-85);
 }

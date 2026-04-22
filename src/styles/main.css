@@ -34,3 +34,7 @@ it-carousel::part(pagination-dot) {
 it-card .it-card-link {
   color: var(--bsi-color-link) !important;
 }
+
+.bg-dark {
+  background-color: var(--it-color-red-cherry-24) !important;
+}
