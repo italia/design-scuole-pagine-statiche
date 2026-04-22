@@ -3,14 +3,18 @@
     "ministero": "Ministero dell'Istruzione e del Merito",
     "areariservata": "Accedi all'area riservata"
   },
+
+  "carousel": {},
+
   "sezioniServizi": {
     "titolo": "In evidenza",
     "cards": [
       {
         "type": "inlineMini",
         "title": "Open day nella sede centrale",
+        "image": "/images/hero-homepage.jpg",
         "text": "",
-        "category": "Categoria",
+        "category": "NOTIZIA",
         "url": "#",
         "date": "18 marzo 2026"
       },
@@ -18,7 +22,7 @@
         "type": "inlineMini",
         "title": "Spettacolo finale per il corso di teatro per le primarie",
         "text": "Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.",
-        "category": "Categoria",
+        "category": "EVENTO",
         "url": "#",
         "date": "18 marzo 2026"
       },
@@ -26,9 +30,9 @@
         "type": "inlineMini",
         "title": "Orientamento per le classi di terza media",
         "text": "Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.",
-        "category": "Categoria",
+        "category": "SERVIZI PRE, INTER E POST SCUOLA",
         "url": "#",
-        "date": "18 marzo 2026"
+        "icon": "it-clip"
       }
     ]
   },
@@ -173,9 +177,27 @@
   "tools": {
     "titolo": "I nostri strumenti digitali",
     "cards": [
-      { "type": "inlineMini", "title": "Scuola in Chiaro", "text": "", "category": "" },
-      { "type": "inlineMini", "title": "UNICA", "text": "", "category": "" },
-      { "type": "inlineMini", "title": "Registro elettronico", "text": "", "category": "" }
+      {
+        "type": "inlineMini",
+        "title": "Scuola in Chiaro",
+        "text": "",
+        "category": "",
+        "image": "../icons/ScuolaInChiaro.svg"
+      },
+      {
+        "type": "inlineMini",
+        "title": "UNICA",
+        "text": "",
+        "category": "",
+        "image": "../icons/Unica.svg"
+      },
+      {
+        "type": "inlineMini",
+        "title": "Registro elettronico",
+        "text": "",
+        "category": "",
+        "image": "../icons/Registro.svg"
+      }
     ]
   },
   "fin": {
@@ -185,6 +207,7 @@
         "type": "editorialeStandard",
         "title": "PNRR Futura",
         "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
+        "image": "../illustrations/scuola-large.svg",
         "category": "",
         "date": ""
       },
@@ -192,6 +215,7 @@
         "type": "editorialeStandard",
         "title": "PON - Ricerca e innovazione 2014-2020",
         "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
+        "image": "../illustrations/didattica-large.svg",
         "category": "",
         "date": ""
       },
@@ -199,6 +223,7 @@
         "type": "editorialeStandard",
         "title": "PON inclusione",
         "text": "Programma europeo per il sostegno e l'inclusione sociale",
+        "image": "../illustrations/comunicazioni-large.svg",
         "category": "",
         "date": ""
       }

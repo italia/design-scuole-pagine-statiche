@@ -37,7 +37,12 @@ export function render(
       if (val === undefined || val === null) continue;
 
       if (name === 'data-tpl') {
-        el.textContent = String(val);
+        // Remove text nodes only — preserve child elements (e.g. <it-icon>)
+        for (const child of Array.from(el.childNodes)) {
+          // TEXT_NODE value for node eval, this is a browser only value mapped as 3 on Node interface
+          if (child.nodeType === 3) child.remove();
+        }
+        el.insertBefore(document.createTextNode(String(val)), el.firstChild);
       } else {
         // "data-tpl-href" -> slice(9) -> "href"
         el.setAttribute(name.slice(9), String(val));

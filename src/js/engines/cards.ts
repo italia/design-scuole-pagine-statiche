@@ -24,7 +24,14 @@ export const renderCards = (listaDati: readonly Card[]): DocumentFragment => {
       console.warn(`Invalid card type: ${card.type}`);
       continue;
     }
-    frag.appendChild(render(templates[card.type], cardToRenderData(card)));
+    const rendered = render(templates[card.type], cardToRenderData(card));
+    if (!card.image) {
+      rendered.querySelectorAll('figure').forEach((fig) => fig.remove());
+    }
+    if (!card.icon) {
+      rendered.querySelectorAll('.it-card-title-icon-wrapper').forEach((el) => el.remove());
+    }
+    frag.appendChild(rendered);
   }
   return frag;
 };

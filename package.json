@@ -25,9 +25,7 @@
     "release:zip": "sh ./scripts/create-release-attachment.sh"
   },
   "dependencies": {
-    "@italia/dev-kit-italia": "1.0.0-alpha.6",
-    "bootstrap-italia": "^2.18.0",
-    "package.json": "^2.0.1"
+    "@italia/dev-kit-italia": "1.0.0-alpha.8"
   },
   "engines": {
     "node": ">=24"
