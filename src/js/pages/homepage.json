@@ -254,6 +254,9 @@
   "footerSection": {
     "name": "F. Hernandez",
     "denominazione": "Istituto comprensivo F. Hernandez",
-    "citta": "Livorno"
+    "citta": "Livorno",
+    "codiceFiscale": "0985649876",
+    "pec": "indirizzopecdellente@pec.gov.it",
+    "telefono": "+39 000000000"
   }
 }
