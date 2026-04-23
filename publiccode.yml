@@ -1,0 +1,67 @@
+publiccodeYmlVersion: 0.5.0
+name: Template HTML per i siti scolastici
+applicationSuite: Modello Scuole di Designers Italia
+url: https://github.com/italia/design-scuole-pagine-statiche
+isBasedOn: https://github.com/italia/bootstrap-italia
+softwareVersion: "v2.4.3 "
+releaseDate: 2024-09-25
+platforms:
+  - web
+categories:
+  - it-development
+  - design
+organisation:
+  uri: https://github.com/italia
+  name: Dipartimento per la trasformazione digitale
+roadmap: https://github.com/orgs/italia/projects/16/views/1?filterQuery=repo%3Aitalia%2Fdesign-scuole-pagine-statiche
+developmentStatus: stable
+softwareType: standalone/web
+intendedAudience:
+  countries:
+    - IT
+description:
+  it-IT:
+    shortDescription: Codice pronto all'uso per creare rapidamente il front-end dei
+      siti scolastici in modo accessibile e coerente.
+    longDescription: >-
+      I template HTML del Modello Scuole mettono a disposizione pagine statiche
+      esemplificative e codice pronto all'uso per realizzare il front-end del
+      sito scolastico. Sono costruiti sulle fondamenta di UI Kit Italia e
+      Bootstrap Italia e permettono di lavorare in modo indipendente dalle
+      soluzioni tecnologiche adottate dall'amministrazione. I template sono già
+      validati in termini di accessibilità e conformità alle Linee guida di
+      design per i siti internet e i servizi digitali della PA e Linee guida
+      sull'accessibilità degli strumenti informatici, facilitando l'adozione del
+      modello di sito istituzionale delle scuole e velocizzando la realizzazione
+      delle interfacce web.
+
+
+      [Vai alle anteprime dei template
+      HTML](https://italia.github.io/design-scuole-pagine-statiche/)
+
+      [Vai alla documentazione del Modello
+      Scuole](https://designers.italia.it/modelli/scuole/)
+    documentation: https://github.com/italia/design-scuole-pagine-statiche/blob/main/README.md
+    features:
+      - Codice HTML, CSS e JavaScript pronto all'uso per realizzare il front-end
+        del sito scolastico
+      - Esempi di pagine e interfacce per il sito scolastico
+      - Integra i fondamenti di UI Kit Italia e Bootstrap Italia
+      - Garantisce accessibilità e conformità alle Linee guida di design per i
+        siti internet e servizi digitali della PA
+      - Aderenza al modello di sito scolastico di Designers Italia
+legal:
+  license: BSD-3-Clause-Clear
+maintenance:
+  type: community
+  contacts:
+    - name: Designers Italia
+      email: contatti@designers.italia.it
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - it
+IT:
+  countryExtensionVersion: "1.0"
+  piattaforme:
+    anpr: false
