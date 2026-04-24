@@ -1,26 +1,32 @@
 <template>
   <div class="bg-dark py-5">
     <div class="row justify-content-center">
-        <div class="col-auto bg-white p-4 rounded"> 
-  <it-rating name="rating" value="0" icon="it-star-outline" max-elements="5" class="d-flex flex-column">
-  <span slot="label">Quanto sono chiare le informazioni su questa pagina?</span>
-  <it-rating-item value="1">
-    <span slot="label">1 stella</span>
-  </it-rating-item>
-  <it-rating-item value="2">
-    <span slot="label">2 stelle</span>
-  </it-rating-item>
-  <it-rating-item value="3">
-    <span slot="label">3 stelle</span>
-  </it-rating-item>
-  <it-rating-item value="4">
-    <span slot="label">4 stelle</span>
-  </it-rating-item>
-  <it-rating-item value="5">
-    <span slot="label">5 stelle</span>
-  </it-rating-item>
-</it-rating>
-</div>
-</div>
-</div>
+      <div class="col-auto bg-white p-4 rounded">
+        <it-rating
+          name="rating"
+          value="0"
+          icon="it-star-outline"
+          max-elements="5"
+          class="d-flex flex-column"
+        >
+          <span slot="label">Quanto sono chiare le informazioni su questa pagina?</span>
+          <it-rating-item value="1">
+            <span slot="label">1 stella</span>
+          </it-rating-item>
+          <it-rating-item value="2">
+            <span slot="label">2 stelle</span>
+          </it-rating-item>
+          <it-rating-item value="3">
+            <span slot="label">3 stelle</span>
+          </it-rating-item>
+          <it-rating-item value="4">
+            <span slot="label">4 stelle</span>
+          </it-rating-item>
+          <it-rating-item value="5">
+            <span slot="label">5 stelle</span>
+          </it-rating-item>
+        </it-rating>
+      </div>
+    </div>
+  </div>
 </template>
