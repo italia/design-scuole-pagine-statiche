@@ -1,25 +1,26 @@
 <template>
   <div class="bg-dark py-5">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-auto bg-white p-4 rounded">
-          <fieldset class="rating-fieldset text-center">
-            <legend class="mb-2">Quanto sono chiare le informazioni su questa pagina?</legend>
-            <div class="rating">
-              <input type="radio" id="star5" name="rating" value="5" />
-              <label for="star5" title="5 stelle">★</label>
-              <input type="radio" id="star4" name="rating" value="4" />
-              <label for="star4" title="4 stelle">★</label>
-              <input type="radio" id="star3" name="rating" value="3" />
-              <label for="star3" title="3 stelle">★</label>
-              <input type="radio" id="star2" name="rating" value="2" />
-              <label for="star2" title="2 stelle">★</label>
-              <input type="radio" id="star1" name="rating" value="1" />
-              <label for="star1" title="1 stella">★</label>
-            </div>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="row justify-content-center">
+        <div class="col-auto bg-white p-4 rounded"> 
+  <it-rating name="rating" value="0" icon="it-star-outline" max-elements="5" class="d-flex flex-column">
+  <span slot="label">Quanto sono chiare le informazioni su questa pagina?</span>
+  <it-rating-item value="1">
+    <span slot="label">1 stella</span>
+  </it-rating-item>
+  <it-rating-item value="2">
+    <span slot="label">2 stelle</span>
+  </it-rating-item>
+  <it-rating-item value="3">
+    <span slot="label">3 stelle</span>
+  </it-rating-item>
+  <it-rating-item value="4">
+    <span slot="label">4 stelle</span>
+  </it-rating-item>
+  <it-rating-item value="5">
+    <span slot="label">5 stelle</span>
+  </it-rating-item>
+</it-rating>
+</div>
+</div>
+</div>
 </template>
