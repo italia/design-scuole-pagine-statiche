@@ -1,0 +1,20 @@
+{
+  "preHeader": {
+    "ministero": "Ministero dell'Istruzione e del Merito",
+    "areariservata": "Accedi all'area riservata"
+  },
+  "mainHeader": {
+    "scuola": {
+      "nome": "Liceo Scientifico Statale",
+      "denominazione": "Federico Hernandez",
+      "citta": "Livorno"
+    }
+  },
+
+  "hero": {
+    "info": {
+      "titolo": "Organizzazione",
+      "text": "In questa sezione sono presenti le informazioni sull'organizzazione dell'Istituto"
+    }
+  }
+}
