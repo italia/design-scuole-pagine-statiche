@@ -38,3 +38,5 @@ const mainHeroContainer = document.getElementById('hero');
 if (mainHeroContainer) {
   mainHeroContainer.appendChild(heroFragment);
 }
+
+/*render dirigenza*/

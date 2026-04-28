@@ -16,5 +16,24 @@
       "titolo": "Organizzazione",
       "text": "In questa sezione sono presenti le informazioni sull'organizzazione dell'Istituto"
     }
+  },
+  "dirigenza": {
+    "titoloSezione": "Dirigenza",
+    "cards": [
+      {
+        "type": "location",
+        "title": "Presidenza",
+        "email": "email della presidenza",
+        "tel": "numero di telefono",
+        "indirizzo": "nome della via, n. civico"
+      },
+      {
+        "type": "location",
+        "title": "Segreteria",
+        "email": "email della segreteria",
+        "tel": "numero di telefono",
+        "indirizzo": "nome della via, n. civico"
+      }
+    ]
   }
 }
