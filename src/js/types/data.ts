@@ -16,7 +16,13 @@ export type TemplateData = Record<string, string | number | boolean | null | und
 /**
  * Card type discriminator.
  */
-const CARD_TYPES = ['editorialeStandard', 'inlineMini', 'informativa'] as const;
+const CARD_TYPES = [
+  'editorialeStandard',
+  'inlineMini',
+  'informativa',
+  'location',
+  'locationMini',
+] as const;
 export type CardType = (typeof CARD_TYPES)[number];
 
 /**
