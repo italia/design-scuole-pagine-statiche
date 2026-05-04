@@ -22,6 +22,7 @@ const CARD_TYPES = [
   'informativa',
   'location',
   'locationMini',
+  'persona',
 ] as const;
 export type CardType = (typeof CARD_TYPES)[number];
 

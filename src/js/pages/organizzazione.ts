@@ -96,3 +96,16 @@ const ratingContainer = document.getElementById('rating');
 if (ratingContainer) {
   ratingContainer.appendChild(ratingFragment);
 }
+
+/*render persone*/
+const fragmentPersone = render(templates.serviceSection, data.personale);
+
+const PersoneCardsContainer = fragmentPersone.querySelector('[data-cards]');
+if (PersoneCardsContainer) {
+  PersoneCardsContainer.appendChild(renderCards(data.personale.cards));
+}
+
+const PersoneContainer = document.getElementById('persone');
+if (PersoneContainer) {
+  PersoneContainer.appendChild(fragmentPersone);
+}

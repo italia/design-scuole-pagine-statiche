@@ -6,6 +6,7 @@ import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
 import cardEditorialeHTML from '@/templates/cards/card-editoriale.html?raw';
 import cardLocationHTML from '@/templates/cards/card-luogo.html?raw';
 import cardLocationMiniHTML from '@/templates/cards/card-luogo-mini.html?raw';
+import cardPersona from '@/templates/cards/card-persona.html?raw';
 
 const templates: Record<CardType, HTMLTemplateElement> = {
   editorialeStandard: fromHTML(cardEditorialeHTML),
@@ -13,6 +14,7 @@ const templates: Record<CardType, HTMLTemplateElement> = {
   informativa: fromHTML(cardInformativaHTML),
   location: fromHTML(cardLocationHTML),
   locationMini: fromHTML(cardLocationMiniHTML),
+  persona: fromHTML(cardPersona),
 };
 
 /**

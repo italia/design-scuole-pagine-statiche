@@ -109,5 +109,25 @@
     "codiceFiscale": "0985649876",
     "pec": "indirizzopecdellente@pec.gov.it",
     "telefono": "+39 000000000"
+  },
+  "personale": {
+    "titolo": "Le persone della scuola",
+    "cards": [
+      {
+        "type": "persona",
+        "nome": "Luigi  Rossi",
+        "ruolo": "Dirigente scolastico"
+      },
+      {
+        "type": "persona",
+        "nome": "Mario Antonio della Monaca",
+        "ruolo": "Responsabile sicurezza"
+      },
+      {
+        "type": "persona",
+        "nome": "Mariacarmela degli Esposti",
+        "ruolo": "Responsabile accessibilità"
+      }
+    ]
   }
 }
