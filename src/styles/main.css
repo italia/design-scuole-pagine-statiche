@@ -46,3 +46,7 @@ it-card .it-card-link {
 it-section .white-color {
   color: black !important;
 }
+
+it-card .it-card-profile-image-icon-wrapper {
+  background-color: var(--it-color-background-primary-lighest);
+}
