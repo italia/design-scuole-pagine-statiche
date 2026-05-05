@@ -1,0 +1,26 @@
+<template>
+  <it-card variant="inline-mini" full-height>
+    <figure slot="image" class="figure img-full">
+      <img data-tpl-src="image" alt="Immagine" />
+    </figure>
+
+    <a slot="title" href="#" data-tpl="title">
+      Titolo contenuto editoriale
+      <span class="visually-hidden"> (link a XYZ)</span>
+      <div class="it-card-title-icon-wrapper">
+        <it-icon color="primary" data-tpl-name="icon"></it-icon>
+      </div>
+    </a>
+
+    <span slot="text" data-tpl="text">
+      Questo è un testo breve che riassume il contenuto della pagina.
+    </span>
+
+    <div slot="footer" class="it-card-taxonomy">
+      <a href="#" class="it-card-category it-card-link" data-tpl="category"
+        ><span class="visually-hidden">Categoria correlata: </span>Categoria</a
+      >
+    </div>
+    <time slot="footer" class="it-card-date" data-tpl="date">18 mar 2026</time>
+  </it-card>
+</template>

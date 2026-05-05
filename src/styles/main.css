@@ -1,0 +1,52 @@
+/* dev-kit vendor CSS is inlined as critical in page heads; keep only project styles here */
+
+@import url('../styles/variables.css');
+
+.page-container {
+  max-width: 960px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.actions-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.section-spacing {
+  margin-top: 2rem;
+}
+
+/* Stili custom del progetto.
+   Il design system è Bootstrap Italia, importato tramite @italia/dev-kit-italia.
+   Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
+   Aggiungi qui solo override o stili davvero specifici del progetto. */
+
+it-carousel::part(arrow-prev),
+it-carousel::part(arrow-next) {
+  background: #812230;
+}
+
+it-carousel::part(pagination-dot) {
+  background: #812230;
+}
+
+it-card .it-card-link {
+  color: var(--bsi-color-link) !important;
+}
+
+.bg-dark {
+  background-color: var(--it-color-red-cherry-24) !important;
+}
+
+.section-emphasis {
+  background-color: white !important;
+}
+
+it-section .white-color {
+  color: black !important;
+}
+
+it-card .it-card-profile-image-icon-wrapper {
+  background-color: var(--it-color-background-primary-lighest);
+}
