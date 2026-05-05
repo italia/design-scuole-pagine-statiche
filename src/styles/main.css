@@ -38,3 +38,11 @@ it-card .it-card-link {
 .bg-dark {
   background-color: var(--it-color-red-cherry-24) !important;
 }
+
+.section-emphasis {
+  background-color: white !important;
+}
+
+it-section .white-color {
+  color: black !important;
+}
