@@ -50,3 +50,10 @@ it-section .white-color {
 it-card .it-card-profile-image-icon-wrapper {
   background-color: var(--it-color-background-primary-lighest);
 }
+
+it-hero .it-hero-text-wrapper,
+it-hero [slot="'text'"] {
+  position: absolute !important;
+  top: 0 !important;
+  bottom: unset !important;
+}
