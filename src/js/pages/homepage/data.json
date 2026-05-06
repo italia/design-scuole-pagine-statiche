@@ -4,7 +4,56 @@
     "areariservata": "Accedi all'area riservata"
   },
 
-  "carousel": {},
+  "mainHeader": {
+    "nome": "Liceo Scientifico Statale",
+    "denominazione": "Federico Hernandez",
+    "citta": "Livorno"
+  },
+
+  "hero": {
+    "denominazione": "Istituto comprensivo",
+    "nome": "Federico Hernandez",
+    "citta": "Livorno",
+    "descrizione": " \"Lo scopo della scuola è quello di trasformare gli specchi in finestre\" ",
+    "image": "../images/hero-homepage.jpg",
+    "illustration": "../illustrations/hero-homepage-large.svg"
+  },
+
+  "carousel": {
+    "titolo": "Un'anteprima dell'Istituto",
+    "slides": [
+      {
+        "src": "https://picsum.photos/800/600?1",
+        "titolo": "Aula magna",
+        "alt": "Aula magna dell'istituto"
+      },
+      {
+        "src": "https://picsum.photos/800/600?2",
+        "titolo": "Laboratorio scienze",
+        "alt": "Laboratorio di scienze"
+      },
+      {
+        "src": "https://picsum.photos/800/600?3",
+        "titolo": "Palestra",
+        "alt": "Palestra dell'istituto"
+      },
+      {
+        "src": "https://picsum.photos/800/600?4",
+        "titolo": "Biblioteca",
+        "alt": "Biblioteca scolastica"
+      },
+      {
+        "src": "https://picsum.photos/800/600?5",
+        "titolo": "Cortile",
+        "alt": "Cortile dell'istituto"
+      },
+      {
+        "src": "https://picsum.photos/800/600?6",
+        "titolo": "Corridoio",
+        "alt": "Corridoio principale"
+      }
+    ]
+  },
 
   "sezioniServizi": {
     "titolo": "In evidenza",
@@ -12,7 +61,7 @@
       {
         "type": "inlineMini",
         "title": "Open day nella sede centrale",
-        "image": "/images/hero-homepage.jpg",
+        "image": "../images/hero-homepage.jpg",
         "text": "",
         "category": "NOTIZIA",
         "url": "#",
@@ -36,43 +85,33 @@
       }
     ]
   },
-  "mainHeader": {
-    "scuola": {
-      "nome": "Liceo Scientifico Statale",
-      "denominazione": "Federico Hernandez",
-      "citta": "Livorno"
-    }
-  },
-  "hero": {
-    "scuola": {
-      "denominazione": "Istituto comprensivo",
-      "nome": "Federico Hernandez",
-      "citta": "Livorno",
-      "descrizione": " \"Lo scopo della scuola è quello di trasformare gli specchi in finestre\" "
-    }
-  },
+
   "studiaConNoi": {
     "titoloSezione": "Studia con noi",
-    "percorsiDiStudio": {
-      "titlePercorsi": "I nostri percorsi di studio",
-      "description1Percorsi": "L'istituto offre diversi percorsi di studio pensati per accompagnare ogni studente nella propria crescita educativa",
-      "description2Percorsi": "Ogni indirizzo propone attività, metodologie e opportunità formative specifiche, così da rispondere ai diversi interessi, attitudini e obiettivi personali",
-      "testoLink1Percorsi": "Esplora le nostre offerte formative",
-      "testoLink2Percorsi": "Consulta il Piano di Offerta Formativa (PTOF)"
-    },
-    "tipiScuole": {
-      "infanzia": "Scuola dell'infanzia",
-      "descrizioneTipo1": "Percorsi attivi: tempo ridotto, tempo pieno",
-      "elementari": "Scuola primaria",
-      "descrizioneTipo2": "Percorsi attivi: tempo normale, tempo pieno",
-      "medie": "Scuola secondaria di primo grado"
-    },
-    "progettiIstituto": {
-      "titleProgetti": "I progetti dell'istituto",
-      "description1Progetti": "L'istituto promuove ogni anno un ampio programma di progetti e attività pensati per arricchire il percorso formativo degli studenti",
-      "description2Progetti": "Esperienze didattiche, laboratoriali e culturali si integrano alla vita scolastica per favorire partecipazione, crescita personale, inclusione e scoperta del territorio",
-      "testolinkProgetti": "Vai a tutti i progetti"
-    },
+    "titlePercorsi": "I nostri percorsi di studio",
+    "description1Percorsi": "L'istituto offre diversi percorsi di studio pensati per accompagnare ogni studente nella propria crescita educativa",
+    "description2Percorsi": "Ogni indirizzo propone attività, metodologie e opportunità formative specifiche, così da rispondere ai diversi interessi, attitudini e obiettivi personali",
+    "testoLink1Percorsi": "Esplora le nostre offerte formative",
+    "urlLink1Percorsi": "#",
+    "testoLink2Percorsi": "Consulta il Piano di Offerta Formativa (PTOF)",
+    "urlLink2Percorsi": "#",
+    "infanzia": "Scuola dell'infanzia",
+    "descrizioneTipo1": "Percorsi attivi: tempo ridotto, tempo pieno",
+    "iconaInfanzia": "../icons/Infanzia-large.svg",
+    "altInfanzia": "icona scuola infanzia",
+    "elementari": "Scuola primaria",
+    "descrizioneTipo2": "Percorsi attivi: tempo normale, tempo pieno",
+    "iconaElementari": "../icons/Elementari-large.svg",
+    "altElementari": "icona scuola elementare",
+    "medie": "Scuola secondaria di primo grado",
+    "descrizioneTipo3": "Percorsi attivi: tempo normale",
+    "iconaMedie": "../icons/Medie-large.svg",
+    "altMedie": "icona scuola secondaria",
+    "titleProgetti": "I progetti dell'istituto",
+    "description1Progetti": "L'istituto promuove ogni anno un ampio programma di progetti e attività pensati per arricchire il percorso formativo degli studenti",
+    "description2Progetti": "Esperienze didattiche, laboratoriali e culturali si integrano alla vita scolastica per favorire partecipazione, crescita personale, inclusione e scoperta del territorio",
+    "testolinkProgetti": "Vai a tutti i progetti",
+    "urlProgetti": "#",
     "cards": [
       {
         "type": "informativa",
@@ -112,6 +151,7 @@
       }
     ]
   },
+
   "circolariEServizi": {
     "circolari": {
       "titolo": "Circolari",
@@ -119,26 +159,26 @@
       "circolariDataCards": [
         {
           "type": "informativa",
-          "title": "titolo della 1 circolare",
-          "text": "contenuto della 1 circolare",
+          "title": "Modulistica uscita autonoma infraquattordicenni, Viaggiatori, Privacy",
+          "text": "Comunicazione per uscita autonoma di alunni pendolari e liberatoria Privacy",
           "date": "15 novembre 2025"
         },
         {
           "type": "informativa",
-          "title": "titolo della 2 circolare",
-          "text": "contenuto della 2 circolare",
+          "title": "Iscrizioni scuola secondaria di secondo grado - anno scolastico 2025/26",
+          "text": "Circolare che descrive le modalità di iscrizione alla scuola secondaria di secondo grado.",
           "date": "22 dicembre 2025"
         },
         {
           "type": "informativa",
-          "title": "titolo della 3 circolare",
-          "text": "contenuto della 3 circolare",
+          "title": "Calendario scolastico 2024-25 e organizzazione oraria",
+          "text": "Calendario annuale",
           "date": "5 gennaio 2026"
         },
         {
           "type": "informativa",
-          "title": "titolo della 4 circolare",
-          "text": "contenuto della 4 circolare",
+          "title": "Chiusura straordinaria per il giorno 11 ottobre 2025",
+          "text": "Comunicazione di chiusura straordinaria per manutenzione",
           "date": "30 marzo 2026"
         }
       ]
@@ -174,6 +214,7 @@
       ]
     }
   },
+
   "tools": {
     "titolo": "I nostri strumenti digitali",
     "cards": [
@@ -182,13 +223,15 @@
         "title": "Scuola in Chiaro",
         "text": "",
         "category": "",
-        "image": "../icons/ScuolaInChiaro.svg"
+        "date": "",
+        "image": "../icons/Scuola-in-chiaro.svg"
       },
       {
         "type": "inlineMini",
         "title": "UNICA",
         "text": "",
         "category": "",
+        "date": "",
         "image": "../icons/Unica.svg"
       },
       {
@@ -196,18 +239,20 @@
         "title": "Registro elettronico",
         "text": "",
         "category": "",
+        "date": "",
         "image": "../icons/Registro.svg"
       }
     ]
   },
-  "fin": {
+
+  "finanziamenti": {
     "titolo": "I nostri finanziamenti",
     "cards": [
       {
         "type": "editorialeStandard",
         "title": "PNRR Futura",
         "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
-        "image": "../illustrations/scuola-large.svg",
+        "image": "../illustrations/pnrr.svg",
         "category": "",
         "date": ""
       },
@@ -215,7 +260,7 @@
         "type": "editorialeStandard",
         "title": "PON - Ricerca e innovazione 2014-2020",
         "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
-        "image": "../illustrations/didattica-large.svg",
+        "image": "../illustrations/pon-ricerca.svg",
         "category": "",
         "date": ""
       },
@@ -223,37 +268,46 @@
         "type": "editorialeStandard",
         "title": "PON inclusione",
         "text": "Programma europeo per il sostegno e l'inclusione sociale",
-        "image": "../illustrations/comunicazioni-large.svg",
+        "image": "../illustrations/pon.svg",
         "category": "",
         "date": ""
       }
     ]
   },
-  "pub": {
+
+  "trasparenza": {
     "titolo": "Pubblicità legale e trasparenza",
     "cards": [
       {
-        "type": "inlineMini",
+        "type": "banner",
         "title": "Albo online",
         "text": "Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore legale e sempre aggiornati",
-        "category": "Vai all'Albo online"
+        "category": "Vai all'Albo online",
+        "full-height": true
       },
       {
-        "type": "inlineMini",
+        "type": "banner",
         "title": "Amministrazione Trasparente",
         "text": "Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza",
-        "category": "Vai alla sezione"
+        "category": "Vai alla sezione",
+        "full-height": true
       }
     ]
   },
+
   "areaPersonale": {
     "title": "Per il personale scolastico",
-    "subtitle": "Accedi all'area riservata al personale scolastico",
+    "subtitle": "Informazioni, modulistica e strumenti per i docenti dell'Istituto.",
     "button": "Accedi all'area personale"
   },
+
   "footerSection": {
     "name": "F. Hernandez",
     "denominazione": "Istituto comprensivo F. Hernandez",
-    "citta": "Livorno"
+    "citta": "Livorno",
+    "indirizzo": "Via degli Istituti, 1 - 57100 Livorno",
+    "codiceFiscale": "0985649876",
+    "pec": "indirizzopecdellente@pec.gov.it",
+    "telefono": "+39 000000000"
   }
 }

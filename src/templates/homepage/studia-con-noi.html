@@ -1,0 +1,107 @@
+<template>
+  <style>
+    .studia-con-noi {
+      background-color: #faebed;
+    }
+  </style>
+  <div class="studia-con-noi">
+    <it-section class="service-section">
+      <div class="container">
+        <h2 data-tpl="titoloSezione"></h2>
+
+        <div class="pt-4">
+          <div class="row align-items-start gy-4">
+            <div class="col-12 col-lg-5">
+              <h3 class="percorsi__title" data-tpl="titlePercorsi"></h3>
+              <p class="percorsi__description" data-tpl="description1Percorsi"></p>
+              <p class="percorsi__description" data-tpl="description2Percorsi"></p>
+              <it-button
+                type="button"
+                variant="primary"
+                data-tpl="testoLink1Percorsi"
+                href="#"
+                data-tpl-href="urlLink1Percorsi"
+              >
+                <it-icon
+                  name="it-arrow-right"
+                  label="col-inverse"
+                  color="inverse"
+                  size="sm"
+                  class="ms-2"
+                >
+                </it-icon>
+              </it-button>
+              <p class="mt-3">
+                <a
+                  class="fw-semibold"
+                  data-tpl="testoLink2Percorsi"
+                  href="#"
+                  data-tpl-href="urlLink2Percorsi"
+                  ><it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon
+                ></a>
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-7 d-none d-lg-block">
+              <div class="card border-0 shadow-sm rounded p-4 bg-lighest">
+                <div class="row g-3">
+                  <div class="col-12 col-md-4">
+                    <img
+                      data-tpl-src="iconaInfanzia"
+                      data-tpl-alt="altInfanzia"
+                      size="lg"
+                      class="mb-2"
+                    />
+                    <p class="h5 text-secondary" data-tpl="infanzia"></p>
+                    <p class="small text-muted mb-0" data-tpl="descrizioneTipo1"></p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img
+                      data-tpl-src="iconaElementari"
+                      data-tpl-alt="altElementari"
+                      size="lg"
+                      class="mb-2"
+                    />
+                    <p class="h5 text-secondary" data-tpl="elementari"></p>
+                    <p class="small text-muted mb-0" data-tpl="descrizioneTipo2"></p>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <img data-tpl-src="iconaMedie" data-tpl-alt="altMedie" size="lg" class="mb-2" />
+                    <p class="h5 text-secondary" data-tpl="medie"></p>
+                    <p class="small text-muted mb-0" data-tpl="descrizioneTipo3"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-5" />
+
+        <div class="progettiIstituto">
+          <div class="row align-items-start gy-4">
+            <div class="col-12 col-lg-5">
+              <h3 class="progetti__title" data-tpl="titleProgetti"></h3>
+              <p class="progetti__description" data-tpl="description1Progetti"></p>
+              <p class="progetti__description" data-tpl="description2Progetti"></p>
+              <p class="mt-3">
+                <a
+                  class="fw-semibold"
+                  data-tpl="testolinkProgetti"
+                  href="#"
+                  data-tpl-href="urlProgetti"
+                >
+                  <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon
+                ></a>
+              </p>
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <div class="row row-cols-1 row-cols-md-2 g-2" data-cards></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </it-section>
+  </div>
+</template>

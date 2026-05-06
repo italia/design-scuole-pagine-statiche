@@ -34,3 +34,19 @@ it-carousel::part(pagination-dot) {
 it-card .it-card-link {
   color: var(--bsi-color-link) !important;
 }
+
+.bg-dark {
+  background-color: var(--it-color-red-cherry-24) !important;
+}
+
+it-rating {
+  --bsi-form-control-label-color: var(--it-color-slate-85);
+}
+
+.bg-darker {
+  background-color: #202a2e !important;
+}
+
+.bg-lighest {
+  background-color: #fdf7f8 !important;
+}

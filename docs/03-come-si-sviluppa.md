@@ -10,17 +10,23 @@
 
 ## Aggiungere una nuova pagina
 
-1. Crea `src/pages/nuova-pagina.html` — Vite la raccoglie automaticamente come entry point.
-2. Crea `src/js/pages/nuova-pagina.ts` (TypeScript) con almeno:
+1. Crea `src/pages/nuova-pagina.html` — shell minimale con landmark e placeholder `<div id="...">`.
+2. Crea la cartella `src/js/pages/nuova-pagina/` con `index.ts` e `data.json`.
+3. `index.ts` inizia sempre con:
+
    ```ts
    import '@/js/main';
+   import { render, renderList, fromHTML } from '@/js/utils/templates';
    ```
-3. Aggiungi il `<script>` nell'HTML:
+
+4. Aggiungi il `<script>` nell'HTML:
+
    ```html
-   <script type="module" src="../js/pages/nuova-pagina.ts"></script>
+   <script type="module" src="../js/pages/nuova-pagina/index.ts"></script>
    ```
-4. Aggiungi il link in `src/index.html`.
-5. Valida i tipi prima di fare commit: `pnpm run typecheck`
+
+5. Aggiungi il link in `src/index.html`.
+6. Valida i tipi prima di fare commit: `pnpm run typecheck`
 
 ## Regole pratiche
 
@@ -30,22 +36,6 @@
 - usare type-safe rendering: evitare `any`, preferire `unknown` con type guards
 - non modificare `dist/` a mano — è generato dal build
 - eseguire `pnpm run lint` prima di aprire una PR
-
-## Strategia di Rendering
-
-Per permettere agli integratori di ricevere HTML statico già popolato ma privo di logica JS complessa, usiamo un sistema di data-binding basato su attributi data-tpl.
-
-### Regole di popolamento (Templates)
-
-Il motore di rendering utilizza un TreeWalker per scansionare il DOM in modo efficiente:
-
-Testo: data-tpl="chiave" -> Inserisce il valore come textContent.
-
-Attributi: data-tpl-[attr]="chiave" -> Inserisce il valore nell'attributo specificato.
-
-Esempio: data-tpl-href="url" scriverà l'URL nel parametro href.
-
-Usa questa semantica nei tuoi script per consistenza.
 
 ## Strategia di migrazione dal repo storico
 

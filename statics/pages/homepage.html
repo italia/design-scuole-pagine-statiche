@@ -6,47 +6,53 @@
   </head>
 
   <body>
-    <div id="site-preheader">
-      <div class="pre-header" site-preheader="">
-        <a href="https://www.mim.gov.it/">Ministero dell'Istruzione e del Merito</a>
-        <a href="#">Accedi all'area riservata</a>
-      </div>
-    </div>
+    <div id="site-preheader"></div>
     <header id="main-header" class="bg-white">
-      <header site-header="">
-        <div class="container header-top">
-          <a href="#" class="school-logo" aria-label="Torna alla home">
-            <div class="school-name" school-name="">
-              <span>Liceo Scientifico Statale</span>
-              <strong>Federico Hernandez</strong>
-              <span>Livorno</span>
-            </div>
-          </a>
-          <nav class="main-nav" aria-label="Principale">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Scuola</a></li>
-              <li><a href="#" aria-current="page">Servizi</a></li>
-              <li><a href="#">Novità</a></li>
-              <li><a href="#">Didattica</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <div class="container header-top">
+        <a href="#" class="school-logo" aria-label="Torna alla home">
+          <div class="school-name" school-name="">
+            <span>Liceo Scientifico Statale</span>
+            <strong>Federico Hernandez</strong>
+            <span>Livorno</span>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Principale">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Scuola</a></li>
+            <li><a href="#" aria-current="page">Servizi</a></li>
+            <li><a href="#">Novità</a></li>
+            <li><a href="#">Didattica</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <div id="hero">
+
+    <main id="main-content">
       <style>
-        @media (max-width: 576px) {
-          #hero section {
-            padding-bottom: 0 !important;
-          }
-          div:has(> figure) {
-            padding: 0 !important;
-          }
-          figure,
-          figure img {
-            width: 100vw;
-            max-width: 100vw;
+        #hero h2,
+        #hero h4 {
+          font-weight: 400;
+        }
+
+        #hero .hero-quote {
+          font-style: italic;
+        }
+        #hero {
+          @media (max-width: 576px) {
+            section {
+              padding-bottom: 0 !important;
+            }
+
+            div:has(> figure) {
+              padding: 0 !important;
+            }
+
+            figure,
+            figure img {
+              width: 100vw;
+              max-width: 100vw;
+            }
           }
         }
       </style>
@@ -55,12 +61,12 @@
           <div class="row align-items-center">
             <div class="col-12 col-lg-6 text-lg-start p-0">
               <div class="py-4 container m-0 row row-cols-1 g-2 g-lg-3">
-                <h2 class="p-0 m-0" style="font-weight: 400">Istituto comprensivo</h2>
+                <p class="p-0 m-0 h2">Istituto comprensivo</p>
                 <h1 class="p-0 m-0">Federico Hernandez</h1>
-                <h4 class="p-0 m-0" style="font-weight: 400">Livorno</h4>
+                <p class="p-0 m-0 h4">Livorno</p>
 
                 <div class="row row-cols-1 g-4 p-0">
-                  <p class="font-serif" style="font-style: italic">
+                  <p class="font-serif hero-quote">
                     "Lo scopo della scuola è quello di trasformare gli specchi in finestre"
                   </p>
                   <a href="#" class="text-white mt-4"
@@ -78,15 +84,14 @@
           </div>
         </div>
       </it-section>
-    </div>
-    <div id="in-evidenza">
+
       <it-section class="service-section" inverse="" variant="emphasis">
         <div class="container">
           <h2 class="service-section__title">In evidenza</h2>
           <div class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch" data-cards="">
             <it-card variant="inline-mini" full-height="">
               <figure slot="image" class="figure img-full">
-                <img src="/images/hero-homepage.jpg" alt="Immagine" />
+                <img src="../images/hero-homepage.jpg" alt="" />
               </figure>
 
               <a slot="title" href="#"
@@ -145,97 +150,82 @@
           </div>
         </div>
       </it-section>
-    </div>
-    <div id="carousel">
+
       <section class="section">
         <div class="container">
-          <it-carousel variant="gallery-sm" arrows=""
-            ><h2 slot="title">Un'anteprima dell'Istituto</h2>
+          <it-carousel variant="gallery-sm" arrows="" data-cards="">
+            <h2 slot="title">Un'anteprima dell'Istituto</h2>
+
+            <it-carousel-slide>
+              <div class="card-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper">
+                      <img title="Aula magna" alt="Aula magna dell'istituto" src="https://picsum.photos/800/600?1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </it-carousel-slide>
+
             <it-carousel-slide>
               <div class="card-wrapper">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
                       <img
-                        src="https://www.placeholderimage.eu/api/800/600"
-                        title="titolo immagine 1"
-                        alt="descrizione immagine 1"
+                        title="Laboratorio scienze"
+                        alt="Laboratorio di scienze"
+                        src="https://picsum.photos/800/600?2"
                       />
                     </div>
                   </div>
                 </div>
               </div>
             </it-carousel-slide>
+
             <it-carousel-slide>
               <div class="card-wrapper">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
-                      <img
-                        src="https://www.placeholderimage.eu/api/800/600"
-                        title="titolo immagine 2"
-                        alt="descrizione immagine 2"
-                      />
+                      <img title="Palestra" alt="Palestra dell'istituto" src="https://picsum.photos/800/600?3" />
                     </div>
                   </div>
                 </div>
               </div>
             </it-carousel-slide>
+
             <it-carousel-slide>
               <div class="card-wrapper">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
-                      <img
-                        src="https://www.placeholderimage.eu/api/800/600"
-                        title="titolo immagine 3"
-                        alt="descrizione immagine 3"
-                      />
+                      <img title="Biblioteca" alt="Biblioteca scolastica" src="https://picsum.photos/800/600?4" />
                     </div>
                   </div>
                 </div>
               </div>
             </it-carousel-slide>
+
             <it-carousel-slide>
               <div class="card-wrapper">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
-                      <img
-                        src="https://www.placeholderimage.eu/api/800/600"
-                        title="titolo immagine 4"
-                        alt="descrizione immagine 4"
-                      />
+                      <img title="Cortile" alt="Cortile dell'istituto" src="https://picsum.photos/800/600?5" />
                     </div>
                   </div>
                 </div>
               </div>
             </it-carousel-slide>
+
             <it-carousel-slide>
               <div class="card-wrapper">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
-                      <img
-                        src="https://www.placeholderimage.eu/api/800/600"
-                        title="titolo immagine 5"
-                        alt="descrizione immagine 5"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </it-carousel-slide>
-            <it-carousel-slide>
-              <div class="card-wrapper">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://www.placeholderimage.eu/api/800/600"
-                        title="titolo immagine 6"
-                        alt="descrizione immagine 6"
-                      />
+                      <img title="Corridoio" alt="Corridoio principale" src="https://picsum.photos/800/600?6" />
                     </div>
                   </div>
                 </div>
@@ -244,9 +234,13 @@
           </it-carousel>
         </div>
       </section>
-    </div>
-    <div id="studia-con-noi">
-      <div style="background-color: #faebed">
+
+      <style>
+        .studia-con-noi {
+          background-color: #faebed;
+        }
+      </style>
+      <div class="studia-con-noi">
         <it-section class="service-section">
           <div class="container">
             <h2>Studia con noi</h2>
@@ -263,7 +257,16 @@
                     Ogni indirizzo propone attività, metodologie e opportunità formative specifiche, così da rispondere
                     ai diversi interessi, attitudini e obiettivi personali
                   </p>
-                  <it-button type="button" variant="primary" href="#">Esplora le nostre offerte formative</it-button>
+                  <it-button type="button" variant="primary" href="#"
+                    >Esplora le nostre offerte formative<it-icon
+                      name="it-arrow-right"
+                      label="col-inverse"
+                      color="inverse"
+                      size="sm"
+                      class="ms-2"
+                    >
+                    </it-icon
+                  ></it-button>
                   <p class="mt-3">
                     <a class="fw-semibold" href="#"
                       >Consulta il Piano di Offerta Formativa (PTOF)<it-icon
@@ -276,23 +279,23 @@
                   </p>
                 </div>
 
-                <div class="col-12 col-lg-7">
-                  <div class="card border-0 shadow-sm rounded p-4 bg-white">
+                <div class="col-12 col-lg-7 d-none d-lg-block">
+                  <div class="card border-0 shadow-sm rounded p-4 bg-lighest">
                     <div class="row g-3">
                       <div class="col-12 col-md-4">
-                        <img src="../icons/Infanzia-Large.svg" size="lg" class="mb-2" />
-                        <h5 class="fw-semibold text-secondary mb-1">Scuola dell'infanzia</h5>
+                        <img alt="icona scuola infanzia" src="../icons/Infanzia-large.svg" size="lg" class="mb-2" />
+                        <p class="h5 text-secondary">Scuola dell'infanzia</p>
                         <p class="small text-muted mb-0">Percorsi attivi: tempo ridotto, tempo pieno</p>
                       </div>
                       <div class="col-12 col-md-4">
-                        <img src="../icons/Elementari-Large.svg" size="lg" class="mb-2" />
-                        <h5 class="fw-semibold text-secondary mb-1">Scuola primaria</h5>
+                        <img alt="icona scuola elementare" src="../icons/Elementari-large.svg" size="lg" class="mb-2" />
+                        <p class="h5 text-secondary">Scuola primaria</p>
                         <p class="small text-muted mb-0">Percorsi attivi: tempo normale, tempo pieno</p>
                       </div>
                       <div class="col-12 col-md-4">
-                        <img src="../icons/Medie-Large.svg" size="lg" class="mb-2" />
-                        <h5 class="fw-semibold text-secondary mb-1">Scuola secondaria di primo grado</h5>
-                        <p class="small text-muted mb-0"></p>
+                        <img alt="icona scuola secondaria" src="../icons/Medie-large.svg" size="lg" class="mb-2" />
+                        <p class="h5 text-secondary">Scuola secondaria di primo grado</p>
+                        <p class="small text-muted mb-0">Percorsi attivi: tempo normale</p>
                       </div>
                     </div>
                   </div>
@@ -305,7 +308,7 @@
             <div class="progettiIstituto">
               <div class="row align-items-start gy-4">
                 <div class="col-12 col-lg-5">
-                  <h2 class="progetti__title">I progetti dell'istituto</h2>
+                  <h3 class="progetti__title">I progetti dell'istituto</h3>
                   <p class="progetti__description">
                     L'istituto promuove ogni anno un ampio programma di progetti e attività pensati per arricchire il
                     percorso formativo degli studenti
@@ -327,7 +330,7 @@
                 </div>
 
                 <div class="col-12 col-lg-7">
-                  <div class="row row-cols-2 g-4" study-card="">
+                  <div class="row row-cols-1 row-cols-md-2 g-2" data-cards="">
                     <it-card full-height="">
                       <a slot="title" href="#">Uscite didattiche</a>
                       <span slot="text">Esperienze fuori dall'aula</span>
@@ -394,18 +397,17 @@
           </div>
         </it-section>
       </div>
-    </div>
-    <div id="circolari-e-servizi">
+
       <it-section class="service-section">
         <div class="container">
-          <div class="row">
+          <div class="row g-4">
             <div class="col-12 col-lg-6">
               <h2 class="service-section__title">Circolari</h2>
               <p class="service-section__description">Le ultime circolari pubblicate</p>
-              <div class="row row-cols-1 g-3">
+              <div class="row row-cols-1 g-3" data-cards="circolari">
                 <it-card full-height="">
-                  <a slot="title" href="#">titolo della 1 circolare</a>
-                  <span slot="text">contenuto della 1 circolare</span>
+                  <a slot="title" href="#">Modulistica uscita autonoma infraquattordicenni, Viaggiatori, Privacy</a>
+                  <span slot="text">Comunicazione per uscita autonoma di alunni pendolari e liberatoria Privacy</span>
                   <div slot="footer" class="it-card-taxonomy">
                     <a href="#" class="it-card-link">
                       <span class="visually-hidden">Categoria correlata: </span>
@@ -414,8 +416,10 @@
                 </it-card>
 
                 <it-card full-height="">
-                  <a slot="title" href="#">titolo della 2 circolare</a>
-                  <span slot="text">contenuto della 2 circolare</span>
+                  <a slot="title" href="#">Iscrizioni scuola secondaria di secondo grado - anno scolastico 2025/26</a>
+                  <span slot="text"
+                    >Circolare che descrive le modalità di iscrizione alla scuola secondaria di secondo grado.</span
+                  >
                   <div slot="footer" class="it-card-taxonomy">
                     <a href="#" class="it-card-link">
                       <span class="visually-hidden">Categoria correlata: </span>
@@ -424,8 +428,8 @@
                 </it-card>
 
                 <it-card full-height="">
-                  <a slot="title" href="#">titolo della 3 circolare</a>
-                  <span slot="text">contenuto della 3 circolare</span>
+                  <a slot="title" href="#">Calendario scolastico 2024-25 e organizzazione oraria</a>
+                  <span slot="text">Calendario annuale</span>
                   <div slot="footer" class="it-card-taxonomy">
                     <a href="#" class="it-card-link">
                       <span class="visually-hidden">Categoria correlata: </span>
@@ -434,8 +438,8 @@
                 </it-card>
 
                 <it-card full-height="">
-                  <a slot="title" href="#">titolo della 4 circolare</a>
-                  <span slot="text">contenuto della 4 circolare</span>
+                  <a slot="title" href="#">Chiusura straordinaria per il giorno 11 ottobre 2025</a>
+                  <span slot="text">Comunicazione di chiusura straordinaria per manutenzione</span>
                   <div slot="footer" class="it-card-taxonomy">
                     <a href="#" class="it-card-link">
                       <span class="visually-hidden">Categoria correlata: </span>
@@ -448,11 +452,10 @@
                 <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
               </a>
             </div>
-
             <div class="col-12 col-lg-6">
               <h2 class="service-section__title">Servizi</h2>
               <p class="service-section__description">I servizi offerti dalla nostra scuola</p>
-              <div class="row row-cols-1 g-3">
+              <div class="row row-cols-1 g-3" data-cards="servizi">
                 <it-card full-height="">
                   <a slot="title" href="#">Mensa</a>
                   <span slot="text"
@@ -513,16 +516,15 @@
           </div>
         </div>
       </it-section>
-    </div>
-    <div id="strumenti-digitali">
-      <it-section variant="muted" class="container" inverse="">
+
+      <it-section variant="muted" inverse="">
         <div class="container">
           <h2 id="modelli-scuole-homepage-tools">I nostri strumenti digitali</h2>
           <div class="py-4">
-            <div class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch">
+            <div class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch" data-cards="">
               <it-card variant="inline-mini" full-height="">
                 <figure slot="image" class="figure img-full">
-                  <img src="../icons/ScuolaInChiaro.svg" alt="Immagine" />
+                  <img src="../icons/Scuola-in-chiaro.svg" alt="" />
                 </figure>
 
                 <a slot="title" href="#">Scuola in Chiaro<span class="visually-hidden"> (link a XYZ)</span></a>
@@ -534,12 +536,12 @@
                     ><span class="visually-hidden">Categoria correlata: </span></a
                   >
                 </div>
-                <time slot="footer" class="it-card-date">18 mar 2026</time>
+                <time slot="footer" class="it-card-date"></time>
               </it-card>
 
               <it-card variant="inline-mini" full-height="">
                 <figure slot="image" class="figure img-full">
-                  <img src="../icons/Unica.svg" alt="Immagine" />
+                  <img src="../icons/Unica.svg" alt="" />
                 </figure>
 
                 <a slot="title" href="#">UNICA<span class="visually-hidden"> (link a XYZ)</span></a>
@@ -551,12 +553,12 @@
                     ><span class="visually-hidden">Categoria correlata: </span></a
                   >
                 </div>
-                <time slot="footer" class="it-card-date">18 mar 2026</time>
+                <time slot="footer" class="it-card-date"></time>
               </it-card>
 
               <it-card variant="inline-mini" full-height="">
                 <figure slot="image" class="figure img-full">
-                  <img src="../icons/Registro.svg" alt="Immagine" />
+                  <img src="../icons/Registro.svg" alt="" />
                 </figure>
 
                 <a slot="title" href="#">Registro elettronico<span class="visually-hidden"> (link a XYZ)</span></a>
@@ -568,336 +570,342 @@
                     ><span class="visually-hidden">Categoria correlata: </span></a
                   >
                 </div>
-                <time slot="footer" class="it-card-date">18 mar 2026</time>
+                <time slot="footer" class="it-card-date"></time>
               </it-card>
             </div>
           </div>
         </div>
       </it-section>
-    </div>
-    <div id="finanziamenti">
-      <div class="container">
-        <h2>I nostri finanziamenti</h2>
-        <div class="service-grid row row-cols-1 row-cols-md-3 g-3 mb-3 align-items-stretch">
-          <it-card full-height="">
-            <a slot="title" href="#">PNRR Futura</a>
-            <figure slot="image" class="figure img-full">
-              <img
-                src="../illustrations/scuola-large.svg"
-                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
-              />
-            </figure>
-            <span slot="text">Programma del PNRR per innovazione e digitalizzazione della scuola</span>
-            <div slot="footer" class="it-card-taxonomy">
-              <a href="#" class="it-card-category it-card-link">
-                <span class="visually-hidden"></span>
-                Categoria
-              </a>
-            </div>
-            <time slot="footer" class="it-card-date" datetime="2026-04-22"></time>
-          </it-card>
 
-          <it-card full-height="">
-            <a slot="title" href="#">PON - Ricerca e innovazione 2014-2020</a>
-            <figure slot="image" class="figure img-full">
-              <img
-                src="../illustrations/didattica-large.svg"
-                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
-              />
-            </figure>
-            <span slot="text">Fondi europei per progetti di ricerca e sviluppo nelle scuole</span>
-            <div slot="footer" class="it-card-taxonomy">
-              <a href="#" class="it-card-category it-card-link">
-                <span class="visually-hidden"></span>
-                Categoria
-              </a>
-            </div>
-            <time slot="footer" class="it-card-date" datetime="2026-04-22"></time>
-          </it-card>
+      <it-section>
+        <div class="container">
+          <h2>I nostri finanziamenti</h2>
+          <div class="service-grid row row-cols-1 row-cols-lg-3 g-3 align-items-stretch" data-cards="">
+            <it-card full-height="">
+              <a slot="title" href="#">PNRR Futura</a>
+              <figure slot="image" class="figure img-full">
+                <img src="../illustrations/pnrr.svg" alt="" />
+              </figure>
+              <span slot="text">Programma del PNRR per innovazione e digitalizzazione della scuola</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden"></span>
+                  Categoria
+                </a>
+              </div>
+              <time datetime="" slot="footer" class="it-card-date"></time>
+            </it-card>
 
-          <it-card full-height="">
-            <a slot="title" href="#">PON inclusione</a>
-            <figure slot="image" class="figure img-full">
-              <img
-                src="../illustrations/comunicazioni-large.svg"
-                alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
-              />
-            </figure>
-            <span slot="text">Programma europeo per il sostegno e l'inclusione sociale</span>
-            <div slot="footer" class="it-card-taxonomy">
-              <a href="#" class="it-card-category it-card-link">
-                <span class="visually-hidden"></span>
-                Categoria
-              </a>
-            </div>
-            <time slot="footer" class="it-card-date" datetime="2026-04-22"></time>
-          </it-card>
+            <it-card full-height="">
+              <a slot="title" href="#">PON - Ricerca e innovazione 2014-2020</a>
+              <figure slot="image" class="figure img-full">
+                <img src="../illustrations/pon-ricerca.svg" alt="" />
+              </figure>
+              <span slot="text">Fondi europei per progetti di ricerca e sviluppo nelle scuole</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden"></span>
+                  Categoria
+                </a>
+              </div>
+              <time datetime="" slot="footer" class="it-card-date"></time>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">PON inclusione</a>
+              <figure slot="image" class="figure img-full">
+                <img src="../illustrations/pon.svg" alt="" />
+              </figure>
+              <span slot="text">Programma europeo per il sostegno e l'inclusione sociale</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden"></span>
+                  Categoria
+                </a>
+              </div>
+              <time datetime="" slot="footer" class="it-card-date"></time>
+            </it-card>
+          </div>
+          <a href="#" class="d-inline-block mt-4">
+            Esplora tutti i finanziamenti<it-icon
+              name="it-arrow-right"
+              color="primary"
+              size="sm"
+              class="ms-2"
+            ></it-icon>
+          </a>
         </div>
-        <a href="#">
-          Esplora tutti i finanziamenti<it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
-        </a>
-      </div>
-    </div>
-    <div id="trasparenza">
-      <div style="background-color: #faebed">
+      </it-section>
+
+      <style>
+        .pubblicita {
+          background-color: #faebed;
+        }
+      </style>
+      <div class="pubblicita">
         <it-section>
           <div class="container">
-            <h2 style="color: #2f475e">Pubblicità legale e trasparenza</h2>
-            <div class="service-grid row row-cols-1 row-cols-md-3 g-2 g-lg-3 align-items-stretch">
-              <it-card variant="inline-mini" full-height="">
-                <a slot="title" href="#">Albo online<span class="visually-hidden"> (link a XYZ)</span></a>
-
-                <span slot="text"
+            <h2>Pubblicità legale e trasparenza</h2>
+            <div class="service-grid row row-cols-1 row-cols-lg-2 g-3 align-items-stretch" data-cards="">
+              <it-card variant="inline-banner-mini" full-height="">
+                <a slot="title" href="#">Albo online</a>
+                <it-icon slot="image" color="primary" name="it-external-link" size="xl"></it-icon>
+                <span slot="subtitle"
                   >Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore
                   legale e sempre aggiornati</span
                 >
-
-                <div slot="footer" class="it-card-taxonomy">
-                  <a href="#" class="it-card-category it-card-link"
-                    >Vai all'Albo online<span class="visually-hidden">Categoria correlata: </span></a
-                  >
-                </div>
-                <time slot="footer" class="it-card-date">18 mar 2026</time>
               </it-card>
 
-              <it-card variant="inline-mini" full-height="">
-                <a slot="title" href="#"
-                  >Amministrazione Trasparente<span class="visually-hidden"> (link a XYZ)</span></a
-                >
-
-                <span slot="text"
+              <it-card variant="inline-banner-mini" full-height="">
+                <a slot="title" href="#">Amministrazione Trasparente</a>
+                <it-icon slot="image" color="primary" name="it-external-link" size="xl"></it-icon>
+                <span slot="subtitle"
                   >Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e
                   sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza</span
                 >
-
-                <div slot="footer" class="it-card-taxonomy">
-                  <a href="#" class="it-card-category it-card-link"
-                    >Vai alla sezione<span class="visually-hidden">Categoria correlata: </span></a
-                  >
-                </div>
-                <time slot="footer" class="it-card-date">18 mar 2026</time>
               </it-card>
             </div>
           </div>
         </it-section>
       </div>
-    </div>
-    <div id="personale-scolastico">
+
       <it-section image="../illustrations/hero-homepage-large.svg" inverse="">
         <div class="container">
           <div class="d-flex flex-column text-white">
             <h2 class="no_toc">Per il personale scolastico</h2>
-            <p class="d-none d-lg-block">Informazioni, modulistica e strumenti per i docenti dell'Istituto.</p>
-            <div class="it-btn-container">
-              <a class="btn btn-sm" href="#" style="background-color: #fff"
-                >Azione primaria
+            <p>Informazioni, modulistica e strumenti per i docenti dell'Istituto.</p>
+            <div class="bg-dark" style="width: fit-content">
+              <a class="btn btn-sm btn-primary" href="#">
+                <span>Accedi all'area personale</span>
                 <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
               </a>
             </div>
           </div>
         </div>
       </it-section>
-    </div>
-    <div id="rating">
-      <div class="bg-dark py-5">
+
+      <it-section variant="primary">
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-auto bg-white p-4 rounded">
-              <it-rating name="rating" value="0" icon="it-star-outline" max-elements="5">
-                <span slot="label">Quanto sono chiare le informazioni su questa pagina?</span>
-                <it-rating-item value="1">
-                  <span slot="label">1 stella</span>
-                </it-rating-item>
-                <it-rating-item value="2">
-                  <span slot="label">2 stelle</span>
-                </it-rating-item>
-                <it-rating-item value="3">
-                  <span slot="label">3 stelle</span>
-                </it-rating-item>
-                <it-rating-item value="4">
-                  <span slot="label">4 stelle</span>
-                </it-rating-item>
-                <it-rating-item value="5">
-                  <span slot="label">5 stelle</span>
-                </it-rating-item>
-              </it-rating>
+          <div class="bg-white py-4 px-4 m-auto col-12 col-lg-6">
+            <it-rating
+              name="rating"
+              value="0"
+              icon="it-star-full"
+              max-elements="5"
+              class="d-flex flex-column align-items-start"
+            >
+              <p slot="label" class="text-black h5">Quanto sono chiare le informazioni su questa pagina?</p>
+              <it-rating-item value="1">
+                <span slot="label">1 stella</span>
+              </it-rating-item>
+              <it-rating-item value="2">
+                <span slot="label">2 stelle</span>
+              </it-rating-item>
+              <it-rating-item value="3">
+                <span slot="label">3 stelle</span>
+              </it-rating-item>
+              <it-rating-item value="4">
+                <span slot="label">4 stelle</span>
+              </it-rating-item>
+              <it-rating-item value="5">
+                <span slot="label">5 stelle</span>
+              </it-rating-item>
+            </it-rating>
+          </div>
+        </div>
+      </it-section>
+    </main>
+
+    <footer class="it-footer">
+      <div class="py-4 bg-darker">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-4 g-3 align-items-center justify-content-center">
+            <div class="col text-center">
+              <img
+                src="../illustrations/pnrr.svg"
+                class="img-fluid"
+                style="height: 80px; object-fit: contain"
+                alt="Logo PNRR"
+              />
+            </div>
+            <div class="col text-center">
+              <img
+                src="../illustrations/pon-ricerca.svg"
+                class="img-fluid"
+                style="height: 80px; object-fit: contain"
+                alt="Logo PON Ricerca"
+              />
+            </div>
+            <div class="col text-center">
+              <img
+                src="../illustrations/pon.svg"
+                class="img-fluid"
+                style="height: 80px; object-fit: contain"
+                alt="Logo PON"
+              />
+            </div>
+            <div class="col text-center">
+              <img
+                src="../illustrations/rigenerazione.svg"
+                class="img-fluid"
+                style="height: 80px; object-fit: contain"
+                alt="Logo Rigenerazione"
+              />
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div id="footer">
-      <footer class="it-footer">
-        <div class="it-footer-main">
-          <div class="container">
-            <section class="pb-4">
-              <div class="row clearfix">
-                <div class="col-sm-12">
-                  <div class="it-brand-wrapper">
-                    <a href="#">
-                      <it-icon name="it-code-circle" size="xl" color="inverse"></it-icon>
-                      <div class="it-brand-text">
-                        <h2 class="no_toc">Nome Ente</h2>
-                        <h3 class="no_toc">Tagline</h3>
-                      </div>
-                    </a>
-                  </div>
+
+      <div class="it-footer-main">
+        <div class="container">
+          <section class="pb-4">
+            <div class="row clearfix">
+              <div class="col-12">
+                <div class="it-brand-wrapper">
+                  <a href="#">
+                    <it-icon name="it-pa" size="xl" color="inverse"></it-icon>
+                    <div class="it-brand-text">
+                      <h2 class="no_toc">Istituto comprensivo F. Hernandez</h2>
+                      <h3 class="no_toc">Livorno</h3>
+                    </div>
+                  </a>
                 </div>
               </div>
-            </section>
-            <section>
-              <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
-                  <h4>
-                    <a href="#" title="Vai alla pagina: Amministrazione">Amministrazione</a>
-                  </h4>
-                  <div class="link-list-wrapper">
-                    <ul class="footer-list link-list clearfix">
-                      <li><a class="list-item" href="#">Giunta e consiglio</a></li>
-                      <li><a class="list-item" href="#">Aree di competenza</a></li>
-                      <li><a class="list-item" href="#">Dipendenti</a></li>
-                      <li><a class="list-item" href="#">Luoghi</a></li>
-                      <li>
-                        <a class="list-item" href="#">Associazioni e società partecipate</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
-                  <h4>
-                    <a href="#" title="Vai alla pagina: Servizi">Servizi</a>
-                  </h4>
-                  <div class="link-list-wrapper">
-                    <ul class="footer-list link-list clearfix">
-                      <li><a class="list-item" href="#">Pagamenti</a></li>
-                      <li><a class="list-item" href="#">Sostegno</a></li>
-                      <li><a class="list-item" href="#">Domande e iscrizioni</a></li>
-                      <li><a class="list-item" href="#">Segnalazioni</a></li>
-                      <li>
-                        <a class="list-item" href="#">Autorizzazioni e concessioni</a>
-                      </li>
-                      <li>
-                        <a class="list-item" href="#">Certificati e dichiarazioni</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
-                  <h4>
-                    <a href="#" title="Vai alla pagina: Novità">Novità</a>
-                  </h4>
-                  <div class="link-list-wrapper">
-                    <ul class="footer-list link-list clearfix">
-                      <li><a class="list-item" href="#">Notizie</a></li>
-                      <li><a class="list-item" href="#">Eventi</a></li>
-                      <li><a class="list-item" href="#">Comunicati stampa</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                  <h4>
-                    <a href="#" title="Vai alla pagina: Documenti">Documenti</a>
-                  </h4>
-                  <div class="link-list-wrapper">
-                    <ul class="footer-list link-list clearfix">
-                      <li><a class="list-item" href="#">Progetti e attività</a></li>
-                      <li>
-                        <a class="list-item" href="#">Delibere, determine e ordinanze</a>
-                      </li>
-                      <li><a class="list-item" href="#">Bandi</a></li>
-                      <li><a class="list-item" href="#">Concorsi</a></li>
-                      <li><a class="list-item" href="#">Albo pretorio</a></li>
-                    </ul>
-                  </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row row-cols-1 row-cols-lg-4 g-3">
+              <div class="col-12 col-lg-3 pb-2">
+                <h4 title="Vai alla pagina: Menu principale">Menu principale</h4>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li><a class="list-item" href="#">Istituto</a></li>
+                    <li><a class="list-item" href="#">Didattica</a></li>
+                    <li><a class="list-item" href="#">Servizi</a></li>
+                    <li><a class="list-item" href="#">Comunicazioni</a></li>
+                  </ul>
                 </div>
               </div>
-            </section>
-            <section class="py-4 border-white border-top">
-              <div class="row">
-                <div class="col-lg-4 col-md-4 pb-2">
-                  <h4>Contatti</h4>
-                  <p>
-                    <strong>Nome Ente</strong><br />
-                    Via Roma 0 - 00000 Città - Codice fiscale / P. IVA: 000000000
-                  </p>
-                  <div class="link-list-wrapper">
-                    <ul class="footer-list link-list clearfix">
-                      <li>
-                        <a class="list-item" href="#">Posta Elettronica Certificata</a>
-                      </li>
-                      <li>
-                        <a class="list-item" href="#">URP - Ufficio Relazioni con il Pubblico</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 pb-2">
-                  <div class="pb-2">
-                    <h4>Seguici su</h4>
-                    <ul class="list-inline text-left social">
-                      <li class="list-inline-item">
-                        <a class="p-2" href="#"
-                          ><it-icon color="inverse" size="sm" name="it-designers-italia"></it-icon
-                          ><span class="visually-hidden">Designers Italia (link esterno)</span></a
-                        >
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="p-2" href="#"
-                          ><it-icon color="inverse" size="sm" name="it-twitter"></it-icon
-                          ><span class="visually-hidden">X (link esterno)</span></a
-                        >
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="p-2" href="#"
-                          ><it-icon color="inverse" size="sm" name="it-medium"></it-icon
-                          ><span class="visually-hidden">Medium (link esterno)</span></a
-                        >
-                      </li>
-                      <li class="list-inline-item">
-                        <a class="p-2" href="#"
-                          ><it-icon color="inverse" size="sm" name="it-behance"></it-icon
-                          ><span class="visually-hidden">Behance (link esterno)</span></a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-4 mt-2">
-                  <h4>Newsletter</h4>
-                  <div class="form-group d-flex gap-1">
-                    <it-input
-                      slotted=""
-                      type="text"
-                      id="exampleFormGroup"
-                      size="sm"
-                      placeholder="Inserisci la tua email"
-                      label-hidden=""
-                      ><span slot="label">Inserisci la tua emial</span>
-                      <it-button type="submit" variant="primary" slot="append">Iscriviti</it-button>
-                    </it-input>
-                  </div>
+              <div class="col-12 col-lg-3 pb-2">
+                <h4 title="Vai alla pagina: Pubblicità e trasparenza">Pubblicità e trasparenza</h4>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li><a class="list-item" href="#">Amministrazione trasparente</a></li>
+                    <li><a class="list-item" href="#">Albo online</a></li>
+                  </ul>
                 </div>
               </div>
-            </section>
-          </div>
+              <div class="col-12 col-lg-3 pb-2">
+                <h4>Personale scolastico</h4>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li><a class="list-item" href="#">Modulistica per il personale scolastico</a></li>
+                    <li><a class="list-item" href="#">Registro elettronico per docenti</a></li>
+                    <li><a class="list-item" href="#">NoiPA</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 pb-2">
+                <h4>Link esterni</h4>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li><a class="list-item" href="#">MIUR</a></li>
+                    <li><a class="list-item" href="#">Ufficio Scolastico Regionale</a></li>
+                    <li><a class="list-item" href="#">Ufficio Scolastico Territoriale</a></li>
+                    <li><a class="list-item" href="#">Scuola In Chiaro</a></li>
+                    <li><a class="list-item" href="#">Comune</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="py-4 border-white border-top">
+            <div class="row row-cols-1 row-cols-lg-4 g-3">
+              <div class="col-12 col-md-4 pb-2">
+                <h4>Contatti</h4>
+                <p>
+                  <strong>Istituto comprensivo F. Hernandez</strong><br />
+                  <span>Via degli Istituti, 1 - 57100 Livorno</span>
+                </p>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li>indirizzopecdellente@pec.gov.it</li>
+                    <li>+39 000000000</li>
+                    <li><a class="list-item" href="#">URP - Ufficio Relazioni con il Pubblico</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 pb-2">
+                <div class="pb-2">
+                  <h4>Seguici su</h4>
+                  <ul class="list-inline text-left social">
+                    <li class="list-inline-item">
+                      <a class="p-2" href="#">
+                        <it-icon color="inverse" size="sm" name="it-facebook"></it-icon>
+                        <span class="visually-hidden">Facebook (link esterno)</span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="p-2" href="#">
+                        <it-icon color="inverse" size="sm" name="it-instagram"></it-icon>
+                        <span class="visually-hidden">Instagram (link esterno)</span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="p-2" href="#">
+                        <it-icon color="inverse" size="sm" name="it-twitter"></it-icon>
+                        <span class="visually-hidden">X (link esterno)</span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="p-2" href="#">
+                        <it-icon color="inverse" size="sm" name="it-youtube"></it-icon>
+                        <span class="visually-hidden">YouTube (link esterno)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <h4>Newsletter</h4>
+                <div class="form-group d-flex gap-1">
+                  <it-input
+                    slotted=""
+                    type="text"
+                    id="footerNewsletterEmail"
+                    size="sm"
+                    placeholder="Indirizzo email"
+                    label-hidden=""
+                  >
+                    <span slot="label">Inserisci la tua email</span>
+                    <it-button type="submit" variant="success" outline="" slot="append">Iscriviti</it-button>
+                  </it-input>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <div class="it-footer-small-prints clearfix">
-          <div class="container">
-            <!-- <h3 class="visually-hidden">Sezione Link Utili</h3> -->
-            <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
-              <li class="list-inline-item"><a href="#">Media policy</a></li>
-              <li class="list-inline-item"><a href="#">Note legali</a></li>
-              <li class="list-inline-item"><a href="#">Privacy policy</a></li>
-              <li class="list-inline-item"><a href="#">Mappa del sito</a></li>
-              <li class="list-inline-item">
-                <a href="https://form.agid.gov.it/view/xyz"
-                  >Dichiarazione di accessibilità <span class="visually-hidden">(link esterno su sito AgID)</span></a
-                >
-              </li>
-            </ul>
-          </div>
+      </div>
+
+      <div class="it-footer-small-prints clearfix">
+        <div class="container">
+          <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+            <li class="list-inline-item"><a href="#">Archivio</a></li>
+            <li class="list-inline-item"><a href="#">Informativa cookie</a></li>
+            <li class="list-inline-item"><a href="#">Note legali</a></li>
+            <li class="list-inline-item"><a href="#">Informativa privacy</a></li>
+            <li class="list-inline-item"><a href="#">Mappa del sito</a></li>
+            <li class="list-inline-item">
+              <a href="https://form.agid.gov.it/view/xyz">
+                Dichiarazione di accessibilità
+                <span class="visually-hidden">(link esterno su sito AgID)</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
