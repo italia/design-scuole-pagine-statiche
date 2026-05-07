@@ -121,4 +121,8 @@
   --it-color-background-primary-muted: #202a2e;
   --it-color-background-primary-deep: #202a2e;
   --bsi-form-control-label-color: var(--it-color-slate-85);
+  --bsi-section-background-color: #202a2e !important;
+  --it-icon-secondary: var(--it-color-slate-85);
+  --it-color-border-success: var(--it-color-white);
+  --it-color-text-success: var(--it-color-white);
 }

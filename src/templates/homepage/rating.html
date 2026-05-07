@@ -1,15 +1,17 @@
 <template>
-  <div class="bg-dark py-5">
-    <div class="row justify-content-center">
-      <div class="col-auto bg-white p-4 rounded">
+  <it-section variant="primary">
+    <div class="container">
+      <div class="bg-white py-4 px-4 m-auto col-12 col-lg-6">
         <it-rating
           name="rating"
           value="0"
-          icon="it-star-outline"
+          icon="it-star-full"
           max-elements="5"
-          class="d-flex flex-column"
+          class="d-flex flex-column align-items-start"
         >
-          <span slot="label">Quanto sono chiare le informazioni su questa pagina?</span>
+          <p slot="label" class="text-black h5">
+            Quanto sono chiare le informazioni su questa pagina?
+          </p>
           <it-rating-item value="1">
             <span slot="label">1 stella</span>
           </it-rating-item>
@@ -28,5 +30,5 @@
         </it-rating>
       </div>
     </div>
-  </div>
+  </it-section>
 </template>

@@ -1,11 +1,8 @@
 <template>
   <it-card full-height="">
-    <a slot="title" href="#" data-tpl="title">Titolo del contenuto</a>
+    <a slot="title" href="#" data-tpl-href="url" data-tpl="title">Titolo del contenuto</a>
     <figure slot="image" class="figure img-full">
-      <img
-        data-tpl-src="image"
-        alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
-      />
+      <img data-tpl-src="image" data-tpl-alt="alt" alt="" />
     </figure>
     <span slot="text" data-tpl="text">
       Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre
@@ -17,7 +14,7 @@
         Categoria
       </a>
     </div>
-    <time slot="footer" class="it-card-date" datetime="2026-04-22" data-tpl="date">
+    <time slot="footer" class="it-card-date" data-tpl-datetime="date" data-tpl="date">
       22 aprile 2026
     </time>
   </it-card>

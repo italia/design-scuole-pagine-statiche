@@ -25,6 +25,7 @@ export function render(
   let el: Element | null;
   while ((el = walker.nextNode() as Element | null)) {
     const attrs = el.attributes;
+    const tplAttrs: string[] = [];
 
     for (let i = 0; i < attrs.length; i++) {
       const attr = attrs[i];
@@ -32,6 +33,7 @@ export function render(
       const { name, value: dataKey } = attr;
 
       if (!name.startsWith('data-tpl')) continue;
+      tplAttrs.push(name);
 
       const val = data[dataKey];
       if (val === undefined || val === null) continue;
@@ -48,6 +50,9 @@ export function render(
         el.setAttribute(name.slice(9), String(val));
       }
     }
+
+    // Strip all data-tpl* attrs so they don't appear in the final DOM
+    for (const name of tplAttrs) el.removeAttribute(name);
   }
 
   return clone;
@@ -65,4 +70,11 @@ export function renderList(tpl: HTMLTemplateElement, items: readonly unknown[]):
     }
   }
   return frag;
+}
+
+/**
+ * Mounts the given DocumentFragment into the DOM element with the specified ID, replacing its content.
+ */
+export function mount(id: string, frag: DocumentFragment): void {
+  document.getElementById(id)?.replaceWith(frag);
 }

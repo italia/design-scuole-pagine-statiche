@@ -31,6 +31,12 @@
     "node": ">=24"
   },
   "packageManager": "pnpm@10.0.0",
+  "lint-staged": {
+    "*.ts": "eslint",
+    "*.css": "stylelint",
+    "src/pages/**/*.html": "html-validate",
+    "**/*": "prettier --check --ignore-unknown"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7",
     "@typescript-eslint/parser": "^7",

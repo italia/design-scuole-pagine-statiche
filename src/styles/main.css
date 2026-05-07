@@ -39,21 +39,14 @@ it-card .it-card-link {
   background-color: var(--it-color-red-cherry-24) !important;
 }
 
-.section-emphasis {
-  background-color: white !important;
+it-rating {
+  --bsi-form-control-label-color: var(--it-color-slate-85);
 }
 
-it-section .white-color {
-  color: black !important;
+.bg-darker {
+  background-color: #202a2e !important;
 }
 
-it-card .it-card-profile-image-icon-wrapper {
-  background-color: var(--it-color-background-primary-lighest);
-}
-
-it-hero .it-hero-text-wrapper,
-it-hero [slot="'text'"] {
-  position: absolute !important;
-  top: 0 !important;
-  bottom: unset !important;
+.bg-lighest {
+  background-color: #fdf7f8 !important;
 }

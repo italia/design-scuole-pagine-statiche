@@ -3,7 +3,7 @@
  * Auto-generated from the JSON import
  */
 
-import type homepageData from '@/js/pages/homepage.json';
+import type homepageData from '@/js/pages/homepage/data.json';
 
 export type HomepageData = typeof homepageData;
 
@@ -16,14 +16,7 @@ export type TemplateData = Record<string, string | number | boolean | null | und
 /**
  * Card type discriminator.
  */
-const CARD_TYPES = [
-  'editorialeStandard',
-  'inlineMini',
-  'informativa',
-  'location',
-  'locationMini',
-  'persona',
-] as const;
+const CARD_TYPES = ['editorialeStandard', 'inlineMini', 'informativa', 'banner'] as const;
 export type CardType = (typeof CARD_TYPES)[number];
 
 /**

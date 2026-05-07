@@ -32,30 +32,40 @@ pnpm run preview        # anteprima del build
 
 ## Struttura sorgente
 
-```
+```text
 src/
-├── index.html            # pagina indice con link alle pagine
 ├── pages/
-│   ├── index.html        # pagina di test rapida
-│   └── servizio.html     # esempio pagina servizio
+│   ├── homepage.html     # shell HTML — solo landmark + <div id="..."> placeholder
+│   └── servizio.html
 ├── js/
 │   ├── main.ts           # import CSS/font/componenti Dev Kit
 │   ├── types/            # definizioni di tipo TypeScript
-│   ├── utils/            # utility functions (templates.ts, etc.)
-│   ├── engines/          # engine specializzati (cards.ts, etc.)
+│   ├── utils/            # utility functions (templates.ts)
+│   ├── engines/          # engine specializzati (cards.ts)
 │   └── pages/
-│       ├── index.ts      # TypeScript specifico per index
-│       ├── index.json    # dati JSON per la pagina
-│       └── servizio.ts   # TypeScript specifico per servizio
+│       ├── homepage/
+│       │   ├── index.ts  # mount logic per homepage
+│       │   └── data.json # dati JSON della pagina
+│       └── servizio/
+│           └── index.ts
+├── templates/
+│   ├── layout/           # header, footer, hero, breadcrumb, preheader
+│   ├── homepage/         # sezioni specifiche homepage
+│   ├── servizio/         # sezioni specifiche servizio
+│   └── cards/            # card riutilizzabili
+├── public/
+│   ├── icons/            # SVG e icone (copiati verbatim in dist/)
+│   └── illustrations/    # SVG illustrazioni
 └── styles/
-    └── main.css          # stili del progetto
+    └── main.css
 ```
 
 ## Output build
 
-```
+```text
 dist/
-├── index.html            # pagina indice
-├── pages/                # pagine HTML con path asset corretti
-└── assets/               # JS, CSS e font bundlati
+├── pages/                # HTML con path asset corretti
+├── icons/                # copiati da src/public/icons/
+├── illustrations/        # copiati da src/public/illustrations/
+└── assets/               # JS, CSS e font bundlati da Vite
 ```

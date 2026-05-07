@@ -9,22 +9,20 @@ bundlato da Vite.
 
 ## Struttura
 
-```
+```text
 src/
 ├── templates/
-│   ├── header.html           # header del sito
-│   ├── footer.html           # footer del sito
-│   ├── breadcrumb.html       # navigazione breadcrumb
-│   ├── hero.html             # sezione hero con titolo e descrizione
-│   ├── service-section.html  # sezione con griglia di card
-│   └── service-card.html     # singola card di servizio
+│   ├── layout/               # header, footer, hero, breadcrumb, preheader
+│   ├── homepage/             # sezioni specifiche della homepage
+│   ├── servizio/             # sezioni specifiche della pagina servizio
+│   └── cards/                # card riutilizzabili (una per CardType)
 └── js/
     ├── utils/
-    │   └── templates.ts      # helper type-safe: fromHTML, render, renderList
+    │   └── templates.ts      # fromHTML, render, renderList
     ├── engines/
-    │   └── cards.ts          # renderCards per card typizzate
+    │   └── cards.ts          # renderCards + cardToRenderData (adapter)
     └── types/
-        └── data.ts           # type definitions (auto-inferred da JSON)
+        └── data.ts           # CardType, isCardType, TemplateData
 ```
 
 ## Come funziona un template
@@ -139,7 +137,8 @@ rootSections.append(sectionFrag);
 | `render(tpl, data)`      | `HTMLTemplateElement`, `Record<string, unknown>` | `DocumentFragment`    | Clona il template e riempie gli slot con type safety   |
 | `renderList(tpl, items)` | `HTMLTemplateElement`, `readonly unknown[]`      | `DocumentFragment`    | Chiama `render` per ogni elemento dell'array           |
 
-## Riferimento — pagina esempio
+## Note importanti
 
-Vedi `src/pages/servizio.html` + `src/js/pages/servizio.js` per un esempio
-completo con header, footer, breadcrumb, hero e tre sezioni di card.
+- `render()` rimuove tutti gli attributi `data-tpl*` dopo averli riempiti — non appaiono nel DOM finale.
+- `mount(id, frag)` chiama `element.replaceWith(frag)`: il `<div id="...">` placeholder sparisce.
+- Per aggiungere nuovi template e pagine vedi `docs/08-llm-figma-porting.md`.

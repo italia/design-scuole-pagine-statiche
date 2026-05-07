@@ -1,10 +1,49 @@
 <template>
   <footer class="it-footer">
+    <div class="py-4 bg-darker">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-4 g-3 align-items-center justify-content-center">
+          <div class="col text-center">
+            <img
+              src="../illustrations/pnrr.svg"
+              class="img-fluid"
+              style="height: 80px; object-fit: contain"
+              alt="Logo PNRR"
+            />
+          </div>
+          <div class="col text-center">
+            <img
+              src="../illustrations/pon-ricerca.svg"
+              class="img-fluid"
+              style="height: 80px; object-fit: contain"
+              alt="Logo PON Ricerca"
+            />
+          </div>
+          <div class="col text-center">
+            <img
+              src="../illustrations/pon.svg"
+              class="img-fluid"
+              style="height: 80px; object-fit: contain"
+              alt="Logo PON"
+            />
+          </div>
+          <div class="col text-center">
+            <img
+              src="../illustrations/rigenerazione.svg"
+              class="img-fluid"
+              style="height: 80px; object-fit: contain"
+              alt="Logo Rigenerazione"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="it-footer-main">
       <div class="container">
         <section class="pb-4">
           <div class="row clearfix">
-            <div class="col-sm-12">
+            <div class="col-12">
               <div class="it-brand-wrapper">
                 <a href="#">
                   <it-icon name="it-pa" size="xl" color="inverse"></it-icon>
@@ -17,12 +56,11 @@
             </div>
           </div>
         </section>
+
         <section>
-          <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
-              <h4>
-                <a href="#" title="Vai alla pagina: Menu principale">Menu principale</a>
-              </h4>
+          <div class="row row-cols-1 row-cols-lg-4 g-3">
+            <div class="col-12 col-lg-3 pb-2">
+              <h4 title="Vai alla pagina: Menu principale">Menu principale</h4>
               <div class="link-list-wrapper">
                 <ul class="footer-list link-list clearfix">
                   <li><a class="list-item" href="#">Istituto</a></li>
@@ -32,12 +70,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
-              <h4>
-                <a href="#" title="Vai alla pagina: Pubblicità e trasparenza"
-                  >Pubblicità e trasparenza</a
-                >
-              </h4>
+            <div class="col-12 col-lg-3 pb-2">
+              <h4 title="Vai alla pagina: Pubblicità e trasparenza">Pubblicità e trasparenza</h4>
               <div class="link-list-wrapper">
                 <ul class="footer-list link-list clearfix">
                   <li><a class="list-item" href="#">Amministrazione trasparente</a></li>
@@ -45,10 +79,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 pb-2">
-              <h4>
-                <a href="#" title="Vai alla pagina: Personale scolastico">Personale scolastico</a>
-              </h4>
+            <div class="col-12 col-lg-3 pb-2">
+              <h4>Personale scolastico</h4>
               <div class="link-list-wrapper">
                 <ul class="footer-list link-list clearfix">
                   <li><a class="list-item" href="#">Modulistica per il personale scolastico</a></li>
@@ -57,10 +89,8 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-              <h4>
-                <a href="#" title="Vai alla pagina: Link esterni">Link esterni</a>
-              </h4>
+            <div class="col-12 col-lg-3 pb-2">
+              <h4>Link esterni</h4>
               <div class="link-list-wrapper">
                 <ul class="footer-list link-list clearfix">
                   <li><a class="list-item" href="#">MIUR</a></li>
@@ -73,29 +103,24 @@
             </div>
           </div>
         </section>
+
         <section class="py-4 border-white border-top">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 pb-2">
+          <div class="row row-cols-1 row-cols-lg-4 g-3">
+            <div class="col-12 col-md-4 pb-2">
               <h4>Contatti</h4>
               <p>
-                <strong data-tpl="denominazione">denominazione</strong><br data-tpl="indirizzo" />
-                indirizzo<br />
+                <strong data-tpl="denominazione">denominazione</strong><br />
+                <span data-tpl="indirizzo">indirizzo</span>
               </p>
               <div class="link-list-wrapper">
                 <ul class="footer-list link-list clearfix">
-                  <li>
-                    <a class="list-item" href="mailto:{{pec}}" data-tpl="pec">pec</a>
-                  </li>
-                  <li>
-                    <a class="list-item" href="tel:{{telefono}}" data-tpl="telefono">telefono</a>
-                  </li>
-                  <li>
-                    <a class="list-item" href="#">URP - Ufficio Relazioni con il Pubblico</a>
-                  </li>
+                  <li data-tpl="pec">pec</li>
+                  <li data-tpl="telefono">telefono</li>
+                  <li><a class="list-item" href="#">URP - Ufficio Relazioni con il Pubblico</a></li>
                 </ul>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 pb-2">
+            <div class="col-12 col-md-4 pb-2">
               <div class="pb-2">
                 <h4>Seguici su</h4>
                 <ul class="list-inline text-left social">
@@ -126,7 +151,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 mt-2">
+            <div class="col-12 col-md-4 mt-2">
               <h4>Newsletter</h4>
               <div class="form-group d-flex gap-1">
                 <it-input
@@ -138,7 +163,9 @@
                   label-hidden=""
                 >
                   <span slot="label">Inserisci la tua email</span>
-                  <it-button type="submit" variant="primary" slot="append">Iscriviti</it-button>
+                  <it-button type="submit" variant="success" outline="" slot="append"
+                    >Iscriviti</it-button
+                  >
                 </it-input>
               </div>
             </div>
@@ -146,6 +173,7 @@
         </section>
       </div>
     </div>
+
     <div class="it-footer-small-prints clearfix">
       <div class="container">
         <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
