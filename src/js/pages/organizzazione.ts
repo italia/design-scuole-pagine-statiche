@@ -2,12 +2,12 @@ import '@/js/main';
 import { render, fromHTML } from '@/js/utils/templates';
 import { renderCards } from '../engines/cards';
 
-import serviceSectionHTML from '@/templates/inEvidenceSection.html?raw';
+import serviceSectionHTML from '@/templates/homepage/in-evidenza.html?raw';
 import heroHTML from '@/templates/hero-secondario.html?raw';
-import strumentiHTML from '@/templates/tools.html?raw';
-import finanziamentiHTML from '@/templates/finanziamenti.html?raw';
-import footerHTML from '@/templates/footer.html?raw';
-import ratingHTML from '@/templates/rating.html?raw';
+import strumentiHTML from '@/templates/homepage/tools.html?raw';
+import finanziamentiHTML from '@/templates/homepage/finanziamenti.html?raw';
+import footerHTML from '@/templates/layout/footer.html?raw';
+import ratingHTML from '@/templates/homepage/rating.html?raw';
 import cardLuogoHTML from '@/templates/cards/card-luogo.html?raw';
 
 import data from '@/js/pages/organizzazione.json';
