@@ -9,6 +9,7 @@ import finanziamentiHTML from '@/templates/homepage/finanziamenti.html?raw';
 import footerHTML from '@/templates/layout/footer.html?raw';
 import ratingHTML from '@/templates/homepage/rating.html?raw';
 import cardLuogoHTML from '@/templates/cards/card-luogo.html?raw';
+import breadcrumbHTML from '@/templates/layout/breadcrumb.html?raw';
 
 import data from '@/js/pages/organizzazione.json';
 
@@ -20,8 +21,16 @@ const templates = {
   footer: fromHTML(footerHTML),
   rating: fromHTML(ratingHTML),
   luogo: fromHTML(cardLuogoHTML),
+  breadcrumb: fromHTML(breadcrumbHTML),
 };
 
+/*render breadcrumb */
+const breadFragment = render(templates.breadcrumb, data);
+
+const breadContainer = document.getElementById('breadcrumb');
+if (breadContainer) {
+  breadContainer.appendChild(breadFragment);
+}
 /* render hero */
 const heroFragment = render(templates.hero, data.hero.info);
 
@@ -62,11 +71,6 @@ const fragmentFinan = render(templates.finanziamenti, data.fin);
 const finanCardsContainer = fragmentFinan.querySelector('[data-tpl="data-cards"]');
 if (finanCardsContainer) {
   finanCardsContainer.appendChild(renderCards(data.fin.cards));
-}
-
-const finanContainer = document.getElementById('finanziamenti');
-if (finanContainer) {
-  finanContainer.appendChild(fragmentFinan);
 }
 
 /* render footer */
