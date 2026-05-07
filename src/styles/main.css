@@ -50,3 +50,15 @@ it-rating {
 .bg-lighest {
   background-color: #fdf7f8 !important;
 }
+
+it-card .it-card-profile-image-icon-wrapper {
+  background-color: var(--it-color-background-primary-lighest);
+}
+
+.section-emphasis {
+  background-color: white !important;
+}
+
+it-section .white-color {
+  color: black !important;
+}
