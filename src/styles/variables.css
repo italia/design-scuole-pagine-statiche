@@ -125,4 +125,5 @@
   --it-icon-secondary: var(--it-color-slate-85);
   --it-color-border-success: var(--it-color-white);
   --it-color-text-success: var(--it-color-white);
+  --bsi-primary: var(--it-color-red-cherry-34);
 }
