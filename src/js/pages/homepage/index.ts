@@ -40,12 +40,8 @@ const templates = {
 /* preheader */
 // mount('site-preheader', render(templates.preheader, data.preHeader));
 
-/* header — strip template's <header> wrapper, inject children into the persistent landmark */
-// const headerFrag = render(templates.header, data.mainHeader);
-// const headerInner = headerFrag.firstElementChild;
-// if (headerInner) {
-//   document.getElementById('main-header')?.replaceChildren(...headerInner.childNodes);
-// }
+/* header */
+mount('main-header', render(templates.header, { ...data.preHeader, ...data.mainHeader }));
 
 /* hero */
 mount('hero', render(templates.hero, data.hero));

@@ -1,11 +1,12 @@
 {
   "preHeader": {
     "ministero": "Ministero dell'Istruzione e del Merito",
+    "ministero_url": "https://www.mim.gov.it/",
     "areariservata": "Accedi all'area riservata"
   },
 
   "mainHeader": {
-    "nome": "Liceo Scientifico Statale",
+    "nome": "Istituto comprensivo",
     "denominazione": "Federico Hernandez",
     "citta": "Livorno"
   },

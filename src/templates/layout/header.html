@@ -1,22 +1,158 @@
 <template>
-  <header site-header>
-    <div class="container header-top">
-      <a href="../index.html" class="school-logo" aria-label="Torna alla home">
-        <div class="school-name" school-name>
-          <span data-tpl="nome"></span>
-          <strong data-tpl="denominazione"></strong>
-          <span data-tpl="citta"></span>
+  <it-header>
+    <header class="it-header-wrapper">
+      <!-- slim header -->
+      <div class="it-header-slim-wrapper">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-12">
+              <div class="it-header-slim-wrapper-content">
+                <a
+                  class="d-block navbar-brand"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-tpl="ministero"
+                  data-tpl-href="ministero_url"
+                >
+                </a>
+                <!-- required by it-header JS for mobile exit-modal cleanup -->
+                <div class="nav-mobile">
+                  <nav aria-label="Navigazione accessoria">
+                    <div class="link-list-wrapper d-none" aria-hidden="true">
+                      <ul class="link-list"></ul>
+                    </div>
+                  </nav>
+                </div>
+                <div class="it-header-slim-right-zone">
+                  <div class="it-access-top-wrapper">
+                    <it-button variant="primary" size="xs">Accedi</it-button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-      <nav class="main-nav" aria-label="Principale">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#">Scuola</a></li>
-          <li><a href="servizio.html" aria-current="page">Servizi</a></li>
-          <li><a href="#">Novità</a></li>
-          <li><a href="#">Didattica</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      </div>
+
+      <!-- center header -->
+      <div class="it-header-center-wrapper theme-light">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-12">
+              <div class="it-header-center-content-wrapper">
+                <div class="it-brand-wrapper">
+                  <a href="#" aria-label="Torna alla home">
+                    <it-icon name="it-pa"></it-icon>
+                    <div class="it-brand-text">
+                      <div class="it-brand-title text-secondary">
+                        <span data-tpl="nome">nome</span>
+                        <span data-tpl="denominazione">denominazione</span>
+                      </div>
+                      <div class="it-brand-tagline d-none d-md-block text-secondary" data-tpl="citta">citta</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="it-right-zone text-secondary">
+                  <div class="it-socials d-none d-md-flex">
+                    <span class="font-semi">Seguici su</span>
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          aria-label="Facebook, link esterno"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <it-icon name="it-facebook" size="sm"></it-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          aria-label="YouTube, link esterno"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <it-icon name="it-youtube" size="sm"></it-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          aria-label="Instagram, link esterno"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <it-icon name="it-instagram" size="sm"></it-icon>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="it-search-wrapper">
+                    <span class="d-none d-md-block me-4">Cerca</span>
+                    <a class="search-link" aria-label="Cerca nel sito" href="#">
+                      <it-icon name="it-search" size="sm"></it-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar -->
+      <div class="it-header-navbar-wrapper theme-light">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-lg" aria-label="Navigazione principale">
+                <div class="navbar-collapsable" id="nav-homepage" tabindex="-1">
+                  <div class="menu-wrapper">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <it-dropdown label="Istituto" offset="0" no-flip>
+                          <it-dropdown-item href="#">La scuola</it-dropdown-item>
+                          <it-dropdown-item href="#">Organigramma</it-dropdown-item>
+                          <it-dropdown-item href="#">PTOF</it-dropdown-item>
+                        </it-dropdown>
+                      </li>
+                      <li class="nav-item">
+                        <it-dropdown label="Didattica" offset="0" no-flip>
+                          <it-dropdown-item href="#">Offerta formativa</it-dropdown-item>
+                          <it-dropdown-item href="#">Orario scolastico</it-dropdown-item>
+                        </it-dropdown>
+                      </li>
+                      <li class="nav-item">
+                        <it-dropdown label="Servizi" offset="0" no-flip>
+                          <it-dropdown-item href="#">Tutti i servizi</it-dropdown-item>
+                        </it-dropdown>
+                      </li>
+                      <li class="nav-item">
+                        <it-dropdown label="Comunicazioni" offset="0" no-flip>
+                          <it-dropdown-item href="#">Circolari</it-dropdown-item>
+                          <it-dropdown-item href="#">Notizie</it-dropdown-item>
+                        </it-dropdown>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-secondary">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Contatti</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Orientamento in entrata</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Tutti gli argomenti</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </it-header>
 </template>

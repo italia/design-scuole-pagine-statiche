@@ -1,5 +1,17 @@
 @import url('../styles/main.css');
 
+.it-header-slim-wrapper {
+  --bsi-header-slim-background: var(--it-color-background-primary-darker);
+}
+
+.it-header-center-wrapper {
+  --bsi-header-brand-title-size: var(--bsi-heading-5-font-size);
+}
+
+.it-right-zone .it-socials it-icon::part(icon) {
+  fill: var(--it-color-secondary);
+}
+
 .bg-white {
   background-color: var(--it-color-white);
 }
