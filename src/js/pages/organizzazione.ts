@@ -10,6 +10,7 @@ import footerHTML from '@/templates/layout/footer.html?raw';
 import ratingHTML from '@/templates/homepage/rating.html?raw';
 import cardLuogoHTML from '@/templates/cards/card-luogo.html?raw';
 import breadcrumbHTML from '@/templates/layout/breadcrumb.html?raw';
+import headerHTML from '@/templates/layout/header.html?raw';
 
 import data from '@/js/pages/organizzazione.json';
 
@@ -22,8 +23,16 @@ const templates = {
   rating: fromHTML(ratingHTML),
   luogo: fromHTML(cardLuogoHTML),
   breadcrumb: fromHTML(breadcrumbHTML),
+  header: fromHTML(headerHTML),
 };
 
+/*render header */
+const headerFragment = render(templates.header, data);
+
+const headerContainer = document.getElementById('header');
+if (headerContainer) {
+  headerContainer.appendChild(headerFragment);
+}
 /*render breadcrumb */
 const breadFragment = render(templates.breadcrumb, data);
 
