@@ -12,6 +12,7 @@
   },
 
   "hero": {
+    "class": "hero",
     "denominazione": "Istituto comprensivo",
     "nome": "Federico Hernandez",
     "citta": "Livorno",
@@ -88,31 +89,6 @@
   },
 
   "studiaConNoi": {
-    "titoloSezione": "Studia con noi",
-    "titlePercorsi": "I nostri percorsi di studio",
-    "description1Percorsi": "L'istituto offre diversi percorsi di studio pensati per accompagnare ogni studente nella propria crescita educativa",
-    "description2Percorsi": "Ogni indirizzo propone attività, metodologie e opportunità formative specifiche, così da rispondere ai diversi interessi, attitudini e obiettivi personali",
-    "testoLink1Percorsi": "Esplora le nostre offerte formative",
-    "urlLink1Percorsi": "#",
-    "testoLink2Percorsi": "Consulta il Piano di Offerta Formativa (PTOF)",
-    "urlLink2Percorsi": "#",
-    "infanzia": "Scuola dell'infanzia",
-    "descrizioneTipo1": "Percorsi attivi: tempo ridotto, tempo pieno",
-    "iconaInfanzia": "../icons/Infanzia-Large.svg",
-    "altInfanzia": "icona scuola infanzia",
-    "elementari": "Scuola primaria",
-    "descrizioneTipo2": "Percorsi attivi: tempo normale, tempo pieno",
-    "iconaElementari": "../icons/Elementari-Large.svg",
-    "altElementari": "icona scuola elementare",
-    "medie": "Scuola secondaria di primo grado",
-    "descrizioneTipo3": "Percorsi attivi: tempo normale",
-    "iconaMedie": "../icons/Medie-Large.svg",
-    "altMedie": "icona scuola secondaria",
-    "titleProgetti": "I progetti dell'istituto",
-    "description1Progetti": "L'istituto promuove ogni anno un ampio programma di progetti e attività pensati per arricchire il percorso formativo degli studenti",
-    "description2Progetti": "Esperienze didattiche, laboratoriali e culturali si integrano alla vita scolastica per favorire partecipazione, crescita personale, inclusione e scoperta del territorio",
-    "testolinkProgetti": "Vai a tutti i progetti",
-    "urlProgetti": "#",
     "cards": [
       {
         "type": "informativa",
@@ -155,62 +131,66 @@
 
   "circolariEServizi": {
     "circolari": {
-      "titolo": "Circolari",
-      "descrizione": "Le ultime circolari pubblicate",
       "circolariDataCards": [
         {
           "type": "informativa",
           "title": "Modulistica uscita autonoma infraquattordicenni, Viaggiatori, Privacy",
+          "subtitle": "Circolare n. 15",
           "text": "Comunicazione per uscita autonoma di alunni pendolari e liberatoria Privacy",
-          "date": "15 novembre 2025"
+          "date": "15 novembre 2025",
+          "datetime": "2025-11-15"
         },
         {
           "type": "informativa",
           "title": "Iscrizioni scuola secondaria di secondo grado - anno scolastico 2025/26",
+          "subtitle": "Circolare n. 16",
           "text": "Circolare che descrive le modalità di iscrizione alla scuola secondaria di secondo grado.",
-          "date": "22 dicembre 2025"
+          "date": "22 dicembre 2025",
+          "datetime": "2025-12-22"
         },
         {
           "type": "informativa",
           "title": "Calendario scolastico 2024-25 e organizzazione oraria",
+          "subtitle": "Circolare n. 17",
           "text": "Calendario annuale",
-          "date": "5 gennaio 2026"
+          "date": "5 gennaio 2026",
+          "datetime": "2026-01-05"
         },
         {
           "type": "informativa",
           "title": "Chiusura straordinaria per il giorno 11 ottobre 2025",
+          "subtitle": "Circolare n. 18",
           "text": "Comunicazione di chiusura straordinaria per manutenzione",
-          "date": "30 marzo 2026"
+          "date": "30 marzo 2026",
+          "datetime": "2026-03-30"
         }
       ]
     },
     "servizi": {
-      "titolo": "Servizi",
-      "descrizione": "I servizi offerti dalla nostra scuola",
       "serviziDataCards": [
         {
           "type": "informativa",
           "title": "Mensa",
           "text": "Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durate la giornata scolastica",
-          "date": ""
+          "category": "Mense scolastiche e buoni pasto"
         },
         {
           "type": "informativa",
           "title": "Piedibus",
           "text": "Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile",
-          "date": ""
+          "category": "Mense scolastiche e buoni pasto"
         },
         {
           "type": "informativa",
           "title": "Scuolabus",
           "text": "Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite",
-          "date": ""
+          "category": "Mense scolastiche e buoni pasto"
         },
         {
           "type": "informativa",
           "title": "Doposcuola",
           "text": "Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato da personale qualificato.",
-          "date": ""
+          "category": "Mense scolastiche e buoni pasto"
         }
       ]
     }
@@ -250,28 +230,22 @@
     "titolo": "I nostri finanziamenti",
     "cards": [
       {
-        "type": "editorialeStandard",
+        "type": "informativa",
         "title": "PNRR Futura",
         "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
-        "image": "../illustrations/pnrr.svg",
-        "category": "",
-        "date": ""
+        "imageSrc": "../illustrations/pnrr.svg"
       },
       {
-        "type": "editorialeStandard",
+        "type": "informativa",
         "title": "PON - Ricerca e innovazione 2014-2020",
         "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
-        "image": "../illustrations/pon-ricerca.svg",
-        "category": "",
-        "date": ""
+        "imageSrc": "../illustrations/pon-ricerca.svg"
       },
       {
-        "type": "editorialeStandard",
+        "type": "informativa",
         "title": "PON inclusione",
         "text": "Programma europeo per il sostegno e l'inclusione sociale",
-        "image": "../illustrations/pon.svg",
-        "category": "",
-        "date": ""
+        "imageSrc": "../illustrations/pon.svg"
       }
     ]
   },
@@ -282,21 +256,21 @@
       {
         "type": "banner",
         "title": "Albo online",
-        "text": "Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore legale e sempre aggiornati",
-        "category": "Vai all'Albo online",
-        "full-height": true
+        "text": "Atti ufficiali, comunicazioni e documenti amministrativi con valore legale.",
+        "category": "Vai all'Albo online"
       },
       {
         "type": "banner",
         "title": "Amministrazione Trasparente",
-        "text": "Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza",
-        "category": "Vai alla sezione",
-        "full-height": true
+        "text": "Dati, documenti e informazioni sull'organizzazione e le attività dell'Istituto.",
+        "category": "Vai a Amministrazione Trasparente"
       }
     ]
   },
 
   "areaPersonale": {
+    "class": "hero bg-dark",
+    "illustration": "../illustrations/hero-homepage-large.svg",
     "title": "Per il personale scolastico",
     "subtitle": "Informazioni, modulistica e strumenti per i docenti dell'Istituto.",
     "button": "Accedi all'area personale"
@@ -304,10 +278,11 @@
 
   "footerSection": {
     "name": "F. Hernandez",
-    "denominazione": "Istituto comprensivo F. Hernandez",
+    "denominazione": "Istituto Comprensivo F. Hernandez",
     "citta": "Livorno",
-    "indirizzo": "Via degli Istituti, 1 - 57100 Livorno",
-    "codiceFiscale": "0985649876",
+    "indirizzo1": "Via Ragazzi del 99, Livorno",
+    "indirizzo2": "50177 Livorno (Livorno)",
+    "codiceFiscale": "CF 0985649876",
     "pec": "indirizzopecdellente@pec.gov.it",
     "telefono": "+39 000000000"
   }

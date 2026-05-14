@@ -8,6 +8,7 @@
     "dev": "vite --open",
     "build": "vite build",
     "build:ssr": "node scripts/generate-ssr.js",
+    "build:watch": "vite build --watch",
     "preview": "vite preview",
     "lint:html": "html-validate \"src/pages/**/*.html\"",
     "format": "prettier --write .",

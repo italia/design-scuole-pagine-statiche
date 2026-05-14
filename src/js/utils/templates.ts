@@ -11,12 +11,28 @@ export function fromHTML(html: string): HTMLTemplateElement {
  * Supported slots:
  * data-tpl="key"          → el.textContent = data[key]
  * data-tpl-[attr]="key"   → el.setAttribute(attr, data[key])
+ * data-tpl-if="key"       → el (and its subtree) removed when data[key] is falsy
+ * data-tpl-if-not="key"   → el (and its subtree) removed when data[key] is truthy
  */
 export function render(
   tpl: HTMLTemplateElement,
   data: Record<string, unknown> = {}
 ): DocumentFragment {
   const clone = tpl.content.cloneNode(true) as DocumentFragment;
+
+  // Pre-pass: resolve conditional visibility before data binding.
+  // querySelectorAll returns a document-order snapshot (Array.from freezes it),
+  // so a parent removal implicitly removes its children before we reach them.
+  for (const el of Array.from(clone.querySelectorAll<Element>('[data-tpl-if]'))) {
+    const key = el.getAttribute('data-tpl-if')!;
+    if (!data[key]) el.remove();
+    else el.removeAttribute('data-tpl-if');
+  }
+  for (const el of Array.from(clone.querySelectorAll<Element>('[data-tpl-if-not]'))) {
+    const key = el.getAttribute('data-tpl-if-not')!;
+    if (data[key]) el.remove();
+    else el.removeAttribute('data-tpl-if-not');
+  }
 
   // Use TreeWalker: the fastest way to scan the DOM.
   // Filter only ELEMENT_NODE types, the actual tags.

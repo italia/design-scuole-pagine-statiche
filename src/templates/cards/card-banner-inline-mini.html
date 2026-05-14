@@ -3,5 +3,10 @@
     <a slot="title" href="#" data-tpl-href="url" data-tpl="title">Titolo del contenuto</a>
     <it-icon slot="image" color="primary" name="it-external-link" size="xl"></it-icon>
     <span slot="subtitle" data-tpl="text">Sottotitolo</span>
+    <div slot="footer" class="it-card-taxonomy" data-tpl-if="category">
+      <a href="#" class="it-card-link">
+        <span data-tpl="category"></span>
+      </a>
+    </div>
   </it-card>
 </template>

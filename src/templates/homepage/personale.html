@@ -1,16 +1,12 @@
 <template>
-  <it-section image="../illustrations/hero-homepage-large.svg" inverse>
+  <it-section data-tpl-image="illustration" inverse data-tpl-class="class">
     <div class="container">
-      <div class="d-flex flex-column text-white">
-        <h2 data-tpl="title" class="no_toc"></h2>
-        <p data-tpl="subtitle"></p>
-        <div class="bg-dark" style="width: fit-content">
-          <a class="btn btn-sm btn-primary" href="#">
-            <span data-tpl="button"></span>
-            <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
-          </a>
-        </div>
-      </div>
+      <h2 data-tpl="title" class="no_toc"></h2>
+      <p data-tpl="subtitle"></p>
+      <a class="btn btn-sm btn-primary" href="#">
+        <span data-tpl="button"></span>
+        <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
+      </a>
     </div>
   </it-section>
 </template>

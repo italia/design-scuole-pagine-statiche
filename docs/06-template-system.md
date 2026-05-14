@@ -75,6 +75,32 @@ const cards: readonly unknown[] = [
 contenitore.append(renderList(tpl.serviceCard, cards));
 ```
 
+### Slot condizionali — `data-tpl-if` / `data-tpl-if-not`
+
+Usa questi attributi per includere o escludere un elemento (e il suo intero sotto-albero)
+in base a un valore nei dati.
+
+| Attributo               | Comportamento                                                                         |
+| ----------------------- | ------------------------------------------------------------------------------------- |
+| `data-tpl-if="key"`     | Elemento rimosso se `data[key]` è **falsy** (`undefined`, `null`, `false`, `0`, `""`) |
+| `data-tpl-if-not="key"` | Elemento rimosso se `data[key]` è **truthy**                                          |
+
+```html
+<template>
+  <div class="card">
+    <p data-tpl="titolo"></p>
+    <!-- mostrato solo se data.badge è truthy -->
+    <span data-tpl-if="badge" data-tpl="badge" class="badge"></span>
+    <!-- mostrato solo se data.badge è falsy -->
+    <span data-tpl-if-not="badge" class="no-badge">Nessun badge</span>
+  </div>
+</template>
+```
+
+I due attributi vengono rimossi dal DOM dopo la valutazione (come tutti gli altri `data-tpl*`).
+Possono coesistere con altri slot sullo stesso elemento (es. `data-tpl-if` + `data-tpl-href`):
+se la condizione è falsa l'elemento viene rimosso prima che gli altri slot vengano elaborati.
+
 ### Template con container per lista — `data-cards`
 
 Il template `service-section.html` contiene un `<div data-cards>` che serve
@@ -136,6 +162,15 @@ rootSections.append(sectionFrag);
 | `fromHTML(html)`         | `string`                                         | `HTMLTemplateElement` | Parsa una stringa `?raw` e restituisce il `<template>` |
 | `render(tpl, data)`      | `HTMLTemplateElement`, `Record<string, unknown>` | `DocumentFragment`    | Clona il template e riempie gli slot con type safety   |
 | `renderList(tpl, items)` | `HTMLTemplateElement`, `readonly unknown[]`      | `DocumentFragment`    | Chiama `render` per ogni elemento dell'array           |
+
+### Slot supportati da `render()`
+
+| Attributo               | Effetto                                                          |
+| ----------------------- | ---------------------------------------------------------------- |
+| `data-tpl="key"`        | Imposta il testo dell'elemento (preserva gli elementi figli)     |
+| `data-tpl-[attr]="key"` | Imposta l'attributo `attr` (es. `data-tpl-href`, `data-tpl-src`) |
+| `data-tpl-if="key"`     | Rimuove l'elemento se `data[key]` è falsy                        |
+| `data-tpl-if-not="key"` | Rimuove l'elemento se `data[key]` è truthy                       |
 
 ## Note importanti
 

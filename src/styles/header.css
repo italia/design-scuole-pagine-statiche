@@ -1,5 +1,3 @@
-@import url('../styles/main.css');
-
 .it-header-slim-wrapper {
   --bsi-header-slim-background: var(--it-color-background-primary-darker);
 }
@@ -10,31 +8,4 @@
 
 .it-right-zone .it-socials it-icon::part(icon) {
   fill: var(--it-color-secondary);
-}
-
-.bg-white {
-  background-color: var(--it-color-white);
-}
-
-.container-header-top a {
-  list-style-type: none;
-  text-decoration: none;
-}
-
-.school-logo {
-  text-decoration: none;
-}
-
-.school-name {
-  color: var(--it-color-gray-32);
-  text-decoration: none;
-}
-
-.main-nav ul {
-  list-style: none;
-}
-
-.main-nav a {
-  color: var(--it-color-red-cherry-34);
-  text-decoration: none;
 }
