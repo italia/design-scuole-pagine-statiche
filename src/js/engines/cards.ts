@@ -3,20 +3,14 @@ import type { Card, CardType } from '@/js/types/data';
 import { isCardType } from '@/js/types/data';
 import cardInlineMiniHTML from '@/templates/cards/card-inline-mini.html?raw';
 import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
-import cardEditorialeHTML from '@/templates/cards/card-editoriale.html?raw';
 import bannerHTML from '@/templates/cards/card-banner-inline-mini.html?raw';
 import luogoHTML from '@/templates/cards/card-luogo.html?raw';
-import luogoMiniHTML from '@/templates/cards/card-luogo-mini.html?raw';
-import personaHTML from '@/templates/cards/card-persona.html?raw';
 
 const templates: Record<CardType, HTMLTemplateElement> = {
-  editorialeStandard: fromHTML(cardEditorialeHTML),
   inlineMini: fromHTML(cardInlineMiniHTML),
   informativa: fromHTML(cardInformativaHTML),
   banner: fromHTML(bannerHTML),
   location: fromHTML(luogoHTML),
-  locationMini: fromHTML(luogoMiniHTML),
-  persona: fromHTML(personaHTML),
 };
 
 /**
@@ -33,12 +27,6 @@ export const renderCards = (listaDati: readonly Card[]): DocumentFragment => {
       continue;
     }
     const rendered = render(templates[card.type], cardToRenderData(card));
-    if (!card.image) {
-      rendered.querySelectorAll('figure').forEach((fig) => fig.remove());
-    }
-    if (!card.icon) {
-      rendered.querySelectorAll('.it-card-title-icon-wrapper').forEach((el) => el.remove());
-    }
     frag.appendChild(rendered);
   }
   return frag;

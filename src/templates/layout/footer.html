@@ -1,8 +1,8 @@
 <template>
   <footer class="it-footer">
-    <div class="py-4 bg-darker">
+    <div class="it-footer-main">
       <div class="container">
-        <div class="row row-cols-1 row-cols-lg-4 g-3 align-items-center justify-content-center">
+        <section class="row row-cols-1 row-cols-lg-4 g-3 align-items-center justify-content-center pb-5">
           <div class="col text-center">
             <img
               src="../illustrations/pnrr.svg"
@@ -35,30 +35,22 @@
               alt="Logo Rigenerazione"
             />
           </div>
-        </div>
-      </div>
-    </div>
+        </section>
 
-    <div class="it-footer-main">
-      <div class="container">
-        <section class="pb-4">
-          <div class="row clearfix">
-            <div class="col-12">
-              <div class="it-brand-wrapper">
-                <a href="#">
-                  <it-icon name="it-pa" size="xl" color="inverse"></it-icon>
-                  <div class="it-brand-text">
-                    <h2 class="no_toc" data-tpl="denominazione">denominazione</h2>
-                    <h3 class="no_toc" data-tpl="citta">citta</h3>
-                  </div>
-                </a>
+        <section class="py-5 border-top border-white">
+          <div class="it-brand-wrapper">
+            <a href="#" class="d-inline-flex">
+              <it-icon name="it-pa" size="xl" color="inverse"></it-icon>
+              <div class="it-brand-text">
+                <h2 class="no_toc" data-tpl="denominazione">denominazione</h2>
+                <h3 class="no_toc" data-tpl="citta">citta</h3>
               </div>
-            </div>
+            </a>
           </div>
         </section>
 
         <section>
-          <div class="row row-cols-1 row-cols-lg-4 g-3">
+          <div class="row g-3">
             <div class="col-12 col-lg-3 pb-2">
               <h4 title="Vai alla pagina: Menu principale">Menu principale</h4>
               <div class="link-list-wrapper">
@@ -104,18 +96,23 @@
           </div>
         </section>
 
-        <section class="py-4 border-white border-top">
-          <div class="row row-cols-1 row-cols-lg-4 g-3">
+        <section class="pt-5 border-white border-top">
+          <div class="row g-3">
             <div class="col-12 col-md-4 pb-2">
               <h4>Contatti</h4>
               <p>
                 <strong data-tpl="denominazione">denominazione</strong><br />
-                <span data-tpl="indirizzo">indirizzo</span>
+                <address>
+                  <span data-tpl="indirizzo1">indirizzo</span>
+                  <br />
+                  <span data-tpl="indirizzo2">indirizzo</span>
+                </address>
+                <span data-tpl="codiceFiscale">cf</span>
               </p>
               <div class="link-list-wrapper">
                 <ul class="footer-list link-list clearfix">
-                  <li data-tpl="pec">pec</li>
-                  <li data-tpl="telefono">telefono</li>
+                  <li><a href="#" data-tpl="pec">pec</a></li>
+                  <li><a href="#" data-tpl="telefono">telefono</a></li>
                   <li><a class="list-item" href="#">URP - Ufficio Relazioni con il Pubblico</a></li>
                 </ul>
               </div>
@@ -153,17 +150,18 @@
             </div>
             <div class="col-12 col-md-4 mt-2">
               <h4>Newsletter</h4>
-              <div class="form-group d-flex gap-1">
+              <div class="form-group">
                 <it-input
-                  slotted=""
+                  slotted
                   type="text"
                   id="footerNewsletterEmail"
                   size="sm"
                   placeholder="Indirizzo email"
-                  label-hidden=""
+                  label-hidden
+                  class="bg-dark"
                 >
                   <span slot="label">Inserisci la tua email</span>
-                  <it-button type="submit" variant="success" outline="" slot="append"
+                  <it-button type="submit" variant="primary" outline slot="append"
                     >Iscriviti</it-button
                   >
                 </it-input>

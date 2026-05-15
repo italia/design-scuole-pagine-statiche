@@ -20,13 +20,12 @@ Fa:
 
 ### 2) Deploy Pages (`.github/workflows/pages.yml`)
 
-Eseguito **manualmente** da GitHub (`workflow_dispatch`).
+Eseguito automaticamente su **push su `main`** oppure **manualmente** (`workflow_dispatch`).
 
 Fa:
 
 - build del progetto
-- upload artifact statico (`dist/`)
-- deploy su GitHub Pages (environment `github-pages`)
+- commit e push di `dist/` nella root del branch `gh-pages`, preservando la cartella `previews/` usata dalle PR preview
 
 ### 3) Preview (`.github/workflows/preview.yml`)
 
@@ -54,6 +53,6 @@ Fa:
 
 ## Note
 
-- Il **deploy su Pages è manuale**: si lancia a mano da GitHub Actions quando si vuole pubblicare.
+- Il **deploy su Pages è automatico** su ogni push a `main` (può essere lanciato anche manualmente da GitHub Actions).
 - Le **preview dei branch** sono automatiche su ogni PR e si trovano a `https://<org>.github.io/<repo>/previews/<branch>/`.
 - La branch `gh-pages` viene gestita dai workflow — non modificarla a mano.

@@ -2,7 +2,7 @@
 
 ## Obiettivo
 
-Setup semplice e adatto a profili junior per creare pagine statiche del modello Scuole.
+Setup semplice per creare pagine statiche del modello Scuole.
 
 ## Stack
 

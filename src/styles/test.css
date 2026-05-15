@@ -1,0 +1,14 @@
+.page-container {
+  max-width: 960px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.actions-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.section-spacing {
+  margin-top: 2rem;
+}

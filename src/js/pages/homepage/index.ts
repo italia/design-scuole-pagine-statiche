@@ -1,4 +1,5 @@
 import '@/js/main';
+import '@/styles/homepage.css';
 import { render, renderList, fromHTML, mount } from '@/js/utils/templates';
 import { renderCards } from '@/js/engines/cards';
 
@@ -14,7 +15,7 @@ import studiaConNoiHTML from '@/templates/homepage/studia-con-noi.html?raw';
 import circolariServiziHTML from '@/templates/homepage/circolari-servizi.html?raw';
 import toolsHTML from '@/templates/homepage/tools.html?raw';
 import finanziamentiHTML from '@/templates/homepage/finanziamenti.html?raw';
-import pubblicitaHTML from '@/templates/homepage/pubblicita.html?raw';
+import trasparenzaHTML from '@/templates/homepage/trasparenza.html?raw';
 import personaleHTML from '@/templates/homepage/personale.html?raw';
 import ratingHTML from '@/templates/homepage/rating.html?raw';
 
@@ -31,7 +32,7 @@ const templates = {
   circolariServizi: fromHTML(circolariServiziHTML),
   tools: fromHTML(toolsHTML),
   finanziamenti: fromHTML(finanziamentiHTML),
-  pubblicita: fromHTML(pubblicitaHTML),
+  trasparenza: fromHTML(trasparenzaHTML),
   personale: fromHTML(personaleHTML),
   rating: fromHTML(ratingHTML),
   footer: fromHTML(footerHTML),
@@ -40,12 +41,8 @@ const templates = {
 /* preheader */
 // mount('site-preheader', render(templates.preheader, data.preHeader));
 
-/* header — strip template's <header> wrapper, inject children into the persistent landmark */
-// const headerFrag = render(templates.header, data.mainHeader);
-// const headerInner = headerFrag.firstElementChild;
-// if (headerInner) {
-//   document.getElementById('main-header')?.replaceChildren(...headerInner.childNodes);
-// }
+/* header */
+mount('main-header', render(templates.header, { ...data.preHeader, ...data.mainHeader }));
 
 /* hero */
 mount('hero', render(templates.hero, data.hero));
@@ -68,12 +65,7 @@ studiaConNoiFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.stu
 mount('studia-con-noi', studiaConNoiFrag);
 
 /* circolari e servizi */
-const circolariServiziFrag = render(templates.circolariServizi, {
-  titolo: data.circolariEServizi.circolari.titolo,
-  descrizione: data.circolariEServizi.circolari.descrizione,
-  titoloServizi: data.circolariEServizi.servizi.titolo,
-  descrizioneServizi: data.circolariEServizi.servizi.descrizione,
-});
+const circolariServiziFrag = render(templates.circolariServizi);
 circolariServiziFrag
   .querySelector('[data-cards="circolari"]')
   ?.appendChild(renderCards(data.circolariEServizi.circolari.circolariDataCards));
@@ -93,7 +85,7 @@ finanziamentiFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.fi
 mount('finanziamenti', finanziamentiFrag);
 
 /* trasparenza */
-const trasparenzaFrag = render(templates.pubblicita, data.trasparenza);
+const trasparenzaFrag = render(templates.trasparenza, data.trasparenza);
 trasparenzaFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.trasparenza.cards));
 mount('trasparenza', trasparenzaFrag);
 

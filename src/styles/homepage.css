@@ -1,0 +1,17 @@
+.hero .section {
+  --bsi-section-image-overlay: none;
+}
+
+.studia-con-noi .section,
+.trasparenza .section {
+  --bsi-section-background-color: var(--it-color-background-primary-lighter);
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.studia-con-noi .percorsi__scuole {
+  --bsi-radius-smooth: var(--bsi-spacing-s);
+}
+
+.strumenti-digitali .section {
+  --bsi-section-background-color: var(--it-color-background-vivid);
+}
