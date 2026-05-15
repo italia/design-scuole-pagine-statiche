@@ -50,7 +50,7 @@ jobs:
 
           # switch to gh-pages (create orphan if it doesn't exist yet)
           git fetch origin gh-pages 2>/dev/null && git checkout gh-pages || \
-            git checkout --orphan gh-pages && git rm -rf . --quiet
+            (git checkout --orphan gh-pages && git rm -rf . --quiet)
 
           # sync the preview subfolder
           rm -rf "previews/${BRANCH}"
