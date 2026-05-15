@@ -5,12 +5,16 @@ import cardInlineMiniHTML from '@/templates/cards/card-inline-mini.html?raw';
 import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
 import bannerHTML from '@/templates/cards/card-banner-inline-mini.html?raw';
 import luogoHTML from '@/templates/cards/card-luogo.html?raw';
+import locationMiniHTML from '@/templates/cards/card-luogo-mini.html?raw';
+import personaHTML from '@/templates/cards/card-persona.html?raw';
 
 const templates: Record<CardType, HTMLTemplateElement> = {
   inlineMini: fromHTML(cardInlineMiniHTML),
   informativa: fromHTML(cardInformativaHTML),
   banner: fromHTML(bannerHTML),
   location: fromHTML(luogoHTML),
+  locationMini: fromHTML(locationMiniHTML),
+  persona: fromHTML(personaHTML),
 };
 
 /**
