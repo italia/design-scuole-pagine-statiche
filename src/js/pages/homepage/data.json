@@ -7,7 +7,7 @@
 
   "mainHeader": {
     "nome": "Istituto comprensivo",
-    "denominazione": "Federico Hernandez",
+    "denominazione": "F. Hernandez",
     "citta": "Livorno"
   },
 
@@ -98,19 +98,13 @@
       },
       {
         "type": "informativa",
-        "title": "Corsi e certificazioni",
+        "title": "Laboratori didattici",
         "text": "Attività pratiche e sperimentali",
         "url": "#"
       },
       {
         "type": "informativa",
-        "title": "Progetti di orientamento",
-        "text": "Supporto alle scelte future",
-        "url": "#"
-      },
-      {
-        "type": "informativa",
-        "title": "Laboratori didattici",
+        "title": "Corsi e certificazioni",
         "text": "Attività pratiche e sperimentali",
         "url": "#"
       },
@@ -118,6 +112,12 @@
         "type": "informativa",
         "title": "Gare e concorsi",
         "text": "Sfide educative e creative",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Progetti di orientamento",
+        "text": "Supporto alle scelte future",
         "url": "#"
       },
       {

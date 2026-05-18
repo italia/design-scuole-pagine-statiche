@@ -2,9 +2,17 @@
   --bsi-section-image-overlay: none;
 }
 
+.hero .hero-more {
+  font-size: var(--it-font-size-2);
+}
+
 .studia-con-noi .section,
 .trasparenza .section {
   --bsi-section-background-color: var(--it-color-background-primary-lighter);
+}
+
+.studia-con-noi {
+  color: var(--it-color-gray-10);
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -12,6 +20,21 @@
   --bsi-radius-smooth: var(--bsi-spacing-s);
 }
 
+.studia-con-noi .progetti-istituto,
+.finanziamenti {
+  --bsi-heading-3-font-size: var(--it-heading-3-font-size);
+}
+
 .strumenti-digitali .section {
   --bsi-section-background-color: var(--it-color-background-vivid);
+  --bsi-heading-4-font-size: var(--bsi-heading-5-font-size);
+}
+
+.trasparenza it-card::part(title) {
+  --bsi-color-link: var(--bsi-color-text-secondary);
+}
+
+.circolari-servizi-section {
+  --bsi-heading-3-font-size: var(--it-heading-4-font-size);
+  --bsi-heading-font-weight: var(--it-font-weight-semibold);
 }

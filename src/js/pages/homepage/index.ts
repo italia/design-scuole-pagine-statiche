@@ -5,9 +5,10 @@ import { renderCards } from '@/js/engines/cards';
 
 import preheaderHTML from '@/templates/layout/preheader.html?raw';
 import headerHTML from '@/templates/layout/header.html?raw';
-import heroHTML from '@/templates/layout/hero.html?raw';
 import footerHTML from '@/templates/layout/footer.html?raw';
+import ratingHTML from '@/templates/layout/rating.html?raw';
 
+import heroHTML from '@/templates/homepage/hero.html?raw';
 import inEvidenzaHTML from '@/templates/homepage/in-evidenza.html?raw';
 import carouselHTML from '@/templates/homepage/carousel.html?raw';
 import carouselSlideHTML from '@/templates/cards/carousel-slide.html?raw';
@@ -17,7 +18,6 @@ import toolsHTML from '@/templates/homepage/tools.html?raw';
 import finanziamentiHTML from '@/templates/homepage/finanziamenti.html?raw';
 import trasparenzaHTML from '@/templates/homepage/trasparenza.html?raw';
 import personaleHTML from '@/templates/homepage/personale.html?raw';
-import ratingHTML from '@/templates/homepage/rating.html?raw';
 
 import data from './data.json';
 

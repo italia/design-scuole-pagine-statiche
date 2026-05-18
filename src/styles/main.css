@@ -8,10 +8,51 @@
    Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
    Aggiungi qui solo override o stili davvero specifici del progetto. */
 
+strong {
+  font-weight: var(--it-font-weight-semibold);
+}
+
+.it-header-center-wrapper {
+  --bsi-header-brand-tagline-size: var(--it-font-size-5);
+}
+
+.it-search-wrapper .search-link it-icon {
+  --bsi-icon-default: var(--bsi-secondary);
+}
+
+.it-brand-wrapper {
+  --bsi-heading-font-weight: 600;
+}
+
+.it-brand-wrapper a .it-brand-tagline {
+  line-height: var(--it-font-size-6);
+}
+
+it-section .section,
+.section {
+  --bsi-section-padding-y: var(--bsi-spacing-xxl);
+}
+
+.spacing-2xl .section,
+.spacing-2xl.section {
+  --bsi-section-padding-y: var(--scuole-spacing-2xl);
+}
+
+.spacing-xl .section,
+.spacing-xl.section {
+  --bsi-section-padding-y: var(--bsi-spacing-xl); /* 40px */
+}
+
 it-card .it-card-link {
   --bsi-card-link-color: var(--bsi-color-link);
 }
 
 it-rating {
   --bsi-form-control-label-color: var(--it-color-slate-85);
+}
+
+it-carousel::part(pagination-dot) {
+  --bsi-carousel-pagination-dot-size: 8px;
+  --bsi-color-background-subtle: var(--it-color-background-primary-light);
+  margin: 0;
 }
