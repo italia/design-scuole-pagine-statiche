@@ -3,7 +3,6 @@ import '@/styles/homepage.css';
 import { render, renderList, fromHTML, mount } from '@/js/utils/templates';
 import { renderCards } from '@/js/engines/cards';
 
-import preheaderHTML from '@/templates/layout/preheader.html?raw';
 import headerHTML from '@/templates/layout/header.html?raw';
 import footerHTML from '@/templates/layout/footer.html?raw';
 import ratingHTML from '@/templates/layout/rating.html?raw';
@@ -22,7 +21,6 @@ import personaleHTML from '@/templates/homepage/personale.html?raw';
 import data from './data.json';
 
 const templates = {
-  preheader: fromHTML(preheaderHTML),
   header: fromHTML(headerHTML),
   hero: fromHTML(heroHTML),
   inEvidenza: fromHTML(inEvidenzaHTML),
@@ -38,11 +36,8 @@ const templates = {
   footer: fromHTML(footerHTML),
 };
 
-/* preheader */
-// mount('site-preheader', render(templates.preheader, data.preHeader));
-
 /* header */
-mount('main-header', render(templates.header, { ...data.preHeader, ...data.mainHeader }));
+mount('main-header', render(templates.header, { ...data.mainHeader }));
 
 /* hero */
 mount('hero', render(templates.hero, data.hero));

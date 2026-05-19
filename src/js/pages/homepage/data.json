@@ -1,11 +1,8 @@
 {
-  "preHeader": {
+  "mainHeader": {
     "ministero": "Ministero dell'Istruzione e del Merito",
     "ministero_url": "https://www.mim.gov.it/",
-    "areariservata": "Accedi all'area riservata"
-  },
-
-  "mainHeader": {
+    "areariservata": "Accedi all'area riservata",
     "nome": "Istituto comprensivo",
     "denominazione": "F. Hernandez",
     "citta": "Livorno"
