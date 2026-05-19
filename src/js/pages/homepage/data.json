@@ -1,13 +1,4 @@
 {
-  "mainHeader": {
-    "ministero": "Ministero dell'Istruzione e del Merito",
-    "ministero_url": "https://www.mim.gov.it/",
-    "areariservata": "Accedi all'area riservata",
-    "nome": "Istituto comprensivo",
-    "denominazione": "F. Hernandez",
-    "citta": "Livorno"
-  },
-
   "hero": {
     "class": "hero presentation",
     "denominazione": "Istituto comprensivo",
@@ -271,16 +262,5 @@
     "title": "Per il personale scolastico",
     "subtitle": "Informazioni, modulistica e strumenti per i docenti dell'Istituto.",
     "button": "Accedi all'area personale"
-  },
-
-  "footerSection": {
-    "name": "F. Hernandez",
-    "denominazione": "Istituto Comprensivo F. Hernandez",
-    "citta": "Livorno",
-    "indirizzo1": "Via Ragazzi del 99, Livorno",
-    "indirizzo2": "50177 Livorno (Livorno)",
-    "codiceFiscale": "CF 0985649876",
-    "pec": "indirizzopecdellente@pec.gov.it",
-    "telefono": "+39 000000000"
   }
 }

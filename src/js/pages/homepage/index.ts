@@ -37,7 +37,7 @@ const templates = {
 };
 
 /* header */
-mount('main-header', render(templates.header, { ...data.mainHeader }));
+mount('main-header', render(templates.header));
 
 /* hero */
 mount('hero', render(templates.hero, data.hero));
@@ -91,4 +91,4 @@ mount('personale-scolastico', render(templates.personale, data.areaPersonale));
 mount('rating', render(templates.rating));
 
 /* footer */
-mount('footer', render(templates.footer, data.footerSection));
+mount('footer', render(templates.footer));
