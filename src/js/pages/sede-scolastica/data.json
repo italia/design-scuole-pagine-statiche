@@ -1,0 +1,25 @@
+{
+  "breadcrumbs": {
+    "pagina": "Scuola dell'infanzia A. Diaz",
+    "paginePrecedenti": [
+      {
+        "nome": "L'istituto",
+        "url": "#"
+      },
+      {
+        "nome": "Le nostre scuole",
+        "url": "#"
+      }
+    ]
+  },
+
+  "hero": {
+    "class": "hero presentation",
+    "denominazione": "Scuola dell'infanzia A. Diaz",
+    "nome": "Codice meccanografico: LIPL000123",
+    "citta": "Corso Amedeo 22,  57125, Livorno (LI)",
+    "descrizione": "Scuola primaria e Scuola secondaria di primo grado",
+    "image": "../images/hero-homepage.jpg",
+    "illustration": "../illustrations/hero-homepage-large.svg"
+  }
+}
