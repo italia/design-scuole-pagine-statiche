@@ -4,8 +4,17 @@
 
 .it-header-center-wrapper {
   --bsi-header-brand-title-size: var(--bsi-heading-5-font-size);
+  --bsi-header-brand-tagline-size: var(--it-font-size-5);
+}
+
+.it-header-center-wrapper.theme-light {
+  --bsi-header-center-text-color: var(--bsi-secondary);
+}
+
+.it-search-wrapper .search-link it-icon {
+  --bsi-icon-default: var(--bsi-secondary);
 }
 
 .it-right-zone .it-socials it-icon::part(icon) {
-  fill: var(--it-color-secondary);
+  fill: var(--bsi-header-center-text-color);
 }

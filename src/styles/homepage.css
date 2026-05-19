@@ -1,18 +1,21 @@
-.hero .section {
+it-section.hero .section {
   --bsi-section-image-overlay: none;
 }
 
-.hero .hero-more {
+it-section.hero .hero-more {
   font-size: var(--it-font-size-2);
+}
+
+@media (width <= 767px) {
+  it-section.hero.presentation .section,
+  .section {
+    --bsi-section-padding-y: var(--bsi-spacing-m) 0;
+  }
 }
 
 .studia-con-noi .section,
 .trasparenza .section {
   --bsi-section-background-color: var(--it-color-background-primary-lighter);
-}
-
-.studia-con-noi {
-  color: var(--it-color-gray-10);
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -36,5 +39,8 @@
 
 .circolari-servizi-section {
   --bsi-heading-3-font-size: var(--it-heading-4-font-size);
+}
+
+.circolari-servizi-section it-card {
   --bsi-heading-font-weight: var(--it-font-weight-semibold);
 }

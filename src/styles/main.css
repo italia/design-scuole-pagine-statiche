@@ -7,25 +7,26 @@
    Il design system è Bootstrap Italia, importato tramite @italia/dev-kit-italia.
    Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
    Aggiungi qui solo override o stili davvero specifici del progetto. */
+body {
+  color: var(--it-color-gray-10);
+}
 
 strong {
   font-weight: var(--it-font-weight-semibold);
 }
 
-.it-header-center-wrapper {
-  --bsi-header-brand-tagline-size: var(--it-font-size-5);
-}
-
-.it-search-wrapper .search-link it-icon {
-  --bsi-icon-default: var(--bsi-secondary);
-}
-
+/* in comune sia per header che per footer */
 .it-brand-wrapper {
   --bsi-heading-font-weight: 600;
 }
 
 .it-brand-wrapper a .it-brand-tagline {
   line-height: var(--it-font-size-6);
+}
+/* ---- */
+
+.it-footer address {
+  font-size: var(--bsi-label-font-size);
 }
 
 it-section .section,
@@ -45,6 +46,10 @@ it-section .section,
 
 it-card .it-card-link {
   --bsi-card-link-color: var(--bsi-color-link);
+}
+
+it-card::part(card) {
+  --bsi-card-inline-mini-min-height: 118px;
 }
 
 it-rating {

@@ -2,7 +2,9 @@
   <footer class="it-footer">
     <div class="it-footer-main">
       <div class="container">
-        <section class="row row-cols-1 row-cols-lg-4 g-3 align-items-center justify-content-center pb-5">
+        <section
+          class="row row-cols-1 row-cols-lg-4 g-3 align-items-center justify-content-center pb-5"
+        >
           <div class="col text-center">
             <img
               src="../illustrations/pnrr.svg"
@@ -100,15 +102,16 @@
           <div class="row g-3">
             <div class="col-12 col-md-4 pb-2">
               <h4>Contatti</h4>
-              <p>
+
+              <address>
                 <strong data-tpl="denominazione">denominazione</strong><br />
-                <address>
-                  <span data-tpl="indirizzo1">indirizzo</span>
-                  <br />
-                  <span data-tpl="indirizzo2">indirizzo</span>
-                </address>
+                <span data-tpl="indirizzo1">indirizzo</span>
+                <br data-tpl-if="indirizzo2" />
+                <span data-tpl="indirizzo2">indirizzo</span>
+                <br data-tpl-if="codiceFiscale" />
                 <span data-tpl="codiceFiscale">cf</span>
-              </p>
+              </address>
+
               <div class="link-list-wrapper">
                 <ul class="footer-list link-list clearfix">
                   <li><a href="#" data-tpl="pec">pec</a></li>

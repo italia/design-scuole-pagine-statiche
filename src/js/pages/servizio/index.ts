@@ -5,7 +5,7 @@ import { render, renderList, fromHTML } from '@/js/utils/templates';
 import headerHTML from '@/templates/layout/header.html?raw';
 import footerHTML from '@/templates/layout/footer.html?raw';
 import breadcrumbHTML from '@/templates/layout/breadcrumb.html?raw';
-import heroHTML from '@/templates/layout/hero.html?raw';
+import heroHTML from '@/templates/components/hero.html?raw';
 import serviceSectionHTML from '@/templates/servizio/service-section.html?raw';
 import serviceCardHTML from '@/templates/servizio/service-card.html?raw';
 
