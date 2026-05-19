@@ -15,11 +15,39 @@
 
   "hero": {
     "class": "hero presentation",
-    "denominazione": "Scuola dell'infanzia A. Diaz",
-    "nome": "Codice meccanografico: LIPL000123",
-    "citta": "Corso Amedeo 22,  57125, Livorno (LI)",
-    "descrizione": "Scuola primaria e Scuola secondaria di primo grado",
+    "title": "Scuola dell’infanzia A. Diaz",
+    "subtitle": "Scuola primaria e Scuola secondaria di primo grado",
+    "text": "<p class=\"fw-semibold px-0 mb-3\">Corso Amedeo 22,  57125, Livorno (LI) </p><p class=\"px-0\">Codice meccanografico: LIPL000123</p>",
     "image": "../images/hero-homepage.jpg",
-    "illustration": "../illustrations/hero-homepage-large.svg"
+    "illustration": "../illustrations/hero-presentation-scuola.png"
+  },
+
+  "laNostraScuola": {
+    "title": "La nostra scuola",
+    "text": "<p>La scuola \"A. Diaz\" offre un ambiente stimolante per <strong>studenti dai 6 ai 14 anni</strong>, integrando la <strong>scuola primaria</strong> e la <strong>scuola secondaria di primo grado</strong>. </p><p>Gli spazi sono progettati per favorire l'apprendimento: la <strong>mensa</strong> accogliente offre pasti sani, la <strong>biblioteca</strong> è un rifugio per gli amanti dei libri, e la <strong>palestra</strong> è attrezzata per attività sportive. </p><p>La scuola si dedica a fornire una preparazione culturale solida, preparando gli studenti per i percorsi di studio a seguire, promuovendo così l'eccellenza e la crescita personale.</p>"
+  },
+  "carousel": {
+    "slides": [
+      {
+        "src": "../images/carousel/carousel-1.jpg",
+        "titolo": "Giardino",
+        "alt": "Giardino dell'istituto"
+      },
+      {
+        "src": "../images/carousel/carousel-2.jpg",
+        "titolo": "Laboratorio scienze",
+        "alt": "Laboratorio di scienze"
+      },
+      {
+        "src": "../images/carousel/carousel-3.jpg",
+        "titolo": "Aula",
+        "alt": "Aula della scuola"
+      },
+      {
+        "src": "../images/carousel/carousel-4.jpg",
+        "titolo": "Biblioteca",
+        "alt": "Biblioteca scolastica"
+      }
+    ]
   }
 }

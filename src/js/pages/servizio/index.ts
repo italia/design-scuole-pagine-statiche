@@ -5,7 +5,7 @@ import { render, renderList, fromHTML } from '@/js/utils/templates';
 import headerHTML from '@/templates/layout/header.html?raw';
 import footerHTML from '@/templates/layout/footer.html?raw';
 import breadcrumbHTML from '@/templates/layout/breadcrumb.html?raw';
-import heroHTML from '@/templates/components/hero.html?raw';
+import heroPresentationHTML from '@/templates/components/hero-presentation.html?raw';
 import serviceSectionHTML from '@/templates/servizio/service-section.html?raw';
 import serviceCardHTML from '@/templates/servizio/service-card.html?raw';
 
@@ -14,7 +14,7 @@ const tpl = {
   header: fromHTML(headerHTML),
   footer: fromHTML(footerHTML),
   breadcrumb: fromHTML(breadcrumbHTML),
-  hero: fromHTML(heroHTML),
+  hero: fromHTML(heroPresentationHTML),
   serviceSection: fromHTML(serviceSectionHTML),
   serviceCard: fromHTML(serviceCardHTML),
 };

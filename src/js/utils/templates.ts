@@ -10,6 +10,7 @@ export function fromHTML(html: string): HTMLTemplateElement {
  *
  * Supported slots:
  * data-tpl="key"          → el.textContent = data[key]
+ * data-tpl-html="key"     → el.innerHTML = data[key]
  * data-tpl-[attr]="key"   → el.setAttribute(attr, data[key])
  * data-tpl-if="key"       → el (and its subtree) removed when data[key] is falsy
  * data-tpl-if-not="key"   → el (and its subtree) removed when data[key] is truthy
@@ -94,6 +95,8 @@ export function render(
           if (child.nodeType === 3) child.remove();
         }
         el.insertBefore(document.createTextNode(String(val)), el.firstChild);
+      } else if (name === 'data-tpl-html') {
+        el.innerHTML = String(val);
       } else {
         // "data-tpl-href" -> slice(9) -> "href"
         el.setAttribute(name.slice(9), String(val));
@@ -140,6 +143,8 @@ function renderElementWithData(el: Element, data: Record<string, unknown>): Docu
           if (child.nodeType === 3) child.remove();
         }
         node.insertBefore(document.createTextNode(String(val)), node.firstChild);
+      } else if (name === 'data-tpl-html') {
+        node.innerHTML = String(val);
       } else {
         // "data-tpl-href" -> slice(9) -> "href"
         node.setAttribute(name.slice(9), String(val));

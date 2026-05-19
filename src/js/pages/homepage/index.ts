@@ -1,16 +1,15 @@
 import '@/js/main';
 import '@/styles/homepage.css';
-import { render, renderList, fromHTML, mount } from '@/js/utils/templates';
+import { render, fromHTML, mount } from '@/js/utils/templates';
 import { renderCards } from '@/js/engines/cards';
 
 import headerHTML from '@/templates/layout/header.html?raw';
 import footerHTML from '@/templates/layout/footer.html?raw';
 import ratingHTML from '@/templates/layout/rating.html?raw';
 
-import heroHTML from '@/templates/components/hero.html?raw';
+import heroPresentationHTML from '@/templates/components/hero-presentation.html?raw';
 import inEvidenzaHTML from '@/templates/homepage/in-evidenza.html?raw';
-import carouselHTML from '@/templates/homepage/carousel.html?raw';
-import carouselSlideHTML from '@/templates/cards/carousel-slide.html?raw';
+import carouselHTML from '@/templates/components/carousel.html?raw';
 import studiaConNoiHTML from '@/templates/homepage/studia-con-noi.html?raw';
 import circolariServiziHTML from '@/templates/homepage/circolari-servizi.html?raw';
 import toolsHTML from '@/templates/homepage/tools.html?raw';
@@ -22,10 +21,9 @@ import data from './data.json';
 
 const templates = {
   header: fromHTML(headerHTML),
-  hero: fromHTML(heroHTML),
+  hero: fromHTML(heroPresentationHTML),
   inEvidenza: fromHTML(inEvidenzaHTML),
   carousel: fromHTML(carouselHTML),
-  carouselSlide: fromHTML(carouselSlideHTML),
   studiaConNoi: fromHTML(studiaConNoiHTML),
   circolariServizi: fromHTML(circolariServiziHTML),
   tools: fromHTML(toolsHTML),
@@ -48,11 +46,7 @@ inEvidenzaFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.sezio
 mount('in-evidenza', inEvidenzaFrag);
 
 /* carousel */
-const carouselFrag = render(templates.carousel, { titolo: data.carousel.titolo });
-carouselFrag
-  .querySelector('[data-cards]')
-  ?.appendChild(renderList(templates.carouselSlide, data.carousel.slides));
-mount('carousel', carouselFrag);
+mount('carousel', render(templates.carousel, data.carousel));
 
 /* studia con noi */
 const studiaConNoiFrag = render(templates.studiaConNoi, data.studiaConNoi);

@@ -61,3 +61,12 @@ it-carousel::part(pagination-dot) {
   --bsi-color-background-subtle: var(--it-color-background-primary-light);
   margin: 0;
 }
+
+/* Hero */
+it-section.hero .section {
+  --bsi-section-image-overlay: none;
+}
+
+it-section.hero .hero-more {
+  font-size: var(--it-font-size-2);
+}

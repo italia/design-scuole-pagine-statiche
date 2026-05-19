@@ -1,11 +1,3 @@
-it-section.hero .section {
-  --bsi-section-image-overlay: none;
-}
-
-it-section.hero .hero-more {
-  font-size: var(--it-font-size-2);
-}
-
 @media (width <= 767px) {
   it-section.hero.presentation .section,
   .section {

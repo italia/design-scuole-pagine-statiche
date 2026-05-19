@@ -1,6 +1,6 @@
 import '@/js/main';
 // import '@/styles/sede-scolastica.css';
-import { render, /*renderList,*/ fromHTML, mount } from '@/js/utils/templates';
+import { render, fromHTML, mount } from '@/js/utils/templates';
 
 // import { renderCards } from '@/js/engines/cards';
 
@@ -9,9 +9,9 @@ import footerHTML from '@/templates/layout/footer.html?raw';
 import ratingHTML from '@/templates/layout/rating.html?raw';
 import breadcrumbsHTML from '@/templates/layout/breadcrumb.html?raw';
 
-import heroHTML from '@/templates/components/hero.html?raw';
-// import inEvidenzaHTML from '@/templates/homepage/in-evidenza.html?raw';
-// import carouselHTML from '@/templates/homepage/carousel.html?raw';
+import heroPresentationHTML from '@/templates/components/hero-presentation.html?raw';
+import article from '@/templates/components/article.html?raw';
+import carouselHTML from '@/templates/components/carousel.html?raw';
 // import carouselSlideHTML from '@/templates/cards/carousel-slide.html?raw';
 // import studiaConNoiHTML from '@/templates/homepage/studia-con-noi.html?raw';
 // import circolariServiziHTML from '@/templates/homepage/circolari-servizi.html?raw';
@@ -25,9 +25,9 @@ import data from './data.json';
 const templates = {
   header: fromHTML(headerHTML),
   breadcrumbs: fromHTML(breadcrumbsHTML),
-  hero: fromHTML(heroHTML),
-  // inEvidenza: fromHTML(inEvidenzaHTML),
-  // carousel: fromHTML(carouselHTML),
+  hero: fromHTML(heroPresentationHTML),
+  article: fromHTML(article),
+  carousel: fromHTML(carouselHTML),
   // carouselSlide: fromHTML(carouselSlideHTML),
   // studiaConNoi: fromHTML(studiaConNoiHTML),
   // circolariServizi: fromHTML(circolariServiziHTML),
@@ -46,17 +46,11 @@ mount('breadcrumbs', render(templates.breadcrumbs, data.breadcrumbs));
 // /* hero */
 mount('hero', render(templates.hero, data.hero));
 
-// /* in evidenza */
-// const inEvidenzaFrag = render(templates.inEvidenza, { titolo: data.sezioniServizi.titolo });
-// inEvidenzaFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.sezioniServizi.cards));
-// mount('in-evidenza', inEvidenzaFrag);
+// /* article */
+mount('la-nostra-scuola', render(templates.article, data.laNostraScuola));
 
-// /* carousel */
-// const carouselFrag = render(templates.carousel, { titolo: data.carousel.titolo });
-// carouselFrag
-//   .querySelector('[data-cards]')
-//   ?.appendChild(renderList(templates.carouselSlide, data.carousel.slides));
-// mount('carousel', carouselFrag);
+/* carousel */
+mount('carousel', render(templates.carousel, data.carousel));
 
 // /* studia con noi */
 // const studiaConNoiFrag = render(templates.studiaConNoi, data.studiaConNoi);
