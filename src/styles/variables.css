@@ -54,4 +54,8 @@
   --bsi-icon-primary-active: var(--scuole-primary-18);
   --bsi-icon-primary-hover: var(--scuole-primary-24);
   --bsi-icon-primary: var(--scuole-primary);
+  --bsi-heading-4-font-size: var(--it-font-size-6);
+  --bsi-heading-4-line-height: var(--it-line-height-6);
+  --bsi-heading-5-font-size: var(--it-font-size-5);
+  --bsi-heading-5-line-height: var(--it-line-height-5);
 }

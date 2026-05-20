@@ -49,5 +49,44 @@
         "alt": "Biblioteca scolastica"
       }
     ]
+  },
+  "luoghi": {
+    "title": "I luoghi della scuola",
+    "items": [
+      {
+        "title": "Mensa",
+        "description": "La mensa della scuola offre pasti sani e bilanciati, preparati con ingredienti freschi e di qualità. "
+      },
+      {
+        "title": "Biblioteca",
+        "description": "La biblioteca della scuola offre un'ampia selezione di libri e risorse per supportare l'apprendimento e la ricerca degli studenti."
+      },
+      {
+        "title": "Palestra",
+        "description": "La palestra della scuola è attrezzata per attività sportive e promuove uno stile di vita sano tra gli studenti."
+      }
+    ],
+
+    "more": "Scopri dove siamo"
+  },
+
+  "doveSiamo": {
+    "title": "Dove siamo",
+    "items": [
+      {
+        "title": "Indirizzo della scuola",
+        "bodyHtml": "<div><dt>Indirizzo:</dt><dd>Via Ragazzi del ‘99, Livorno</dd></div>",
+        "mapUrl": "#"
+      },
+      {
+        "title": "Modalità di accesso",
+        "bodyHtml": "<div><dt>Tel:</dt><dd>340.12345678</dd></div>"
+      },
+      {
+        "title": "Contatti",
+        "subtitle": "Segreteria",
+        "bodyHtml": "<div><dt>Email:</dt><dd>scuola@mail.com</dd></div><div><dt>Tel:</dt><dd>340.12345678</dd></div>"
+      }
+    ]
   }
 }

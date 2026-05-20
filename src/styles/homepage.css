@@ -26,7 +26,6 @@
 
 .strumenti-digitali .section {
   --bsi-section-background-color: var(--bsi-color-background-accent);
-  --bsi-heading-4-font-size: var(--bsi-heading-5-font-size);
 }
 
 .trasparenza it-card::part(title) {
