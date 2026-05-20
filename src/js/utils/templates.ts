@@ -6,6 +6,58 @@ export function fromHTML(html: string): HTMLTemplateElement {
 }
 
 /**
+ * Evaluates a condition expression safely without eval().
+ * Supports: "field != null", "count > 0", "status == 'active'"
+ * Operators: !=, !==, ==, ===, >, <, >=, <=
+ */
+function evaluateCondition(expression: string, data: Record<string, unknown>): boolean {
+  const match = expression.match(/^(\w+)\s*(!=|!==|==|===|>=|<=|>|<)\s*(.+)$/);
+  if (!match || match.length < 4) return false;
+
+  const fieldName = match[1]!;
+  const operator = match[2]!;
+  const valueStr = match[3]!;
+  const fieldValue = data[fieldName];
+
+  // Parse the test value
+  let testValue: unknown;
+  if (valueStr === 'null') testValue = null;
+  else if (valueStr === 'undefined') testValue = undefined;
+  else if (valueStr === 'true') testValue = true;
+  else if (valueStr === 'false') testValue = false;
+  else if (/^\d+(\.\d+)?$/.test(valueStr)) testValue = Number(valueStr);
+  else if (/^['"].*['"]$/.test(valueStr)) testValue = valueStr.slice(1, -1);
+  else testValue = valueStr;
+
+  // Evaluate
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const compare = (a: any, b: any, op: string): boolean => {
+    switch (op) {
+      case '!=':
+        return a != b;
+      case '!==':
+        return a !== b;
+      case '==':
+        return a == b;
+      case '===':
+        return a === b;
+      case '>':
+        return a > b;
+      case '<':
+        return a < b;
+      case '>=':
+        return a >= b;
+      case '<=':
+        return a <= b;
+      default:
+        return false;
+    }
+  };
+
+  return compare(fieldValue, testValue, operator);
+}
+
+/**
  * Clones the template, fills data-tpl slots, and returns a DocumentFragment.
  *
  * Supported slots:
@@ -14,6 +66,7 @@ export function fromHTML(html: string): HTMLTemplateElement {
  * data-tpl-[attr]="key"   → el.setAttribute(attr, data[key])
  * data-tpl-if="key"       → el (and its subtree) removed when data[key] is falsy
  * data-tpl-if-not="key"   → el (and its subtree) removed when data[key] is truthy
+ * data-tpl-condition="expr" → el removed when condition is false (e.g., "image != null")
  * data-tpl-each="key"     → el cloned for each item in data[key] array, item becomes root context
  */
 export function render(
@@ -66,6 +119,11 @@ export function render(
     const key = el.getAttribute('data-tpl-if-not')!;
     if (data[key]) el.remove();
     else el.removeAttribute('data-tpl-if-not');
+  }
+  for (const el of Array.from(clone.querySelectorAll<Element>('[data-tpl-condition]'))) {
+    const expr = el.getAttribute('data-tpl-condition')!;
+    if (!evaluateCondition(expr, data)) el.remove();
+    else el.removeAttribute('data-tpl-condition');
   }
 
   // Use TreeWalker: the fastest way to scan the DOM.
