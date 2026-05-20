@@ -8,7 +8,16 @@
    Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
    Aggiungi qui solo override o stili davvero specifici del progetto. */
 body {
-  color: var(--it-color-gray-10);
+  color: var(--bsi-color-text-secondary);
+}
+
+h1,
+h2 {
+  color: var(--scuole-headings-color);
+}
+
+.white-color {
+  --scuole-headings-color: var(--bsi-white);
 }
 
 strong {
@@ -52,12 +61,8 @@ it-card::part(card) {
   --bsi-card-inline-mini-min-height: 118px;
 }
 
-it-rating {
-  --bsi-form-control-label-color: var(--it-color-slate-85);
-}
-
 it-carousel::part(pagination-dot) {
   --bsi-carousel-pagination-dot-size: 8px;
-  --bsi-color-background-subtle: var(--it-color-background-primary-light);
+  --bsi-color-background-subtle: var(--bsi-theme-primary-light);
   margin: 0;
 }
