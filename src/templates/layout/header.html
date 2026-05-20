@@ -1,4 +1,13 @@
 <template>
+  <it-skiplinks it-aria-label="Vai a:">
+    <a href="#main-navigation">Vai al menu</a>
+    <a href="#main-content">Vai al contenuto principale</a>
+    <a href="#satisfaction">Questa pagina ti è stata utile?</a>
+    <a href="#footer">Vai al piè di pagina</a>
+    <a href="https://form.agid.gov.it/view/xyz"
+      >Dichiarazione di accessibilità (link esterno su sito AgID</a
+    >
+  </it-skiplinks>
   <it-header>
     <header class="it-header-wrapper">
       <!-- slim header -->
@@ -9,9 +18,9 @@
               class="d-block navbar-brand"
               target="_blank"
               rel="noopener noreferrer"
-              data-tpl="ministero"
-              data-tpl-href="ministero_url"
+              href="https://www.mim.gov.it/"
             >
+              Ministero dell'Istruzione e del Merito
             </a>
             <!-- required by it-header JS for mobile exit-modal cleanup -->
             <div class="nav-mobile">
@@ -41,21 +50,16 @@
                     <it-icon name="it-pa"></it-icon>
                     <div class="it-brand-text">
                       <div class="it-brand-title text-secondary">
-                        <span data-tpl="nome">nome</span>
-                        <span data-tpl="denominazione">denominazione</span>
+                        <span>Istituto comprensivo</span>
+                        <span>F. Hernandez</span>
                       </div>
-                      <div
-                        class="it-brand-tagline d-none d-md-block text-secondary"
-                        data-tpl="citta"
-                      >
-                        citta
-                      </div>
+                      <div class="it-brand-tagline d-none d-md-block text-secondary">Livorno</div>
                     </div>
                   </a>
                 </div>
-                <div class="it-right-zone text-secondary">
+                <div class="it-right-zone">
                   <div class="it-socials d-none d-md-flex">
-                    <span class="fw-semibold">Seguici su</span>
+                    <span class="fw-semibold">Seguici su:</span>
                     <ul>
                       <li>
                         <a
@@ -107,7 +111,11 @@
         <div class="container-xxl">
           <div class="row">
             <div class="col-12">
-              <nav class="navbar navbar-expand-lg" aria-label="Navigazione principale">
+              <nav
+                class="navbar navbar-expand-lg"
+                aria-label="Navigazione principale"
+                id="main-navigation"
+              >
                 <div class="navbar-collapsable" id="main-navbar" tabindex="-1">
                   <div class="menu-wrapper">
                     <ul class="navbar-nav">

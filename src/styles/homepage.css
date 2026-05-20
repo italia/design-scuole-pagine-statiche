@@ -1,10 +1,21 @@
-.hero .section {
+it-section.hero .section {
   --bsi-section-image-overlay: none;
+}
+
+it-section.hero .hero-more {
+  font-size: var(--it-font-size-2);
+}
+
+@media (width <= 767px) {
+  it-section.hero.presentation .section,
+  .section {
+    --bsi-section-padding-y: var(--bsi-spacing-m) 0;
+  }
 }
 
 .studia-con-noi .section,
 .trasparenza .section {
-  --bsi-section-background-color: var(--it-color-background-primary-lighter);
+  --bsi-section-background-color: var(--bsi-color-background-primary-lighter);
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
@@ -12,6 +23,33 @@
   --bsi-radius-smooth: var(--bsi-spacing-s);
 }
 
+.studia-con-noi h3 {
+  color: var(--scuole-headings-color);
+}
+
+.studia-con-noi .progetti-istituto,
+.finanziamenti {
+  --bsi-heading-3-font-size: var(--it-heading-3-font-size);
+}
+
 .strumenti-digitali .section {
-  --bsi-section-background-color: var(--it-color-background-vivid);
+  --bsi-section-background-color: var(--bsi-color-background-accent);
+  --bsi-heading-4-font-size: var(--bsi-heading-5-font-size);
+}
+
+.trasparenza it-card::part(title) {
+  --bsi-color-link: var(--bsi-color-text-secondary);
+}
+
+.circolari-servizi-section {
+  --bsi-heading-3-font-size: var(--it-heading-4-font-size);
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.circolari-servizi-section .circolari-servizi-section__description {
+  font-size: var(--bsi-heading-5-font-size);
+}
+
+.circolari-servizi-section it-card {
+  --bsi-heading-font-weight: var(--it-font-weight-semibold);
 }

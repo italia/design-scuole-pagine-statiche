@@ -1,11 +1,21 @@
 .it-header-slim-wrapper {
-  --bsi-header-slim-background: var(--it-color-background-primary-darker);
+  --bsi-header-slim-background: var(--scuole-primary-darker);
 }
 
 .it-header-center-wrapper {
   --bsi-header-brand-title-size: var(--bsi-heading-5-font-size);
+  --bsi-header-brand-tagline-size: var(--bsi-font-size-5);
+}
+
+.it-header-center-wrapper.theme-light {
+  --bsi-header-center-text-color: var(--bsi-color-text-secondary);
+  --bsi-header-brand-icon-color: var(--bsi-color-text-secondary);
+}
+
+.it-search-wrapper .search-link it-icon {
+  --bsi-icon-default: var(--bsi-header-center-text-color);
 }
 
 .it-right-zone .it-socials it-icon::part(icon) {
-  fill: var(--it-color-secondary);
+  fill: var(--bsi-header-center-text-color);
 }

@@ -1,18 +1,6 @@
 {
-  "preHeader": {
-    "ministero": "Ministero dell'Istruzione e del Merito",
-    "ministero_url": "https://www.mim.gov.it/",
-    "areariservata": "Accedi all'area riservata"
-  },
-
-  "mainHeader": {
-    "nome": "Istituto comprensivo",
-    "denominazione": "Federico Hernandez",
-    "citta": "Livorno"
-  },
-
   "hero": {
-    "class": "hero",
+    "class": "hero presentation",
     "denominazione": "Istituto comprensivo",
     "nome": "Federico Hernandez",
     "citta": "Livorno",
@@ -63,7 +51,7 @@
       {
         "type": "inlineMini",
         "title": "Open day nella sede centrale",
-        "image": "../images/hero-homepage.jpg",
+        "image": "../images/open-day.jpg",
         "text": "",
         "category": "NOTIZIA",
         "url": "#",
@@ -98,19 +86,13 @@
       },
       {
         "type": "informativa",
-        "title": "Corsi e certificazioni",
+        "title": "Laboratori didattici",
         "text": "Attività pratiche e sperimentali",
         "url": "#"
       },
       {
         "type": "informativa",
-        "title": "Progetti di orientamento",
-        "text": "Supporto alle scelte future",
-        "url": "#"
-      },
-      {
-        "type": "informativa",
-        "title": "Laboratori didattici",
+        "title": "Corsi e certificazioni",
         "text": "Attività pratiche e sperimentali",
         "url": "#"
       },
@@ -118,6 +100,12 @@
         "type": "informativa",
         "title": "Gare e concorsi",
         "text": "Sfide educative e creative",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Progetti di orientamento",
+        "text": "Supporto alle scelte future",
         "url": "#"
       },
       {
@@ -274,16 +262,5 @@
     "title": "Per il personale scolastico",
     "subtitle": "Informazioni, modulistica e strumenti per i docenti dell'Istituto.",
     "button": "Accedi all'area personale"
-  },
-
-  "footerSection": {
-    "name": "F. Hernandez",
-    "denominazione": "Istituto Comprensivo F. Hernandez",
-    "citta": "Livorno",
-    "indirizzo1": "Via Ragazzi del 99, Livorno",
-    "indirizzo2": "50177 Livorno (Livorno)",
-    "codiceFiscale": "CF 0985649876",
-    "pec": "indirizzopecdellente@pec.gov.it",
-    "telefono": "+39 000000000"
   }
 }
