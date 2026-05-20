@@ -33,6 +33,9 @@ strong {
   line-height: var(--it-font-size-6);
 }
 /* ---- */
+.it-footer {
+  --scuole-headings-color: var(--bsi-footer-brand-icon-color);
+}
 
 .it-footer address {
   font-size: var(--bsi-label-font-size);
