@@ -9,6 +9,7 @@
 
 .it-header-center-wrapper.theme-light {
   --bsi-header-center-text-color: var(--bsi-color-text-secondary);
+  --bsi-header-brand-icon-color: var(--bsi-color-text-secondary);
 }
 
 .it-search-wrapper .search-link it-icon {
