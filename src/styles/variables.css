@@ -58,4 +58,5 @@
   --bsi-heading-4-line-height: var(--it-line-height-6);
   --bsi-heading-5-font-size: var(--it-font-size-5);
   --bsi-heading-5-line-height: var(--it-line-height-5);
+  --bsi-navscroll-heading-color: var(--scuole-primary);
 }

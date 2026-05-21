@@ -12,9 +12,66 @@
       }
     ]
   },
-  "header": {
+  "contentHeader": {
     "title": "Segreteria didattica",
     "description": "La segreteria gestisce iscrizioni, documenti e informazioni per studenti e famiglie.",
     "category": "SEGRETERIA"
+  },
+  "contentBody": {
+    "navItems": [
+      {
+        "title": "Cosa fa",
+        "href": "#cosa-fa",
+        "className": "nav-link active"
+      },
+      {
+        "title": "Dove si trova",
+        "href": "#dove-si-trova"
+      },
+      {
+        "title": "Orari di apertura",
+        "href": "#orari-di-apertura"
+      },
+      {
+        "title": "Contatti",
+        "href": "#contatti"
+      },
+      {
+        "title": "Dipende da",
+        "href": "#dipende-da"
+      },
+      {
+        "title": "Responsabile",
+        "href": "#responsabile"
+      },
+      {
+        "title": "Personale",
+        "href": "#personale"
+      },
+      {
+        "title": "Ulteriori informazioni",
+        "href": "#ulteriori-informazioni"
+      }
+    ],
+    "cosaFa": {
+      "className": "pb-4",
+      "title": "Cosa fa",
+      "title_id": "cosa-fa",
+      "text": "La segreteria didattica supporta studenti e famiglie nelle principali procedure scolastiche: iscrizioni, certificazioni, gestione dei documenti e informazioni sull’andamento dell’anno scolastico. Fornisce assistenza su orari, modulistica, servizi e comunicazioni ufficiali dell’Istituto."
+    },
+    "doveSiTrova": {
+      "className": "pb-4",
+      "title": "Dove si trova",
+      "title_id": "dove-si-trova",
+      "items": [
+        {
+          "type": "locationBorderTop",
+          "title": "Scuola E. De Amicis",
+          "subtitle": "<strong>Orari di ingresso:</strong> La scuola è aperta dal lunedì al venerdì dalle ore 8:30 alle ore 12:30.",
+          "bodyHtml": "<div><dt>Email:</dt><dd>scuola@mail.com</dd></div><div><dt>Tel:</dt><dd>00 000000</dd></div><div><dt>Indirizzo:</dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div>",
+          "icon": "it-mail"
+        }
+      ]
+    }
   }
 }

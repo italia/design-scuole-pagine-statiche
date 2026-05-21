@@ -1,0 +1,56 @@
+<template>
+  <div class="container">
+    <div class="row row-column-border border-light row-column-menu-left">
+      <aside class="col-lg-4" aria-label="Indice della pagina">
+        <it-navscroll
+          breakpoint="1024"
+          open-label="Naviga fra le sezioni"
+          sticky=""
+          for="#scroll-container"
+        >
+          <div class="link-list-wrapper">
+            <h3>Indice</h3>
+            <it-progress
+              type="bar"
+              value="0"
+              class="it-navscroll-progressbar"
+              aria-label="Progress bar"
+            ></it-progress>
+            <nav>
+              <ul class="link-list">
+                <li class="nav-item" data-tpl-each="navItems">
+                  <a class="nav-link" data-tpl-class="className" data-tpl-href="href">
+                    <span data-tpl="title">text</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </it-navscroll>
+      </aside>
+
+      <main id="scroll-container" class="col-lg-8 it-page-sections-container border-light">
+        <section id="cosa-fa"></section>
+        <section id="dove-si-trova"></section>
+        <section id="orari-di-apertura"></section>
+        <section id="contatti"></section>
+        <section id="dipende-da"></section>
+        <section id="responsabile"></section>
+        <section id="personale"></section>
+        <section id="ulteriori-informazioni"></section>
+
+        <!-- <h2 class="it-page-section" id="p1">Introduzione</h2>
+        <p>
+          Proin placerat ipsum massa, ac commodo velit tempor quis. In ante augue, sodales ac
+          rhoncus in, ultricies a neque. Morbi non semper felis, at lacinia nibh. Nam quis elit
+          massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam laoreet, diam
+          quis blandit porttitor, leo erat semper sem, vel sagittis dolor quam eu magna. Nunc
+          feugiat pretium tempor. Nam eget augue quis tellus viverra malesuada vel ut quam. Cras
+          vehicula rutrum vehicula. Suspendisse efficitur eget purus vitae convallis. Integer
+          euismod pharetra lorem, non ullamcorper lorem euismod vel. Orci varius natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p> -->
+      </main>
+    </div>
+  </div>
+</template>
