@@ -176,6 +176,26 @@ function renderElementWithData(el: Element, data: Record<string, unknown>): Docu
   const frag = document.createDocumentFragment();
   frag.appendChild(el);
 
+  // Pre-pass: resolve conditionals against the item's own data context.
+  // This must happen before the TreeWalker so that removed subtrees are never
+  // processed — and so that the outer render()'s pre-passes don't pick them
+  // up and evaluate them against the wrong (outer) data object.
+  for (const node of Array.from(el.querySelectorAll<Element>('[data-tpl-if]'))) {
+    const key = node.getAttribute('data-tpl-if')!;
+    if (!data[key]) node.remove();
+    else node.removeAttribute('data-tpl-if');
+  }
+  for (const node of Array.from(el.querySelectorAll<Element>('[data-tpl-if-not]'))) {
+    const key = node.getAttribute('data-tpl-if-not')!;
+    if (data[key]) node.remove();
+    else node.removeAttribute('data-tpl-if-not');
+  }
+  for (const node of Array.from(el.querySelectorAll<Element>('[data-tpl-condition]'))) {
+    const expr = node.getAttribute('data-tpl-condition')!;
+    if (!evaluateCondition(expr, data)) node.remove();
+    else node.removeAttribute('data-tpl-condition');
+  }
+
   // Use TreeWalker on the element and its descendants
   const walker = document.createTreeWalker(el, NodeFilter.SHOW_ELEMENT);
 

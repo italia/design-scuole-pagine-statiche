@@ -1,6 +1,10 @@
 <template>
-  <it-card full-height="">
-    <a slot="title" href="#" data-tpl-href="url" data-tpl="title">Titolo servizio</a>
+  <it-card full-height="" data-tpl-class="className">
+    <a slot="title" href="#" data-tpl-href="url" data-tpl="title">
+      <div class="it-card-title-icon-wrapper" data-tpl-if="icon">
+        <it-icon color="primary" data-tpl-name="icon" size="md"></it-icon>
+      </div>
+    </a>
     <figure slot="image" class="figure img-full" data-tpl-if="imageSrc">
       <img
         src="https://picsum.photos/seed/city/800/600"
@@ -9,6 +13,7 @@
         data-tpl-alt="imageAlt"
       />
     </figure>
+
     <span slot="subtitle" data-tpl="subtitle" data-tpl-if="subtitle"></span>
     <span slot="signature" data-tpl="signature" data-tpl-if="signature"></span>
     <span slot="text" data-tpl="text">

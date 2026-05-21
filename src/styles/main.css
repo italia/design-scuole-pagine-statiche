@@ -56,6 +56,14 @@ it-section .section,
   --bsi-section-padding-y: var(--bsi-spacing-xl); /* 40px */
 }
 
+it-card {
+  --bsi-heading-3-font-size: var(--it-heading-3-font-size);
+}
+
+it-card.attachment {
+  --bsi-heading-font-weight: var(--it-font-weight-semibold);
+}
+
 it-card .it-card-link {
   --bsi-card-link-color: var(--bsi-color-link);
 }

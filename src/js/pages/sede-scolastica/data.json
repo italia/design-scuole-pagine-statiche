@@ -54,14 +54,17 @@
     "title": "I luoghi della scuola",
     "items": [
       {
+        "type": "location",
         "title": "Mensa",
         "description": "La mensa della scuola offre pasti sani e bilanciati, preparati con ingredienti freschi e di qualità. "
       },
       {
+        "type": "location",
         "title": "Biblioteca",
         "description": "La biblioteca della scuola offre un'ampia selezione di libri e risorse per supportare l'apprendimento e la ricerca degli studenti."
       },
       {
+        "type": "location",
         "title": "Palestra",
         "description": "La palestra della scuola è attrezzata per attività sportive e promuove uno stile di vita sano tra gli studenti."
       }
@@ -74,19 +77,153 @@
     "title": "Dove siamo",
     "items": [
       {
+        "type": "locationBorderTop",
         "title": "Indirizzo della scuola",
         "bodyHtml": "<div><dt>Indirizzo:</dt><dd>Via Ragazzi del ‘99, Livorno</dd></div>",
-        "mapUrl": "#"
+        "mapUrl": "#",
+        "icon": "it-map-marker"
       },
       {
+        "type": "locationBorderTop",
         "title": "Modalità di accesso",
-        "bodyHtml": "<div><dt>Tel:</dt><dd>340.12345678</dd></div>"
+        "bodyHtml": "<div><dt>Tel:</dt><dd>340.12345678</dd></div>",
+        "icon": "it-info-circle"
       },
       {
+        "type": "locationBorderTop",
         "title": "Contatti",
         "subtitle": "Segreteria",
-        "bodyHtml": "<div><dt>Email:</dt><dd>scuola@mail.com</dd></div><div><dt>Tel:</dt><dd>340.12345678</dd></div>"
+        "bodyHtml": "<div><dt>Email:</dt><dd>scuola@mail.com</dd></div><div><dt>Tel:</dt><dd>340.12345678</dd></div>",
+        "icon": "it-mail"
       }
     ]
+  },
+
+  "orari": {
+    "titleH3": "Orari",
+    "items": [
+      {
+        "type": "locationBorderTop",
+        "title": "Orario di ricevimento",
+        "body": "L’edificio scolastico è accessibile a partire dalle 7:45, mentre l’ingresso nelle classi è previsto tra 7:55 e 8:05, in base all’ordine scolastico, dal lunedì al sabato.",
+        "icon": "it-clock"
+      },
+      {
+        "type": "locationBorderTop",
+        "title": "Orario di ingresso alla scuola",
+        "body": "L’edificio scolastico è accessibile a partire dalle 7:45, mentre l’ingresso nelle classi è previsto tra 7:55 e 8:05, in base all’ordine scolastico, dal lunedì al sabato. Le attività didattiche iniziano puntualmente alle 8:10.",
+        "icon": "it-clock"
+      }
+    ]
+  },
+  "servizi": {
+    "title": "I servizi della scuola",
+    "items": [
+      {
+        "type": "simple",
+        "title": "Mensa scolastica",
+        "text": "Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durante la giornata scolastica.",
+        "taxonomy": "MENSE SCOLASTICHE"
+      },
+      {
+        "type": "simple",
+        "title": "Piedibus",
+        "text": "Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile.",
+        "taxonomy": "TRASPORTO SCOLASTICO"
+      },
+      {
+        "type": "simple",
+        "title": "Scuolabus",
+        "text": "Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite.",
+        "taxonomy": "TRASPORTO SCOLASTICO"
+      }
+    ],
+    "more": "Esplora tutti i servizi della scuola"
+  },
+
+  "novita": {
+    "title": "Le ultime novità della scuola",
+    "items": [
+      {
+        "type": "informativa",
+        "title": "Open day dell’Istituto",
+        "text": "L’Istituto organizza una serie di appuntamenti dedicati alle famiglie per conoscere da vicino ambienti, docenti e percorsi di studio. Durante gli open day sarà possibile visitare gli spazi, partecipare alle attività e ricevere informazioni utili sull’iscrizione.",
+        "date": "27 novembre 2025",
+        "imageSrc": "../images/hero-homepage.jpg",
+        "category": "NOTIZIA"
+      },
+      {
+        "type": "informativa",
+        "title": "Nuovi progetti didattici attivati",
+        "text": "Sono stati attivati i nuovi laboratori e percorsi educativi previsti per l’anno scolastico. Le attività coinvolgono classi di diversi ordini e approfondiscono competenze, creatività e collaborazione. Tutti i dettagli e i calendari sono disponibili nella notizia completa.",
+        "date": "27 novembre 2025",
+        "imageSrc": "../images/hero-homepage.jpg",
+        "category": "NOTIZIA"
+      },
+      {
+        "type": "informativa",
+        "title": "Comunicazioni per famiglie e studenti",
+        "text": "Una sintesi delle informazioni utili per l’organizzazione scolastica: avvisi su orari, scadenze, servizi digitali e modulistica. Le famiglie possono consultare qui le comunicazioni più recenti e restare aggiornate sulle attività dell’Istituto.",
+        "date": "27 novembre 2025",
+        "imageSrc": "../images/hero-homepage.jpg",
+        "category": "NOTIZIA"
+      }
+    ],
+    "more": "Scopri le ultime novità della scuola"
+  },
+  "documenti": {
+    "title": "I documenti della scuola",
+    "items": [
+      {
+        "type": "informativa",
+        "className": "attachment",
+        "title": "PTOF – Piano Triennale dell’Offerta Formativa",
+        "text": "Il documento che descrive identità, obiettivi educativi e organizzazione della scuola. Contiene i percorsi di studio, i progetti attivi e le modalità di collaborazione con famiglie e territorio, aggiornati per il triennio in corso.",
+        "category": "DOCUMENTO PROGRAMMATICO",
+        "icon": "it-file"
+      },
+      {
+        "type": "informativa",
+        "className": "attachment",
+        "title": "Regolamento d’Istituto",
+        "text": "Le norme che disciplinano la vita scolastica, i diritti e i doveri di studenti, famiglie e personale. Il documento definisce comportamenti attesi, procedure interne e criteri di funzionamento degli spazi e dei servizi.",
+        "category": "REGOLAMENTI",
+        "icon": "it-file"
+      },
+      {
+        "type": "informativa",
+        "className": "attachment",
+        "title": "Piano per l’Inclusione",
+        "text": "Il documento che raccoglie principi, strategie e interventi adottati dalla scuola per garantire pari opportunità a tutti gli studenti. Descrive modalità di supporto, strumenti didattici, ruoli coinvolti e azioni previste per favorire un ambiente accogliente e inclusivo.",
+        "category": "DOCUMENTO PROGRAMMATICO",
+        "icon": "it-file"
+      }
+    ],
+
+    "more": "Esplora i documenti della scuola"
+  },
+  "progetti": {
+    "title": "Attività e progetti extracurricolari",
+    "items": [
+      {
+        "type": "informativa",
+        "title": "Laboratorio di creatività e espressione artistica",
+        "text": "Uno spazio dedicato a tecniche artistiche e attività manuali che aiutano gli studenti a sviluppare fantasia, sensibilità estetica e capacità espressive.",
+        "imageSrc": "../images/hero-homepage.jpg"
+      },
+      {
+        "type": "informativa",
+        "title": "Percorso di lettura e scrittura creativa",
+        "text": "Un’attività che stimola il piacere della lettura e guida gli studenti nella creazione di racconti, poesie e testi originali, favorendo immaginazione e competenze linguistiche.",
+        "imageSrc": "../images/hero-homepage.jpg"
+      },
+      {
+        "type": "informativa",
+        "title": "Cittadini del Mondo: educazione alla sostenibilità",
+        "text": "Un progetto che avvicina gli studenti ai temi ambientali e della cittadinanza attiva, promuovendo comportamenti responsabili e consapevoli verso il pianeta e la comunità.",
+        "imageSrc": "../images/hero-homepage.jpg"
+      }
+    ],
+    "more": "Esplora i progetti"
   }
 }

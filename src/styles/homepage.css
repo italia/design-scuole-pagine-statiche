@@ -19,11 +19,6 @@
   color: var(--scuole-headings-color);
 }
 
-.studia-con-noi .progetti-istituto,
-.finanziamenti {
-  --bsi-heading-3-font-size: var(--it-heading-3-font-size);
-}
-
 .strumenti-digitali .section {
   --bsi-section-background-color: var(--bsi-color-background-accent);
 }
