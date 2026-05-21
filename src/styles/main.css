@@ -56,6 +56,14 @@ it-section .section,
   --bsi-section-padding-y: var(--bsi-spacing-xl); /* 40px */
 }
 
+it-card {
+  --bsi-heading-3-font-size: var(--it-heading-3-font-size);
+}
+
+it-card.attachment {
+  --bsi-heading-font-weight: var(--it-font-weight-semibold);
+}
+
 it-card .it-card-link {
   --bsi-card-link-color: var(--bsi-color-link);
 }
@@ -68,4 +76,13 @@ it-carousel::part(pagination-dot) {
   --bsi-carousel-pagination-dot-size: 8px;
   --bsi-color-background-subtle: var(--bsi-theme-primary-light);
   margin: 0;
+}
+
+/* Hero */
+it-section.hero .section {
+  --bsi-section-image-overlay: none;
+}
+
+it-section.hero .hero-more {
+  font-size: var(--it-font-size-2);
 }

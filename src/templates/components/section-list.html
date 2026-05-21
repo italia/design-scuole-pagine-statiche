@@ -1,0 +1,14 @@
+<template>
+  <section class="section">
+    <h2 class="mb-4" data-tpl="title" data-tpl-if="title"></h2>
+    <div
+      class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch"
+      data-tpl-if="items"
+      data-cards
+    ></div>
+    <a href="#" data-tpl-if="more" class="fw-semibold mt-4 d-inline-block"
+      ><span data-tpl="more"></span
+      ><it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon
+    ></a>
+  </section>
+</template>

@@ -1,0 +1,19 @@
+<template>
+  <it-carousel variant="gallery-sm" arrows="" data-cards>
+    <h2 slot="title" data-tpl="titolo" data-tpl-if="titolo"></h2>
+
+    <span data-tpl-if="slides" data-tpl-each="slides">
+      <it-carousel-slide>
+        <div class="card-wrapper">
+          <div class="img-responsive-wrapper">
+            <div class="img-responsive">
+              <div class="img-wrapper">
+                <img data-tpl-src="src" data-tpl-alt="alt" data-tpl-title="titolo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </it-carousel-slide>
+    </span>
+  </it-carousel>
+</template>

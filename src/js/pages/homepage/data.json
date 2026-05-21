@@ -1,10 +1,11 @@
 {
   "hero": {
     "class": "hero presentation",
-    "denominazione": "Istituto comprensivo",
-    "nome": "Federico Hernandez",
-    "citta": "Livorno",
-    "descrizione": " \"Lo scopo della scuola è quello di trasformare gli specchi in finestre\" ",
+    "pre-title": "Istituto comprensivo",
+    "title": "Federico Hernandez",
+    "subtitle": "Livorno",
+    "quote": " \"Lo scopo della scuola è quello di trasformare gli specchi in finestre\" ",
+    "more": "Scopri l'istituto",
     "image": "../images/hero-homepage.jpg",
     "illustration": "../illustrations/hero-homepage-large.svg"
   },
@@ -13,34 +14,24 @@
     "titolo": "Un'anteprima dell'Istituto",
     "slides": [
       {
-        "src": "https://picsum.photos/800/600?1",
-        "titolo": "Aula magna",
-        "alt": "Aula magna dell'istituto"
+        "src": "../images/carousel/carousel-1.jpg",
+        "titolo": "Giardino",
+        "alt": "Giardino dell'istituto"
       },
       {
-        "src": "https://picsum.photos/800/600?2",
+        "src": "../images/carousel/carousel-2.jpg",
         "titolo": "Laboratorio scienze",
         "alt": "Laboratorio di scienze"
       },
       {
-        "src": "https://picsum.photos/800/600?3",
-        "titolo": "Palestra",
-        "alt": "Palestra dell'istituto"
+        "src": "../images/carousel/carousel-3.jpg",
+        "titolo": "Aula",
+        "alt": "Aula della scuola"
       },
       {
-        "src": "https://picsum.photos/800/600?4",
+        "src": "../images/carousel/carousel-4.jpg",
         "titolo": "Biblioteca",
         "alt": "Biblioteca scolastica"
-      },
-      {
-        "src": "https://picsum.photos/800/600?5",
-        "titolo": "Cortile",
-        "alt": "Cortile dell'istituto"
-      },
-      {
-        "src": "https://picsum.photos/800/600?6",
-        "titolo": "Corridoio",
-        "alt": "Corridoio principale"
       }
     ]
   },

@@ -1,11 +1,3 @@
-it-section.hero .section {
-  --bsi-section-image-overlay: none;
-}
-
-it-section.hero .hero-more {
-  font-size: var(--it-font-size-2);
-}
-
 @media (width <= 767px) {
   it-section.hero.presentation .section,
   .section {
@@ -27,14 +19,8 @@ it-section.hero .hero-more {
   color: var(--scuole-headings-color);
 }
 
-.studia-con-noi .progetti-istituto,
-.finanziamenti {
-  --bsi-heading-3-font-size: var(--it-heading-3-font-size);
-}
-
 .strumenti-digitali .section {
   --bsi-section-background-color: var(--bsi-color-background-accent);
-  --bsi-heading-4-font-size: var(--bsi-heading-5-font-size);
 }
 
 .trasparenza it-card::part(title) {

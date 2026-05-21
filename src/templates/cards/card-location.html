@@ -1,0 +1,19 @@
+<template>
+  <it-card full-height variant="location">
+    <a slot="title" href="#" data-tpl="title">Toponimo o luogo</a>
+    <span slot="subtitle" class="fw-normal" data-tpl="description" data-tpl-if="description"
+      >descrizione</span
+    >
+
+    <figure slot="image" class="figure img-full" data-tpl-if-not="icon">
+      <img
+        src="https://picsum.photos/seed/monument/320/320"
+        alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+      />
+    </figure>
+
+    <div slot="image" class="it-card-profile-image-icon-wrapper" data-tpl-if="icon">
+      <it-icon color="primary" data-tpl-name="icon" size="md"></it-icon>
+    </div>
+  </it-card>
+</template>

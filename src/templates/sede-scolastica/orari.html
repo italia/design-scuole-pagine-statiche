@@ -1,0 +1,15 @@
+<template>
+  <h2 class="mb-4" data-tpl="title" data-tpl-if="title"></h2>
+  <h3 class="pt-0" data-tpl="titleH3" data-tpl-if="titleH3"></h3>
+
+  <div
+    class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch mb-4"
+    data-tpl-if="items"
+    data-cards
+  ></div>
+
+  <a href="#" data-tpl-if="more" class="fw-semibold"
+    ><span data-tpl="more"></span
+    ><it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon
+  ></a>
+</template>
