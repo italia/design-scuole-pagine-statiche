@@ -1,0 +1,20 @@
+{
+  "breadcrumbs": {
+    "pagina": "Segreteria didattica",
+    "paginePrecedenti": [
+      {
+        "nome": "L'istituto",
+        "url": "#"
+      },
+      {
+        "nome": "Organizzazione",
+        "url": "#"
+      }
+    ]
+  },
+  "header": {
+    "title": "Segreteria didattica",
+    "description": "La segreteria gestisce iscrizioni, documenti e informazioni per studenti e famiglie.",
+    "category": "SEGRETERIA"
+  }
+}
