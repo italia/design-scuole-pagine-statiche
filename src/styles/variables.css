@@ -25,6 +25,7 @@
   --bsi-theme-primary: var(--scuole-primary);
   --bsi-theme-primary-light: var(--scuole-primary-84);
   --bsi-theme-primary-lighter: var(--scuole-primary-95);
+  --bsi-theme-primary-lightest: var(--scuole-primary-97);
   --bsi-theme-primary-subtle: var(--scuole-primary-24);
   --bsi-theme-primary-muted: #202a2e;
   --bsi-theme-primary-deep: #202a2e;
@@ -42,6 +43,7 @@
   --bsi-color-border-primary: var(--scuole-primary);
   --bsi-color-background-primary: var(--scuole-primary);
   --bsi-color-background-primary-lighter: var(--bsi-theme-primary-lighter);
+  --bsi-color-background-primary-lightest: var(--bsi-theme-primary-lightest);
   --bsi-color-background-primary-light: var(--bsi-theme-primary-ligh);
   --bsi-color-background-primary-deep: var(--bsi-theme-primary-deep);
   --bsi-color-background-primary-muted: var(--bsi-theme-primary-muted);
