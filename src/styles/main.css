@@ -46,6 +46,21 @@ it-section .section,
   --bsi-section-padding-y: var(--bsi-spacing-xxl);
 }
 
+it-section.bg-lightest .section,
+section.bg-lightest {
+  --bsi-section-background-color: var(--bsi-color-background-primary-lightest);
+}
+
+it-section.bg-lighter .section,
+section.bg-lighter {
+  --bsi-section-background-color: var(--bsi-color-background-primary-lighter);
+}
+
+it-section.bg-accent .section,
+section.bg-accent {
+  --bsi-section-background-color: var(--bsi-color-background-accent);
+}
+
 .spacing-2xl .section,
 .spacing-2xl.section {
   --bsi-section-padding-y: var(--scuole-spacing-2xl);

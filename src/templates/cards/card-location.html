@@ -27,6 +27,10 @@
       data-tpl-html="body"
     ></div>
 
+    <div slot="footer" style="flex-grow: 1" data-tpl-if="distance">
+      <it-icon color="secondary" name="it-map-marker" size="sm"></it-icon>
+      <strong>Distanza:</strong> <span data-tpl="distance"></span>
+    </div>
     <a slot="footer" href="#" target="_blank" class="it-card-link" data-tpl-if="mapUrl">
       Apri in mappa
       <span class="visually-hidden">

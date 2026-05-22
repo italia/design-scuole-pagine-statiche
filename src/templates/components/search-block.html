@@ -1,0 +1,44 @@
+<template>
+  <it-section class="section bg-lightest" data-tpl-class="class">
+    <div class="container">
+      <h1 data-tpl="title"></h1>
+      <form>
+        <div>
+          <it-input
+            id="search-scuole-input"
+            type="text"
+            name="search-scuole"
+            placeholder="Inserisci parole chiave"
+            label-hidden
+            aria-controls="results-search-scuole"
+          >
+            <span slot="label">Cerca una scuola</span>
+            <it-icon name="it-search" slot="prepend" size="sm"></it-icon>
+            <it-button variant="primary" slot="append" aria-controls="results-search-scuole"
+              >Cerca</it-button
+            >
+          </it-input>
+        </div>
+        <div id="results-search-scuole" aria-live="polite" class="mt-4" data-tpl-if="items">
+          <div class="row">
+            <div class="col-12 col-lg-4 order-2 order-lg-1">
+              <ul class="list-unstyled">
+                <li data-tpl-each="items" class="mb-3">
+                  <div data-card-template></div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-8 order-1 order-lg-2 mb-4">
+              <img
+                data-tpl-src="resultsImage"
+                alt="Mappa dei risultati della ricerca. Da implementare con il plugin desiderato"
+                alt="Mappa dei risultati della ricerca."
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </it-section>
+</template>
