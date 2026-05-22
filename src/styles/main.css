@@ -1,7 +1,7 @@
 /* dev-kit vendor CSS is inlined as critical in page heads; keep only project styles here */
 
-@import url('../styles/variables.css');
-@import url('../styles/header.css');
+@import url('./styles/variables.css');
+@import url('./styles/header.css');
 
 /* Stili custom del progetto.
    Il design system è Bootstrap Italia, importato tramite @italia/dev-kit-italia.
