@@ -1,0 +1,133 @@
+{
+  "preHeader": {
+    "ministero": "Ministero dell'Istruzione e del Merito",
+    "areariservata": "Accedi all'area riservata"
+  },
+  "mainHeader": {
+    "scuola": {
+      "nome": "Liceo Scientifico Statale",
+      "denominazione": "Federico Hernandez",
+      "citta": "Livorno"
+    }
+  },
+
+  "hero": {
+    "info": {
+      "titolo": "Organizzazione",
+      "text": "In questa sezione sono presenti le informazioni sull'organizzazione dell'Istituto"
+    }
+  },
+  "dirigenza": {
+    "titolo": "Dirigenza",
+    "cards": [
+      {
+        "type": "location",
+        "title": "Presidenza",
+        "email": "me@mail.xom",
+        "tel": "+39 00 000000",
+        "indirizzo": "nome della via, n. civico"
+      },
+      {
+        "type": "location",
+        "title": "Segreteria",
+        "email": "me@mail.com",
+        "tel": "+39 00 000000",
+        "indirizzo": "nome della via, n. civico"
+      }
+    ]
+  },
+
+  "funzioni": {
+    "titolo": "Funzioni strumentali",
+    "cards": [
+      {
+        "type": "locationMini",
+        "title": "Area didattica e curriculo",
+        "subtitle": ""
+      },
+      {
+        "type": "locationMini",
+        "title": "Area inclusione e supporto agli studenti",
+        "subtitle": ""
+      },
+      {
+        "type": "locationMini",
+        "title": "Area orientamento",
+        "subtitle": ""
+      },
+      {
+        "type": "locationMini",
+        "title": "Area valutazione e autovalutazione",
+        "subtitle": ""
+      },
+      {
+        "type": "locationMini",
+        "title": "Area comunicazione e rapporti con l'esterno",
+        "subtitle": ""
+      },
+      {
+        "type": "locationMini",
+        "title": "Area innovazione tecnologica",
+        "subtitle": ""
+      }
+    ]
+  },
+
+  "fin": {
+    "titolo": "I nostri finanziamenti",
+    "cards": [
+      {
+        "type": "editorialeStandard",
+        "title": "PNRR Futura",
+        "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
+        "image": "../illustrations/scuola-large.svg",
+        "category": "",
+        "date": ""
+      },
+      {
+        "type": "editorialeStandard",
+        "title": "PON - Ricerca e innovazione 2014-2020",
+        "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
+        "image": "../illustrations/didattica-large.svg",
+        "category": "",
+        "date": ""
+      },
+      {
+        "type": "editorialeStandard",
+        "title": "PON inclusione",
+        "text": "Programma europeo per il sostegno e l'inclusione sociale",
+        "image": "../illustrations/comunicazioni-large.svg",
+        "category": "",
+        "date": ""
+      }
+    ]
+  },
+  "footerSection": {
+    "name": "F. Hernandez",
+    "denominazione": "Istituto comprensivo F. Hernandez",
+    "citta": "Livorno",
+    "codiceFiscale": "0985649876",
+    "pec": "indirizzopecdellente@pec.gov.it",
+    "telefono": "+39 000000000"
+  },
+  "personale": {
+    "titolo": "Le persone della scuola",
+    "cards": [
+      {
+        "type": "persona",
+        "nome": "Luigi  Rossi",
+        "ruolo": "Dirigente scolastico"
+      },
+      {
+        "type": "persona",
+        "nome": "Mario Antonio della Monaca",
+        "ruolo": "Responsabile sicurezza"
+      },
+      {
+        "type": "persona",
+        "nome": "Mariacarmela degli Esposti",
+        "ruolo": "Responsabile accessibilità"
+      }
+    ]
+  }
+}

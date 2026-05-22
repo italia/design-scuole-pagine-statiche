@@ -1,0 +1,49 @@
+name: Lint
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lint-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable Corepack and prepare pnpm
+        run: corepack enable && corepack prepare pnpm@10 --activate
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Format check
+        run: pnpm run format:check
+
+      - name: Lint HTML
+        run: pnpm run lint:html
+
+      - name: Lint JS
+        run: pnpm run lint:js
+
+      - name: Lint CSS
+        run: pnpm run lint:css
+
+      - name: Lint TS
+        run: pnpm run lint:ts
+
+      - name: Typecheck
+        run: pnpm run typecheck

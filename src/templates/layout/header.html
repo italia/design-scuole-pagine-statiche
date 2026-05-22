@@ -1,0 +1,356 @@
+<template>
+  <it-skiplinks it-aria-label="Vai a:">
+    <a href="#main-navigation">Vai al menu</a>
+    <a href="#main-content">Vai al contenuto principale</a>
+    <a href="#satisfaction">Questa pagina ti è stata utile?</a>
+    <a href="#footer">Vai al piè di pagina</a>
+    <a href="https://form.agid.gov.it/view/xyz"
+      >Dichiarazione di accessibilità (link esterno su sito AgID</a
+    >
+  </it-skiplinks>
+  <it-header>
+    <header class="it-header-wrapper">
+      <!-- slim header -->
+      <div class="it-header-slim-wrapper">
+        <div class="container-xxl">
+          <div class="it-header-slim-wrapper-content">
+            <a
+              class="d-block navbar-brand"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.mim.gov.it/"
+            >
+              Ministero dell'Istruzione e del Merito
+            </a>
+            <!-- required by it-header JS for mobile exit-modal cleanup -->
+            <div class="nav-mobile">
+              <nav aria-label="Navigazione accessoria">
+                <div class="link-list-wrapper d-none" aria-hidden="true">
+                  <ul class="link-list"></ul>
+                </div>
+              </nav>
+            </div>
+            <div class="it-header-slim-right-zone">
+              <div class="it-access-top-wrapper">
+                <it-button variant="primary" size="xs">Accedi</it-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- center header -->
+      <div class="it-header-center-wrapper theme-light">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-12">
+              <div class="it-header-center-content-wrapper">
+                <div class="it-brand-wrapper">
+                  <a href="#" aria-label="Torna alla home">
+                    <it-icon name="it-pa"></it-icon>
+                    <div class="it-brand-text">
+                      <div class="it-brand-title text-secondary">
+                        <span>Istituto comprensivo</span>
+                        <span>F. Hernandez</span>
+                      </div>
+                      <div class="it-brand-tagline d-none d-md-block text-secondary">Livorno</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="it-right-zone">
+                  <div class="it-socials d-none d-md-flex">
+                    <span class="fw-semibold">Seguici su:</span>
+                    <ul>
+                      <li>
+                        <a
+                          href="#"
+                          aria-label="Facebook, link esterno"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <it-icon name="it-facebook" size="sm"></it-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          aria-label="YouTube, link esterno"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <it-icon name="it-youtube" size="sm"></it-icon>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          aria-label="Instagram, link esterno"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <it-icon name="it-instagram" size="sm"></it-icon>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="it-search-wrapper">
+                    <span class="d-none d-md-block me-4 fw-semibold">Cerca</span>
+                    <a class="search-link" aria-label="Cerca nel sito" href="#">
+                      <it-icon name="it-search" size="sm"></it-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- navbar -->
+      <div class="it-header-navbar-wrapper theme-light">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="col-12">
+              <nav
+                class="navbar navbar-expand-lg"
+                aria-label="Navigazione principale"
+                id="main-navigation"
+              >
+                <div class="navbar-collapsable" id="main-navbar" tabindex="-1">
+                  <div class="menu-wrapper">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <it-megamenu label="Istituto" columns="4">
+                          <div slot="header">
+                            <a class="it-heading-link" href="#">
+                              <it-icon
+                                name="it-arrow-right-triangle"
+                                size="sm"
+                                color="primary"
+                                class="me-2 mb-1"
+                              ></it-icon>
+                              <span>Esplora la sezione</span>
+                            </a>
+                          </div>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Le nostre scuole
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Organizzazione
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Contatti
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Documenti
+                          </it-dropdown-item>
+                        </it-megamenu>
+                      </li>
+                      <li class="nav-item">
+                        <it-megamenu label="Didattica" columns="3">
+                          <div slot="header">
+                            <a class="it-heading-link" href="#">
+                              <it-icon
+                                name="it-arrow-right-triangle"
+                                size="sm"
+                                color="primary"
+                                class="me-2 mb-1"
+                              ></it-icon>
+                              <span>Esplora la sezione</span>
+                            </a>
+                          </div>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Percorsi di studio
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Libri di testo
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Attività e progetti didattici
+                          </it-dropdown-item>
+                        </it-megamenu>
+                      </li>
+                      <li class="nav-item">
+                        <it-megamenu label="Servizi" columns="2">
+                          <div slot="header">
+                            <a class="it-heading-link" href="#">
+                              <it-icon
+                                name="it-arrow-right-triangle"
+                                size="sm"
+                                color="primary"
+                                class="me-2 mb-1"
+                              ></it-icon>
+                              <span>Esplora la sezione</span>
+                            </a>
+                          </div>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Modulistica
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Servizio 1 / Categoria 1
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Servizio 2 / Categoria 2
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Servizio 3 / Categoria 3
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Servizio 4 / Categoria 4
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Servizio 5 / Categoria 5
+                          </it-dropdown-item>
+                        </it-megamenu>
+                      </li>
+                      <li class="nav-item">
+                        <it-megamenu label="Comunicazioni" columns="4">
+                          <div slot="header">
+                            <a class="it-heading-link" href="#">
+                              <it-icon
+                                name="it-arrow-right-triangle"
+                                size="sm"
+                                color="primary"
+                                class="me-2 mb-1"
+                              ></it-icon>
+                              <span>Esplora la sezione</span>
+                            </a>
+                          </div>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Notizie
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Circolari
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Eventi
+                          </it-dropdown-item>
+                          <it-dropdown-item href="#">
+                            <it-icon
+                              slot="prefix"
+                              name="it-arrow-right-triangle"
+                              size="sm"
+                              color="primary"
+                            ></it-icon>
+                            Albo online
+                          </it-dropdown-item>
+                        </it-megamenu>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-secondary">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Contatti</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Orientamento in entrata</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><span>Tutti gli argomenti</span></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </it-header>
+</template>

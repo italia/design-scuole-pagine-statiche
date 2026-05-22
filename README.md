@@ -28,7 +28,7 @@ Buon lavoro!
 
 ## Come iniziare
 
-Per utilizzare i template del sito scolastico all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/main/build). 
+Per utilizzare i template del sito scolastico all'interno del tuo progetto, è sufficiente riutilizare il codice HTML presente nella cartella [build](https://github.com/italia/design-scuole-pagine-statiche/tree/main/build).
 
 Inizia scaricando le dipendenze esterne del progetto, utilizzando uno dei seguenti comandi:
 
@@ -49,6 +49,7 @@ Infine, nel documento sono contenute alcune indicazioni per la migrazione e/o ri
 [Vai al documento di architettura dell'informazione (ODS 337)](https://designers.italia.it/files/resources/modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/Architettura-informazione-sito-scuole.ods)
 
 ## Come contribuire
+
 Vorresti dare una mano contribuendo allo sviluppo del progetto?
 
 Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza sul [documento di architettura dell'informazione (ODS 337)](https://designers.italia.it/files/resources/modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/Architettura-informazione-sito-scuole.ods) e fai riferimento alle [indicazioni su come contribuire](https://github.com/italia/design-scuole-wordpress-theme/blob/main/CONTRIBUTING.md).

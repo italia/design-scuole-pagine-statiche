@@ -1,0 +1,71 @@
+/* dev-kit vendor CSS is inlined as critical in page heads; keep only project styles here */
+
+@import url('./styles/variables.css');
+@import url('./styles/header.css');
+
+/* Stili custom del progetto.
+   Il design system è Bootstrap Italia, importato tramite @italia/dev-kit-italia.
+   Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
+   Aggiungi qui solo override o stili davvero specifici del progetto. */
+body {
+  color: var(--bsi-color-text-secondary);
+}
+
+h1,
+h2 {
+  color: var(--scuole-headings-color);
+}
+
+.white-color {
+  --scuole-headings-color: var(--bsi-white);
+}
+
+strong {
+  font-weight: var(--it-font-weight-semibold);
+}
+
+/* in comune sia per header che per footer */
+.it-brand-wrapper {
+  --bsi-heading-font-weight: 600;
+}
+
+.it-brand-wrapper a .it-brand-tagline {
+  line-height: var(--it-font-size-6);
+}
+/* ---- */
+.it-footer {
+  --scuole-headings-color: var(--bsi-footer-brand-icon-color);
+}
+
+.it-footer address {
+  font-size: var(--bsi-label-font-size);
+}
+
+it-section .section,
+.section {
+  --bsi-section-padding-y: var(--bsi-spacing-xxl);
+}
+
+.spacing-2xl .section,
+.spacing-2xl.section {
+  --bsi-section-padding-y: var(--scuole-spacing-2xl);
+}
+
+.spacing-xl .section,
+.spacing-xl.section {
+  --bsi-section-padding-y: var(--bsi-spacing-xl); /* 40px */
+}
+
+it-card .it-card-link {
+  --bsi-card-link-color: var(--bsi-color-link);
+}
+
+it-card::part(card) {
+  --bsi-card-inline-mini-min-height: 118px;
+}
+
+it-carousel::part(pagination-dot) {
+  --bsi-carousel-pagination-dot-size: 8px;
+  --bsi-color-background-subtle: var(--bsi-theme-primary-light);
+  margin: 0;
+}

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servizi – Scuola</title>
+  </head>
+  <body>
+    <div id="root-header">
+      <it-header>
+        <header class="it-header-wrapper">
+          <!-- slim header -->
+          <div class="it-header-slim-wrapper">
+            <div class="container-xxl">
+              <div class="row">
+                <div class="col-12">
+                  <div class="it-header-slim-wrapper-content">
+                    <a class="d-block navbar-brand" target="_blank" rel="noopener noreferrer"> </a>
+                    <!-- required by it-header JS for mobile exit-modal cleanup -->
+                    <div class="nav-mobile">
+                      <nav aria-label="Navigazione accessoria">
+                        <div class="link-list-wrapper d-none" aria-hidden="true">
+                          <ul class="link-list"></ul>
+                        </div>
+                      </nav>
+                    </div>
+                    <div class="it-header-slim-right-zone">
+                      <div class="it-access-top-wrapper">
+                        <it-button variant="primary" size="xs">Accedi</it-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- center header -->
+          <div class="it-header-center-wrapper theme-light">
+            <div class="container-xxl">
+              <div class="row">
+                <div class="col-12">
+                  <div class="it-header-center-content-wrapper">
+                    <div class="it-brand-wrapper">
+                      <a href="#" aria-label="Torna alla home">
+                        <it-icon name="it-pa"></it-icon>
+                        <div class="it-brand-text">
+                          <div class="it-brand-title text-secondary">
+                            <span>Liceo Scientifico Statale</span>
+                            <span>Federigo Enriques</span>
+                          </div>
+                          <div class="it-brand-tagline d-none d-md-block text-secondary">Livorno</div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="it-right-zone text-secondary">
+                      <div class="it-socials d-none d-md-flex">
+                        <span class="fw-semibold">Seguici su</span>
+                        <ul>
+                          <li>
+                            <a href="#" aria-label="Facebook, link esterno" target="_blank" rel="noopener noreferrer">
+                              <it-icon name="it-facebook" size="sm"></it-icon>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" aria-label="YouTube, link esterno" target="_blank" rel="noopener noreferrer">
+                              <it-icon name="it-youtube" size="sm"></it-icon>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" aria-label="Instagram, link esterno" target="_blank" rel="noopener noreferrer">
+                              <it-icon name="it-instagram" size="sm"></it-icon>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="it-search-wrapper">
+                        <span class="d-none d-md-block me-4 fw-semibold">Cerca</span>
+                        <a class="search-link" aria-label="Cerca nel sito" href="#">
+                          <it-icon name="it-search" size="sm"></it-icon>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- navbar -->
+          <div class="it-header-navbar-wrapper theme-light">
+            <div class="container-xxl">
+              <div class="row">
+                <div class="col-12">
+                  <nav class="navbar navbar-expand-lg" aria-label="Navigazione principale">
+                    <div class="navbar-collapsable" id="nav-homepage" tabindex="-1">
+                      <div class="menu-wrapper">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <it-dropdown label="Istituto" offset="0" no-flip="">
+                              <it-dropdown-item href="#">La scuola</it-dropdown-item>
+                              <it-dropdown-item href="#">Organigramma</it-dropdown-item>
+                              <it-dropdown-item href="#">PTOF</it-dropdown-item>
+                            </it-dropdown>
+                          </li>
+                          <li class="nav-item">
+                            <it-dropdown label="Didattica" offset="0" no-flip="">
+                              <it-dropdown-item href="#">Offerta formativa</it-dropdown-item>
+                              <it-dropdown-item href="#">Orario scolastico</it-dropdown-item>
+                            </it-dropdown>
+                          </li>
+                          <li class="nav-item">
+                            <it-dropdown label="Servizi" offset="0" no-flip="">
+                              <it-dropdown-item href="#">Tutti i servizi</it-dropdown-item>
+                            </it-dropdown>
+                          </li>
+                          <li class="nav-item">
+                            <it-dropdown label="Comunicazioni" offset="0" no-flip="">
+                              <it-dropdown-item href="#">Circolari</it-dropdown-item>
+                              <it-dropdown-item href="#">Notizie</it-dropdown-item>
+                            </it-dropdown>
+                          </li>
+                        </ul>
+                        <ul class="navbar-nav navbar-secondary">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Contatti</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Orientamento in entrata</span></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><span>Tutti gli argomenti</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </it-header>
+    </div>
+
+    <main id="main-content">
+      <div id="root-breadcrumb">
+        <nav class="breadcrumb" aria-label="breadcrumb">
+          <div class="container">
+            <ol>
+              <li><a href="#">Home</a></li>
+              <li aria-current="page"><span>Servizi</span></li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+      <div id="root-hero">
+        <style>
+          #hero h2,
+          #hero h4 {
+            font-weight: 400;
+          }
+
+          #hero .hero-quote {
+            font-style: italic;
+          }
+          #hero {
+            @media (max-width: 576px) {
+              section {
+                padding-bottom: 0 !important;
+              }
+
+              div:has(> figure) {
+                padding: 0 !important;
+              }
+
+              figure,
+              figure img {
+                width: 100vw;
+                max-width: 100vw;
+              }
+            }
+          }
+        </style>
+        <it-section inverse="">
+          <div class="container w-100">
+            <div class="row align-items-center">
+              <div class="col-12 col-lg-6 text-lg-start p-0">
+                <div class="py-4 container m-0 row row-cols-1 g-2 g-lg-3">
+                  <p class="p-0 m-0 h2"></p>
+                  <h1 class="p-0 m-0"></h1>
+                  <p class="p-0 m-0 h4"></p>
+
+                  <div class="row row-cols-1 g-4 p-0">
+                    <p class="font-serif hero-quote">
+                      I servizi offerti dalla scuola dedicati a studenti, famiglie e personale scolastico.
+                    </p>
+                    <a href="#" class="text-white mt-4"
+                      >Scopri l'istituto<it-icon name="it-arrow-right" color="inverse" size="sm" class="ms-2"></it-icon
+                    ></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+                <figure class="figure img-full mb-0 ratio ratio-16x9">
+                  <img alt="immagine istituto" width="540" height="304" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </it-section>
+      </div>
+      <div id="root-sections">
+        <it-section class="service-section">
+          <div class="container">
+            <h2 class="service-section__title">Famiglie e studenti</h2>
+            <!-- data-cards: punto di iniezione per le card, gestito da servizio.js -->
+            <div data-cards="">
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Iscrizioni online</strong></p>
+                      <p class="service-card__description">Procedura per l'iscrizione al primo anno</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Pagamenti scolastici</strong></p>
+                      <p class="service-card__description">Tasse, contributi e servizi vari</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Colloqui genitori-docenti</strong></p>
+                      <p class="service-card__description">Prenotazione colloqui individuali</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Comunicazioni e circolari</strong></p>
+                      <p class="service-card__description">Avvisi e comunicazioni della scuola</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Registro elettronico</strong></p>
+                      <p class="service-card__description">Accesso al registro voti e presenze</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+            </div>
+          </div>
+        </it-section>
+
+        <it-section class="service-section">
+          <div class="container">
+            <h2 class="service-section__title">Personale scolastico</h2>
+            <!-- data-cards: punto di iniezione per le card, gestito da servizio.js -->
+            <div data-cards="">
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Gestione assenze</strong></p>
+                      <p class="service-card__description">Richiesta e documentazione assenze</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Certificati di servizio</strong></p>
+                      <p class="service-card__description">Richiesta certificati di servizio</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Modulistica interna</strong></p>
+                      <p class="service-card__description">Moduli e documenti amministrativi</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Supplenze</strong></p>
+                      <p class="service-card__description">Gestione delle supplenze temporanee</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+            </div>
+          </div>
+        </it-section>
+
+        <it-section class="service-section">
+          <div class="container">
+            <h2 class="service-section__title">Percorsi di studio</h2>
+            <!-- data-cards: punto di iniezione per le card, gestito da servizio.js -->
+            <div data-cards="">
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Piano di studi</strong></p>
+                      <p class="service-card__description">Offerta formativa e materie per indirizzo</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Orientamento</strong></p>
+                      <p class="service-card__description">Attività di orientamento in entrata e in uscita</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+
+              <div class="col">
+                <it-card class="service-card">
+                  <a href="#">
+                    <div class="service-card__body">
+                      <p class="service-card__title"><strong>Libri di testo</strong></p>
+                      <p class="service-card__description">Elenco adozioni librarie per anno scolastico</p>
+                    </div>
+                  </a>
+                </it-card>
+              </div>
+            </div>
+          </div>
+        </it-section>
+      </div>
+    </main>
+
+    <div id="root-footer">
+      <footer class="it-footer">
+        <div class="py-4 bg-darker">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-lg-4 g-3 align-items-center justify-content-center">
+              <div class="col text-center">
+                <img
+                  src="../illustrations/pnrr.svg"
+                  class="img-fluid"
+                  style="height: 80px; object-fit: contain"
+                  alt="Logo PNRR"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  src="../illustrations/pon-ricerca.svg"
+                  class="img-fluid"
+                  style="height: 80px; object-fit: contain"
+                  alt="Logo PON Ricerca"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  src="../illustrations/pon.svg"
+                  class="img-fluid"
+                  style="height: 80px; object-fit: contain"
+                  alt="Logo PON"
+                />
+              </div>
+              <div class="col text-center">
+                <img
+                  src="../illustrations/rigenerazione.svg"
+                  class="img-fluid"
+                  style="height: 80px; object-fit: contain"
+                  alt="Logo Rigenerazione"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="it-footer-main">
+          <div class="container">
+            <section class="pb-4">
+              <div class="row clearfix">
+                <div class="col-12">
+                  <div class="it-brand-wrapper">
+                    <a href="#">
+                      <it-icon name="it-pa" size="xl" color="inverse"></it-icon>
+                      <div class="it-brand-text">
+                        <h2 class="no_toc">Federigo Enriques</h2>
+                        <h3 class="no_toc">Livorno</h3>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div class="row row-cols-1 row-cols-lg-4 g-3">
+                <div class="col-12 col-lg-3 pb-2">
+                  <h4 title="Vai alla pagina: Menu principale">Menu principale</h4>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li><a class="list-item" href="#">Istituto</a></li>
+                      <li><a class="list-item" href="#">Didattica</a></li>
+                      <li><a class="list-item" href="#">Servizi</a></li>
+                      <li><a class="list-item" href="#">Comunicazioni</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pb-2">
+                  <h4 title="Vai alla pagina: Pubblicità e trasparenza">Pubblicità e trasparenza</h4>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li><a class="list-item" href="#">Amministrazione trasparente</a></li>
+                      <li><a class="list-item" href="#">Albo online</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pb-2">
+                  <h4>Personale scolastico</h4>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li><a class="list-item" href="#">Modulistica per il personale scolastico</a></li>
+                      <li><a class="list-item" href="#">Registro elettronico per docenti</a></li>
+                      <li><a class="list-item" href="#">NoiPA</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pb-2">
+                  <h4>Link esterni</h4>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li><a class="list-item" href="#">MIUR</a></li>
+                      <li><a class="list-item" href="#">Ufficio Scolastico Regionale</a></li>
+                      <li><a class="list-item" href="#">Ufficio Scolastico Territoriale</a></li>
+                      <li><a class="list-item" href="#">Scuola In Chiaro</a></li>
+                      <li><a class="list-item" href="#">Comune</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="py-4 border-white border-top">
+              <div class="row row-cols-1 row-cols-lg-4 g-3">
+                <div class="col-12 col-md-4 pb-2">
+                  <h4>Contatti</h4>
+                  <p>
+                    <strong>Federigo Enriques</strong><br />
+                    <span>indirizzo</span>
+                  </p>
+                  <div class="link-list-wrapper">
+                    <ul class="footer-list link-list clearfix">
+                      <li>pec</li>
+                      <li>telefono</li>
+                      <li><a class="list-item" href="#">URP - Ufficio Relazioni con il Pubblico</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 pb-2">
+                  <div class="pb-2">
+                    <h4>Seguici su</h4>
+                    <ul class="list-inline text-left social">
+                      <li class="list-inline-item">
+                        <a class="p-2" href="#">
+                          <it-icon color="inverse" size="sm" name="it-facebook"></it-icon>
+                          <span class="visually-hidden">Facebook (link esterno)</span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="p-2" href="#">
+                          <it-icon color="inverse" size="sm" name="it-instagram"></it-icon>
+                          <span class="visually-hidden">Instagram (link esterno)</span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="p-2" href="#">
+                          <it-icon color="inverse" size="sm" name="it-twitter"></it-icon>
+                          <span class="visually-hidden">X (link esterno)</span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a class="p-2" href="#">
+                          <it-icon color="inverse" size="sm" name="it-youtube"></it-icon>
+                          <span class="visually-hidden">YouTube (link esterno)</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 mt-2">
+                  <h4>Newsletter</h4>
+                  <div class="form-group d-flex gap-1">
+                    <it-input
+                      slotted=""
+                      type="text"
+                      id="footerNewsletterEmail"
+                      size="sm"
+                      placeholder="Indirizzo email"
+                      label-hidden=""
+                    >
+                      <span slot="label">Inserisci la tua email</span>
+                      <it-button type="submit" variant="success" outline="" slot="append">Iscriviti</it-button>
+                    </it-input>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="it-footer-small-prints clearfix">
+          <div class="container">
+            <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+              <li class="list-inline-item"><a href="#">Archivio</a></li>
+              <li class="list-inline-item"><a href="#">Informativa cookie</a></li>
+              <li class="list-inline-item"><a href="#">Note legali</a></li>
+              <li class="list-inline-item"><a href="#">Informativa privacy</a></li>
+              <li class="list-inline-item"><a href="#">Mappa del sito</a></li>
+              <li class="list-inline-item">
+                <a href="https://form.agid.gov.it/view/xyz">
+                  Dichiarazione di accessibilità
+                  <span class="visually-hidden">(link esterno su sito AgID)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

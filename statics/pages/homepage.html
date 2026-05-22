@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Homepage</title>
+  </head>
+
+  <body>
+    <div id="site-preheader"></div>
+
+    <it-header>
+      <header class="it-header-wrapper">
+        <!-- slim header -->
+        <div class="it-header-slim-wrapper">
+          <div class="container-xxl">
+            <div class="row">
+              <div class="col-12">
+                <div class="it-header-slim-wrapper-content">
+                  <a
+                    href="https://www.mim.gov.it/"
+                    class="d-block navbar-brand"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Ministero dell'Istruzione e del Merito</a
+                  >
+                  <!-- required by it-header JS for mobile exit-modal cleanup -->
+                  <div class="nav-mobile">
+                    <nav aria-label="Navigazione accessoria">
+                      <div class="link-list-wrapper d-none" aria-hidden="true">
+                        <ul class="link-list"></ul>
+                      </div>
+                    </nav>
+                  </div>
+                  <div class="it-header-slim-right-zone">
+                    <div class="it-access-top-wrapper">
+                      <it-button variant="primary" size="xs">Accedi</it-button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- center header -->
+        <div class="it-header-center-wrapper theme-light">
+          <div class="container-xxl">
+            <div class="row">
+              <div class="col-12">
+                <div class="it-header-center-content-wrapper">
+                  <div class="it-brand-wrapper">
+                    <a href="#" aria-label="Torna alla home">
+                      <it-icon name="it-pa"></it-icon>
+                      <div class="it-brand-text">
+                        <div class="it-brand-title text-secondary">
+                          <span>Istituto comprensivo</span>
+                          <span>Federico Hernandez</span>
+                        </div>
+                        <div class="it-brand-tagline d-none d-md-block text-secondary">Livorno</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="it-right-zone text-secondary">
+                    <div class="it-socials d-none d-md-flex">
+                      <span class="fw-semibold">Seguici su</span>
+                      <ul>
+                        <li>
+                          <a href="#" aria-label="Facebook, link esterno" target="_blank" rel="noopener noreferrer">
+                            <it-icon name="it-facebook" size="sm"></it-icon>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="YouTube, link esterno" target="_blank" rel="noopener noreferrer">
+                            <it-icon name="it-youtube" size="sm"></it-icon>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Instagram, link esterno" target="_blank" rel="noopener noreferrer">
+                            <it-icon name="it-instagram" size="sm"></it-icon>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="it-search-wrapper">
+                      <span class="d-none d-md-block me-4 fw-semibold">Cerca</span>
+                      <a class="search-link" aria-label="Cerca nel sito" href="#">
+                        <it-icon name="it-search" size="sm"></it-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- navbar -->
+        <div class="it-header-navbar-wrapper theme-light">
+          <div class="container-xxl">
+            <div class="row">
+              <div class="col-12">
+                <nav class="navbar navbar-expand-lg" aria-label="Navigazione principale">
+                  <div class="navbar-collapsable" id="nav-homepage" tabindex="-1">
+                    <div class="menu-wrapper">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <it-dropdown label="Istituto" offset="0" no-flip="">
+                            <it-dropdown-item href="#">La scuola</it-dropdown-item>
+                            <it-dropdown-item href="#">Organigramma</it-dropdown-item>
+                            <it-dropdown-item href="#">PTOF</it-dropdown-item>
+                          </it-dropdown>
+                        </li>
+                        <li class="nav-item">
+                          <it-dropdown label="Didattica" offset="0" no-flip="">
+                            <it-dropdown-item href="#">Offerta formativa</it-dropdown-item>
+                            <it-dropdown-item href="#">Orario scolastico</it-dropdown-item>
+                          </it-dropdown>
+                        </li>
+                        <li class="nav-item">
+                          <it-dropdown label="Servizi" offset="0" no-flip="">
+                            <it-dropdown-item href="#">Tutti i servizi</it-dropdown-item>
+                          </it-dropdown>
+                        </li>
+                        <li class="nav-item">
+                          <it-dropdown label="Comunicazioni" offset="0" no-flip="">
+                            <it-dropdown-item href="#">Circolari</it-dropdown-item>
+                            <it-dropdown-item href="#">Notizie</it-dropdown-item>
+                          </it-dropdown>
+                        </li>
+                      </ul>
+                      <ul class="navbar-nav navbar-secondary">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><span>Contatti</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><span>Orientamento in entrata</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><span>Tutti gli argomenti</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </it-header>
+
+    <main id="main-content">
+      <style>
+        #hero h2,
+        #hero h4 {
+          font-weight: 400;
+        }
+
+        #hero .hero-quote {
+          font-style: italic;
+        }
+        #hero {
+          @media (max-width: 576px) {
+            section {
+              padding-bottom: 0 !important;
+            }
+
+            div:has(> figure) {
+              padding: 0 !important;
+            }
+
+            figure,
+            figure img {
+              width: 100vw;
+              max-width: 100vw;
+            }
+          }
+        }
+      </style>
+      <it-section image="../illustrations/hero-homepage-large.svg" inverse="">
+        <div class="container w-100">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6 text-lg-start p-0">
+              <div class="py-4 container m-0 row row-cols-1 g-2 g-lg-3">
+                <p class="p-0 m-0 h2">Istituto comprensivo</p>
+                <h1 class="p-0 m-0">Federico Hernandez</h1>
+                <p class="p-0 m-0 h4">Livorno</p>
+
+                <div class="row row-cols-1 g-4 p-0">
+                  <p class="font-serif hero-quote">
+                    "Lo scopo della scuola è quello di trasformare gli specchi in finestre"
+                  </p>
+                  <a href="#" class="text-white mt-4"
+                    >Scopri l'istituto<it-icon name="it-arrow-right" color="inverse" size="sm" class="ms-2"></it-icon
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center mt-4 mt-lg-0">
+              <figure class="figure img-full mb-0 ratio ratio-16x9">
+                <img src="../images/hero-homepage.jpg" alt="immagine istituto" width="540" height="304" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </it-section>
+
+      <it-section class="service-section" inverse="" variant="emphasis">
+        <div class="container">
+          <h2 class="service-section__title">In evidenza</h2>
+          <div class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch" data-cards="">
+            <it-card variant="inline-mini" full-height="">
+              <figure slot="image" class="figure img-full">
+                <img src="../images/hero-homepage.jpg" alt="" />
+              </figure>
+
+              <a slot="title" href="#"
+                >Open day nella sede centrale<span class="visually-hidden"> (link a XYZ)</span></a
+              >
+
+              <span slot="text"></span>
+
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link"
+                  >NOTIZIA<span class="visually-hidden">Categoria correlata: </span></a
+                >
+              </div>
+              <time slot="footer" class="it-card-date">18 marzo 2026</time>
+            </it-card>
+
+            <it-card variant="inline-mini" full-height="">
+              <a slot="title" href="#"
+                >Spettacolo finale per il corso di teatro per le primarie<span class="visually-hidden">
+                  (link a XYZ)</span
+                ></a
+              >
+
+              <span slot="text"
+                >Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro
+                righe, senza troncamento.</span
+              >
+
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link"
+                  >EVENTO<span class="visually-hidden">Categoria correlata: </span></a
+                >
+              </div>
+              <time slot="footer" class="it-card-date">18 marzo 2026</time>
+            </it-card>
+
+            <it-card variant="inline-mini" full-height="">
+              <a slot="title" href="#"
+                >Orientamento per le classi di terza media<span class="visually-hidden"> (link a XYZ)</span>
+                <div class="it-card-title-icon-wrapper">
+                  <it-icon name="it-clip" color="primary"></it-icon></div
+              ></a>
+
+              <span slot="text"
+                >Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro
+                righe, senza troncamento.</span
+              >
+
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link"
+                  >SERVIZI PRE, INTER E POST SCUOLA<span class="visually-hidden">Categoria correlata: </span></a
+                >
+              </div>
+              <time slot="footer" class="it-card-date">18 mar 2026</time>
+            </it-card>
+          </div>
+        </div>
+      </it-section>
+
+      <section class="section">
+        <div class="container">
+          <it-carousel variant="gallery-sm" arrows="" data-cards="">
+            <h2 slot="title">Un'anteprima dell'Istituto</h2>
+
+            <it-carousel-slide>
+              <div class="card-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper">
+                      <img title="Aula magna" alt="Aula magna dell'istituto" src="https://picsum.photos/800/600?1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </it-carousel-slide>
+
+            <it-carousel-slide>
+              <div class="card-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper">
+                      <img
+                        title="Laboratorio scienze"
+                        alt="Laboratorio di scienze"
+                        src="https://picsum.photos/800/600?2"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </it-carousel-slide>
+
+            <it-carousel-slide>
+              <div class="card-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper">
+                      <img title="Palestra" alt="Palestra dell'istituto" src="https://picsum.photos/800/600?3" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </it-carousel-slide>
+
+            <it-carousel-slide>
+              <div class="card-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper">
+                      <img title="Biblioteca" alt="Biblioteca scolastica" src="https://picsum.photos/800/600?4" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </it-carousel-slide>
+
+            <it-carousel-slide>
+              <div class="card-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper">
+                      <img title="Cortile" alt="Cortile dell'istituto" src="https://picsum.photos/800/600?5" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </it-carousel-slide>
+
+            <it-carousel-slide>
+              <div class="card-wrapper">
+                <div class="img-responsive-wrapper">
+                  <div class="img-responsive">
+                    <div class="img-wrapper">
+                      <img title="Corridoio" alt="Corridoio principale" src="https://picsum.photos/800/600?6" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </it-carousel-slide>
+          </it-carousel>
+        </div>
+      </section>
+
+      <style>
+        .studia-con-noi {
+          background-color: #faebed;
+        }
+      </style>
+      <div class="studia-con-noi">
+        <it-section class="service-section">
+          <div class="container">
+            <h2>Studia con noi</h2>
+
+            <div class="pt-4">
+              <div class="row align-items-start gy-4">
+                <div class="col-12 col-lg-5">
+                  <h3 class="percorsi__title">I nostri percorsi di studio</h3>
+                  <p class="percorsi__description">
+                    L'istituto offre diversi percorsi di studio pensati per accompagnare ogni studente nella propria
+                    crescita educativa
+                  </p>
+                  <p class="percorsi__description">
+                    Ogni indirizzo propone attività, metodologie e opportunità formative specifiche, così da rispondere
+                    ai diversi interessi, attitudini e obiettivi personali
+                  </p>
+                  <it-button type="button" variant="primary" href="#"
+                    >Esplora le nostre offerte formative<it-icon
+                      name="it-arrow-right"
+                      label="col-inverse"
+                      color="inverse"
+                      size="sm"
+                      class="ms-2"
+                    >
+                    </it-icon
+                  ></it-button>
+                  <p class="mt-3">
+                    <a class="fw-semibold" href="#"
+                      >Consulta il Piano di Offerta Formativa (PTOF)<it-icon
+                        name="it-arrow-right"
+                        color="primary"
+                        size="sm"
+                        class="ms-2"
+                      ></it-icon
+                    ></a>
+                  </p>
+                </div>
+
+                <div class="col-12 col-lg-7 d-none d-lg-block">
+                  <div class="card border-0 shadow-sm rounded p-4 bg-lightest">
+                    <div class="row g-3">
+                      <div class="col-12 col-md-4">
+                        <img alt="icona scuola infanzia" src="../icons/Infanzia-Large.svg" size="lg" class="mb-2" />
+                        <p class="h5 text-secondary">Scuola dell'infanzia</p>
+                        <p class="small text-muted mb-0">Percorsi attivi: tempo ridotto, tempo pieno</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <img alt="icona scuola elementare" src="../icons/Elementari-Large.svg" size="lg" class="mb-2" />
+                        <p class="h5 text-secondary">Scuola primaria</p>
+                        <p class="small text-muted mb-0">Percorsi attivi: tempo normale, tempo pieno</p>
+                      </div>
+                      <div class="col-12 col-md-4">
+                        <img alt="icona scuola secondaria" src="../icons/Medie-Large.svg" size="lg" class="mb-2" />
+                        <p class="h5 text-secondary">Scuola secondaria di primo grado</p>
+                        <p class="small text-muted mb-0">Percorsi attivi: tempo normale</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-5" />
+
+            <div class="progettiIstituto">
+              <div class="row align-items-start gy-4">
+                <div class="col-12 col-lg-5">
+                  <h3 class="progetti__title">I progetti dell'istituto</h3>
+                  <p class="progetti__description">
+                    L'istituto promuove ogni anno un ampio programma di progetti e attività pensati per arricchire il
+                    percorso formativo degli studenti
+                  </p>
+                  <p class="progetti__description">
+                    Esperienze didattiche, laboratoriali e culturali si integrano alla vita scolastica per favorire
+                    partecipazione, crescita personale, inclusione e scoperta del territorio
+                  </p>
+                  <p class="mt-3">
+                    <a class="fw-semibold" href="#"
+                      >Vai a tutti i progetti<it-icon
+                        name="it-arrow-right"
+                        color="primary"
+                        size="sm"
+                        class="ms-2"
+                      ></it-icon
+                    ></a>
+                  </p>
+                </div>
+
+                <div class="col-12 col-lg-7">
+                  <div class="row row-cols-1 row-cols-md-2 g-2" data-cards="">
+                    <it-card full-height="">
+                      <a slot="title" href="#">Uscite didattiche</a>
+                      <span slot="text">Esperienze fuori dall'aula</span>
+                      <div slot="footer" class="it-card-taxonomy">
+                        <a href="#" class="it-card-link">
+                          <span class="visually-hidden">Categoria correlata: </span>
+                        </a>
+                      </div>
+                    </it-card>
+
+                    <it-card full-height="">
+                      <a slot="title" href="#">Corsi e certificazioni</a>
+                      <span slot="text">Attività pratiche e sperimentali</span>
+                      <div slot="footer" class="it-card-taxonomy">
+                        <a href="#" class="it-card-link">
+                          <span class="visually-hidden">Categoria correlata: </span>
+                        </a>
+                      </div>
+                    </it-card>
+
+                    <it-card full-height="">
+                      <a slot="title" href="#">Progetti di orientamento</a>
+                      <span slot="text">Supporto alle scelte future</span>
+                      <div slot="footer" class="it-card-taxonomy">
+                        <a href="#" class="it-card-link">
+                          <span class="visually-hidden">Categoria correlata: </span>
+                        </a>
+                      </div>
+                    </it-card>
+
+                    <it-card full-height="">
+                      <a slot="title" href="#">Laboratori didattici</a>
+                      <span slot="text">Attività pratiche e sperimentali</span>
+                      <div slot="footer" class="it-card-taxonomy">
+                        <a href="#" class="it-card-link">
+                          <span class="visually-hidden">Categoria correlata: </span>
+                        </a>
+                      </div>
+                    </it-card>
+
+                    <it-card full-height="">
+                      <a slot="title" href="#">Gare e concorsi</a>
+                      <span slot="text">Sfide educative e creative</span>
+                      <div slot="footer" class="it-card-taxonomy">
+                        <a href="#" class="it-card-link">
+                          <span class="visually-hidden">Categoria correlata: </span>
+                        </a>
+                      </div>
+                    </it-card>
+
+                    <it-card full-height="">
+                      <a slot="title" href="#">Progetti territorio e ambiente</a>
+                      <span slot="text">Scoperta e cura del territorio</span>
+                      <div slot="footer" class="it-card-taxonomy">
+                        <a href="#" class="it-card-link">
+                          <span class="visually-hidden">Categoria correlata: </span>
+                        </a>
+                      </div>
+                    </it-card>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </it-section>
+      </div>
+
+      <it-section class="service-section">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-12 col-lg-6">
+              <h2 class="service-section__title">Circolari</h2>
+              <p class="service-section__description">Le ultime circolari pubblicate</p>
+              <div class="row row-cols-1 g-3" data-cards="circolari">
+                <it-card full-height="">
+                  <a slot="title" href="#">Modulistica uscita autonoma infraquattordicenni, Viaggiatori, Privacy</a>
+                  <span slot="text">Comunicazione per uscita autonoma di alunni pendolari e liberatoria Privacy</span>
+                  <div slot="footer" class="it-card-taxonomy">
+                    <a href="#" class="it-card-link">
+                      <span class="visually-hidden">Categoria correlata: </span>
+                    </a>
+                  </div>
+                </it-card>
+
+                <it-card full-height="">
+                  <a slot="title" href="#">Iscrizioni scuola secondaria di secondo grado - anno scolastico 2025/26</a>
+                  <span slot="text"
+                    >Circolare che descrive le modalità di iscrizione alla scuola secondaria di secondo grado.</span
+                  >
+                  <div slot="footer" class="it-card-taxonomy">
+                    <a href="#" class="it-card-link">
+                      <span class="visually-hidden">Categoria correlata: </span>
+                    </a>
+                  </div>
+                </it-card>
+
+                <it-card full-height="">
+                  <a slot="title" href="#">Calendario scolastico 2024-25 e organizzazione oraria</a>
+                  <span slot="text">Calendario annuale</span>
+                  <div slot="footer" class="it-card-taxonomy">
+                    <a href="#" class="it-card-link">
+                      <span class="visually-hidden">Categoria correlata: </span>
+                    </a>
+                  </div>
+                </it-card>
+
+                <it-card full-height="">
+                  <a slot="title" href="#">Chiusura straordinaria per il giorno 11 ottobre 2025</a>
+                  <span slot="text">Comunicazione di chiusura straordinaria per manutenzione</span>
+                  <div slot="footer" class="it-card-taxonomy">
+                    <a href="#" class="it-card-link">
+                      <span class="visually-hidden">Categoria correlata: </span>
+                    </a>
+                  </div>
+                </it-card>
+              </div>
+              <a href="#" class="d-inline-flex align-items-center g-2 mt-3">
+                Consulta tutte le circolari
+                <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
+              </a>
+            </div>
+            <div class="col-12 col-lg-6">
+              <h2 class="service-section__title">Servizi</h2>
+              <p class="service-section__description">I servizi offerti dalla nostra scuola</p>
+              <div class="row row-cols-1 g-3" data-cards="servizi">
+                <it-card full-height="">
+                  <a slot="title" href="#">Mensa</a>
+                  <span slot="text"
+                    >Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta
+                    alimentazione durate la giornata scolastica</span
+                  >
+                  <div slot="footer" class="it-card-taxonomy">
+                    <a href="#" class="it-card-link">
+                      <span class="visually-hidden">Categoria correlata: </span>
+                    </a>
+                  </div>
+                </it-card>
+
+                <it-card full-height="">
+                  <a slot="title" href="#">Piedibus</a>
+                  <span slot="text"
+                    >Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza
+                    e mobilità sostenibile</span
+                  >
+                  <div slot="footer" class="it-card-taxonomy">
+                    <a href="#" class="it-card-link">
+                      <span class="visually-hidden">Categoria correlata: </span>
+                    </a>
+                  </div>
+                </it-card>
+
+                <it-card full-height="">
+                  <a slot="title" href="#">Scuolabus</a>
+                  <span slot="text"
+                    >Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza,
+                    secondo orari e fermate predefinite</span
+                  >
+                  <div slot="footer" class="it-card-taxonomy">
+                    <a href="#" class="it-card-link">
+                      <span class="visually-hidden">Categoria correlata: </span>
+                    </a>
+                  </div>
+                </it-card>
+
+                <it-card full-height="">
+                  <a slot="title" href="#">Doposcuola</a>
+                  <span slot="text"
+                    >Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo
+                    guidato da personale qualificato.</span
+                  >
+                  <div slot="footer" class="it-card-taxonomy">
+                    <a href="#" class="it-card-link">
+                      <span class="visually-hidden">Categoria correlata: </span>
+                    </a>
+                  </div>
+                </it-card>
+              </div>
+              <a href="#" class="d-inline-flex align-items-center g-2 mt-3">
+                Vai a tutti i servizi
+                <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </it-section>
+
+      <it-section variant="emphasis" inverse="">
+        <div class="container">
+          <h2 id="modelli-scuole-homepage-tools">I nostri strumenti digitali</h2>
+          <div class="py-4">
+            <div class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch" data-cards="">
+              <it-card variant="inline-mini" full-height="">
+                <figure slot="image" class="figure img-full">
+                  <img src="../icons/Scuola-in-chiaro.svg" alt="" />
+                </figure>
+
+                <a slot="title" href="#">Scuola in Chiaro<span class="visually-hidden"> (link a XYZ)</span></a>
+
+                <span slot="text"></span>
+
+                <div slot="footer" class="it-card-taxonomy">
+                  <a href="#" class="it-card-category it-card-link"
+                    ><span class="visually-hidden">Categoria correlata: </span></a
+                  >
+                </div>
+                <time slot="footer" class="it-card-date"></time>
+              </it-card>
+
+              <it-card variant="inline-mini" full-height="">
+                <figure slot="image" class="figure img-full">
+                  <img src="../icons/Unica.svg" alt="" />
+                </figure>
+
+                <a slot="title" href="#">UNICA<span class="visually-hidden"> (link a XYZ)</span></a>
+
+                <span slot="text"></span>
+
+                <div slot="footer" class="it-card-taxonomy">
+                  <a href="#" class="it-card-category it-card-link"
+                    ><span class="visually-hidden">Categoria correlata: </span></a
+                  >
+                </div>
+                <time slot="footer" class="it-card-date"></time>
+              </it-card>
+
+              <it-card variant="inline-mini" full-height="">
+                <figure slot="image" class="figure img-full">
+                  <img src="../icons/Registro.svg" alt="" />
+                </figure>
+
+                <a slot="title" href="#">Registro elettronico<span class="visually-hidden"> (link a XYZ)</span></a>
+
+                <span slot="text"></span>
+
+                <div slot="footer" class="it-card-taxonomy">
+                  <a href="#" class="it-card-category it-card-link"
+                    ><span class="visually-hidden">Categoria correlata: </span></a
+                  >
+                </div>
+                <time slot="footer" class="it-card-date"></time>
+              </it-card>
+            </div>
+          </div>
+        </div>
+      </it-section>
+
+      <it-section>
+        <div class="container">
+          <h2>I nostri finanziamenti</h2>
+          <div class="service-grid row row-cols-1 row-cols-lg-3 g-3 align-items-stretch" data-cards="">
+            <it-card full-height="">
+              <a slot="title" href="#">PNRR Futura</a>
+              <figure slot="image" class="figure img-full">
+                <img src="../illustrations/pnrr.svg" alt="" />
+              </figure>
+              <span slot="text">Programma del PNRR per innovazione e digitalizzazione della scuola</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden"></span>
+                  Categoria
+                </a>
+              </div>
+              <time datetime="" slot="footer" class="it-card-date"></time>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">PON - Ricerca e innovazione 2014-2020</a>
+              <figure slot="image" class="figure img-full">
+                <img src="../illustrations/pon-ricerca.svg" alt="" />
+              </figure>
+              <span slot="text">Fondi europei per progetti di ricerca e sviluppo nelle scuole</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden"></span>
+                  Categoria
+                </a>
+              </div>
+              <time datetime="" slot="footer" class="it-card-date"></time>
+            </it-card>
+
+            <it-card full-height="">
+              <a slot="title" href="#">PON inclusione</a>
+              <figure slot="image" class="figure img-full">
+                <img src="../illustrations/pon.svg" alt="" />
+              </figure>
+              <span slot="text">Programma europeo per il sostegno e l'inclusione sociale</span>
+              <div slot="footer" class="it-card-taxonomy">
+                <a href="#" class="it-card-category it-card-link">
+                  <span class="visually-hidden"></span>
+                  Categoria
+                </a>
+              </div>
+              <time datetime="" slot="footer" class="it-card-date"></time>
+            </it-card>
+          </div>
+          <a href="#" class="d-inline-block mt-4">
+            Esplora tutti i finanziamenti<it-icon
+              name="it-arrow-right"
+              color="primary"
+              size="sm"
+              class="ms-2"
+            ></it-icon>
+          </a>
+        </div>
+      </it-section>
+
+      <style>
+        .pubblicita {
+          background-color: #faebed;
+        }
+      </style>
+      <div class="pubblicita">
+        <it-section>
+          <div class="container">
+            <h2>Pubblicità legale e trasparenza</h2>
+            <div class="service-grid row row-cols-1 row-cols-lg-2 g-3 align-items-stretch" data-cards="">
+              <it-card variant="inline-banner-mini" full-height="">
+                <a slot="title" href="#">Albo online</a>
+                <it-icon slot="image" color="primary" name="it-external-link" size="xl"></it-icon>
+                <span slot="subtitle"
+                  >Spazio in cui la scuola pubblica atti ufficiali, comunicazioni e documenti amministrativi con valore
+                  legale e sempre aggiornati</span
+                >
+              </it-card>
+
+              <it-card variant="inline-banner-mini" full-height="">
+                <a slot="title" href="#">Amministrazione Trasparente</a>
+                <it-icon slot="image" color="primary" name="it-external-link" size="xl"></it-icon>
+                <span slot="subtitle"
+                  >Portale dedicato alla pubblicazione di dati, documenti e informazioni sull'organizzazione e
+                  sull'attività dell'istituto, nel rispetto degli obblighi di trasparenza</span
+                >
+              </it-card>
+            </div>
+          </div>
+        </it-section>
+      </div>
+
+      <it-section image="../illustrations/hero-homepage-large.svg" inverse="">
+        <div class="container">
+          <div class="d-flex flex-column text-white">
+            <h2 class="no_toc">Per il personale scolastico</h2>
+            <p>Informazioni, modulistica e strumenti per i docenti dell'Istituto.</p>
+            <a class="btn btn-sm btn-primary align-self-start" href="#">
+              <span>Accedi all'area personale</span>
+              <it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon>
+            </a>
+          </div>
+        </div>
+      </it-section>
+
+      <it-section variant="primary">
+        <div class="container">
+          <div class="bg-white py-4 px-4 m-auto col-12 col-lg-6">
+            <it-rating
+              name="rating"
+              value="0"
+              icon="it-star-full"
+              max-elements="5"
+              class="d-flex flex-column align-items-start"
+            >
+              <p slot="label" class="text-black h5">Quanto sono chiare le informazioni su questa pagina?</p>
+              <it-rating-item value="1">
+                <span slot="label">1 stella</span>
+              </it-rating-item>
+              <it-rating-item value="2">
+                <span slot="label">2 stelle</span>
+              </it-rating-item>
+              <it-rating-item value="3">
+                <span slot="label">3 stelle</span>
+              </it-rating-item>
+              <it-rating-item value="4">
+                <span slot="label">4 stelle</span>
+              </it-rating-item>
+              <it-rating-item value="5">
+                <span slot="label">5 stelle</span>
+              </it-rating-item>
+            </it-rating>
+          </div>
+        </div>
+      </it-section>
+    </main>
+
+    <footer class="it-footer">
+      <div class="py-4 bg-darker">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-lg-4 g-3 align-items-center justify-content-center">
+            <div class="col text-center">
+              <img
+                src="../illustrations/pnrr.svg"
+                class="img-fluid"
+                style="height: 80px; object-fit: contain"
+                alt="Logo PNRR"
+              />
+            </div>
+            <div class="col text-center">
+              <img
+                src="../illustrations/pon-ricerca.svg"
+                class="img-fluid"
+                style="height: 80px; object-fit: contain"
+                alt="Logo PON Ricerca"
+              />
+            </div>
+            <div class="col text-center">
+              <img
+                src="../illustrations/pon.svg"
+                class="img-fluid"
+                style="height: 80px; object-fit: contain"
+                alt="Logo PON"
+              />
+            </div>
+            <div class="col text-center">
+              <img
+                src="../illustrations/rigenerazione.svg"
+                class="img-fluid"
+                style="height: 80px; object-fit: contain"
+                alt="Logo Rigenerazione"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="it-footer-main">
+        <div class="container">
+          <section class="pb-4">
+            <div class="row clearfix">
+              <div class="col-12">
+                <div class="it-brand-wrapper">
+                  <a href="#">
+                    <it-icon name="it-pa" size="xl" color="inverse"></it-icon>
+                    <div class="it-brand-text">
+                      <h2 class="no_toc">Istituto comprensivo F. Hernandez</h2>
+                      <h3 class="no_toc">Livorno</h3>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="row row-cols-1 row-cols-lg-4 g-3">
+              <div class="col-12 col-lg-3 pb-2">
+                <h4 title="Vai alla pagina: Menu principale">Menu principale</h4>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li><a class="list-item" href="#">Istituto</a></li>
+                    <li><a class="list-item" href="#">Didattica</a></li>
+                    <li><a class="list-item" href="#">Servizi</a></li>
+                    <li><a class="list-item" href="#">Comunicazioni</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 pb-2">
+                <h4 title="Vai alla pagina: Pubblicità e trasparenza">Pubblicità e trasparenza</h4>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li><a class="list-item" href="#">Amministrazione trasparente</a></li>
+                    <li><a class="list-item" href="#">Albo online</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 pb-2">
+                <h4>Personale scolastico</h4>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li><a class="list-item" href="#">Modulistica per il personale scolastico</a></li>
+                    <li><a class="list-item" href="#">Registro elettronico per docenti</a></li>
+                    <li><a class="list-item" href="#">NoiPA</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-3 pb-2">
+                <h4>Link esterni</h4>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li><a class="list-item" href="#">MIUR</a></li>
+                    <li><a class="list-item" href="#">Ufficio Scolastico Regionale</a></li>
+                    <li><a class="list-item" href="#">Ufficio Scolastico Territoriale</a></li>
+                    <li><a class="list-item" href="#">Scuola In Chiaro</a></li>
+                    <li><a class="list-item" href="#">Comune</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="py-4 border-white border-top">
+            <div class="row row-cols-1 row-cols-lg-4 g-3">
+              <div class="col-12 col-md-4 pb-2">
+                <h4>Contatti</h4>
+                <p>
+                  <strong>Istituto comprensivo F. Hernandez</strong><br />
+                  <span>Via degli Istituti, 1 - 57100 Livorno</span>
+                </p>
+                <div class="link-list-wrapper">
+                  <ul class="footer-list link-list clearfix">
+                    <li>indirizzopecdellente@pec.gov.it</li>
+                    <li>+39 000000000</li>
+                    <li><a class="list-item" href="#">URP - Ufficio Relazioni con il Pubblico</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 pb-2">
+                <div class="pb-2">
+                  <h4>Seguici su</h4>
+                  <ul class="list-inline text-left social">
+                    <li class="list-inline-item">
+                      <a class="p-2" href="#">
+                        <it-icon color="inverse" size="sm" name="it-facebook"></it-icon>
+                        <span class="visually-hidden">Facebook (link esterno)</span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="p-2" href="#">
+                        <it-icon color="inverse" size="sm" name="it-instagram"></it-icon>
+                        <span class="visually-hidden">Instagram (link esterno)</span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="p-2" href="#">
+                        <it-icon color="inverse" size="sm" name="it-twitter"></it-icon>
+                        <span class="visually-hidden">X (link esterno)</span>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="p-2" href="#">
+                        <it-icon color="inverse" size="sm" name="it-youtube"></it-icon>
+                        <span class="visually-hidden">YouTube (link esterno)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 mt-2">
+                <h4>Newsletter</h4>
+                <div class="form-group d-flex gap-1">
+                  <it-input
+                    slotted=""
+                    type="text"
+                    id="footerNewsletterEmail"
+                    size="sm"
+                    placeholder="Indirizzo email"
+                    label-hidden=""
+                  >
+                    <span slot="label">Inserisci la tua email</span>
+                    <it-button type="submit" variant="success" outline="" slot="append">Iscriviti</it-button>
+                  </it-input>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div class="it-footer-small-prints clearfix">
+        <div class="container">
+          <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+            <li class="list-inline-item"><a href="#">Archivio</a></li>
+            <li class="list-inline-item"><a href="#">Informativa cookie</a></li>
+            <li class="list-inline-item"><a href="#">Note legali</a></li>
+            <li class="list-inline-item"><a href="#">Informativa privacy</a></li>
+            <li class="list-inline-item"><a href="#">Mappa del sito</a></li>
+            <li class="list-inline-item">
+              <a href="https://form.agid.gov.it/view/xyz">
+                Dichiarazione di accessibilità
+                <span class="visually-hidden">(link esterno su sito AgID)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

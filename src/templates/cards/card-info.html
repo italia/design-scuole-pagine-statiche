@@ -1,0 +1,32 @@
+<template>
+  <it-card full-height="">
+    <a slot="title" href="#" data-tpl-href="url" data-tpl="title">Titolo servizio</a>
+    <figure slot="image" class="figure img-full" data-tpl-if="imageSrc">
+      <img
+        src="https://picsum.photos/seed/city/800/600"
+        data-tpl-src="imageSrc"
+        alt=""
+        data-tpl-alt="imageAlt"
+      />
+    </figure>
+    <span slot="subtitle" data-tpl="subtitle" data-tpl-if="subtitle"></span>
+    <span slot="signature" data-tpl="signature" data-tpl-if="signature"></span>
+    <span slot="text" data-tpl="text">
+      Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre
+      o quattro righe, senza troncamento.
+    </span>
+    <div slot="footer" class="it-card-taxonomy" data-tpl-if="category">
+      <a href="#" class="it-card-category it-card-link">
+        <span class="visually-hidden">Categoria correlata: </span>
+        <span data-tpl="category"></span>
+      </a>
+    </div>
+    <time
+      slot="footer"
+      class="it-card-date"
+      data-tpl="date"
+      data-tpl-if="date"
+      data-tpl-datetime="datetime"
+    ></time>
+  </it-card>
+</template>
