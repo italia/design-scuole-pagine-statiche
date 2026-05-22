@@ -12,6 +12,10 @@
   --bsi-header-brand-icon-color: var(--bsi-color-text-secondary);
 }
 
+.it-header-navbar-wrapper.theme-light {
+  --bsi-header-slim-border-color: var(--bsi-border-color);
+}
+
 .it-search-wrapper .search-link it-icon {
   --bsi-icon-default: var(--bsi-header-center-text-color);
 }
