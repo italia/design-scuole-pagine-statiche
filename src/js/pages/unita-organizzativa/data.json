@@ -1,0 +1,160 @@
+{
+  "breadcrumbs": {
+    "pagina": "Segreteria didattica",
+    "paginePrecedenti": [
+      {
+        "nome": "L'istituto",
+        "url": "#"
+      },
+      {
+        "nome": "Organizzazione",
+        "url": "#"
+      }
+    ]
+  },
+  "contentHeader": {
+    "title": "Segreteria didattica",
+    "description": "La segreteria gestisce iscrizioni, documenti e informazioni per studenti e famiglie.",
+    "category": "SEGRETERIA"
+  },
+  "contentBody": {
+    "navItems": [
+      {
+        "title": "Cosa fa",
+        "href": "#cosa-fa",
+        "className": "nav-link active"
+      },
+      {
+        "title": "Dove si trova",
+        "href": "#dove-si-trova"
+      },
+      {
+        "title": "Orari di apertura",
+        "href": "#orari-di-apertura"
+      },
+      {
+        "title": "Contatti",
+        "href": "#contatti"
+      },
+      {
+        "title": "Dipende da",
+        "href": "#dipende-da"
+      },
+      {
+        "title": "Responsabile",
+        "href": "#responsabile"
+      },
+      {
+        "title": "Personale",
+        "href": "#personale"
+      },
+      {
+        "title": "Ulteriori informazioni",
+        "href": "#ulteriori-informazioni"
+      }
+    ],
+    "cosaFa": {
+      "className": "pb-4",
+      "textClassName": "font-serif mb-0",
+      "title": "Cosa fa",
+      "title_id": "cosa-fa",
+      "text": "La segreteria didattica supporta studenti e famiglie nelle principali procedure scolastiche: iscrizioni, certificazioni, gestione dei documenti e informazioni sull’andamento dell’anno scolastico. Fornisce assistenza su orari, modulistica, servizi e comunicazioni ufficiali dell’Istituto."
+    },
+    "doveSiTrova": {
+      "className": "py-4",
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Dove si trova",
+      "title_id": "dove-si-trova",
+      "items": [
+        {
+          "type": "location",
+          "title": "Scuola E. De Amicis",
+          "titleHref": "#",
+          "bodyHtml": "<div><dt>Orari di ingresso:</dt><dd>La scuola è aperta dal lunedì al venerdì dalle ore 8:30 alle ore 12:30.</dd></div><div><dt>Email: </dt><dd><a href=\"mailto:scuola@mail.com\">scuola@mail.com</a></dd></div><div><dt>Tel: </dt><dd>00 000000</dd></div><div><dt>Indirizzo: </dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div>",
+          "icon": "it-map-marker",
+          "mapUrl": "#"
+        }
+      ]
+    },
+    "orari": {
+      "className": "py-4",
+      "textClassName": "font-serif",
+      "title": "Orari di apertura",
+      "title_id": "orari-di-apertura",
+      "text": "Dal lunedì al venerdì dalle ore 8:30 alle ore 12:30."
+    },
+    "contatti": {
+      "className": "py-4",
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Contatti",
+      "title_id": "contatti",
+      "items": [
+        {
+          "type": "location",
+          "borderTop": "primary",
+          "title": "Segreteria centrale",
+          "bodyHtml": "<div><dt>Email: </dt><dd><a href=\"mailto:segreteria@mail.com\">segreteria@mail.com</a></dd></div><div><dt>Tel: </dt><dd>+39 00 000000</dd></div><div><dt>PEC: </dt><dd><a href=\"mailto:segreteria@pec.it\">segreteria@pec.it</a></dd></div>",
+          "icon": "it-mail"
+        }
+      ]
+    },
+    "dipendeDa": {
+      "className": "py-4",
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Dipende da",
+      "title_id": "dipende-da",
+      "items": [
+        {
+          "type": "location",
+          "title": "Presidenza",
+          "titleHref": "#",
+          "bodyHtml": "<div><dt>Indirizzo: </dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div>",
+          "icon": "it-pa"
+        }
+      ]
+    },
+
+    "responsabile": {
+      "className": "py-4",
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Responsabile",
+      "title_id": "responsabile",
+      "items": [
+        {
+          "type": "person",
+          "title": "Mario Rossi",
+          "titleHref": "#",
+          "subtitle": "Responsabile segreteria didattica",
+          "bodyHtml": "<div><dt>Email: </dt><dd><a href=\"mailto:mario.rossi@mail.com\">mario.rossi@mail.com</a></dd></div><div><dt>Tel: </dt><dd>+39 00 000000</dd></div>",
+          "icon": "it-user",
+          "avatarType": "icon"
+        }
+      ]
+    },
+    "personale": {
+      "className": "py-4",
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Personale",
+      "title_id": "personale",
+      "items": [
+        {
+          "type": "person",
+          "title": "Massimiliano Santovito",
+          "titleHref": "#",
+          "subtitle": "Segretario",
+          "bodyHtml": "<div><dt>Email: </dt><dd><a href=\"mailto:msantovito@mail.com\">msantovito@mail.com</a></dd></div><div><dt>Tel: </dt><dd>+39 00 000000</dd></div>",
+          "icon": "it-user",
+          "avatarType": "icon"
+        }
+      ]
+    },
+    "ulterioriInformazioni": {
+      "className": "pt-4",
+      "title": "Ulteriori informazioni",
+      "title_id": "ulteriori-informazioni",
+      "text": "Per chiarimenti su pratiche amministrative, iscrizioni, certificazioni e servizi di segreteria, è possibile contattare la segreteria scolastica negli orari indicati. Il personale è a disposizione per fornire supporto e informazioni utili alle famiglie e agli studenti.",
+      "categories": [{ "title": "Segreteria" }],
+      "lastUpdate": "12 dicembre 2025"
+    }
+  }
+}
