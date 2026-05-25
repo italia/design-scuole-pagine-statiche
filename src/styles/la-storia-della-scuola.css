@@ -1,0 +1,9 @@
+.storia-text {
+  padding: var(--it-spacing-6x) 0;
+}
+
+@media (width >= 992px) {
+  .storia-text {
+    padding: var(--scuole-padding-6);
+  }
+}

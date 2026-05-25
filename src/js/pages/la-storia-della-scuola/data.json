@@ -1,0 +1,56 @@
+{
+  "breadcrumbs": {
+    "pagina": "La storia della scuola",
+    "paginePrecedenti": [
+      {
+        "nome": "L'istituto",
+        "url": "#"
+      }
+    ],
+    "paginePrecedenti": [
+      {
+        "nome": "Le nostre scuole",
+        "url": "../pages/le-nostre-scuole.html"
+      }
+    ]
+  },
+
+  "pageHeader": {
+    "class": "hero presentation",
+    "title": "La storia della scuola",
+    "subtitle": "Testo eventuale sottotitolo",
+    "illustration": "../illustrations/hero-presentation-scuola.png"
+  },
+
+  "hero1978": {
+    "rowClass": "row flex-md-row-reverse m-md-0",
+    "title": "1978",
+    "subtitle": "Inaugurazione del nuovo edificio scolastico",
+    "text": "Nel 1978 la comunità scolastica vive uno dei momenti più significativi della propria storia: l’inaugurazione del nuovo edificio, progettato per rispondere alle esigenze di un territorio in forte crescita demografica. La nuova sede sostituisce una struttura ormai insufficiente e introduce spazi più ampi, luminosi e funzionali, realizzati secondo criteri allora innovativi. Per la prima volta vengono previsti ambienti specifici per attività laboratoriali, una palestra interna e aree esterne attrezzate per il gioco e l’educazione motoria. L’apertura segna un passaggio simbolico e operativo: la scuola diventa un punto di riferimento stabile per le famiglie, capace di sostenere percorsi educativi moderni e inclusivi, e sancisce l’avvio di un processo di continuo miglioramento che accompagnerà l’Istituto negli anni successivi.",
+    "image": "../images/placeholder-image.png",
+    "imagePosition": "right"
+  },
+
+  "hero1999": {
+    "title": "1999",
+    "subtitle": "Avvio delle attività digitali per studenti e docenti",
+    "text": "Con l’arrivo dei primi computer nelle scuole italiane, anche l’Istituto decide di investire nell’innovazione, inaugurando i primi laboratori informatici. L’iniziativa nasce dalla volontà di offrire agli studenti competenze che stanno diventando sempre più centrali nella vita quotidiana e professionale. Le aule vengono attrezzate con postazioni multimediali, un sistema di rete e una delle prime connessioni internet del territorio. Parallelamente, un gruppo di docenti si forma per integrare questi strumenti nella didattica, introducendo modalità di apprendimento nuove, più interattive e collaborative. Gli studenti partecipano ai primi corsi di alfabetizzazione digitale, sperimentano software educativi e imparano a navigare online. Questo passo segna una svolta culturale: la tecnologia entra stabilmente nella scuola e apre la strada a un’evoluzione che negli anni porterà alla piena integrazione del digitale nei percorsi formativi."
+  },
+
+  "hero2014": {
+    "title": "2014",
+    "subtitle": "Ristrutturazione degli spazi didattici",
+    "text": "Nel 2014 l'Istituto intraprende un ampio intervento di ristrutturazione che coinvolge tutte le aree didattiche e amministrative. L’obiettivo è rendere gli ambienti più accoglienti, sicuri e adatti a una didattica sempre più partecipativa. Le aule vengono ampliate e dotate di sistemi multimediali, mentre la nuova biblioteca scolastica viene progettata come spazio flessibile, pensato non solo per la consultazione, ma anche per letture condivise, lavori di gruppo e incontri con autori. Vengono inoltre creati ambienti interdisciplinari dedicati ai laboratori scientifici, creativi e musicali, con attrezzature aggiornate e postazioni configurabili. La ristrutturazione coinvolge anche gli spazi esterni, migliorati per supportare attività motorie e momenti di socializzazione. Questo rinnovamento non rappresenta solo un cambiamento architettonico, ma un vero e proprio ripensamento pedagogico: la scuola diventa uno spazio dinamico, aperto, capace di sostenere percorsi educativi più innovativi e vicini alle esigenze degli studenti.",
+    "textClass": "storia-text pe-md-0",
+    "image": "../images/placeholder-image.png",
+    "imagePosition": "left"
+  },
+
+  "hero2022": {
+    "title": "2022",
+    "subtitle": "Accesso online a modulistica, comunicazioni e iscrizioni",
+    "text": "Nel 2022 l’Istituto avvia un progetto strutturato di digitalizzazione dei servizi, con l’obiettivo di semplificare il rapporto tra scuola, famiglie e studenti. Viene introdotto un nuovo portale online che permette di consultare avvisi, circolari, documenti ufficiali, modulistica e scadenze in modo centralizzato e facilmente accessibile. Le procedure più utilizzate — dalle iscrizioni ai colloqui, fino alle richieste amministrative — vengono progressivamente digitalizzate per ridurre la burocrazia, limitare le file in segreteria e garantire maggiore trasparenza. Il personale scolastico viene formato all’uso degli strumenti digitali e vengono attivate nuove modalità di comunicazione che permettono alle famiglie di ricevere aggiornamenti in tempo reale. Questo percorso segna una tappa fondamentale per la scuola, che si impegna a offrire un’esperienza più semplice, inclusiva e orientata ai bisogni contemporanei della comunità educativa."
+  },
+
+  "lastUpdate": "12 dicembre 2025"
+}

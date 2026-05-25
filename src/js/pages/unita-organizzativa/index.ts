@@ -13,6 +13,9 @@ import sectionList from '@/templates/components/section-list.html?raw';
 import contentHeaderHTML from '@/templates/components/pagina-foglia/content-header.html?raw';
 import contentBodyHTML from '@/templates/components/pagina-foglia/content-body.html?raw';
 import contentUlterioriInformazioniHTML from '@/templates/components/pagina-foglia/content-ulteriori-informazioni.html?raw';
+import pageInfosHTML from '@/templates/components/page-infos.html?raw';
+
+import contentTextHTML from '@/templates/unita-organizzativa/content-text.html?raw';
 
 import data from './data.json';
 
@@ -23,6 +26,8 @@ const templates = {
   contentBody: fromHTML(contentBodyHTML),
   sectionList: fromHTML(sectionList),
   contentUlterioriInformazioni: fromHTML(contentUlterioriInformazioniHTML),
+  pageInfos: fromHTML(pageInfosHTML),
+  contentText: fromHTML(contentTextHTML),
   rating: fromHTML(ratingHTML),
   footer: fromHTML(footerHTML),
 };
@@ -32,6 +37,10 @@ mount('main-header', render(templates.header));
 mount('breadcrumbs', render(templates.breadcrumbs, data.breadcrumbs));
 
 mount('content-header', render(templates.contentHeader, data.contentHeader));
+
+templates.contentBody.content
+  .querySelector('[data-content-text]')
+  ?.replaceWith(fromHTML(contentTextHTML).content.cloneNode(true));
 
 const contentBody = render(templates.contentBody, data.contentBody);
 

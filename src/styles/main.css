@@ -71,6 +71,11 @@ section.bg-accent {
   --bsi-section-padding-y: var(--bsi-spacing-xl); /* 40px */
 }
 
+.page-infos {
+  --bsi-body-font-size: var(--bsi-font-size-3);
+  --bsi-border-color: var(--it-color-gray-96);
+}
+
 it-avatar {
   --bsi-color-background-secondary-lighter: var(--bsi-color-background-primary-lightest);
   --bsi-color-text-secondary: var(--bsi-color-text-primary);
