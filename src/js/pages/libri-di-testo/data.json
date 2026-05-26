@@ -15,36 +15,26 @@
     "illustration": "../public/illustrations/didattica-large.svg"
   },
   "contentBody": {
-    "navItems": [
-      {
-        "title": "Elenco",
-        "href": "#elenco",
-        "className": "nav-link active"
-      }
-    ],
     "elenco": {
-      "className": "pb-4",
-      "textClassName": "font-serif mb-0",
       "title": "Elenco dei libri per anno scolastico",
-      "title_id": "elenco",
       "items": [
         {
           "type": "inlineMini",
           "title": "Primaria a tempo pieno (40 ore)",
           "titleHref": "#",
-          "body": "PDF, 0.5 MB"
+          "text": "PDF, 0.5 MB"
         },
         {
           "type": "inlineMini",
           "title": "Primaria a tempo ridotto (30 ore)",
           "titleHref": "#",
-          "body": "PDF, 0.5 MB"
+          "text": "PDF, 0.5 MB"
         },
         {
           "type": "inlineMini",
           "title": "Secondaria",
           "titleHref": "#",
-          "body": "PDF, 0.5 MB"
+          "text": "PDF, 0.5 MB"
         }
       ]
     }

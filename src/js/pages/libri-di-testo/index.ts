@@ -1,6 +1,7 @@
 import '@/js/main';
 // import '@/styles/sede-scolastica.css';
 import { render, fromHTML, mount } from '@/js/utils/templates';
+import { renderCards } from '@/js/engines/cards';
 
 import headerHTML from '@/templates/layout/header.html?raw';
 import footerHTML from '@/templates/layout/footer.html?raw';
@@ -41,3 +42,31 @@ container?.appendChild(hero);
 const select = render(templates.select);
 const selectContainer = document.getElementById('select');
 selectContainer?.appendChild(select);
+
+/* render section */
+const fragment = render(templates.serviceSection, data.contentBody.elenco);
+const CardsContainer = fragment.querySelector('[data-cards]');
+if (CardsContainer) {
+  CardsContainer.appendChild(renderCards(data.contentBody.elenco.items));
+}
+
+const Container = document.getElementById('content-body');
+if (Container) {
+  Container.appendChild(fragment);
+}
+
+/*
+contentBody
+  .querySelector('#ulteriori-informazioni')
+  ?.replaceWith(
+    render(templates.contentUlterioriInformazioni, data.contentBody.ulterioriInformazioni)
+  );
+
+mount('content-body', contentBody);
+*/
+
+/* rating */
+mount('rating', render(templates.rating));
+
+/* footer */
+mount('footer', render(templates.footer));
