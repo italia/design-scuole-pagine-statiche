@@ -13,6 +13,7 @@
       Toponimo o luogo
     </div>
     <span slot="subtitle" data-tpl-html="subtitle" data-tpl-if="subtitle"></span>
+    <span slot="address" data-tpl="address" data-tpl-if="address"></span>
     <div slot="image" class="it-card-profile-image-icon-wrapper" data-tpl-if="icon">
       <it-icon color="primary" data-tpl-name="icon" size="md"></it-icon>
     </div>
@@ -37,7 +38,7 @@
       data-tpl-html="body"
     ></div>
 
-    <div slot="footer" style="flex-grow: 1" data-tpl-if="distance">
+    <div slot="footer" class="flex-grow-1" data-tpl-if="distance">
       <it-icon color="secondary" name="it-map-marker" size="sm"></it-icon>
       <strong>Distanza:</strong> <span data-tpl="distance"></span>
     </div>

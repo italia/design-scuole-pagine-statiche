@@ -1,0 +1,8 @@
+.numeri-istituto .numero {
+  font-size: 3.75rem;
+  line-height: 1.3;
+}
+
+.storia .section {
+  --bsi-section-image-overlay: hsl(352deg 58% 24% / 80%);
+}
