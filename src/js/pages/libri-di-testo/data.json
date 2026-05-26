@@ -11,7 +11,8 @@
   "hero": {
     "title": "Libri di testo",
     "subtitle": "In questa sezione sono presenti tutti i libri di testo delle classi",
-    "category": ""
+    "category": "",
+    "illustration": "../public/illustrations/didattica-large.svg"
   },
   "contentBody": {
     "navItems": [

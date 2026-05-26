@@ -29,55 +29,6 @@ const templates = {
 mount('main-header', render(templates.header));
 mount('breadcrumbs', render(templates.breadcrumbs, data.breadcrumbs));
 
-mount('hero', render(templates.hero, data.hero));
-
-/*
-
-const contentBody = render(templates.contentBody, data.contentBody);
-
-contentBody
-  .querySelector('#cosa-fa')
-  ?.replaceWith(render(templates.sectionList, data.contentBody.cosaFa));
-
-const doveSiTrova = render(templates.sectionList, data.contentBody.doveSiTrova);
-doveSiTrova
-  .querySelector('[data-cards]')
-  ?.appendChild(renderCards(data.contentBody.doveSiTrova.items));
-contentBody.querySelector('#dove-si-trova')?.replaceWith(doveSiTrova);
-
-contentBody
-  .querySelector('#orari-di-apertura')
-  ?.replaceWith(render(templates.sectionList, data.contentBody.orari));
-
-const contatti = render(templates.sectionList, data.contentBody.contatti);
-contatti.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.contatti.items));
-contentBody.querySelector('#contatti')?.replaceWith(contatti);
-
-const dipendeDa = render(templates.sectionList, data.contentBody.dipendeDa);
-dipendeDa.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.dipendeDa.items));
-contentBody.querySelector('#dipende-da')?.replaceWith(dipendeDa);
-
-const responsabile = render(templates.sectionList, data.contentBody.responsabile);
-responsabile
-  .querySelector('[data-cards]')
-  ?.appendChild(renderCards(data.contentBody.responsabile.items));
-contentBody.querySelector('#responsabile')?.replaceWith(responsabile);
-
-const personale = render(templates.sectionList, data.contentBody.personale);
-personale.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.personale.items));
-contentBody.querySelector('#personale')?.replaceWith(personale);
-
-contentBody
-  .querySelector('#ulteriori-informazioni')
-  ?.replaceWith(
-    render(templates.contentUlterioriInformazioni, data.contentBody.ulterioriInformazioni)
-  );
-
-mount('content-body', contentBody);
-
-
-mount('rating', render(templates.rating));
-
-
-mount('footer', render(templates.footer));
-*/
+const hero = render(templates.hero, data.hero);
+const container = document.getElementById('hero-presentation');
+container?.appendChild(hero);
