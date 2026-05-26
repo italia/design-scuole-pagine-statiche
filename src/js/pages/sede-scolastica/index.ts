@@ -53,40 +53,68 @@ mount('indirizzi-studio', render(templates.indirizziStudio));
 
 /*luoghi*/
 const luoghi = render(templates.sectionList, data.luoghi);
-luoghi.querySelector('[data-cards]')?.appendChild(renderCards(data.luoghi.items));
-mount('luoghi', luoghi);
+mount('luoghi', luoghi, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.luoghi.items),
+  },
+]);
 
 /*dove siamo*/
 const doveSiamo = render(templates.sectionList, data.doveSiamo);
-doveSiamo.querySelector('[data-cards]')?.appendChild(renderCards(data.doveSiamo.items));
-mount('dove-siamo', doveSiamo);
+mount('dove-siamo', doveSiamo, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.doveSiamo.items),
+  },
+]);
 
 const orari = render(templates.orari, data.orari);
-orari.querySelector('[data-cards]')?.appendChild(renderCards(data.orari.items));
-mount('orari', orari);
+mount('orari', orari, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.orari.items),
+  },
+]);
 
 mount('calendario', render(templates.calendario));
 mount('chiusure', render(templates.chiusure));
 
 /* servizi */
 const servizi = render(templates.sectionList, data.servizi);
-servizi.querySelector('[data-cards]')?.appendChild(renderCards(data.servizi.items));
-mount('servizi', servizi);
+mount('servizi', servizi, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.servizi.items),
+  },
+]);
 
 /* novità */
 const novita = render(templates.sectionList, data.novita);
-novita.querySelector('[data-cards]')?.appendChild(renderCards(data.novita.items));
-mount('novita', novita);
+mount('novita', novita, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.novita.items),
+  },
+]);
 
 /* documenti */
 const documenti = render(templates.sectionList, data.documenti);
-documenti.querySelector('[data-cards]')?.appendChild(renderCards(data.documenti.items));
-mount('documenti', documenti);
+mount('documenti', documenti, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.documenti.items),
+  },
+]);
 
 /* progetti */
 const progetti = render(templates.sectionList, data.progetti);
-progetti.querySelector('[data-cards]')?.appendChild(renderCards(data.progetti.items));
-mount('progetti', progetti);
+mount('progetti', progetti, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.progetti.items),
+  },
+]);
 
 /* rating */
 mount('rating', render(templates.rating));

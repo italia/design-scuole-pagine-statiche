@@ -61,16 +61,6 @@ section.bg-accent {
   --bsi-section-background-color: var(--bsi-color-background-accent);
 }
 
-.spacing-2xl .section,
-.spacing-2xl.section {
-  --bsi-section-padding-y: var(--scuole-spacing-2xl);
-}
-
-.spacing-xl .section,
-.spacing-xl.section {
-  --bsi-section-padding-y: var(--bsi-spacing-xl); /* 40px */
-}
-
 .page-infos {
   --bsi-body-font-size: var(--bsi-font-size-3);
   --bsi-border-color: var(--it-color-gray-96);
@@ -86,16 +76,20 @@ it-card {
   --bsi-heading-3-font-size: var(--it-heading-3-font-size);
 }
 
+it-card .it-card-link {
+  --bsi-card-link-color: var(--bsi-color-link);
+}
+
+it-card .it-card-category {
+  --bsi-card-category-color: var(--bsi-color-text-secondary);
+}
+
 it-card .it-card-profile-image-icon-wrapper {
   --bsi-color-background-primary-lighter: var(--bsi-color-background-primary-lightest);
 }
 
 it-card.attachment {
   --bsi-heading-font-weight: var(--it-font-weight-semibold);
-}
-
-it-card .it-card-link {
-  --bsi-card-link-color: var(--bsi-color-link);
 }
 
 it-card::part(card) {

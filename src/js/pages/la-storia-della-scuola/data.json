@@ -5,12 +5,10 @@
       {
         "nome": "L'istituto",
         "url": "#"
-      }
-    ],
-    "paginePrecedenti": [
+      },
       {
         "nome": "Le nostre scuole",
-        "url": "../pages/le-nostre-scuole.html"
+        "url": "/pages/le-nostre-scuole.html"
       }
     ]
   },

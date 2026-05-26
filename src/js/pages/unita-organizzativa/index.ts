@@ -44,45 +44,59 @@ templates.contentBody.content
 
 const contentBody = render(templates.contentBody, data.contentBody);
 
-contentBody
-  .querySelector('#cosa-fa')
-  ?.replaceWith(render(templates.sectionList, data.contentBody.cosaFa));
-
 const doveSiTrova = render(templates.sectionList, data.contentBody.doveSiTrova);
 doveSiTrova
   .querySelector('[data-cards]')
   ?.appendChild(renderCards(data.contentBody.doveSiTrova.items));
-contentBody.querySelector('#dove-si-trova')?.replaceWith(doveSiTrova);
-
-contentBody
-  .querySelector('#orari-di-apertura')
-  ?.replaceWith(render(templates.sectionList, data.contentBody.orari));
 
 const contatti = render(templates.sectionList, data.contentBody.contatti);
 contatti.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.contatti.items));
-contentBody.querySelector('#contatti')?.replaceWith(contatti);
 
 const dipendeDa = render(templates.sectionList, data.contentBody.dipendeDa);
 dipendeDa.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.dipendeDa.items));
-contentBody.querySelector('#dipende-da')?.replaceWith(dipendeDa);
 
 const responsabile = render(templates.sectionList, data.contentBody.responsabile);
 responsabile
   .querySelector('[data-cards]')
   ?.appendChild(renderCards(data.contentBody.responsabile.items));
-contentBody.querySelector('#responsabile')?.replaceWith(responsabile);
 
 const personale = render(templates.sectionList, data.contentBody.personale);
 personale.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.personale.items));
-contentBody.querySelector('#personale')?.replaceWith(personale);
 
-contentBody
-  .querySelector('#ulteriori-informazioni')
-  ?.replaceWith(
-    render(templates.contentUlterioriInformazioni, data.contentBody.ulterioriInformazioni)
-  );
-
-mount('content-body', contentBody);
+mount('content-body', contentBody, [
+  {
+    selector: '#cosa-fa',
+    content: render(templates.sectionList, data.contentBody.cosaFa),
+    mode: 'replace',
+  },
+  {
+    selector: '#dove-si-trova',
+    content: doveSiTrova,
+    mode: 'replace',
+  },
+  {
+    selector: '#orari-di-apertura',
+    content: render(templates.sectionList, data.contentBody.orari),
+    mode: 'replace',
+  },
+  {
+    selector: '#contatti',
+    content: contatti,
+    mode: 'replace',
+  },
+  {
+    selector: '#dipende-da',
+    content: dipendeDa,
+    mode: 'replace',
+  },
+  { selector: '#responsabile', content: responsabile, mode: 'replace' },
+  { selector: '#personale', content: personale, mode: 'replace' },
+  {
+    selector: '#ulteriori-informazioni',
+    content: render(templates.contentUlterioriInformazioni, data.contentBody.ulterioriInformazioni),
+    mode: 'replace',
+  },
+]);
 
 /* rating */
 mount('rating', render(templates.rating));

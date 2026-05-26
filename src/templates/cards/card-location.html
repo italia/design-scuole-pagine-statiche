@@ -1,7 +1,17 @@
 <template>
   <it-card full-height variant="location" data-tpl-border-top="borderTop">
-    <a slot="title" href="#" data-tpl="title" data-tpl-if="titleHref">Toponimo o luogo</a>
-    <div slot="title" href="#" data-tpl="title" data-tpl-if-not="titleHref">Toponimo o luogo</div>
+    <a slot="title" href="#" data-tpl-href="titleHref" data-tpl="title" data-tpl-if="titleHref"
+      >Toponimo o luogo</a
+    >
+    <div
+      slot="title"
+      href="#"
+      data-tpl-href="titleHref"
+      data-tpl="title"
+      data-tpl-if-not="titleHref"
+    >
+      Toponimo o luogo
+    </div>
     <span slot="subtitle" data-tpl-html="subtitle" data-tpl-if="subtitle"></span>
     <div slot="image" class="it-card-profile-image-icon-wrapper" data-tpl-if="icon">
       <it-icon color="primary" data-tpl-name="icon" size="md"></it-icon>

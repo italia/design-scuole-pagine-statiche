@@ -128,22 +128,22 @@
     "title": "I servizi della scuola",
     "items": [
       {
-        "type": "simple",
+        "type": "informativa",
         "title": "Mensa scolastica",
         "text": "Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durante la giornata scolastica.",
-        "taxonomy": "MENSE SCOLASTICHE"
+        "category": "MENSE SCOLASTICHE"
       },
       {
-        "type": "simple",
+        "type": "informativa",
         "title": "Piedibus",
         "text": "Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile.",
-        "taxonomy": "TRASPORTO SCOLASTICO"
+        "category": "TRASPORTO SCOLASTICO"
       },
       {
-        "type": "simple",
+        "type": "informativa",
         "title": "Scuolabus",
         "text": "Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite.",
-        "taxonomy": "TRASPORTO SCOLASTICO"
+        "category": "TRASPORTO SCOLASTICO"
       }
     ],
     "more": "Esplora tutti i servizi della scuola"

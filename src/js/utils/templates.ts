@@ -253,6 +253,33 @@ export function renderList(tpl: HTMLTemplateElement, items: readonly unknown[]):
 /**
  * Mounts the given DocumentFragment into the DOM element with the specified ID, replacing its content.
  */
-export function mount(id: string, frag: DocumentFragment): void {
-  document.getElementById(id)?.replaceWith(frag);
+export function mount(
+  id: string,
+  frag: DocumentFragment,
+  placeholders: {
+    selector: string;
+    content: DocumentFragment;
+    mode?: 'replace' | 'append' | 'prepend';
+  }[] = []
+): void {
+  const element = document.getElementById(id);
+  if (!element) return;
+
+  for (const { selector, content, mode = 'append' } of placeholders) {
+    const target = frag.querySelector(selector);
+    if (target) {
+      switch (mode) {
+        case 'replace':
+          target.replaceWith(content);
+          break;
+        case 'append':
+          target.appendChild(content);
+          break;
+        case 'prepend':
+          target.insertBefore(content, target.firstChild);
+          break;
+      }
+    }
+  }
+  element.replaceWith(frag);
 }

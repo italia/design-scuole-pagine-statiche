@@ -4,7 +4,6 @@ import { isCardType } from '@/js/types/data';
 import cardInlineMiniHTML from '@/templates/cards/card-inline-mini.html?raw';
 import cardInformativaHTML from '@/templates/cards/card-info.html?raw';
 import bannerHTML from '@/templates/cards/card-banner-inline-mini.html?raw';
-import cardSimpleHTML from '@/templates/cards/card-simple.html?raw';
 import locationHTML from '@/templates/cards/card-location.html?raw';
 import personHTML from '@/templates/cards/card-person.html?raw';
 
@@ -12,7 +11,6 @@ const templates: Record<CardType, HTMLTemplateElement> = {
   inlineMini: fromHTML(cardInlineMiniHTML),
   informativa: fromHTML(cardInformativaHTML),
   banner: fromHTML(bannerHTML),
-  simple: fromHTML(cardSimpleHTML),
   location: fromHTML(locationHTML),
   person: fromHTML(personHTML),
 };

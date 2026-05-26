@@ -1,5 +1,5 @@
 <template>
-  <section class="section" data-tpl-class="className">
+  <section class="section" data-tpl-class="className" data-tpl-if-not="withContainer">
     <h2 class="mb-4" data-tpl="title" data-tpl-if="title" data-tpl-id="title_id"></h2>
     <p data-tpl-if="text" data-tpl-html="text" data-tpl-class="textClassName"></p>
     <div
@@ -13,4 +13,26 @@
       ><it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon
     ></a>
   </section>
+  <it-section
+    class="section"
+    data-tpl-class="className"
+    data-tpl-if="withContainer"
+    data-tpl-variant="variant"
+    data-tpl-inverse="inverse"
+  >
+    <div class="container w-100">
+      <h2 class="mb-4" data-tpl="title" data-tpl-if="title" data-tpl-id="title_id"></h2>
+      <p data-tpl-if="text" data-tpl-html="text" data-tpl-class="textClassName"></p>
+      <div
+        class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch"
+        data-tpl-class="cardsWrapperClassName"
+        data-tpl-if="items"
+        data-cards
+      ></div>
+      <a href="#" data-tpl-if="more" class="fw-semibold mt-4 d-inline-block"
+        ><span data-tpl="more"></span
+        ><it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon
+      ></a>
+    </div>
+  </it-section>
 </template>
