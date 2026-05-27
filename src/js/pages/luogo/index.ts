@@ -1,5 +1,4 @@
 import '@/js/main';
-// import '@/styles/sede-scolastica.css';
 import { render, fromHTML, mount } from '@/js/utils/templates';
 
 import { renderCards } from '@/js/engines/cards';
@@ -14,27 +13,26 @@ import contentHeaderHTML from '@/templates/components/pagina-foglia/content-head
 import contentBodyHTML from '@/templates/components/pagina-foglia/content-body.html?raw';
 
 import pageInfosHTML from '@/templates/components/page-infos.html?raw';
-
-import contentTextHTML from '@/templates/unita-organizzativa/content-text.html?raw';
+import carouselHTML from '@/templates/components/carousel.html?raw';
+import contentTextHTML from '@/templates/luogo/content-text.html?raw';
 
 import data from './data.json';
 
 const templates = {
   header: fromHTML(headerHTML),
   breadcrumbs: fromHTML(breadcrumbsHTML),
+  carousel: fromHTML(carouselHTML),
   contentHeader: fromHTML(contentHeaderHTML),
   contentBody: fromHTML(contentBodyHTML),
   sectionList: fromHTML(sectionList),
-  pageInfos: fromHTML(pageInfosHTML),
   contentText: fromHTML(contentTextHTML),
+  pageInfos: fromHTML(pageInfosHTML),
   rating: fromHTML(ratingHTML),
   footer: fromHTML(footerHTML),
 };
 
-/* header */
 mount('main-header', render(templates.header));
 mount('breadcrumbs', render(templates.breadcrumbs, data.breadcrumbs));
-
 mount('content-header', render(templates.contentHeader, data.contentHeader));
 
 templates.contentBody.content
@@ -43,29 +41,56 @@ templates.contentBody.content
 
 const contentBody = render(templates.contentBody, data.contentBody);
 
+/*descrizione*/
+const descrizione = render(templates.sectionList, data.contentBody.descrizione);
+const carousel = document.createElement('div');
+carousel.setAttribute('class', 'px-5');
+carousel.appendChild(render(templates.carousel, data.contentBody.carousel));
+descrizione.querySelector('section:first-of-type')?.appendChild(carousel);
+
+/*servizi*/
+const servizi = render(templates.sectionList, data.contentBody.servizi);
+servizi.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.servizi.items));
+
+/*dove si trova */
 const doveSiTrova = render(templates.sectionList, data.contentBody.doveSiTrova);
 doveSiTrova
   .querySelector('[data-cards]')
   ?.appendChild(renderCards(data.contentBody.doveSiTrova.items));
 
+const parteDi = render(templates.sectionList, data.contentBody.doveSiTrova.parteDi);
+parteDi
+  .querySelector('[data-cards]')
+  ?.appendChild(renderCards(data.contentBody.doveSiTrova.parteDi.items));
+
+parteDi.querySelector('section.section')?.classList.add('pt-0');
+
+doveSiTrova.appendChild(parteDi);
+
+/*orari*/
+contentBody
+  .querySelector('#orari')
+  ?.replaceWith(render(templates.sectionList, data.contentBody.orari));
+
+/*contatti */
 const contatti = render(templates.sectionList, data.contentBody.contatti);
 contatti.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.contatti.items));
 
-const dipendeDa = render(templates.sectionList, data.contentBody.dipendeDa);
-dipendeDa.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.dipendeDa.items));
-
-const responsabile = render(templates.sectionList, data.contentBody.responsabile);
-responsabile
+/*ultime notizie */
+const ultimeNotizie = render(templates.sectionList, data.contentBody.ultimeNotizie);
+ultimeNotizie
   .querySelector('[data-cards]')
-  ?.appendChild(renderCards(data.contentBody.responsabile.items));
-
-const personale = render(templates.sectionList, data.contentBody.personale);
-personale.querySelector('[data-cards]')?.appendChild(renderCards(data.contentBody.personale.items));
+  ?.appendChild(renderCards(data.contentBody.ultimeNotizie.items));
 
 mount('content-body', contentBody, [
   {
-    selector: '#cosa-fa',
-    content: render(templates.sectionList, data.contentBody.cosaFa),
+    selector: '#descrizione',
+    content: descrizione,
+    mode: 'replace',
+  },
+  {
+    selector: '#servizi',
+    content: servizi,
     mode: 'replace',
   },
   {
@@ -74,7 +99,7 @@ mount('content-body', contentBody, [
     mode: 'replace',
   },
   {
-    selector: '#orari-di-apertura',
+    selector: '#orari',
     content: render(templates.sectionList, data.contentBody.orari),
     mode: 'replace',
   },
@@ -84,15 +109,13 @@ mount('content-body', contentBody, [
     mode: 'replace',
   },
   {
-    selector: '#dipende-da',
-    content: dipendeDa,
-    mode: 'replace',
-  },
-  { selector: '#responsabile', content: responsabile, mode: 'replace' },
-  { selector: '#personale', content: personale, mode: 'replace' },
-  {
     selector: '#ulteriori-informazioni',
     content: render(templates.sectionList, data.contentBody.ulterioriInformazioni),
+    mode: 'replace',
+  },
+  {
+    selector: '#ultime-notizie',
+    content: ultimeNotizie,
     mode: 'replace',
   },
   {
@@ -101,9 +124,5 @@ mount('content-body', contentBody, [
     mode: 'replace',
   },
 ]);
-
-/* rating */
 mount('rating', render(templates.rating));
-
-/* footer */
 mount('footer', render(templates.footer));

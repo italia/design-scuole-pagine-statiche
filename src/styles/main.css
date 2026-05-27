@@ -118,3 +118,15 @@ it-section.hero .section {
 it-section.hero .hero-more {
   font-size: var(--it-font-size-2);
 }
+
+/* fix temporaneo in attesa di https://github.com/italia/bootstrap-italia/issues/1809 */
+.navbar.it-navscroll-wrapper h2 {
+  padding-right: var(--bsi-navscroll-heading-spacing-x);
+  padding-left: var(--bsi-navscroll-heading-spacing-x);
+  margin-top: var(--bsi-navscroll-heading-spacing-top);
+  margin-bottom: var(--bsi-navscroll-heading-spacing-bottom);
+  color: var(--bsi-navscroll-heading-color);
+  font-size: var(--bsi-navscroll-heading-font-size);
+  font-weight: var(--bsi-navscroll-heading-font-weight);
+  text-transform: uppercase;
+}

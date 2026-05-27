@@ -1,14 +1,22 @@
 <template>
-  <it-carousel variant="gallery-sm" arrows="" data-cards>
+  <it-carousel
+    variant="gallery-sm"
+    data-tpl-variant="variant"
+    data-tpl-fullscreen="fullscreen"
+    arrows=""
+    data-cards
+  >
     <h2 slot="title" data-tpl="titolo" data-tpl-if="titolo"></h2>
 
     <span data-tpl-if="slides" data-tpl-each="slides">
-      <it-carousel-slide>
+      <it-carousel-slide style="width: 100%">
         <div class="card-wrapper">
-          <div class="img-responsive-wrapper">
-            <div class="img-responsive">
-              <div class="img-wrapper">
-                <img data-tpl-src="src" data-tpl-alt="alt" data-tpl-title="titolo" />
+          <div class="card card-img no-after">
+            <div class="img-responsive-wrapper">
+              <div class="img-responsive">
+                <div class="img-wrapper">
+                  <img data-tpl-src="src" data-tpl-alt="alt" data-tpl-title="titolo" />
+                </div>
               </div>
             </div>
           </div>

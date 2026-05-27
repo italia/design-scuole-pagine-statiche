@@ -17,7 +17,11 @@
     <div slot="image" class="it-card-profile-image-icon-wrapper" data-tpl-if="icon">
       <it-icon color="primary" data-tpl-name="icon" size="md"></it-icon>
     </div>
-    <figure slot="image" class="figure img-full" data-tpl-if-not="icon">
+    <figure
+      slot="image"
+      class="figure img-full"
+      data-tpl-condition="icon == null && noImage == true"
+    >
       <img
         src="https://picsum.photos/seed/monument/320/320"
         alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
