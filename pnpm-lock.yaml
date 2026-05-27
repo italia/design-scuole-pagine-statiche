@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@italia/dev-kit-italia':
-        specifier: 1.0.0-alpha.13
-        version: 1.0.0-alpha.13(lit@3.3.2)
+        specifier: 1.0.0-alpha.14
+        version: 1.0.0-alpha.14(lit@3.3.2)
     devDependencies:
       '@typescript-eslint/eslint-plugin':
         specifier: ^7
@@ -322,192 +322,192 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
-  '@italia/accordion@1.0.0-alpha.13':
-    resolution: {integrity: sha512-qFo+leINRuO7eVyWDPvxwzvvbfTxAEA9cP3UMrWRki3uoGIq86drX1tBb7qstF1H0RKOIuVc7V5q7mFLtkr6yA==}
+  '@italia/accordion@1.0.0-alpha.14':
+    resolution: {integrity: sha512-xF4m5aDbsMLGNXsEVCX19mbP+qRg2tOO8N+ldwwS2EkpXTL9iJbNPc1xljx88no2p/hGQpdRsJchfMGGXN61Dw==}
     peerDependencies:
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/autocomplete@1.0.0-alpha.13':
-    resolution: {integrity: sha512-KqMrE7SEZBsrpIBwABkMXtswl0CxrrHmdjcdoKGLkihFM4adrmZ5Stn7QMheHHUT+wv83iIr+hd6+6yWJLd+Bg==}
+  '@italia/autocomplete@1.0.0-alpha.14':
+    resolution: {integrity: sha512-D8cvfrcllrzcHoEzhWnaejWlCM0CfvUCp7ikmBkdthCW+xrlTNjbOro6r1FPJ/CioAzQEGDU0OKWELUdyz68Ug==}
     peerDependencies:
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/avatar@1.0.0-alpha.13':
-    resolution: {integrity: sha512-W2CgVudG2z9UNcWVhsmUT5uYmwqcZ+hJ3sRBOVmZLmypsA34O2SDO9AXttADqXFGy05DVxGDDqJKir2IbAWiNQ==}
+  '@italia/avatar@1.0.0-alpha.14':
+    resolution: {integrity: sha512-uEb4To1gZBQSOX59BnN6363+u9oPhuppqcEx1MrKfzin32GeT82bv3a8FA9BuvNAsdkTlraJzG3lLu3gj1yQBA==}
     peerDependencies:
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/back-to-top@1.0.0-alpha.13':
-    resolution: {integrity: sha512-K7aS5fTzD3IOJUUXNKHuEIETNlBMZlobE3FaYV2kCrtEARasOHv+fDuRMJW+cwFqXNAMtp3qWFp0T8njXn1Hdg==}
+  '@italia/back-to-top@1.0.0-alpha.14':
+    resolution: {integrity: sha512-flLj4ZNzdkxCc02D6LnPuXQxKfHRMVhTG8yTOu38tOwymqHJt5GclXd3TVk50oX84V4Nd6mvYlm+u+7oLRxlqA==}
 
-  '@italia/bottom-nav@1.0.0-alpha.13':
-    resolution: {integrity: sha512-/qTl1H6NoP8qD3s/h9vGs7NmKijqZxMyFp3NPPHihpIroXRrJ1bs3T09XlVerfIyNggl48u5ecMQ3yArGG8xxg==}
+  '@italia/bottom-nav@1.0.0-alpha.14':
+    resolution: {integrity: sha512-h2XGibGYmqeyVbwJNOvexqBi02ba6V3e951YQUwK4s6gb98qq3V2Zz0BqFyX4ojwif3hqU/7g8Wvz4PkUOu/LA==}
 
-  '@italia/breadcrumbs@1.0.0-alpha.13':
-    resolution: {integrity: sha512-9ExJaHN4Bfy7+wkGliDhlYPxzQ//IrQtnjX4ytR1za8vMD6Z5KW2xgFfwCjF9oTdSH9wTd9Pag9x716kA7iwUA==}
+  '@italia/breadcrumbs@1.0.0-alpha.14':
+    resolution: {integrity: sha512-UycI/ws0+3VywiNEq5Lq8u89HCCwut98DzQrbZZcHBOEJkpl1/otImtDLLhiza15enk9x7zW5MzDm12yTNf8HQ==}
 
-  '@italia/button@1.0.0-alpha.13':
-    resolution: {integrity: sha512-UGI6iADFbD0pAHyYU+oCLlkX1soM+jx0VoppVV+eNhNjeypOyTU9U1yj82ftCr934nsy03CWDDrXBJUsFLjw6A==}
+  '@italia/button@1.0.0-alpha.14':
+    resolution: {integrity: sha512-IBdugiAfAGyu5EEsZXngYT3RlTi541qZPvjdeEhtsyik2KMdPvqzwYhx8baLoC/ev4GArWDzNkiSTSbeT0Qf2g==}
 
-  '@italia/callout@1.0.0-alpha.13':
-    resolution: {integrity: sha512-fSs1gnYNxTSe1RzvoZK5WS2UYtVjDz0CNz4BaqnZTBHDS7x+922A1X/9Ccydmdlc83PBzP1lyQAiUI19JXHxUw==}
+  '@italia/callout@1.0.0-alpha.14':
+    resolution: {integrity: sha512-AS2DUzpYlyFT8AupapncPvmR0Y6D2/6XfTESjXpILnZC6+R+3R2z4+WTxi6VIk4sQi0s8qTqfno9pr5lS4js1g==}
     peerDependencies:
-      '@italia/collapse': ^1.0.0-alpha.13
+      '@italia/collapse': ^1.0.0-alpha.14
 
-  '@italia/card@1.0.0-alpha.13':
-    resolution: {integrity: sha512-+qAp60r9G8qmfoeH7PtVAUiDsKv5bQmKheNOvMtKyFk2qh6KOkLh/i76yRLBOLfeRIRE2T6Vo+cnu02CsagrNg==}
+  '@italia/card@1.0.0-alpha.14':
+    resolution: {integrity: sha512-Z7GBOjCOUP9Gl/0sxOLOHDp06f7TTdMgPrI07aJepMcaKtev7sd2AK2JsWWft35GihHH+CZyAJaes0cGbO3pCw==}
 
-  '@italia/carousel@1.0.0-alpha.13':
-    resolution: {integrity: sha512-Z6ziRWDCX/3wMCDHq3ri7jr1FBxWwxkuzKyoTh1zx0LR1rvuJWwn7OGYN32s2Kg7+a4NZSwfqrpLJVXouIhp/g==}
+  '@italia/carousel@1.0.0-alpha.14':
+    resolution: {integrity: sha512-UrIk4SVtTBa1317do1bYBmqhSKFNtDcDMbFenCVAn2ftLOnUUTNF76bt5xvkwSDZwbqnrHp7DB8YCN5qMw6HIg==}
 
-  '@italia/checkbox@1.0.0-alpha.13':
-    resolution: {integrity: sha512-MIsTrVEawAyGwBZ8XHkbDh2rmylxx9mPJB73nItZv7W3pX4wa3VIGFDsMxbht7SqxuSzhpttf/xnnV0S9q6QLw==}
+  '@italia/checkbox@1.0.0-alpha.14':
+    resolution: {integrity: sha512-3dIx3/SMyISVGoTsjYEW1GLkRnqVdZtMnZy3MHXfCETX85uvVYsLdCVhQAvIG3DJ2gKi1QUcaxjv2VUF0Vkdjg==}
 
-  '@italia/chip@1.0.0-alpha.13':
-    resolution: {integrity: sha512-CjE2YhjwGxJdyvy6QiAi82ytMh/jg1u3C2VIlF7Wq48y3b48FiiGW1r8gAHtZFBTi45CmPB21C6enY28RWCFLw==}
+  '@italia/chip@1.0.0-alpha.14':
+    resolution: {integrity: sha512-F/jPdhenIm3SBR4AfuflZbfoPsl5Iz79dvnuM3Xl6aLzFbaTbycF3qSA9cAkLcaHQDJeHVyJRJtBO/S/xBVLXA==}
     peerDependencies:
-      '@italia/avatar': ^1.0.0-alpha.13
-      '@italia/button': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/avatar': ^1.0.0-alpha.14
+      '@italia/button': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/collapse@1.0.0-alpha.13':
-    resolution: {integrity: sha512-NDc2iv7I7GdUYBiHXD5wIlmfBmtpl/TiOSloZh5jcfSRoR2GErngpTIXm5jXfYx55t2PmYAqJt2e59IX2puIOA==}
+  '@italia/collapse@1.0.0-alpha.14':
+    resolution: {integrity: sha512-b36W5u40Yy13OiZAC4QmhbILdyvw7IVFWAPO8pDNU8TZAvKsbEF69/mUSQGp2aRVvAxFkQ0ES7VAAhAq9iri8w==}
 
-  '@italia/dev-kit-italia@1.0.0-alpha.13':
-    resolution: {integrity: sha512-qBW/uPkWVDFrmMOuRleHRCb6Ulx6p9DNJlzbefB2mD+/ez6blkmOKCqccb1myPLsOMcL49exXpUdvLOcOa77pQ==}
+  '@italia/dev-kit-italia@1.0.0-alpha.14':
+    resolution: {integrity: sha512-gpdcjxyL+g+NH2zkV7+e5zi8wE4YbNY3TN6YVqH0PYZnfbT5ezmRHQIa+MtVFSm7a2Flp2eaSMaGKdk7p/aX8g==}
     peerDependencies:
       lit: ^3.3.0
 
-  '@italia/dimmer@1.0.0-alpha.13':
-    resolution: {integrity: sha512-wOt1xYb7dSLpiGkXk9bgtPaOdXSxwKS0UAG891SJqs+qelwUNJhCgIWdkPBxp9cXmyEn3yho6ukex3+gMSJ99Q==}
+  '@italia/dimmer@1.0.0-alpha.14':
+    resolution: {integrity: sha512-eMVk2/iKyHHNUKzU6lUedjoxFaC8YsA3dgM8kGNAXYQwvG4r5pXtQSwCBfDWqKqKImIYjEWzNT1XGuOMAY2KDA==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/dropdown@1.0.0-alpha.13':
-    resolution: {integrity: sha512-NBQcFOThtzyvWWmTBtVC5sQSFMC3Yk45amwoQ9Ic8bTzVYFfEoZJPw1pqwXjFguACtALl0Pk4YgS+HNclKvDpQ==}
+  '@italia/dropdown@1.0.0-alpha.14':
+    resolution: {integrity: sha512-n85czoiQPJEoPUzSL3MDHZUD0YyIRufS6NcAgVq1UGI0erQHtuqREBKzM5tH59U7FsilTDViVlTf8naQFjHIug==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
-      '@italia/popover': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
+      '@italia/popover': ^1.0.0-alpha.14
 
-  '@italia/globals@1.0.0-alpha.13':
-    resolution: {integrity: sha512-2JnKcCTLkGKWAJdDXRazvZuFfdLzxPcGvNHLLExx+6MupGxM6Xm2Up+mWJM+WgmSZ+CSu+5lr5/BDqnvFXshaQ==}
+  '@italia/globals@1.0.0-alpha.14':
+    resolution: {integrity: sha512-PE7BRf6n0rClSQzy+0D5wPBSR6u1b7PM6uqke39YtqLidp7kFP5FKE57u1UuvLOQLqIF64MBKVkOzYvYjogNbQ==}
 
-  '@italia/header@1.0.0-alpha.13':
-    resolution: {integrity: sha512-x+rxqjzBZVl33xZOsZgeAkS4WVmrliS6Y1q0DeIcXvBSf8Yx6th+6wId9Gx3NDA9IUcdVlE3EdGuLWDac2LP+g==}
+  '@italia/header@1.0.0-alpha.14':
+    resolution: {integrity: sha512-N90dEv8UVH6Q1yMzaXfcLJRd/KFxNeck/XtxDG2C/UmhWtmQJzpPn1INjHA1DXSMYftWB42hc8ONymO/TG1sQw==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
-      '@italia/dropdown': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
-      '@italia/modal': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
+      '@italia/dropdown': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
+      '@italia/modal': ^1.0.0-alpha.14
 
-  '@italia/hero@1.0.0-alpha.13':
-    resolution: {integrity: sha512-f7VYLDbwcqm44VcWf6M0zP4SKAxSVfjnt+P4GnRV6CaZWBw1NmKfqo+3nZGN2hK+fMhZDF3SPHS4krBk3VcIdw==}
+  '@italia/hero@1.0.0-alpha.14':
+    resolution: {integrity: sha512-3V11ehUBmm8TIzfH3sCsub9OvEMIRUTv8qY77XQPltLzqxjjNFTwjdsD+uRKxWy25/FncAEk+2CuMMlWGAhQ6A==}
 
-  '@italia/i18n@1.0.0-alpha.13':
-    resolution: {integrity: sha512-qOZwTM7ngADDuIuJxvk9365Vzmac9/Ur0XKiCduq6zpXg0e62sHBg85NQRVQ1FgHNQ1j3Sk/qgrVS6/+A7WG0w==}
+  '@italia/i18n@1.0.0-alpha.14':
+    resolution: {integrity: sha512-fh+u2aq5qtfW8079Wbg/iWDtYh17OH8GjcBlTq9tvgWsL35Tl4BOLuEvCxzMkGzgqDYNHnjLv31DKraBUqPXQg==}
 
-  '@italia/icon@1.0.0-alpha.13':
-    resolution: {integrity: sha512-RL277luwnWY1hJ+h7Cd2jXrkVeABhfYnlVym5ipLpbCfJX8lfjuux7yuHyl5CRwynA3CB/yrVyaGthe4aKab5g==}
+  '@italia/icon@1.0.0-alpha.14':
+    resolution: {integrity: sha512-aTR1dINAZiemYUHxwHJJgfrJ+rzCTX/sQ3uomqEL6lh9mfG4LMPez9wbk7Jylg13SOrZNgEG2NTEjUueAM/tow==}
 
-  '@italia/input@1.0.0-alpha.13':
-    resolution: {integrity: sha512-HRY6aGMmic0PcLloqmL1bzQj3fDmBnPdqIaD6P5L8Cye3T+nJD/y3Yk23bBZm+v5Pi4Pkg/l8iuaUw7jN+5Kjg==}
+  '@italia/input@1.0.0-alpha.14':
+    resolution: {integrity: sha512-JNqNdExQlUa3yh53jJAstAY/VBISkQXU2rqGEpSECleM1N5NIvVxoqOw8qyCEYqP7+9ywta3F0uwzO49iH+fpg==}
     peerDependencies:
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/megamenu@1.0.0-alpha.13':
-    resolution: {integrity: sha512-R3b1Sn/6KtQ5t92DuxifFP/AiYPgsnj08Rv6U1blZimPfHH23yUxigEoiSe3UR5Z1FjLu35fdQFAv7ZtYXojMw==}
+  '@italia/megamenu@1.0.0-alpha.14':
+    resolution: {integrity: sha512-bq75lkXEs2izmVJhJ3gKmdsbWWJbbOYG72yBwV/zO8EF+lDRdkbR59/DK6SaHwivSJBOs1OPrAyW5SbSuqEvtg==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
-      '@italia/dropdown': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
+      '@italia/dropdown': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/modal@1.0.0-alpha.13':
-    resolution: {integrity: sha512-3dY6I72R9L4veFokglUCLd56ZRuHj+LCcIUAq7hTQim/A/V32Pk8Nw2sw95IDkGobBRXEiOJ0qwBAy0l1nZc4w==}
+  '@italia/modal@1.0.0-alpha.14':
+    resolution: {integrity: sha512-uPRrsgReV56HeV7STjCBZM+k6rZDK6dweQnI41LUGMx+OiJQ/upRbaspAI8GRdOruELj0vc+spCM0P1LtgQJMQ==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/navscroll@1.0.0-alpha.13':
-    resolution: {integrity: sha512-58uUrhv+Mxh0FFNnUZxErii3S9bgeHTfBLaGlFcuZOl8av5/JMrpHNC1MR19mJHOPgr6SrUXMTa0ymP0dMjJqw==}
+  '@italia/navscroll@1.0.0-alpha.14':
+    resolution: {integrity: sha512-mFOJGg0wnXR9eB9SCjDeBZCefrfSAHdGGV2o+BtS8XD2Xkn3ZnJv2ojdKt1QKpdw5s2dwELoj8ZTx5pvoQmPsQ==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
-      '@italia/modal': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
+      '@italia/modal': ^1.0.0-alpha.14
 
-  '@italia/notification@1.0.0-alpha.13':
-    resolution: {integrity: sha512-TanDHiy2Pw3VEr8rRDFAfoci5SkcaFeYjuhnCHv+wFrd8/l+DddVY6CtN92YUbZ1TrEo9ZsND50+5NdQJWRrGA==}
+  '@italia/notification@1.0.0-alpha.14':
+    resolution: {integrity: sha512-VqwMdBM1LB+hVzmAvtm2o3OS2reDh/4f48+XLUXxihicT2ydHDKYxJ+oxTkaniX5CJY0TdZvwakhvPajaFlATg==}
 
-  '@italia/pagination@1.0.0-alpha.13':
-    resolution: {integrity: sha512-SYCAchgo4lixXel7mQgZu4VKT41EBkwC7N2DZsAc9XXuAhkIn+8KTT53t122TE6SPcUEqMjmX4U0phN0OV4xtg==}
+  '@italia/pagination@1.0.0-alpha.14':
+    resolution: {integrity: sha512-aytlW0iasuKGi+0ytXjznDNkwbw+qmiWzMnPGsPBrm7+Qk8UnFq9jQJ0Rqo5nYP+c9FR999ZKm2oSd3+wMNHSw==}
 
-  '@italia/popover@1.0.0-alpha.13':
-    resolution: {integrity: sha512-NJhwcuILBA4YePp34r8Y9ocFRIHvRFKho2kOVRkS2qzAfSJ+b5ujOE/ONNdJO7cSgAwmdvm0eDjiOV/ktttPkw==}
+  '@italia/popover@1.0.0-alpha.14':
+    resolution: {integrity: sha512-yvFbmQARbyyDSx40FDvcJDrIlz2XfavBWIkuMB0isXJ3GpouX9cLDhD6uBiMSlJKr07HmRVYdLQqNqbxu7vMFA==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
 
-  '@italia/progress@1.0.0-alpha.13':
-    resolution: {integrity: sha512-Baco6ohZkYF7iSNlUdb9s3/V8t/4a4jK2bi4ZBsswIDrkqlbGdQgkGXFoTZKgVc7Khmy4AqFvGE/ngxTKj4syw==}
+  '@italia/progress@1.0.0-alpha.14':
+    resolution: {integrity: sha512-Waz5DRs1j6LJ9WSbB11i18DdPIB69uJcE93IC+l29YrZRiwPCNXxHmc+k/eMAcDc8WTmyg1pEvkKziBPCfnSLA==}
 
-  '@italia/radio@1.0.0-alpha.13':
-    resolution: {integrity: sha512-zLxhyqQzLAoO4ctMEAXumHeybEIo12IueRJ0SmnEd6etuyXPZjj53MA0iycAGm3m5gK9bY71fwTbPr4Z1/UCwQ==}
+  '@italia/radio@1.0.0-alpha.14':
+    resolution: {integrity: sha512-ZDcaDMUuOypNxnKs1fP7w1Cst1v/ktERemIH9u+QM0h1p9vG6ySWlLBe8U9CqGVzZIzECs80YYpt3yWBimecuw==}
 
-  '@italia/rating@1.0.0-alpha.13':
-    resolution: {integrity: sha512-Xiryuh8l2euJBAhtTN9NteLpYAL8SHXYHJED5RvfzJOv29h5e7n9eJBYYlaemVvpBobR7D+cdUMHY8rwXYfccQ==}
+  '@italia/rating@1.0.0-alpha.14':
+    resolution: {integrity: sha512-1lKq+EmBjCxwvjfSqM3cYDUI+WbdhZGFw5pTpOCmmFprK9mMIlfnqA8ofxd8ztdw4HZYhlbPHHzrH2mh/sEoHA==}
 
-  '@italia/section@1.0.0-alpha.13':
-    resolution: {integrity: sha512-bn3TCNmf/NffBD7q3m8jyMAa1WZhY5Wu3/yO+HIjkD9DFwCkQLnuK3uX2lvKdMiA98kOCzKwh/O0LNCHj47HWw==}
+  '@italia/section@1.0.0-alpha.14':
+    resolution: {integrity: sha512-hj3bNf2IlYprCcksPV6f/CJcGmqe3cxicwrYOnpmHhu8ksqHaVpcpGasePT5UKPk2m4+ukaUgRid3PbCZ9ZnhQ==}
 
-  '@italia/select@1.0.0-alpha.13':
-    resolution: {integrity: sha512-bwAO7NfNSa1ZyXa3rzjKIIsbe4qL7MAg7ghNTW4hOVk8uBrvHjafrRBCV5DeSHtR1Wy9inci5BZOBlder4hhIg==}
+  '@italia/select@1.0.0-alpha.14':
+    resolution: {integrity: sha512-rkfLzImPrPNEZj622CWIsOQMXWv+y16RUXl+jCEg26iKyhzfBp6MEVPgcYvWsOJQmIDCxM1j7JLRg/PZcDOrKA==}
     peerDependencies:
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/skiplinks@1.0.0-alpha.13':
-    resolution: {integrity: sha512-Dc/zCqO92sROlIUQ8UsjF7Ihhfr0OJ7L2XeD24KqTF+5+N8YyQSnPPIZ7xAB3ReuBZiC3YhVTolFMKhc61dgxg==}
+  '@italia/skiplinks@1.0.0-alpha.14':
+    resolution: {integrity: sha512-Pj+FQn3XQmDEBx4LltGiHUXefxuawCosVajY7thBL8CnS+Yr3pIKhWvGtcf6uUb69Ul9FrbQ/3b852uuT5wmmw==}
 
-  '@italia/sticky@1.0.0-alpha.13':
-    resolution: {integrity: sha512-n4ZBhFXDxRjLZdIKAV3bUw4PG2AIwjwI35IXpe413c4Ygak6Mh+uzJH6kHxXOoexYBoXdzkYKRGaR+lbW3OC7w==}
+  '@italia/sticky@1.0.0-alpha.14':
+    resolution: {integrity: sha512-mEAYFtyIRJL2rOZ/uRIY4o/2cB6Bs1TUK+lOeeeKNncmENdifGa2WHz9wYzy8JM07Xy2nM81eWcsAcH1t4vd9w==}
 
-  '@italia/tabs@1.0.0-alpha.13':
-    resolution: {integrity: sha512-ReJjazXntIWuNLW2n2pKdSzRDajbqIr/gLjlfd7CRKc5Ty8Iydy1nLwANNbX2eEhWgb+EQ2iDTb2tj3vwlgwwQ==}
+  '@italia/tabs@1.0.0-alpha.14':
+    resolution: {integrity: sha512-nNSm1MevdxkhdUFWvSVCdku7KE3AnsJ9y+2getxoIrETXmJQl1yuBWM5N2KW+blGvvJXxrYecbIfF2FBVPdEnw==}
 
-  '@italia/thumbnav@1.0.0-alpha.13':
-    resolution: {integrity: sha512-D5/efy4/JOovq1pYMZchCSyiEDu2vabbB03iPibJD44M0FkJfelyCSC0juDoqFIkEpBov0otoG8QFlPNI/bWKg==}
+  '@italia/thumbnav@1.0.0-alpha.14':
+    resolution: {integrity: sha512-UQtOOiLC44hw646NkaHt7xLO2DK4m2ghQmMy8S1crrWloeXMa4ZSsqynSDfuHdxJJ/k5XQnJw6UO7wNga/AsrQ==}
 
-  '@italia/timeline@1.0.0-alpha.13':
-    resolution: {integrity: sha512-2gEWGsID4AAUkNMDtwC+lozCE1M/SV2AEwo3yrR6sZh3voMddJE9YloJjR/6O/HrbeSfyV8ZzpXaBV8/SzQaFw==}
+  '@italia/timeline@1.0.0-alpha.14':
+    resolution: {integrity: sha512-e2Lz9lKEnBpUNH3krwfMFPpE23MXKdzg7VrcrLlJz/NN2u+nvkjdC674mqyrekEFr3giPtcqLQu+ro6sWMsktQ==}
 
-  '@italia/toggle@1.0.0-alpha.13':
-    resolution: {integrity: sha512-sKD6BEzW+7KV1o3pZtlwqIiWBu5BNtvt87AMBtWBqn5iSIxlC8oDvsDlHQ/QqvHBoNjJ/AIvXkvHR70+gGYC5A==}
+  '@italia/toggle@1.0.0-alpha.14':
+    resolution: {integrity: sha512-EbH+NzRCP/ZyWQF03hmPDBYVJvPiVhNPH+ExSALyfCvpVGo9GL0wDaP7wxfBZQdNx8cnaryHyBuOGQwKi2cMMA==}
 
-  '@italia/toolbar@1.0.0-alpha.13':
-    resolution: {integrity: sha512-q5Sa7LO5qYlvBw3p/3Smg7RTZNiAucPr6hG3r3T0Xc9yvb4rkitnVlltInq7GTwdEemzfxRxbPODvddVXoUr2A==}
+  '@italia/toolbar@1.0.0-alpha.14':
+    resolution: {integrity: sha512-i6KhQPRzgTtJP9tWlbPyCatwFwZz6YtxM6sdeYa+HX6hShxOdZ/b5vzPXhrPTvzTZH7fwpUZKc2pES1lnLM01A==}
 
-  '@italia/tooltip@1.0.0-alpha.13':
-    resolution: {integrity: sha512-SIx9gsdFRRrvCjSEsw7xC/16+gg01poaNiVxETN2N3SugIBa6HXeFv2k8P84wSwfTp7wbZjXS79u8V/QMVExuA==}
+  '@italia/tooltip@1.0.0-alpha.14':
+    resolution: {integrity: sha512-DQbewWrhtQ92k8SCd+CMa5YpxMKtHL/SdFkKIPKY+86tFJaicZXxx0XDmbYuDKr389KImgcJ7jbquUgjxaSK9w==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
 
-  '@italia/transfer@1.0.0-alpha.13':
-    resolution: {integrity: sha512-jVBWbkocBiSvO9FpW1myM7kp1nUq71GIWLzL6r9MldtwgCHHHg9dYU8O5groJZ79LdeoKcg0Mi3WmeaTfrk1BQ==}
+  '@italia/transfer@1.0.0-alpha.14':
+    resolution: {integrity: sha512-YZ9+XRlkW6/AgNcmiRdAywPxMBXRCzplrNLc5WX6gw3TMc2gZiB+d4Meznb0tnuZBydQzO4dsZ3Zv7hosZRJgw==}
     peerDependencies:
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/icon': ^1.0.0-alpha.14
 
-  '@italia/upload@1.0.0-alpha.13':
-    resolution: {integrity: sha512-Inqo+L9o2OfHr6w0bexVD9V4dEObwLbgv8Qfr83kzGKbJgDf5QYeIJPNmgAQW+lMLwvX9gYsKjySh4vxfaqQPw==}
+  '@italia/upload@1.0.0-alpha.14':
+    resolution: {integrity: sha512-MFfDqGll8grsEBJvqWnJTZlLiJE3P0F/I7lFzkM/iko2tFrNjhSUbLyAZtmLUNxMD5KzNhcJ3HQ8lskh3mlGSg==}
     peerDependencies:
-      '@italia/avatar': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
-      '@italia/progress': ^1.0.0-alpha.13
+      '@italia/avatar': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
+      '@italia/progress': ^1.0.0-alpha.14
 
-  '@italia/video@1.0.0-alpha.13':
-    resolution: {integrity: sha512-Ef9Z/IRlZX8fNRhlJeJthTpKBjjQ2i6yjN4tSboDqfUU/vGygczEv0D2T7fnnwsYOD+0vR5+0y5WbjaEXCJCDQ==}
+  '@italia/video@1.0.0-alpha.14':
+    resolution: {integrity: sha512-k4kkiTGgKTfNcF8Nlkii6EnovlKnKKhv89sta1bKtfV5LlpUY++xJ0bhEgzjICCzWlMyWjscDyKQt3Dn7PsFkw==}
     peerDependencies:
-      '@italia/button': ^1.0.0-alpha.13
-      '@italia/checkbox': ^1.0.0-alpha.13
-      '@italia/icon': ^1.0.0-alpha.13
+      '@italia/button': ^1.0.0-alpha.14
+      '@italia/checkbox': ^1.0.0-alpha.14
+      '@italia/icon': ^1.0.0-alpha.14
 
   '@keyv/bigmap@1.3.1':
     resolution: {integrity: sha512-WbzE9sdmQtKy8vrNPa9BRnwZh5UF4s1KTmSK0KUVLo3eff5BlQNNWDnFOouNpKfPKDnms9xynJjsMYjMaT/aFQ==}
@@ -2381,365 +2381,365 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
-  '@italia/accordion@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)':
+  '@italia/accordion@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/collapse': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/collapse': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/autocomplete@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)':
+  '@italia/autocomplete@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/avatar@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)':
+  '@italia/avatar@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/back-to-top@1.0.0-alpha.13':
+  '@italia/back-to-top@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/bottom-nav@1.0.0-alpha.13':
+  '@italia/bottom-nav@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/sticky': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/sticky': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/breadcrumbs@1.0.0-alpha.13':
+  '@italia/breadcrumbs@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/button@1.0.0-alpha.13':
+  '@italia/button@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/callout@1.0.0-alpha.13(@italia/collapse@1.0.0-alpha.13)':
+  '@italia/callout@1.0.0-alpha.14(@italia/collapse@1.0.0-alpha.14)':
     dependencies:
-      '@italia/collapse': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/collapse': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/card@1.0.0-alpha.13':
+  '@italia/card@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/carousel@1.0.0-alpha.13':
+  '@italia/carousel@1.0.0-alpha.14':
     dependencies:
-      '@italia/card': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
+      '@italia/card': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
       '@splidejs/splide': 4.1.4
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/checkbox@1.0.0-alpha.13':
+  '@italia/checkbox@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/chip@1.0.0-alpha.13(@italia/avatar@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13))(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)':
+  '@italia/chip@1.0.0-alpha.14(@italia/avatar@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14))(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/avatar': 1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/avatar': 1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/collapse@1.0.0-alpha.13':
+  '@italia/collapse@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/dev-kit-italia@1.0.0-alpha.13(lit@3.3.2)':
+  '@italia/dev-kit-italia@1.0.0-alpha.14(lit@3.3.2)':
     dependencies:
-      '@italia/accordion': 1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)
-      '@italia/autocomplete': 1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)
-      '@italia/avatar': 1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)
-      '@italia/back-to-top': 1.0.0-alpha.13
-      '@italia/bottom-nav': 1.0.0-alpha.13
-      '@italia/breadcrumbs': 1.0.0-alpha.13
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/callout': 1.0.0-alpha.13(@italia/collapse@1.0.0-alpha.13)
-      '@italia/card': 1.0.0-alpha.13
-      '@italia/carousel': 1.0.0-alpha.13
-      '@italia/checkbox': 1.0.0-alpha.13
-      '@italia/chip': 1.0.0-alpha.13(@italia/avatar@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13))(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)
-      '@italia/collapse': 1.0.0-alpha.13
-      '@italia/dimmer': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)
-      '@italia/dropdown': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13))
-      '@italia/header': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/dropdown@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)))(@italia/icon@1.0.0-alpha.13)(@italia/modal@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13))
-      '@italia/hero': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
-      '@italia/input': 1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)
-      '@italia/megamenu': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/dropdown@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)))(@italia/icon@1.0.0-alpha.13)
-      '@italia/modal': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)
-      '@italia/navscroll': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/modal@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13))
-      '@italia/notification': 1.0.0-alpha.13
-      '@italia/pagination': 1.0.0-alpha.13
-      '@italia/popover': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)
-      '@italia/progress': 1.0.0-alpha.13
-      '@italia/radio': 1.0.0-alpha.13
-      '@italia/rating': 1.0.0-alpha.13
-      '@italia/section': 1.0.0-alpha.13
-      '@italia/select': 1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)
-      '@italia/skiplinks': 1.0.0-alpha.13
-      '@italia/sticky': 1.0.0-alpha.13
-      '@italia/tabs': 1.0.0-alpha.13
-      '@italia/thumbnav': 1.0.0-alpha.13
-      '@italia/timeline': 1.0.0-alpha.13
-      '@italia/toggle': 1.0.0-alpha.13
-      '@italia/toolbar': 1.0.0-alpha.13
-      '@italia/tooltip': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)
-      '@italia/transfer': 1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)
-      '@italia/upload': 1.0.0-alpha.13(@italia/avatar@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13))(@italia/icon@1.0.0-alpha.13)(@italia/progress@1.0.0-alpha.13)
-      '@italia/video': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/checkbox@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)
+      '@italia/accordion': 1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)
+      '@italia/autocomplete': 1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)
+      '@italia/avatar': 1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)
+      '@italia/back-to-top': 1.0.0-alpha.14
+      '@italia/bottom-nav': 1.0.0-alpha.14
+      '@italia/breadcrumbs': 1.0.0-alpha.14
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/callout': 1.0.0-alpha.14(@italia/collapse@1.0.0-alpha.14)
+      '@italia/card': 1.0.0-alpha.14
+      '@italia/carousel': 1.0.0-alpha.14
+      '@italia/checkbox': 1.0.0-alpha.14
+      '@italia/chip': 1.0.0-alpha.14(@italia/avatar@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14))(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)
+      '@italia/collapse': 1.0.0-alpha.14
+      '@italia/dimmer': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)
+      '@italia/dropdown': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14))
+      '@italia/header': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/dropdown@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)))(@italia/icon@1.0.0-alpha.14)(@italia/modal@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14))
+      '@italia/hero': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
+      '@italia/input': 1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)
+      '@italia/megamenu': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/dropdown@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)))(@italia/icon@1.0.0-alpha.14)
+      '@italia/modal': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)
+      '@italia/navscroll': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/modal@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14))
+      '@italia/notification': 1.0.0-alpha.14
+      '@italia/pagination': 1.0.0-alpha.14
+      '@italia/popover': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)
+      '@italia/progress': 1.0.0-alpha.14
+      '@italia/radio': 1.0.0-alpha.14
+      '@italia/rating': 1.0.0-alpha.14
+      '@italia/section': 1.0.0-alpha.14
+      '@italia/select': 1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)
+      '@italia/skiplinks': 1.0.0-alpha.14
+      '@italia/sticky': 1.0.0-alpha.14
+      '@italia/tabs': 1.0.0-alpha.14
+      '@italia/thumbnav': 1.0.0-alpha.14
+      '@italia/timeline': 1.0.0-alpha.14
+      '@italia/toggle': 1.0.0-alpha.14
+      '@italia/toolbar': 1.0.0-alpha.14
+      '@italia/tooltip': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)
+      '@italia/transfer': 1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)
+      '@italia/upload': 1.0.0-alpha.14(@italia/avatar@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14))(@italia/icon@1.0.0-alpha.14)(@italia/progress@1.0.0-alpha.14)
+      '@italia/video': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/checkbox@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)
       lit: 3.3.2
 
-  '@italia/dimmer@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)':
+  '@italia/dimmer@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/dropdown@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13))':
+  '@italia/dropdown@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14))':
     dependencies:
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
-      '@italia/popover': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
+      '@italia/popover': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/globals@1.0.0-alpha.13':
+  '@italia/globals@1.0.0-alpha.14':
     dependencies:
       '@floating-ui/dom': 1.7.6
-      '@italia/i18n': 1.0.0-alpha.13
+      '@italia/i18n': 1.0.0-alpha.14
       clsx: 2.1.1
       lit: 3.3.2
 
-  '@italia/header@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/dropdown@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)))(@italia/icon@1.0.0-alpha.13)(@italia/modal@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13))':
+  '@italia/header@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/dropdown@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)))(@italia/icon@1.0.0-alpha.14)(@italia/modal@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14))':
     dependencies:
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/dropdown': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13))
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
-      '@italia/modal': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/dropdown': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14))
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
+      '@italia/modal': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/hero@1.0.0-alpha.13':
+  '@italia/hero@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/i18n@1.0.0-alpha.13':
+  '@italia/i18n@1.0.0-alpha.14':
     dependencies:
       lit: 3.3.2
 
-  '@italia/icon@1.0.0-alpha.13':
+  '@italia/icon@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/input@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)':
+  '@italia/input@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/megamenu@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/dropdown@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)))(@italia/icon@1.0.0-alpha.13)':
+  '@italia/megamenu@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/dropdown@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)))(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/dropdown': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13))
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/dropdown': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14))
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/modal@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)':
+  '@italia/modal@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/navscroll@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)(@italia/modal@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13))':
+  '@italia/navscroll@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)(@italia/modal@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14))':
     dependencies:
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
-      '@italia/modal': 1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
+      '@italia/modal': 1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/notification@1.0.0-alpha.13':
+  '@italia/notification@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/pagination@1.0.0-alpha.13':
+  '@italia/pagination@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/popover@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)':
+  '@italia/popover@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)':
     dependencies:
       '@floating-ui/dom': 1.7.6
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/progress@1.0.0-alpha.13':
+  '@italia/progress@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
       progressbar.js: 1.1.1
 
-  '@italia/radio@1.0.0-alpha.13':
+  '@italia/radio@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/rating@1.0.0-alpha.13':
+  '@italia/rating@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
-      '@italia/radio': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
+      '@italia/radio': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/section@1.0.0-alpha.13':
+  '@italia/section@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/select@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)':
+  '@italia/select@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/skiplinks@1.0.0-alpha.13':
+  '@italia/skiplinks@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/sticky@1.0.0-alpha.13':
+  '@italia/sticky@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/tabs@1.0.0-alpha.13':
+  '@italia/tabs@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/thumbnav@1.0.0-alpha.13':
+  '@italia/thumbnav@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/timeline@1.0.0-alpha.13':
+  '@italia/timeline@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/toggle@1.0.0-alpha.13':
+  '@italia/toggle@1.0.0-alpha.14':
     dependencies:
-      '@italia/checkbox': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
+      '@italia/checkbox': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/toolbar@1.0.0-alpha.13':
+  '@italia/toolbar@1.0.0-alpha.14':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/tooltip@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)':
+  '@italia/tooltip@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)':
     dependencies:
       '@floating-ui/dom': 1.7.6
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/transfer@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)':
+  '@italia/transfer@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/upload@1.0.0-alpha.13(@italia/avatar@1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13))(@italia/icon@1.0.0-alpha.13)(@italia/progress@1.0.0-alpha.13)':
+  '@italia/upload@1.0.0-alpha.14(@italia/avatar@1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14))(@italia/icon@1.0.0-alpha.14)(@italia/progress@1.0.0-alpha.14)':
     dependencies:
-      '@italia/avatar': 1.0.0-alpha.13(@italia/icon@1.0.0-alpha.13)
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
-      '@italia/progress': 1.0.0-alpha.13
+      '@italia/avatar': 1.0.0-alpha.14(@italia/icon@1.0.0-alpha.14)
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
+      '@italia/progress': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
 
-  '@italia/video@1.0.0-alpha.13(@italia/button@1.0.0-alpha.13)(@italia/checkbox@1.0.0-alpha.13)(@italia/icon@1.0.0-alpha.13)':
+  '@italia/video@1.0.0-alpha.14(@italia/button@1.0.0-alpha.14)(@italia/checkbox@1.0.0-alpha.14)(@italia/icon@1.0.0-alpha.14)':
     dependencies:
-      '@italia/button': 1.0.0-alpha.13
-      '@italia/checkbox': 1.0.0-alpha.13
-      '@italia/globals': 1.0.0-alpha.13
-      '@italia/i18n': 1.0.0-alpha.13
-      '@italia/icon': 1.0.0-alpha.13
+      '@italia/button': 1.0.0-alpha.14
+      '@italia/checkbox': 1.0.0-alpha.14
+      '@italia/globals': 1.0.0-alpha.14
+      '@italia/i18n': 1.0.0-alpha.14
+      '@italia/icon': 1.0.0-alpha.14
       bootstrap-italia: 3.0.0-beta.0
       lit: 3.3.2
       video.js: 8.23.7

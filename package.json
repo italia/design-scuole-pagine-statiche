@@ -26,7 +26,7 @@
     "release:zip": "sh ./scripts/create-release-attachment.sh"
   },
   "dependencies": {
-    "@italia/dev-kit-italia": "1.0.0-alpha.13"
+    "@italia/dev-kit-italia": "1.0.0-alpha.14"
   },
   "engines": {
     "node": ">=24"
