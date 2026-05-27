@@ -16,27 +16,30 @@
   },
   "contentBody": {
     "elenco": {
-      "title": "Elenco dei libri per anno scolastico",
+      "titolo": "Elenco dei libri per anno scolastico",
       "items": [
         {
-          "type": "inlineMini",
+          "type": "simple",
           "title": "Primaria a tempo pieno (40 ore)",
           "titleHref": "#",
           "text": "PDF, 0.5 MB"
         },
         {
-          "type": "inlineMini",
+          "type": "simple",
           "title": "Primaria a tempo ridotto (30 ore)",
           "titleHref": "#",
           "text": "PDF, 0.5 MB"
         },
         {
-          "type": "inlineMini",
+          "type": "simple",
           "title": "Secondaria",
           "titleHref": "#",
           "text": "PDF, 0.5 MB"
         }
       ]
     }
+  },
+  "info": {
+    "lastUpdate": "12 dicembre 2025"
   }
 }

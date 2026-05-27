@@ -39,12 +39,13 @@ const hero = render(templates.hero, data.hero);
 const container = document.getElementById('hero-presentation');
 container?.appendChild(hero);
 
+/* render section */
+const fragment = render(templates.serviceSection, data.contentBody.elenco);
+
 const select = render(templates.select);
 const selectContainer = document.getElementById('select');
 selectContainer?.appendChild(select);
 
-/* render section */
-const fragment = render(templates.serviceSection, data.contentBody.elenco);
 const CardsContainer = fragment.querySelector('[data-cards]');
 if (CardsContainer) {
   CardsContainer.appendChild(renderCards(data.contentBody.elenco.items));
@@ -55,15 +56,10 @@ if (Container) {
   Container.appendChild(fragment);
 }
 
-/*
-contentBody
-  .querySelector('#ulteriori-informazioni')
-  ?.replaceWith(
-    render(templates.contentUlterioriInformazioni, data.contentBody.ulterioriInformazioni)
-  );
-
-mount('content-body', contentBody);
-*/
+/* render informazioni */
+const info = render(templates.contentUlterioriInformazioni, data.info);
+const contentContainer = document.getElementById('informazioni');
+contentContainer?.appendChild(info);
 
 /* rating */
 mount('rating', render(templates.rating));

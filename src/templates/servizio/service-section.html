@@ -1,9 +1,23 @@
 <template>
   <it-section class="service-section">
     <div class="container">
-      <h2 class="service-section__title" data-tpl="titolo"></h2>
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <h2 class="service-section__title" data-tpl="titolo"></h2>
+        </div>
+        <div class="col-md-12">
+          <it-select name="select-anno" id="select-anno" placeholder="2025-2026" style="width: 310px;">
+            <span slot="label">Seleziona un anno scolastico</span>
+            <option value="Value 1">Opzione 1</option>
+            <option value="Value 2">Opzione 2</option>
+            <option value="Value 3">Opzione 3</option>
+            <option value="Value 4">Opzione 4</option>
+            <option value="Value 5">Opzione 5</option>
+          </it-select>
+        </div>
+      </div>
       <!-- data-cards: punto di iniezione per le card, gestito da servizio.js -->
-      <div data-cards></div>
+      <div class="row" data-cards></div>
     </div>
   </it-section>
 </template>
