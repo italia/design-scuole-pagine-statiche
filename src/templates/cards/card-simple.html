@@ -1,17 +1,17 @@
 <template>
-  <div class="col-md-4 col-12"> 
-  <it-card full-height=""> 
-    <a slot="title" href="#" data-tpl-if="title" data-tpl="title">Titolo</a>
-    <span slot="text" data-tpl-if="text" data-tpl="text">
-      Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre
-      o quattro righe, senza troncamento.
-    </span>
-    <div slot="footer" class="it-card-taxonomy" data-tpl-if="taxonomy">
-      <a href="#" class="it-card-category it-card-link">
-        <span class="visually-hidden">Categoria correlata: </span>
-        <span data-tpl="taxonomy"></span>
-      </a>
-    </div>
-  </it-card>
-</div>
+  <div class="col-md-4 col-12">
+    <it-card full-height="">
+      <a slot="title" href="#" data-tpl-if="title" data-tpl="title">Titolo</a>
+      <span slot="text" data-tpl-if="text" data-tpl="text">
+        Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo
+        tre o quattro righe, senza troncamento.
+      </span>
+      <div slot="footer" class="it-card-taxonomy" data-tpl-if="taxonomy">
+        <a href="#" class="it-card-category it-card-link">
+          <span class="visually-hidden">Categoria correlata: </span>
+          <span data-tpl="taxonomy"></span>
+        </a>
+      </div>
+    </it-card>
+  </div>
 </template>
