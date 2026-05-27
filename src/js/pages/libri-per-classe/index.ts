@@ -1,67 +1,49 @@
 import '@/js/main';
 import { render, fromHTML, mount } from '@/js/utils/templates';
-import { renderCards } from '@/js/engines/cards';
 
 import headerHTML from '@/templates/layout/header.html?raw';
 import footerHTML from '@/templates/layout/footer.html?raw';
 import ratingHTML from '@/templates/layout/rating.html?raw';
 import breadcrumbsHTML from '@/templates/layout/breadcrumb.html?raw';
 import heroHTML from '@/templates/components/hero-presentation.html?raw';
-import sectionListHTML from '@/templates/components/section-list.html?raw';
-import selectHTML from '@/templates/components/pagina-foglia/select.html?raw';
 import serviceSectionHTML from '@/templates/servizio/service-section.html?raw';
-
-import contentBodyHTML from '@/templates/components/pagina-foglia/content-body.html?raw';
 import contentUlterioriInformazioniHTML from '@/templates/components/pagina-foglia/content-ulteriori-informazioni.html?raw';
+import accordionHTML from '@/templates/components/pagina-foglia/accordion.html?raw';
 
-import data from '@/js/pages/libri-di-testo/data.json';
+import data from '@/js/pages/libri-per-classe/data.json';
 
 const templates = {
   header: fromHTML(headerHTML),
   breadcrumbs: fromHTML(breadcrumbsHTML),
-  contentBody: fromHTML(contentBodyHTML),
-  sectionList: fromHTML(sectionListHTML),
   serviceSection: fromHTML(serviceSectionHTML),
   contentUlterioriInformazioni: fromHTML(contentUlterioriInformazioniHTML),
   rating: fromHTML(ratingHTML),
   footer: fromHTML(footerHTML),
   hero: fromHTML(heroHTML),
-  select: fromHTML(selectHTML),
+  accordion: fromHTML(accordionHTML),
 };
 
-/* header */
+/* Layout base */
 mount('main-header', render(templates.header));
 mount('breadcrumbs', render(templates.breadcrumbs, data.breadcrumbs));
 
-/* hero */
+/* Hero */
 const hero = render(templates.hero, data.hero);
-const container = document.getElementById('hero-presentation');
-container?.appendChild(hero);
+document.getElementById('hero-presentation')?.appendChild(hero);
 
-/* render section */
-const fragment = render(templates.serviceSection, data.contentBody.elenco);
+/* Render sezione principale */
+const section = render(templates.serviceSection, data.contentBody.elenco);
+document.getElementById('content-body')?.appendChild(section);
 
-const select = render(templates.select);
-const selectContainer = document.getElementById('select');
-selectContainer?.appendChild(select);
+/*render accordion*/
 
-const CardsContainer = fragment.querySelector('[data-cards]');
-if (CardsContainer) {
-  CardsContainer.appendChild(renderCards(data.contentBody.elenco.items));
-}
-
-const Container = document.getElementById('content-body');
-if (Container) {
-  Container.appendChild(fragment);
-}
+const accordion = render(templates.accordion, data.scuole);
+document.getElementById('accordion')?.appendChild(accordion);
 
 /* render informazioni */
 const info = render(templates.contentUlterioriInformazioni, data.info);
-const contentContainer = document.getElementById('informazioni');
-contentContainer?.appendChild(info);
+document.getElementById('informazioni')?.appendChild(info);
 
-/* rating */
+/* Rating & Footer */
 mount('rating', render(templates.rating));
-
-/* footer */
 mount('footer', render(templates.footer));
