@@ -4,7 +4,7 @@
       <h1 data-tpl="title"></h1>
       <form>
         <div>
-          <it-input
+          <!-- <it-input
             id="search-scuole-input"
             type="text"
             name="search-scuole"
@@ -17,9 +17,26 @@
             <it-button variant="primary" slot="append" aria-controls="results-search-scuole"
               >Cerca</it-button
             >
-          </it-input>
+          </it-input> -->
+          <it-autocomplete
+            id="input-search-block"
+            name="search"
+            placeholder="Cerca un indirizzo..."
+            data-tpl-placeholder="placeholder"
+            label-hidden=""
+            it-aria-controls="results-search-block"
+            source='[{"value":"via dei Mille, 10","label":"Via dei Mille, 10"},{"value":"Corso Vittorio Emanuele, 20","label":"Corso Vittorio Emanuele, 20"}]'
+          >
+            <span slot="label" data-tpl="label">Indirizzo</span>
+          </it-autocomplete>
         </div>
-        <div id="results-search-scuole" aria-live="polite" class="mt-4" data-tpl-if="items">
+        <div
+          id="results-search-block"
+          aria-live="polite"
+          aria-atomic="true"
+          class="mt-4"
+          data-tpl-if="items"
+        >
           <div class="visually-hidden">4 risultati trovati</div>
           <div class="row">
             <div class="col-12 col-lg-4 order-2 order-lg-1">
