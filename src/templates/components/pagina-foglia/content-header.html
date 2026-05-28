@@ -2,41 +2,62 @@
   <div class="border-top border-light">
     <div class="container pt-5 pb-0 pb-lg-4">
       <div class="row">
-        <div class="col-12 col-lg-8 d-flex flex-column align-items-start">
-          <h1 data-tpl="title"></h1>
-          <p
-            class="page-description h4 fw-normal pt-0"
-            data-tpl="description"
-            data-tpl-if="description"
-          ></p>
-          <div data-tpl-if="category" data-tpl="category" href="#" class="fw-semibold mt-5"></div>
-        </div>
-        <div class="col-12 px-0 col-lg-4 d-flex flex-column flex-lg-column-reverse align-items-end">
-          <it-dropdown it-aria-label="Condividi" variant="link" class="share px-3 py-4 p-lg-0">
-            <div slot="label">
-              <it-icon name="it-share" size="sm" color="primary" class="me-2"></it-icon>Condividi
-            </div>
-            <it-dropdown-item href="#">
-              <it-icon slot="prefix" name="it-facebook" size="sm" color="primary"></it-icon>
-              Facebook
-            </it-dropdown-item>
-            <it-dropdown-item href="#">
-              <it-icon slot="prefix" name="it-twitter" size="sm" color="primary"></it-icon>
-              Twitter
-            </it-dropdown-item>
-            <it-dropdown-item href="#">
-              <it-icon slot="prefix" name="it-linkedin" size="sm" color="primary"></it-icon>
-              LinkedIn
-            </it-dropdown-item>
-            <it-dropdown-item href="#">
-              <it-icon slot="prefix" name="it-whatsapp" size="sm" color="primary"></it-icon>
-              WhatsApp
-            </it-dropdown-item>
-          </it-dropdown>
-
-          <div data-tpl-if="image" class="mb-lg-4">
-            <img data-tpl-src="image" alt="" class="img-fluid" />
+        <div class="col-12 col-lg-7 d-flex flex-column justify-content-between gap-3">
+          <!--top-->
+          <div class="content-header-top">
+            <h1 data-tpl="title"></h1>
+            <p
+              class="page-description h4 fw-normal pt-0"
+              data-tpl="description"
+              data-tpl-if="description"
+            ></p>
+            <div data-tpl-html="headerText" data-tpl-if="headerText"></div>
           </div>
+
+          <!--bottom-->
+          <div
+            class="content-header-bottom d-flex w-100 justify-content-between align-items-lg-center gap-3 flex-column flex-lg-row"
+          >
+            <div
+              class="left-data d-flex flex-column flex-lg-row gap-3 gap-lg-4 align-items-lg-center flex-wrap"
+            >
+              <div data-tpl-if="category" data-tpl="category" href="#" class="fw-semibold"></div>
+              <div data-tpl-if="author" class="fw-semibold d-flex align-items-center gap-2">
+                <it-avatar
+                  size="sm"
+                  src="https://randomuser.me/api/portraits/men/43.jpg"
+                ></it-avatar>
+                <a data-tpl="author" href="#" data-tpl-href="author-link">autore</a>
+              </div>
+              <div data-tpl-if="publicationDate" data-tpl="publicationDate" class="fw-semibold">
+                22 ottobre 2025
+              </div>
+            </div>
+            <it-dropdown it-aria-label="Condividi" variant="link" class="share">
+              <div slot="label">
+                <it-icon name="it-share" size="sm" color="primary" class="me-2"></it-icon>Condividi
+              </div>
+              <it-dropdown-item href="#">
+                <it-icon slot="prefix" name="it-facebook" size="sm" color="primary"></it-icon>
+                Facebook
+              </it-dropdown-item>
+              <it-dropdown-item href="#">
+                <it-icon slot="prefix" name="it-twitter" size="sm" color="primary"></it-icon>
+                Twitter
+              </it-dropdown-item>
+              <it-dropdown-item href="#">
+                <it-icon slot="prefix" name="it-linkedin" size="sm" color="primary"></it-icon>
+                LinkedIn
+              </it-dropdown-item>
+              <it-dropdown-item href="#">
+                <it-icon slot="prefix" name="it-whatsapp" size="sm" color="primary"></it-icon>
+                WhatsApp
+              </it-dropdown-item>
+            </it-dropdown>
+          </div>
+        </div>
+        <div data-tpl-if="image" class="col-12 px-0 col-lg-5 ps-lg-5 mt-3 mt-lg-0">
+          <img data-tpl-src="image" alt="" class="img-fluid" />
         </div>
       </div>
     </div>
