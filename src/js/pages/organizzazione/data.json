@@ -1,0 +1,159 @@
+{
+  "breadcrumbs": {
+    "pagina": "Organizzazione",
+    "paginePrecedenti": [
+      {
+        "nome": "L'istituto",
+        "url": "#"
+      }
+    ]
+  },
+
+  "pageHeader": {
+    "class": "hero presentation",
+    "title": "Organizzazione",
+    "subtitle": "In questa sezione sono presenti le informazioni sull’organizzazione dell’Istituto",
+    "illustration": "../illustrations/hero-presentation-scuola.png"
+  },
+
+  "dirigenza": {
+    "title": "Dirigenza",
+    "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+    "items": [
+      {
+        "type": "location",
+        "title": "Presidenza",
+        "titleHref": "/pages/unita-organizzativa.html",
+        "bodyHtml": "<div><dt>Email:</dt><dd>presidenza@mail.com</dd></div><div><dt>Tel:</dt><dd>+39 00 000000</dd></div><div><dt>Indirizzo:</dt><dd>Via Ragazzi del ‘99, Livorno</dd></div>",
+        "icon": "it-pa"
+      },
+      {
+        "type": "location",
+        "title": "Segreteria",
+        "titleHref": "/pages/unita-organizzativa.html",
+        "bodyHtml": "<div><dt>Email:</dt><dd>segreteria@mail.com</dd></div><div><dt>Tel:</dt><dd>+39 00 000000</dd></div><div><dt>Indirizzo:</dt><dd>Via Ragazzi del ‘99, Livorno</dd></div>",
+        "icon": "it-pa"
+      }
+    ]
+  },
+
+  "organi": {
+    "title": "Organi collegiali",
+    "items": [
+      {
+        "type": "location",
+        "title": "Consiglio d’Istituto",
+        "titleHref": "#",
+        "icon": "it-pa"
+      },
+      {
+        "type": "location",
+        "title": "Giunta esecutiva",
+        "titleHref": "#",
+        "icon": "it-pa"
+      },
+      {
+        "type": "location",
+        "title": "Collegio docenti",
+        "titleHref": "#",
+        "icon": "it-pa"
+      }
+    ]
+  },
+
+  "funzioni": {
+    "title": "Funzioni strumentali",
+    "items": [
+      {
+        "type": "location",
+        "title": "Area didattica e curricolo",
+        "titleHref": "#",
+        "icon": "it-pa"
+      },
+      {
+        "type": "location",
+        "title": "Area inclusione e supporto agli studenti",
+        "titleHref": "#",
+        "icon": "it-pa"
+      },
+      {
+        "type": "location",
+        "title": "Area orientamento",
+        "titleHref": "#",
+        "icon": "it-pa"
+      },
+      {
+        "type": "location",
+        "title": "Area valutazione e autovalutazione",
+        "titleHref": "#",
+        "icon": "it-pa"
+      },
+      {
+        "type": "location",
+        "title": "Area comunicazione e rapporti con l’esterno",
+        "titleHref": "#",
+        "icon": "it-pa"
+      },
+      {
+        "type": "location",
+        "title": "Area innovazione tecnologica",
+        "titleHref": "#",
+        "icon": "it-pa"
+      }
+    ]
+  },
+
+  "persone": {
+    "title": "Le persone della scuola",
+    "items": [
+      {
+        "type": "person",
+        "title": "Luigi Rossi",
+        "subtitle": "Dirigente scolastico",
+        "titleHref": "#",
+        "icon": "it-user"
+      },
+      {
+        "type": "person",
+        "title": "Mario Antonio della Monaca",
+        "subtitle": "Responsabile sicurezza",
+        "titleHref": "#",
+        "icon": "it-user"
+      },
+      {
+        "type": "person",
+        "title": "Mariacarmela degli Esposti",
+        "subtitle": "Responsabile accessibilità",
+        "titleHref": "#",
+        "icon": "it-user"
+      }
+    ]
+  },
+
+  "finanziamenti": {
+    "title": "Finanziamenti",
+    "items": [
+      {
+        "type": "informativa",
+        "title": "PNRR Futura",
+        "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
+        "imageSrc": "../illustrations/pnrr.svg"
+      },
+      {
+        "type": "informativa",
+        "title": "PON - Ricerca e innovazione 2014-2020",
+        "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
+        "imageSrc": "../illustrations/pon-ricerca.svg"
+      },
+      {
+        "type": "informativa",
+        "title": "PON inclusione",
+        "text": "Programma europeo per il sostegno e l'inclusione sociale",
+        "imageSrc": "../illustrations/pon.svg"
+      }
+    ],
+    "more": "Esplora tutti i finanziamenti"
+  },
+
+  "lastUpdate": "12 dicembre 2025"
+}

@@ -1,0 +1,48 @@
+<template>
+  <it-section class="section bg-lightest numeri-istituto">
+    <div class="container">
+      <h2 data-tpl="titolo">I numeri dell'Istituto</h2>
+
+      <div class="row row-cols-2 row-cols-lg-4 g-4 mt-2 mb-4">
+        <div class="col">
+          <it-icon size="lg" class="d-inline-block"
+            ><img src="../icons/people.svg" alt=""
+          /></it-icon>
+          <p class="numero text-primary fw-bold mb-0" data-tpl="alunni">993</p>
+          <p class="text-primary mb-0" data-tpl="alunniLabel">alunni</p>
+        </div>
+        <div class="col">
+          <it-icon size="lg" class="d-inline-block"
+            ><img src="../icons/school.svg" alt=""
+          /></it-icon>
+          <p class="numero text-primary fw-bold mb-0" data-tpl="classi">43</p>
+          <p class="text-primary mb-0" data-tpl="classiLabel">classi</p>
+        </div>
+        <div class="col">
+          <it-icon size="lg" class="d-inline-block"><img src="../icons/leaf.svg" alt="" /></it-icon>
+          <p class="numero text-primary fw-bold mb-0" data-tpl="spaziAperti">3</p>
+          <p class="text-primary mb-0" data-tpl="spaziApertiLabel">spazi aperti</p>
+        </div>
+        <div class="col">
+          <it-icon size="lg" class="d-inline-block"
+            ><img src="../icons/type4.svg" alt=""
+          /></it-icon>
+          <p class="numero text-primary fw-bold mb-0" data-tpl="proseguiStudi">89</p>
+          <p class="text-primary mb-0" data-tpl="proseguiStudiLabel">
+            % di studenti che proseguono gli studi
+          </p>
+        </div>
+      </div>
+
+      <a href="#" data-tpl-href="scuolaInChiaroUrl" class="fw-semibold"
+        >Approfondisci su Scuola in Chiaro<it-icon
+          name="it-external-link"
+          color="primary"
+          size="sm"
+          class="ms-2"
+          align="bottom"
+        ></it-icon
+      ></a>
+    </div>
+  </it-section>
+</template>

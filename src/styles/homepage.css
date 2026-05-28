@@ -1,6 +1,5 @@
 @media (width <= 767px) {
-  it-section.hero.presentation .section,
-  .section {
+  it-section.hero.presentation .section {
     --bsi-section-padding-y: var(--bsi-spacing-m) 0;
   }
 }

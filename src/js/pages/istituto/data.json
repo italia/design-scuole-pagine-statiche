@@ -1,0 +1,169 @@
+{
+  "breadcrumb": {
+    "pagina": "L'Istituto"
+  },
+
+  "hero": {
+    "class": "hero",
+    "title": "L'Istituto",
+    "subtitle": "Istituto Comprensivo F. Hernandez",
+    "text": "Livorno",
+    "image": "../images/hero-homepage.jpg",
+    "illustration": "../illustrations/scuola-large.svg"
+  },
+
+  "nostreScuole": {
+    "title": "Le nostre scuole",
+    "more": "Scopri dove siamo",
+    "items": [
+      {
+        "type": "location",
+        "title": "Scuola E. De Amicis",
+        "titleHref": "#",
+        "address": "La scuola E. De Amicis propone il percorso di Scuola dell'Infanzia."
+      },
+      {
+        "type": "location",
+        "title": "Scuola A. Diaz",
+        "titleHref": "#",
+        "address": "La scuola A. Diaz comprende la Scuola primaria e la Scuola secondaria di primo grado."
+      },
+      {
+        "type": "location",
+        "title": "Scuola F. Hernandez",
+        "titleHref": "#",
+        "address": "La scuola F. Hernandez comprende la Scuola primaria."
+      }
+    ]
+  },
+
+  "offertaFormativa": {
+    "class": "hero bg-dark",
+    "illustration": "../illustrations/scuola-large.svg",
+    "title": "Scopri la nostra offerta formativa",
+    "text": "Percorsi, attività e opportunità pensate per accompagnare ogni studente nella propria crescita educativa.",
+    "buttonText": "Vai alla didattica",
+    "buttonUrl": "#"
+  },
+
+  "organizzazione": {
+    "linkUrl": "#",
+    "cards": [
+      {
+        "type": "location",
+        "title": "Presidenza",
+        "address": "Coordinamento generale dell'istituto e guida delle attività didattiche e organizzative.",
+        "icon": "it-pa",
+        "titleHref": "#"
+      },
+      {
+        "type": "location",
+        "title": "Segreteria",
+        "address": "Ufficio amministrativo che gestisce i servizi per famiglie e personale.",
+        "icon": "it-pa",
+        "titleHref": "#"
+      },
+      {
+        "type": "location",
+        "title": "Consiglio d'Istituto",
+        "address": "Struttura di partecipazione che supporta le decisioni e l'organizzazione della vita scolastica.",
+        "icon": "it-pa",
+        "titleHref": "#"
+      },
+      {
+        "type": "location",
+        "title": "Collegio docenti",
+        "address": "Docenti incaricati di coordinare aree strategiche dell'offerta formativa e dei progetti d'istituto.",
+        "icon": "it-pa",
+        "titleHref": "#"
+      }
+    ]
+  },
+
+  "contattiSezione": {
+    "linkUrl": "#",
+    "cards": [
+      {
+        "borderTop": "primary",
+        "type": "location",
+        "title": "Segreteria",
+        "icon": "it-pa",
+        "bodyHtml": "<div><dt>Email:</dt><dd><a href=\"mailto:me@mail.com\">me@mail.com</a></dd></div><div><dt>Tel:</dt><dd>+39 00 000000</dd></div>"
+      },
+      {
+        "borderTop": "primary",
+        "type": "location",
+        "title": "Presidenza",
+        "icon": "it-pa",
+        "bodyHtml": "<div><dt>Email: </dt><dd><a href=\"mailto:me@mail.com\">me@mail.com</a></dd></div><div><dt>Tel: </dt><dd>+39 00 000000</dd></div>"
+      }
+    ]
+  },
+
+  "storia": {
+    "class": "storia bg-dark",
+    "illustration": "../images/school.png",
+    "pre-title": "Dal 1965 a oggi",
+    "title": "La storia dell'Istituto",
+    "text": "Vantiamo oltre cinquant'anni di storia dedicata all'educazione e alla formazione degli studenti, con percorsi educativi che bilanciano tradizione e innovazione.",
+    "buttonText": "Scopri la storia dell'Istituto"
+  },
+
+  "documenti": {
+    "title": "Documenti e modulistica",
+    "text": "In questa sezione troverai i documenti e la modulistica di tutto l'Istituto.",
+    "textClassName": "lead",
+    "more": "Vai a tutti i documenti",
+    "items": [
+      {
+        "type": "informativa",
+        "className": "attachment",
+        "title": "Modulo di iscrizione per la gita scolastica",
+        "text": "Modulo da compilare per adere alle uscite e ai viaggi di istruzione.",
+        "category": "MODULISTICA",
+        "icon": "it-file"
+      },
+      {
+        "type": "informativa",
+        "className": "attachment",
+        "title": "Regolamento d'Istituto",
+        "text": "Documento che definisce norme, diritti e doveri di studenti, famiglie e personale.",
+        "category": "REGOLAMENTO",
+        "icon": "it-file"
+      },
+      {
+        "type": "informativa",
+        "className": "attachment",
+        "title": "Linee guida per il comportamento degli studenti",
+        "text": "Indicazioni su comportamenti attesi e buone pratiche di benessere scolastico.",
+        "category": "REGOLAMENTO",
+        "icon": "it-file"
+      }
+    ]
+  },
+
+  "finanziamenti": {
+    "title": "I nostri finanziamenti",
+    "items": [
+      {
+        "type": "informativa",
+        "title": "PNRR Futura",
+        "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
+        "imageSrc": "../illustrations/pnrr.svg"
+      },
+      {
+        "type": "informativa",
+        "title": "PON - Ricerca e innovazione 2014-2020",
+        "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
+        "imageSrc": "../illustrations/pon-ricerca.svg"
+      },
+      {
+        "type": "informativa",
+        "title": "PON Inclusione",
+        "text": "Programma europeo per il sostegno e l'inclusione sociale",
+        "imageSrc": "../illustrations/pon.svg"
+      }
+    ],
+    "more": "Esplora tutti i finanziamenti"
+  }
+}

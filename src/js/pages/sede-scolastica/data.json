@@ -128,22 +128,22 @@
     "title": "I servizi della scuola",
     "items": [
       {
-        "type": "simple",
+        "type": "informativa",
         "title": "Mensa scolastica",
         "text": "Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durante la giornata scolastica.",
-        "taxonomy": "MENSE SCOLASTICHE"
+        "category": "MENSE SCOLASTICHE"
       },
       {
-        "type": "simple",
+        "type": "informativa",
         "title": "Piedibus",
         "text": "Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile.",
-        "taxonomy": "TRASPORTO SCOLASTICO"
+        "category": "TRASPORTO SCOLASTICO"
       },
       {
-        "type": "simple",
+        "type": "informativa",
         "title": "Scuolabus",
         "text": "Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite.",
-        "taxonomy": "TRASPORTO SCOLASTICO"
+        "category": "TRASPORTO SCOLASTICO"
       }
     ],
     "more": "Esplora tutti i servizi della scuola"
@@ -185,7 +185,7 @@
       {
         "type": "informativa",
         "className": "attachment",
-        "title": "PTOF – Piano Triennale dell’Offerta Formativa",
+        "title": "PTOF - Piano Triennale dell'Offerta Formativa",
         "text": "Il documento che descrive identità, obiettivi educativi e organizzazione della scuola. Contiene i percorsi di studio, i progetti attivi e le modalità di collaborazione con famiglie e territorio, aggiornati per il triennio in corso.",
         "category": "DOCUMENTO PROGRAMMATICO",
         "icon": "it-file"

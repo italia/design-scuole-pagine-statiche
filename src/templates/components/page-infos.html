@@ -1,0 +1,34 @@
+<template>
+  <div data-tpl-if="categories" data-tpl-class="categoriesClassName" class="mt-5">
+    <div class="fw-semibold text-small mb-4 mb-lg-2">PARLIAMO DI</div>
+    <ul class="list-inline">
+      <li data-tpl-each="categories" class="list-inline-item">
+        <it-chip
+          data-tpl-label="title"
+          size="sm"
+          variant="primary"
+          a11y-description="Argomento:"
+        ></it-chip>
+      </li>
+    </ul>
+  </div>
+
+  <section
+    data-tpl-if="lastUpdate"
+    class="section border-top page-infos pt-4"
+    data-tpl-class="className"
+  >
+    <div data-tpl-class="updateClass" class="container w-100">
+      <div class="font-serif">
+        <p class="mb-2">
+          Ultimo aggiornamento:
+          <span data-tpl="lastUpdate"></span>
+        </p>
+        <p class="mb-0">
+          Eccetto dove diversamente specificato, questi contenuti sono stati rilasciati sotto
+          Licenza Creative Commons Attribuzione 4.0 Italia.
+        </p>
+      </div>
+    </div>
+  </section>
+</template>

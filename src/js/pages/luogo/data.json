@@ -1,0 +1,193 @@
+{
+  "breadcrumbs": {
+    "pagina": "Mensa",
+    "paginePrecedenti": [
+      {
+        "nome": "La scuola",
+        "url": "#"
+      },
+      {
+        "nome": "Luoghi",
+        "url": "#"
+      }
+    ]
+  },
+  "contentHeader": {
+    "title": "Mensa",
+    "description": "Servizio dedicato alla mensa scolastica."
+  },
+  "contentBody": {
+    "navItems": [
+      {
+        "title": "Descrizione",
+        "href": "#descrizione",
+        "className": "nav-link active"
+      },
+      {
+        "title": "Servizi",
+        "href": "#servizi"
+      },
+      {
+        "title": "Dove si trova",
+        "href": "#dove-si-trova"
+      },
+      {
+        "title": "Orari di ingresso",
+        "href": "#orari"
+      },
+      {
+        "title": "Contatti",
+        "href": "#contatti"
+      },
+      {
+        "title": "Ulteriori informazioni",
+        "href": "#ulteriori-informazioni"
+      },
+      {
+        "title": "Ultime notizie",
+        "href": "#ultime-notizie"
+      }
+    ],
+    "descrizione": {
+      "className": "pb-4",
+      "textClassName": "font-serif mb-0",
+      "title": "Descrizione",
+      "title_id": "descrizione",
+      "text": "La mensa scolastica è un servizio fondamentale che contribuisce alle finalità educative della scuola, offrendo agli studenti l'opportunità di prolungare il loro tempo all'interno dell'istituto. Questo servizio non solo fornisce pasti nutrienti, ma promuove anche momenti di socializzazione e crescita personale."
+    },
+    "carousel": {
+      "variant": "single",
+      "slides": [
+        {
+          "src": "../images/carousel/carousel-1.jpg",
+          "titolo": "Giardino",
+          "alt": "Giardino dell'istituto"
+        },
+        {
+          "src": "../images/carousel/carousel-2.jpg",
+          "titolo": "Laboratorio scienze",
+          "alt": "Laboratorio di scienze"
+        },
+        {
+          "src": "../images/carousel/carousel-3.jpg",
+          "titolo": "Aula",
+          "alt": "Aula della scuola"
+        },
+        {
+          "src": "../images/carousel/carousel-4.jpg",
+          "titolo": "Biblioteca",
+          "alt": "Biblioteca scolastica"
+        }
+      ]
+    },
+    "servizi": {
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Servizi",
+      "title_id": "servizi",
+      "items": [
+        {
+          "type": "informativa",
+          "title": "Mensa",
+          "text": "Offre pasti equilibrati e controllati, garantendo un’alimentazione sana durante la giornata scolastica.",
+          "category": "MENSE SCOLASTICHE E BUONI PASTO"
+        }
+      ]
+    },
+    "doveSiTrova": {
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Dove si trova",
+      "title_id": "dove-si-trova",
+      "items": [
+        {
+          "type": "location",
+          "title": "Scuola dell'infanzia A. Diaz",
+          "titleHref": "#",
+          "bodyHtml": "<div><dt>Orari di ingresso:</dt><dd>La scuola è aperta dal lunedì al venerdì dalle ore 8:30 alle ore 12:30.</dd></div><div><dt>Indirizzo: </dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div>",
+          "icon": "it-pa",
+          "mapUrl": "#"
+        },
+        {
+          "type": "location",
+          "noImage": true,
+          "borderTop": "primary",
+          "title": "Modalità di accesso",
+          "body": "L’ingresso è dotato di rampa per persone con mobilità ridotta e l’edificio dispone di ascensori per raggiungere i piani superiori."
+        }
+      ],
+      "parteDi": {
+        "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+        "title3": "Parte di",
+        "items": [
+          {
+            "type": "location",
+            "title": "Scuola dell'infanzia A. Diaz",
+            "titleHref": "#",
+            "subtitle": "Scuola",
+            "icon": "it-pa"
+          }
+        ]
+      }
+    },
+
+    "orari": {
+      "className": "pb-4",
+      "textClassName": "font-serif mb-0",
+      "title": "Orari",
+      "title_id": "orari",
+      "text": "Dal <strong>lunedì</strong> al <strong>venerdì</strong>, dalle <strong>8:00</strong> alle <strong>16:00</strong>. <br/><br/> Si raccomanda di controllare eventuali variazioni degli orari tramite gli avvisi affissi all'ingresso."
+    },
+    "contatti": {
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Contatti",
+      "title_id": "contatti",
+      "items": [
+        {
+          "type": "location",
+          "borderTop": "primary",
+          "title": "Mensa",
+          "bodyHtml": "<div><dt>Tel: </dt><dd>+39 00 000000</dd></div>",
+          "icon": "it-mail"
+        }
+      ]
+    },
+    "ultimeNotizie": {
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Ultime notizie",
+      "title_id": "ultime-notizie",
+      "items": [
+        {
+          "type": "inlineMini",
+          "title": "Titolo del contenuto editoriale",
+          "category": "Notizia",
+          "date": "26 maggio 2026",
+          "image": "../images/placeholder-image.png"
+        },
+        {
+          "type": "inlineMini",
+          "title": "Titolo del contenuto editoriale",
+          "category": "Notizia",
+          "date": "26 maggio 2026",
+          "image": "../images/placeholder-image.png"
+        }
+      ]
+    },
+    "ulterioriInformazioni": {
+      "title": "Ulteriori informazioni",
+      "title_id": "ulteriori-informazioni",
+      "text": "La biblioteca è uno spazio da utilizzare in modo rispettoso: si richiede silenzio durante lo studio e l’uso dei materiali con cura. I libri devono essere consultati o prenotati secondo le modalità indicate dallo staff. È vietato consumare cibi e bevande all’interno degli spazi, mentre i dispositivi elettronici vanno utilizzati con attenzione per non disturbare gli altri utenti."
+    },
+    "pageInfos": {
+      "updateClass": "",
+      "categoriesClassName": "",
+      "categories": [
+        {
+          "title": "Scuola A. Diaz"
+        },
+        {
+          "title": "Mensa"
+        }
+      ],
+      "lastUpdate": "26 maggio 2026"
+    }
+  }
+}

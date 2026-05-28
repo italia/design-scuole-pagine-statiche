@@ -1,0 +1,33 @@
+<template>
+  <section data-tpl-class="class" data-tpl-if="image">
+    <div class="row m-0" data-tpl-class="rowClass">
+      <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-center p-0">
+        <figure class="figure img-full w-100 mb-0 ratio ratio-1x1">
+          <img
+            data-tpl-src="image"
+            alt="immagine anno"
+            width="720"
+            height="544"
+            class="img-fluid mh-100"
+          />
+        </figure>
+      </div>
+
+      <div class="col-12 col-md-6 text-md-start">
+        <div data-tpl-class="textClass" class="storia-text ps-md-0">
+          <h2 data-tpl="title" class="text-primary mb-0"></h2>
+          <h3 data-tpl="subtitle" data-tpl-if="subtitle"></h3>
+
+          <p data-tpl="text" data-tpl-if="text" class="font-serif"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="storia-text px-md-0" data-tpl-if-not="image">
+    <h2 data-tpl="title" class="text-primary mb-0"></h2>
+    <h3 data-tpl="subtitle" data-tpl-if="subtitle"></h3>
+
+    <p data-tpl="text" data-tpl-if="text" class="font-serif"></p>
+  </section>
+</template>

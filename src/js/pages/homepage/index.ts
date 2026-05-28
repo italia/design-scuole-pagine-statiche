@@ -8,13 +8,12 @@ import footerHTML from '@/templates/layout/footer.html?raw';
 import ratingHTML from '@/templates/layout/rating.html?raw';
 
 import heroPresentationHTML from '@/templates/components/hero-presentation.html?raw';
-import inEvidenzaHTML from '@/templates/homepage/in-evidenza.html?raw';
 import carouselHTML from '@/templates/components/carousel.html?raw';
 import studiaConNoiHTML from '@/templates/homepage/studia-con-noi.html?raw';
 import circolariServiziHTML from '@/templates/homepage/circolari-servizi.html?raw';
 import toolsHTML from '@/templates/homepage/tools.html?raw';
-import finanziamentiHTML from '@/templates/homepage/finanziamenti.html?raw';
-import trasparenzaHTML from '@/templates/homepage/trasparenza.html?raw';
+
+import sectionList from '@/templates/components/section-list.html?raw';
 import personaleHTML from '@/templates/homepage/personale.html?raw';
 
 import data from './data.json';
@@ -22,13 +21,11 @@ import data from './data.json';
 const templates = {
   header: fromHTML(headerHTML),
   hero: fromHTML(heroPresentationHTML),
-  inEvidenza: fromHTML(inEvidenzaHTML),
   carousel: fromHTML(carouselHTML),
   studiaConNoi: fromHTML(studiaConNoiHTML),
   circolariServizi: fromHTML(circolariServiziHTML),
   tools: fromHTML(toolsHTML),
-  finanziamenti: fromHTML(finanziamentiHTML),
-  trasparenza: fromHTML(trasparenzaHTML),
+  sectionList: fromHTML(sectionList),
   personale: fromHTML(personaleHTML),
   rating: fromHTML(ratingHTML),
   footer: fromHTML(footerHTML),
@@ -40,43 +37,63 @@ mount('main-header', render(templates.header));
 /* hero */
 mount('hero', render(templates.hero, data.hero));
 
-/* in evidenza */
-const inEvidenzaFrag = render(templates.inEvidenza, { titolo: data.sezioniServizi.titolo });
-inEvidenzaFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.sezioniServizi.cards));
-mount('in-evidenza', inEvidenzaFrag);
+const inEvidenza = render(templates.sectionList, data.inEvidenza);
+mount('in-evidenza', inEvidenza, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.inEvidenza.items),
+  },
+]);
 
 /* carousel */
 mount('carousel', render(templates.carousel, data.carousel));
 
 /* studia con noi */
-const studiaConNoiFrag = render(templates.studiaConNoi, data.studiaConNoi);
-studiaConNoiFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.studiaConNoi.cards));
-mount('studia-con-noi', studiaConNoiFrag);
+const studia = render(templates.studiaConNoi, data.studiaConNoi);
+mount('studia-con-noi', studia, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.studiaConNoi.cards),
+  },
+]);
 
-/* circolari e servizi */
-const circolariServiziFrag = render(templates.circolariServizi);
-circolariServiziFrag
-  .querySelector('[data-cards="circolari"]')
-  ?.appendChild(renderCards(data.circolariEServizi.circolari.circolariDataCards));
-circolariServiziFrag
-  .querySelector('[data-cards="servizi"]')
-  ?.appendChild(renderCards(data.circolariEServizi.servizi.serviziDataCards));
-mount('circolari-e-servizi', circolariServiziFrag);
+const circolariServizi = render(templates.circolariServizi);
+mount('circolari-e-servizi', circolariServizi, [
+  {
+    selector: '[data-cards="circolari"]',
+    content: renderCards(data.circolariEServizi.circolari.circolariDataCards),
+  },
+  {
+    selector: '[data-cards="servizi"]',
+    content: renderCards(data.circolariEServizi.servizi.serviziDataCards),
+  },
+]);
 
 /* strumenti digitali */
-const toolsFrag = render(templates.tools, data.tools);
-toolsFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.tools.cards));
-mount('strumenti-digitali', toolsFrag);
+const tools = render(templates.tools, data.tools);
+mount('strumenti-digitali', tools, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.tools.cards),
+  },
+]);
 
 /* finanziamenti */
-const finanziamentiFrag = render(templates.finanziamenti, data.finanziamenti);
-finanziamentiFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.finanziamenti.cards));
-mount('finanziamenti', finanziamentiFrag);
+const finanziamenti = render(templates.sectionList, data.finanziamenti);
+mount('finanziamenti', finanziamenti, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.finanziamenti.items),
+  },
+]);
 
-/* trasparenza */
-const trasparenzaFrag = render(templates.trasparenza, data.trasparenza);
-trasparenzaFrag.querySelector('[data-cards]')?.appendChild(renderCards(data.trasparenza.cards));
-mount('trasparenza', trasparenzaFrag);
+const trasparenza = render(templates.sectionList, data.trasparenza);
+mount('trasparenza', trasparenza, [
+  {
+    selector: '[data-cards]',
+    content: renderCards(data.trasparenza.items),
+  },
+]);
 
 /* area personale */
 mount('personale-scolastico', render(templates.personale, data.areaPersonale));

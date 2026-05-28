@@ -36,9 +36,12 @@
     ]
   },
 
-  "sezioniServizi": {
-    "titolo": "In evidenza",
-    "cards": [
+  "inEvidenza": {
+    "title": "In evidenza",
+    "inverse": "",
+    "variant": "emphasis",
+    "withContainer": true,
+    "items": [
       {
         "type": "inlineMini",
         "title": "Open day nella sede centrale",
@@ -206,8 +209,8 @@
   },
 
   "finanziamenti": {
-    "titolo": "I nostri finanziamenti",
-    "cards": [
+    "title": "I nostri finanziamenti",
+    "items": [
       {
         "type": "informativa",
         "title": "PNRR Futura",
@@ -226,12 +229,16 @@
         "text": "Programma europeo per il sostegno e l'inclusione sociale",
         "imageSrc": "../illustrations/pon.svg"
       }
-    ]
+    ],
+    "more": "Esplora tutti i finanziamenti"
   },
 
   "trasparenza": {
-    "titolo": "Pubblicità legale e trasparenza",
-    "cards": [
+    "title": "Pubblicità legale e trasparenza",
+    "className": "section bg-lighter trasparenza",
+    "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+    "withContainer": true,
+    "items": [
       {
         "type": "banner",
         "title": "Albo online",
