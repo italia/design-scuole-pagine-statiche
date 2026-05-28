@@ -1,0 +1,45 @@
+{
+  "breadcrumbs": {
+    "pagina": "Libri di testo",
+    "paginePrecedenti": [
+      {
+        "nome": "Didattica",
+        "url": "#"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Libri di testo",
+    "subtitle": "In questa sezione sono presenti tutti i libri di testo delle classi",
+    "category": "",
+    "illustration": "../public/illustrations/didattica-large.svg"
+  },
+  "contentBody": {
+    "elenco": {
+      "titolo": "Elenco dei libri per anno scolastico",
+      "items": [
+        {
+          "type": "simple",
+          "title": "Primaria a tempo pieno (40 ore)",
+          "titleHref": "#",
+          "text": "PDF, 0.5 MB"
+        },
+        {
+          "type": "simple",
+          "title": "Primaria a tempo ridotto (30 ore)",
+          "titleHref": "#",
+          "text": "PDF, 0.5 MB"
+        },
+        {
+          "type": "simple",
+          "title": "Secondaria",
+          "titleHref": "#",
+          "text": "PDF, 0.5 MB"
+        }
+      ]
+    }
+  },
+  "info": {
+    "lastUpdate": "12 dicembre 2025"
+  }
+}
