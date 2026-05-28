@@ -12,7 +12,7 @@ import selectHTML from '@/templates/components/pagina-foglia/select.html?raw';
 import serviceSectionHTML from '@/templates/servizio/service-section.html?raw';
 
 import contentBodyHTML from '@/templates/components/pagina-foglia/content-body.html?raw';
-import contentUlterioriInformazioniHTML from '@/templates/components/pagina-foglia/content-ulteriori-informazioni.html?raw';
+import contentUlterioriInformazioniHTML from '@/templates/components/page-infos.html?raw';
 
 import data from '@/js/pages/libri-di-testo/data.json';
 

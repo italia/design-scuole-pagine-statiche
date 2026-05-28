@@ -7,7 +7,7 @@ import ratingHTML from '@/templates/layout/rating.html?raw';
 import breadcrumbsHTML from '@/templates/layout/breadcrumb.html?raw';
 import heroHTML from '@/templates/components/hero-presentation.html?raw';
 import serviceSectionHTML from '@/templates/servizio/service-section.html?raw';
-import contentUlterioriInformazioniHTML from '@/templates/components/pagina-foglia/content-ulteriori-informazioni.html?raw';
+import contentUlterioriInformazioniHTML from '@/templates/components/page-infos.html?raw';
 import accordionHTML from '@/templates/components/pagina-foglia/accordion-libri.html?raw';
 
 import data from '@/js/pages/libri-per-classe/data.json';
