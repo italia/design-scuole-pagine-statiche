@@ -1,0 +1,63 @@
+{
+  "breadcrumbs": {
+    "pagina": "Le nostre scuole",
+    "paginePrecedenti": [
+      {
+        "nome": "L'istituto",
+        "url": "#"
+      }
+    ]
+  },
+
+  "hero": {
+    "class": "hero presentation",
+    "title": "Le nostre scuole",
+    "subtitle": "In questa sezione sono presenti tutte le scuole del nostro Istituto.",
+    "illustration": "../illustrations/hero-presentation-scuola.png"
+  },
+
+  "search": {
+    "title": "Trova le scuole più vicine",
+    "resultsImage": "../images/search-scuole-map.png",
+    "items": [
+      {
+        "type": "location",
+        "title": "Scuola E. De Amicis",
+        "subtitle": "Scuola Primaria",
+        "titleHref": "/pages/sede-scolastica.html",
+        "bodyHtml": "<div><dt>Indirizzo: </dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div><div><dt>Codice meccanografico: </dt><dd>1234</dd></div>",
+        "mapUrl": "#",
+        "distance": "900 metri"
+      },
+      {
+        "type": "location",
+        "title": "Scuola A. Diaz",
+        "subtitle": "Scuola Primaria, Scuola Secondaria di primo grado",
+        "titleHref": "/pages/sede-scolastica.html",
+        "bodyHtml": "<div><dt>Indirizzo: </dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div><div><dt>Codice meccanografico: </dt><dd>1234</dd></div>",
+        "mapUrl": "#",
+        "distance": "3 km"
+      },
+      {
+        "type": "location",
+        "title": "Scuola F. Hernandez",
+        "subtitle": "Scuola Secondaria",
+        "titleHref": "/pages/sede-scolastica.html",
+        "bodyHtml": "<div><dt>Indirizzo: </dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div><div><dt>Codice meccanografico: </dt><dd>1234</dd></div>",
+        "icon": "it-map-marker",
+        "mapUrl": "#",
+        "distance": "1,2 km"
+      },
+      {
+        "type": "location",
+        "title": "Scuola G. Marconi",
+        "subtitle": "Scuola dell'infanzia",
+        "titleHref": "/pages/sede-scolastica.html",
+        "bodyHtml": "<div><dt>Indirizzo: </dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div><div><dt>Codice meccanografico: </dt><dd>1234</dd></div>",
+        "icon": "it-map-marker",
+        "mapUrl": "#",
+        "distance": "300 metri"
+      }
+    ]
+  }
+}

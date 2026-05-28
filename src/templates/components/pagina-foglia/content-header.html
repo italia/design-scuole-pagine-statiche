@@ -1,0 +1,35 @@
+<template>
+  <div class="border-top border-light">
+    <div class="container pt-5 pb-4">
+      <h1 data-tpl="title"></h1>
+      <p class="description" data-tpl="description" data-tpl-if="description"></p>
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          <div data-tpl-if="category" data-tpl="category" href="#" class="fw-semibold"></div>
+        </div>
+
+        <it-dropdown it-aria-label="Condividi" variant="link" class="share justify-self-end">
+          <div slot="label">
+            <it-icon name="it-share" size="sm" color="primary" class="me-2"></it-icon>Condividi
+          </div>
+          <it-dropdown-item href="#">
+            <it-icon slot="prefix" name="it-facebook" size="sm" color="primary"></it-icon>
+            Facebook
+          </it-dropdown-item>
+          <it-dropdown-item href="#">
+            <it-icon slot="prefix" name="it-twitter" size="sm" color="primary"></it-icon>
+            Twitter
+          </it-dropdown-item>
+          <it-dropdown-item href="#">
+            <it-icon slot="prefix" name="it-linkedin" size="sm" color="primary"></it-icon>
+            LinkedIn
+          </it-dropdown-item>
+          <it-dropdown-item href="#">
+            <it-icon slot="prefix" name="it-whatsapp" size="sm" color="primary"></it-icon>
+            WhatsApp
+          </it-dropdown-item>
+        </it-dropdown>
+      </div>
+    </div>
+  </div>
+</template>

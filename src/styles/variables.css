@@ -1,0 +1,64 @@
+:root {
+  /* Theme variables */
+  --scuole-primary: #812230;
+  --scuole-primary-hsl: hsl(345deg 60% 30%);
+  --scuole-primary-rgb: 122, 31, 54;
+  --scuole-primary-98: #fdf7f8;
+  --scuole-primary-97: #fdf7f8;
+  --scuole-primary-95: #faebed;
+  --scuole-primary-84: #eebec5;
+  --scuole-primary-55: #d0495d;
+  --scuole-primary-52: #cd3c52;
+  --scuole-primary-34: var(--scuole-primary);
+  --scuole-primary-24: #611a24;
+  --scuole-primary-18: #49131b;
+  --scuole-accent: #cd3c52;
+  --scuole-primary-dark: var(--scuole-primary-24);
+  --scuole-primary-darker: var(--scuole-primary-18);
+  --scuole-headings-color: var(--it-color-gray-10);
+  /* Spacing */
+  --scuole-padding-6: 4rem;
+
+  /* BSI variables */
+  --bsi-primary: var(--scuole-primary);
+  --bsi-primary-rgb: var(--scuole-primary-rgb);
+  --bsi-theme-primary: var(--scuole-primary);
+  --bsi-theme-primary-light: var(--scuole-primary-84);
+  --bsi-theme-primary-lighter: var(--scuole-primary-95);
+  --bsi-theme-primary-lightest: var(--scuole-primary-97);
+  --bsi-theme-primary-subtle: var(--scuole-primary-24);
+  --bsi-theme-primary-muted: #202a2e;
+  --bsi-theme-primary-deep: #202a2e;
+  --bsi-color-text-accent: var(--scuole-accent);
+  --bsi-color-text-secondary: var(--it-color-slate-28);
+  --bsi-color-text-primary: var(--scuole-primary);
+  /* --bsi-color-text-base: #1a1a1a; */
+  --bsi-color-link: var(--scuole-primary);
+  --bsi-color-link-hover: var(--scuole-primary-24);
+  --bsi-color-link-active: var(--scuole-primary-18);
+  --bsi-color-link-accent: var(--scuole-accent);
+  --bsi-color-link-accent-hover: var(--scuole-primary);
+  --bsi-color-border-primary-active: var(--scuole-primary-18);
+  --bsi-color-border-primary-hover: var(--scuole-primary-24);
+  --bsi-color-border-primary: var(--scuole-primary);
+  --bsi-color-background-primary: var(--scuole-primary);
+  --bsi-color-background-primary-lighter: var(--bsi-theme-primary-lighter);
+  --bsi-color-background-primary-lightest: var(--bsi-theme-primary-lightest);
+  --bsi-color-background-primary-light: var(--bsi-theme-primary-ligh);
+  --bsi-color-background-primary-deep: var(--bsi-theme-primary-deep);
+  --bsi-color-background-primary-muted: var(--bsi-theme-primary-muted);
+  --bsi-color-background-primary-active: var(--scuole-primary-18);
+  --bsi-color-background-primary-hover: var(--scuole-primary-24);
+  --bsi-color-background-emphasis: var(--scuole-primary-24);
+  --bsi-color-background-accent-hover: #b13346;
+  --bsi-color-background-accent: var(--scuole-accent);
+  --bsi-overlay-background-primary: hsl(345deg 60% 30% / 85%);
+  --bsi-icon-primary-active: var(--scuole-primary-18);
+  --bsi-icon-primary-hover: var(--scuole-primary-24);
+  --bsi-icon-primary: var(--scuole-primary);
+  --bsi-heading-4-font-size: var(--it-font-size-6);
+  --bsi-heading-4-line-height: var(--it-line-height-6);
+  --bsi-heading-5-font-size: var(--it-font-size-5);
+  --bsi-heading-5-line-height: var(--it-line-height-5);
+  --bsi-navscroll-heading-color: var(--scuole-primary);
+}

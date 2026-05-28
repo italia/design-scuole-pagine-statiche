@@ -1,0 +1,21 @@
+{
+  "breadcrumbs": {
+    "pagina": "Segreteria didattica",
+    "paginePrecedenti": [
+      {
+        "nome": "L'istituto",
+        "url": "#"
+      },
+      {
+        "nome": "Organizzazione",
+        "url": "@/pages/organizzazione.html"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Contatti",
+    "description": "",
+    "category": "",
+    "illustration": "@/public/illustrations/hero-presentation-scuola.png"
+  }
+}

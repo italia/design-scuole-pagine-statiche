@@ -1,0 +1,26 @@
+<template>
+  <section class="section">
+    <h2 class="mb-4" data-tpl="title"></h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 g-3 align-items-stretch mb-4" data-tpl-if="items">
+      <it-card full-height variant="location" data-tpl-each="items">
+        <a slot="title" href="#" data-tpl="title">Toponimo o luogo</a>
+        <span slot="subtitle" class="fw-normal" data-tpl="description" data-tpl-if="description"
+          >descrizione</span
+        >
+
+        <figure slot="image" class="figure img-full">
+          <img
+            src="https://picsum.photos/seed/monument/320/320"
+            alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+          />
+        </figure>
+      </it-card>
+    </div>
+
+    <a href="#" data-tpl-if="more" class="fw-semibold"
+      ><span data-tpl="more"></span
+      ><it-icon name="it-arrow-right" color="primary" size="sm" class="ms-2"></it-icon
+    ></a>
+  </section>
+</template>

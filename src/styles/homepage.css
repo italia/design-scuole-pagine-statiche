@@ -1,0 +1,31 @@
+@media (width <= 767px) {
+  it-section.hero.presentation .section {
+    --bsi-section-padding-y: var(--bsi-spacing-m) 0;
+  }
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.studia-con-noi .percorsi__scuole {
+  --bsi-radius-smooth: var(--bsi-spacing-s);
+}
+
+.studia-con-noi h3 {
+  color: var(--scuole-headings-color);
+}
+
+.trasparenza it-card::part(title) {
+  --bsi-color-link: var(--bsi-color-text-secondary);
+}
+
+.circolari-servizi-section {
+  --bsi-heading-3-font-size: var(--it-heading-4-font-size);
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.circolari-servizi-section .circolari-servizi-section__description {
+  font-size: var(--bsi-heading-5-font-size);
+}
+
+.circolari-servizi-section it-card {
+  --bsi-heading-font-weight: var(--it-font-weight-semibold);
+}

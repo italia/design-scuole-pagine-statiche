@@ -1,0 +1,7 @@
+{
+  "src/pages/**/*.html": ["html-validate"],
+  "src/js/**/*.js": ["eslint --fix"],
+  "src/**/*.ts": ["eslint --fix"],
+  "src/styles/**/*.css": ["stylelint --fix"],
+  "*.{json,md}": ["prettier --write"]
+}

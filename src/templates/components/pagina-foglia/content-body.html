@@ -1,0 +1,37 @@
+<template>
+  <div class="container">
+    <div class="row row-column-border border-light row-column-menu-left">
+      <aside class="col-lg-4 py-0" aria-label="Indice della pagina">
+        <it-navscroll
+          breakpoint="1024"
+          open-label="Naviga fra le sezioni"
+          sticky=""
+          for="#scroll-container"
+        >
+          <div class="link-list-wrapper">
+            <h2>Indice</h2>
+            <it-progress
+              type="bar"
+              value="0"
+              class="it-navscroll-progressbar"
+              aria-label="Progress bar"
+            ></it-progress>
+            <nav>
+              <ul class="link-list">
+                <li class="nav-item" data-tpl-each="navItems">
+                  <a class="nav-link" data-tpl-class="className" data-tpl-href="href">
+                    <span data-tpl="title">text</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </it-navscroll>
+      </aside>
+
+      <main id="scroll-container" class="col-lg-8 it-page-sections-container border-light">
+        <div data-content-text></div>
+      </main>
+    </div>
+  </div>
+</template>

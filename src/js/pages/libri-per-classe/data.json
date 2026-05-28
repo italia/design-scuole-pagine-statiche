@@ -1,0 +1,33 @@
+{
+  "breadcrumbs": {
+    "pagina": "Libri di testo",
+    "paginePrecedenti": [
+      {
+        "nome": "Didattica",
+        "url": "#"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Libri di testo",
+    "subtitle": "In questa sezione sono presenti tutti i libri di testo delle classi",
+    "category": "",
+    "illustration": "../public/illustrations/didattica-large.svg"
+  },
+  "contentBody": {
+    "elenco": {
+      "titolo": "Elenco dei libri per anno scolastico"
+    }
+  },
+  "scuole": {
+    "nome1": "Scuola primaria E. De Amicis",
+    "descrizione1": "L'elenco dei libri di testo raccoglie i volumi adottati dalla scuola per ciascun anno e classe. Le informazioni sono aggiornate annualmente e permettono a famiglie e studenti di conoscere con precisione i testi necessari per l'avvio e lo svolgimento dell'anno scolastico.",
+    "nome2": "Scuola primaria A. Diaz",
+    "descrizione2": "",
+    "nome3": "Scuola secondaria di primo grado F. Henriquez",
+    "descrizione3": ""
+  },
+  "info": {
+    "lastUpdate": "12 dicembre 2025"
+  }
+}

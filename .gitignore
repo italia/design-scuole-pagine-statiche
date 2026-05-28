@@ -1,4 +1,4 @@
+.vscode/settings.json
+node_modules/
+dist/
 .DS_Store
-node_modules
-src/index.html
-dist

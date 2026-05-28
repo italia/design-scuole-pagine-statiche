@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable Corepack and prepare pnpm
+        run: corepack enable && corepack prepare pnpm@10 --activate
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Publish main site to gh-pages
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+          # Stash the build output outside the working tree
+          DIST=$(mktemp -d)
+          cp -r dist/. "$DIST/"
+
+          # Switch to gh-pages
+          git fetch origin gh-pages 2>/dev/null && git checkout gh-pages || \
+            (git checkout --orphan gh-pages && git rm -rf . --quiet)
+
+          # CRITICAL: Remove old main site files but KEEP the previews folder
+          find . -maxdepth 1 ! -name 'previews' ! -name '.git' ! -name '.' -exec rm -rf {} +
+
+          # Copy new main site files to root
+          cp -r "$DIST/." .
+
+          # Ensure GitHub Pages doesn't skip underscore/dot folders
+          touch .nojekyll
+
+          git add .
+          git diff --cached --quiet || \
+            git commit -m "ci(deploy): update gh pages"
+          git push origin gh-pages

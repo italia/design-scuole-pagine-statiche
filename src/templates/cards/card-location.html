@@ -1,0 +1,57 @@
+<template>
+  <it-card full-height variant="location" data-tpl-border-top="borderTop">
+    <a slot="title" href="#" data-tpl-href="titleHref" data-tpl="title" data-tpl-if="titleHref"
+      >Toponimo o luogo</a
+    >
+    <div
+      slot="title"
+      href="#"
+      data-tpl-href="titleHref"
+      data-tpl="title"
+      data-tpl-if-not="titleHref"
+    >
+      Toponimo o luogo
+    </div>
+    <span slot="subtitle" data-tpl-html="subtitle" data-tpl-if="subtitle"></span>
+    <span slot="address" data-tpl="address" data-tpl-if="address"></span>
+    <div slot="image" class="it-card-profile-image-icon-wrapper" data-tpl-if="icon">
+      <it-icon color="primary" data-tpl-name="icon" size="md"></it-icon>
+    </div>
+    <figure
+      slot="image"
+      class="figure img-full"
+      data-tpl-condition="icon == null && noImage == true"
+    >
+      <img
+        src="https://picsum.photos/seed/monument/320/320"
+        alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto."
+      />
+    </figure>
+
+    <dl
+      slot="body"
+      class="it-card-description-list border-bottom-0 mb-0"
+      data-tpl-if="bodyHtml"
+      data-tpl-html="bodyHtml"
+    ></dl>
+
+    <div
+      slot="body"
+      class="it-card-description-list border-bottom-0 mb-0"
+      data-tpl-if="body"
+      data-tpl-html="body"
+    ></div>
+
+    <div slot="footer" class="flex-grow-1" data-tpl-if="distance">
+      <it-icon color="secondary" name="it-map-marker" size="sm"></it-icon>
+      <strong>Distanza:</strong> <span data-tpl="distance"></span>
+    </div>
+    <a slot="footer" href="#" target="_blank" class="it-card-link" data-tpl-if="mapUrl">
+      Apri in mappa
+      <span class="visually-hidden">
+        <span data-tpl="title"></span> (si apre in una nuova finestra)</span
+      >
+      <it-icon class="ms-2" color="primary" name="it-external-link" size="sm"></it-icon>
+    </a>
+  </it-card>
+</template>

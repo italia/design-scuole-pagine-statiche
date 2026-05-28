@@ -1,0 +1,132 @@
+/* dev-kit vendor CSS is inlined as critical in page heads; keep only project styles here */
+
+@import url('../styles/variables.css');
+@import url('../styles/header.css');
+
+/* Stili custom del progetto.
+   Il design system è Bootstrap Italia, importato tramite @italia/dev-kit-italia.
+   Usa le classi BSI direttamente negli HTML (es. d-flex, container, ecc.).
+   Aggiungi qui solo override o stili davvero specifici del progetto. */
+body {
+  color: var(--bsi-color-text-secondary);
+}
+
+h1,
+h2 {
+  color: var(--scuole-headings-color);
+}
+
+.white-color {
+  --scuole-headings-color: var(--bsi-white);
+}
+
+strong {
+  font-weight: var(--it-font-weight-semibold);
+}
+
+/* in comune sia per header che per footer */
+.it-brand-wrapper {
+  --bsi-heading-font-weight: 600;
+}
+
+.it-brand-wrapper a .it-brand-tagline {
+  line-height: var(--it-font-size-6);
+}
+/* ---- */
+.it-footer {
+  --scuole-headings-color: var(--bsi-footer-brand-icon-color);
+}
+
+.it-footer address {
+  font-size: var(--bsi-label-font-size);
+}
+
+it-section .section,
+.section {
+  --bsi-section-padding-y: var(--bsi-spacing-xxl);
+}
+
+it-section.bg-lightest .section,
+section.bg-lightest {
+  --bsi-section-background-color: var(--bsi-color-background-primary-lightest);
+}
+
+it-section.bg-lighter .section,
+section.bg-lighter {
+  --bsi-section-background-color: var(--bsi-color-background-primary-lighter);
+}
+
+it-section.bg-accent .section,
+section.bg-accent {
+  --bsi-section-background-color: var(--bsi-color-background-accent);
+}
+
+.page-infos {
+  --bsi-body-font-size: var(--bsi-font-size-3);
+  --bsi-border-color: var(--it-color-gray-96);
+}
+
+it-avatar {
+  --bsi-color-background-secondary-lighter: var(--bsi-color-background-primary-lightest);
+  --bsi-color-text-secondary: var(--bsi-color-text-primary);
+  --bsi-icon-default: var(--bsi-color-text-primary);
+}
+
+it-card {
+  --bsi-heading-3-font-size: var(--it-heading-3-font-size);
+}
+
+it-card .it-card-link {
+  --bsi-card-link-color: var(--bsi-color-link);
+}
+
+it-card .it-card-category {
+  --bsi-card-category-color: var(--bsi-color-text-secondary);
+}
+
+it-card .it-card-profile-image-icon-wrapper {
+  --bsi-color-background-primary-lighter: var(--bsi-color-background-primary-lightest);
+}
+
+it-card.attachment {
+  --bsi-heading-font-weight: var(--it-font-weight-semibold);
+}
+
+it-card::part(card) {
+  --bsi-card-inline-mini-min-height: 118px;
+}
+
+it-dropdown.share::part(icon) {
+  display: none;
+}
+
+it-progress::part(progress) {
+  --bsi-progress-bar-bg: var(--scuole-primary);
+}
+
+it-carousel::part(pagination-dot) {
+  --bsi-carousel-pagination-dot-size: 8px;
+  --bsi-color-background-subtle: var(--bsi-theme-primary-light);
+  margin: 0;
+}
+
+/* Hero */
+it-section.hero .section {
+  --bsi-section-image-overlay: none;
+}
+
+it-section.hero .hero-more {
+  font-size: var(--it-font-size-2);
+}
+
+/* fix temporaneo in attesa di https://github.com/italia/bootstrap-italia/issues/1809 */
+.navbar.it-navscroll-wrapper h2 {
+  padding-right: var(--bsi-navscroll-heading-spacing-x);
+  padding-left: var(--bsi-navscroll-heading-spacing-x);
+  margin-top: var(--bsi-navscroll-heading-spacing-top);
+  margin-bottom: var(--bsi-navscroll-heading-spacing-bottom);
+  color: var(--bsi-navscroll-heading-color);
+  font-size: var(--bsi-navscroll-heading-font-size);
+  font-weight: var(--bsi-navscroll-heading-font-weight);
+  text-transform: uppercase;
+}

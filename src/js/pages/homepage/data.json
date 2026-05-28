@@ -1,0 +1,264 @@
+{
+  "hero": {
+    "class": "hero presentation",
+    "pre-title": "Istituto comprensivo",
+    "title": "Federico Hernandez",
+    "subtitle": "Livorno",
+    "quote": " \"Lo scopo della scuola è quello di trasformare gli specchi in finestre\" ",
+    "more": "Scopri l'istituto",
+    "image": "../images/hero-homepage.jpg",
+    "illustration": "../illustrations/hero-homepage-large.svg"
+  },
+
+  "carousel": {
+    "titolo": "Un'anteprima dell'Istituto",
+    "slides": [
+      {
+        "src": "../images/carousel/carousel-1.jpg",
+        "titolo": "Giardino",
+        "alt": "Giardino dell'istituto"
+      },
+      {
+        "src": "../images/carousel/carousel-2.jpg",
+        "titolo": "Laboratorio scienze",
+        "alt": "Laboratorio di scienze"
+      },
+      {
+        "src": "../images/carousel/carousel-3.jpg",
+        "titolo": "Aula",
+        "alt": "Aula della scuola"
+      },
+      {
+        "src": "../images/carousel/carousel-4.jpg",
+        "titolo": "Biblioteca",
+        "alt": "Biblioteca scolastica"
+      }
+    ]
+  },
+
+  "inEvidenza": {
+    "title": "In evidenza",
+    "inverse": "",
+    "variant": "emphasis",
+    "withContainer": true,
+    "items": [
+      {
+        "type": "inlineMini",
+        "title": "Open day nella sede centrale",
+        "image": "../images/open-day.jpg",
+        "text": "",
+        "category": "NOTIZIA",
+        "url": "#",
+        "date": "18 marzo 2026"
+      },
+      {
+        "type": "inlineMini",
+        "title": "Spettacolo finale per il corso di teatro per le primarie",
+        "text": "Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.",
+        "category": "EVENTO",
+        "url": "#",
+        "date": "18 marzo 2026"
+      },
+      {
+        "type": "inlineMini",
+        "title": "Orientamento per le classi di terza media",
+        "text": "Questo è un testo breve che riassume il contenuto della pagina di destinazione in massimo tre o quattro righe, senza troncamento.",
+        "category": "SERVIZI PRE, INTER E POST SCUOLA",
+        "url": "#",
+        "icon": "it-clip"
+      }
+    ]
+  },
+
+  "studiaConNoi": {
+    "cards": [
+      {
+        "type": "informativa",
+        "title": "Uscite didattiche",
+        "text": "Esperienze fuori dall'aula",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Laboratori didattici",
+        "text": "Attività pratiche e sperimentali",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Corsi e certificazioni",
+        "text": "Attività pratiche e sperimentali",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Gare e concorsi",
+        "text": "Sfide educative e creative",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Progetti di orientamento",
+        "text": "Supporto alle scelte future",
+        "url": "#"
+      },
+      {
+        "type": "informativa",
+        "title": "Progetti territorio e ambiente",
+        "text": "Scoperta e cura del territorio",
+        "url": "#"
+      }
+    ]
+  },
+
+  "circolariEServizi": {
+    "circolari": {
+      "circolariDataCards": [
+        {
+          "type": "informativa",
+          "title": "Modulistica uscita autonoma infraquattordicenni, Viaggiatori, Privacy",
+          "subtitle": "Circolare n. 15",
+          "text": "Comunicazione per uscita autonoma di alunni pendolari e liberatoria Privacy",
+          "date": "15 novembre 2025",
+          "datetime": "2025-11-15"
+        },
+        {
+          "type": "informativa",
+          "title": "Iscrizioni scuola secondaria di secondo grado - anno scolastico 2025/26",
+          "subtitle": "Circolare n. 16",
+          "text": "Circolare che descrive le modalità di iscrizione alla scuola secondaria di secondo grado.",
+          "date": "22 dicembre 2025",
+          "datetime": "2025-12-22"
+        },
+        {
+          "type": "informativa",
+          "title": "Calendario scolastico 2024-25 e organizzazione oraria",
+          "subtitle": "Circolare n. 17",
+          "text": "Calendario annuale",
+          "date": "5 gennaio 2026",
+          "datetime": "2026-01-05"
+        },
+        {
+          "type": "informativa",
+          "title": "Chiusura straordinaria per il giorno 11 ottobre 2025",
+          "subtitle": "Circolare n. 18",
+          "text": "Comunicazione di chiusura straordinaria per manutenzione",
+          "date": "30 marzo 2026",
+          "datetime": "2026-03-30"
+        }
+      ]
+    },
+    "servizi": {
+      "serviziDataCards": [
+        {
+          "type": "informativa",
+          "title": "Mensa",
+          "text": "Servizio che garantisce pasti equilibrati e controllati agli studenti, favorendo una corretta alimentazione durate la giornata scolastica",
+          "category": "Mense scolastiche e buoni pasto"
+        },
+        {
+          "type": "informativa",
+          "title": "Piedibus",
+          "text": "Un percorso casa-scuola a piedi, organizzato e accompagnato da volontari, per promuovere sicurezza e mobilità sostenibile",
+          "category": "Mense scolastiche e buoni pasto"
+        },
+        {
+          "type": "informativa",
+          "title": "Scuolabus",
+          "text": "Il servizio di trasporto dedicato che accompagna gli studenti da e verso la scuola in sicurezza, secondo orari e fermate predefinite",
+          "category": "Mense scolastiche e buoni pasto"
+        },
+        {
+          "type": "informativa",
+          "title": "Doposcuola",
+          "text": "Attività pomeridiane di supporto allo studio e socializzazione, svolte in un ambiente educativo guidato da personale qualificato.",
+          "category": "Mense scolastiche e buoni pasto"
+        }
+      ]
+    }
+  },
+
+  "tools": {
+    "titolo": "I nostri strumenti digitali",
+    "cards": [
+      {
+        "type": "inlineMini",
+        "title": "Scuola in Chiaro",
+        "text": "",
+        "category": "",
+        "date": "",
+        "image": "../icons/Scuola-in-chiaro.svg"
+      },
+      {
+        "type": "inlineMini",
+        "title": "UNICA",
+        "text": "",
+        "category": "",
+        "date": "",
+        "image": "../icons/Unica.svg"
+      },
+      {
+        "type": "inlineMini",
+        "title": "Registro elettronico",
+        "text": "",
+        "category": "",
+        "date": "",
+        "image": "../icons/Registro.svg"
+      }
+    ]
+  },
+
+  "finanziamenti": {
+    "title": "I nostri finanziamenti",
+    "items": [
+      {
+        "type": "informativa",
+        "title": "PNRR Futura",
+        "text": "Programma del PNRR per innovazione e digitalizzazione della scuola",
+        "imageSrc": "../illustrations/pnrr.svg"
+      },
+      {
+        "type": "informativa",
+        "title": "PON - Ricerca e innovazione 2014-2020",
+        "text": "Fondi europei per progetti di ricerca e sviluppo nelle scuole",
+        "imageSrc": "../illustrations/pon-ricerca.svg"
+      },
+      {
+        "type": "informativa",
+        "title": "PON inclusione",
+        "text": "Programma europeo per il sostegno e l'inclusione sociale",
+        "imageSrc": "../illustrations/pon.svg"
+      }
+    ],
+    "more": "Esplora tutti i finanziamenti"
+  },
+
+  "trasparenza": {
+    "title": "Pubblicità legale e trasparenza",
+    "className": "section bg-lighter trasparenza",
+    "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+    "withContainer": true,
+    "items": [
+      {
+        "type": "banner",
+        "title": "Albo online",
+        "text": "Atti ufficiali, comunicazioni e documenti amministrativi con valore legale.",
+        "category": "Vai all'Albo online"
+      },
+      {
+        "type": "banner",
+        "title": "Amministrazione Trasparente",
+        "text": "Dati, documenti e informazioni sull'organizzazione e le attività dell'Istituto.",
+        "category": "Vai a Amministrazione Trasparente"
+      }
+    ]
+  },
+
+  "areaPersonale": {
+    "class": "hero bg-dark",
+    "illustration": "../illustrations/hero-homepage-large.svg",
+    "title": "Per il personale scolastico",
+    "subtitle": "Informazioni, modulistica e strumenti per i docenti dell'Istituto.",
+    "button": "Accedi all'area personale"
+  }
+}
