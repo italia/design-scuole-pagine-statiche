@@ -123,7 +123,7 @@
         {
           "type": "person",
           "title": "Mario Rossi",
-          "titleHref": "#",
+          "titleHref": "../pages/persona.html",
           "subtitle": "Responsabile segreteria didattica",
           "bodyHtml": "<div><dt>Email: </dt><dd><a href=\"mailto:mario.rossi@mail.com\">mario.rossi@mail.com</a></dd></div><div><dt>Tel: </dt><dd>+39 00 000000</dd></div>",
           "icon": "it-user",
@@ -140,7 +140,7 @@
         {
           "type": "person",
           "title": "Massimiliano Santovito",
-          "titleHref": "#",
+          "titleHref": "../pages/persona.html",
           "subtitle": "Segretario",
           "bodyHtml": "<div><dt>Email: </dt><dd><a href=\"mailto:msantovito@mail.com\">msantovito@mail.com</a></dd></div><div><dt>Tel: </dt><dd>+39 00 000000</dd></div>",
           "icon": "it-user",

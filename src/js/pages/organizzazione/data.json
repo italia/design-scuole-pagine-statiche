@@ -110,21 +110,21 @@
         "type": "person",
         "title": "Luigi Rossi",
         "subtitle": "Dirigente scolastico",
-        "titleHref": "#",
+        "titleHref": "../pages/persona.html",
         "icon": "it-user"
       },
       {
         "type": "person",
         "title": "Mario Antonio della Monaca",
         "subtitle": "Responsabile sicurezza",
-        "titleHref": "#",
+        "titleHref": "../pages/persona.html",
         "icon": "it-user"
       },
       {
         "type": "person",
         "title": "Mariacarmela degli Esposti",
         "subtitle": "Responsabile accessibilità",
-        "titleHref": "#",
+        "titleHref": "../pages/persona.html",
         "icon": "it-user"
       }
     ]

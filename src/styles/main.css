@@ -100,6 +100,11 @@ it-dropdown.share::part(icon) {
   display: none;
 }
 
+it-dropdown.share::part(button) {
+  padding: 0;
+  gap: 0;
+}
+
 it-progress::part(progress) {
   --bsi-progress-bar-bg: var(--scuole-primary);
 }

@@ -1,0 +1,124 @@
+{
+  "breadcrumbs": {
+    "pagina": "Luigi Rossi",
+    "paginePrecedenti": [
+      {
+        "nome": "L'istituto",
+        "url": "/pages/istituto.html"
+      },
+      {
+        "nome": "Organizzazione",
+        "url": "/pages/organizzazione.html"
+      },
+      {
+        "nome": "Persone",
+        "url": "/pages/persone.html"
+      }
+    ]
+  },
+  "contentHeader": {
+    "title": "Luigi Rossi",
+    "description": "Dirigente scolastico",
+    "image": "../images/luigi-rossi.png"
+  },
+  "contentBody": {
+    "navItems": [
+      {
+        "title": "Biografia",
+        "href": "#biografia",
+        "className": "nav-link active"
+      },
+      {
+        "title": "Dove lavora",
+        "href": "#dove-lavora"
+      },
+      {
+        "title": "Strutture di cui è responsabile",
+        "href": "#strutture"
+      },
+      {
+        "title": "Documenti",
+        "href": "#documenti"
+      },
+      {
+        "title": "Contatti",
+        "href": "#contatti"
+      }
+    ],
+    "biografia": {
+      "className": "pb-4",
+      "textClassName": "font-serif mb-0",
+      "title": "Biografia",
+      "title_id": "biografia",
+      "text": "Con una lunga esperienza nel settore educativo, il Dirigente Scolastico coordina e guida l’istituto promuovendo qualità didattica, inclusione e collaborazione con le famiglie e il territorio. Si impegna a garantire un ambiente di apprendimento sereno e innovativo, sostenendo il lavoro dei docenti e valorizzando il percorso di ogni studente."
+    },
+    "doveLavora": {
+      "className": "py-4",
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Dove lavora",
+      "title_id": "dove-lavora",
+      "items": [
+        {
+          "type": "location",
+          "title": "Scuola E. De Amicis",
+          "titleHref": "#",
+          "subtitle": "Scuola primaria",
+          "bodyHtml": "<div><dt>Indirizzo: </dt><dd>Via dei Fiori, Livorno, 57100</dd></div>",
+          "icon": "it-map-marker",
+          "mapUrl": "#"
+        },
+        {
+          "type": "location",
+          "title": "Scuola A. Diaz",
+          "titleHref": "#",
+          "subtitle": "Scuola primaria, Scuola secondaria di primo grado",
+          "bodyHtml": "<div><dt>Indirizzo: </dt><dd>Via Ragazzi del ‘99, Livorno, 57100</dd></div>",
+          "icon": "it-map-marker",
+          "mapUrl": "#"
+        },
+        {
+          "type": "location",
+          "title": "Scuola F. Hernandez",
+          "titleHref": "#",
+          "subtitle": "Scuola primaria",
+          "bodyHtml": "<div><dt>Indirizzo: </dt><dd>Via Piazza Navona, Livorno, 57100</dd></div>",
+          "icon": "it-map-marker",
+          "mapUrl": "#"
+        }
+      ]
+    },
+    "strutture": {
+      "className": "py-4",
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Strutture di cui è responsabile",
+      "title_id": "strutture",
+      "items": [
+        {
+          "type": "location",
+          "title": "Presidenza",
+          "titleHref": "#",
+          "icon": "it-pa"
+        }
+      ]
+    },
+    "documenti": {
+      "className": "py-4",
+      "cardsWrapperClassName": "row row-cols-1 row-cols-lg-2 g-3 align-items-stretch",
+      "title": "Documenti",
+      "title_id": "documenti",
+      "items": [
+        {
+          "type": "informativa",
+          "className": "attachment",
+          "title": "CV Luigi Rossi",
+          "text": "File PDF, 5 MB",
+          "icon": "it-file"
+        }
+      ]
+    },
+    "pageInfos": {
+      "updateClass": "",
+      "lastUpdate": "26 maggio 2026"
+    }
+  }
+}
