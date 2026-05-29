@@ -76,14 +76,6 @@ it-card {
   --bsi-heading-3-font-size: var(--it-heading-3-font-size);
 }
 
-it-card .it-card-link {
-  --bsi-card-link-color: var(--bsi-color-link);
-}
-
-it-card .it-card-category {
-  --bsi-card-category-color: var(--bsi-color-text-secondary);
-}
-
 it-card .it-card-profile-image-icon-wrapper {
   --bsi-color-background-primary-lighter: var(--bsi-color-background-primary-lightest);
 }

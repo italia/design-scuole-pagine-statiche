@@ -99,7 +99,7 @@
         "borderTop": "primary",
         "title": "Contatti",
         "subtitle": "Segreteria",
-        "bodyHtml": "<div><dt>Email:</dt><dd>scuola@mail.com</dd></div><div><dt>Tel:</dt><dd>340.12345678</dd></div>",
+        "bodyHtml": "<div><dt>Email: </dt><dd><a href=\"mailto:scuola@mail.com\">scuola@mail.com</a></dd></div><div><dt>Tel:</dt><dd>340.12345678</dd></div>",
         "icon": "it-mail"
       }
     ]
