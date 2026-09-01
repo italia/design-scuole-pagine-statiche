@@ -20058,3 +20058,38 @@ a img.aligncenter {
     margin-left: auto;
     margin-right: auto;
 }
+
+.home-message.green {
+background-color: #008055;
+color: #fff!important;
+fill: #fff!important
+}
+
+.home-message.green svg {
+background-color: #008055;
+}
+
+.home-message.green a:not(.btn) {
+color: #fff!important;
+text-decoration:underline;
+}
+
+.home-message.red a:not(.btn) {
+color: #fff!important;
+text-decoration:underline;
+}
+
+.home-message.blue a:not(.btn) {
+color: #fff!important;
+text-decoration:underline;
+}
+
+.home-message.purple a:not(.btn) {
+color: #fff!important;
+text-decoration:underline;
+}
+
+.home-message.yellow a:not(.btn) {
+color: #333!important;
+text-decoration:underline;
+}
